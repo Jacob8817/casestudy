@@ -1,0 +1,1211 @@
+[
+  {
+    "label": "skull",
+    "component_id": 1,
+    "voxels": 2115085,
+    "volume_mm3": 489938.8770103119,
+    "centroid_ras_mm": [
+      28.40104586507971,
+      139.30910295861912,
+      -522.3447289943142
+    ],
+    "bbox_index": [
+      [
+        100,
+        344
+      ],
+      [
+        115,
+        416
+      ],
+      [
+        0,
+        215
+      ]
+    ],
+    "mean_hu": 897.2101440429688,
+    "median_hu": 1061.0,
+    "fraction_ge_300_hu": 0.7999550845474296,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 2,
+    "voxels": 35,
+    "volume_mm3": 8.107409723656929,
+    "centroid_ras_mm": [
+      41.29194412231446,
+      200.76386184692385,
+      -562.1308332170759
+    ],
+    "bbox_index": [
+      [
+        180,
+        184
+      ],
+      [
+        371,
+        375
+      ],
+      [
+        53,
+        57
+      ]
+    ],
+    "mean_hu": 185.7142791748047,
+    "median_hu": 225.0,
+    "fraction_ge_300_hu": 0.05714285714285714,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 3,
+    "voxels": 1,
+    "volume_mm3": 0.2316402778187694,
+    "centroid_ras_mm": [
+      33.06690216064453,
+      184.31377792358398,
+      -563.7379760742188
+    ],
+    "bbox_index": [
+      [
+        196,
+        197
+      ],
+      [
+        343,
+        344
+      ],
+      [
+        52,
+        53
+      ]
+    ],
+    "mean_hu": 261.0,
+    "median_hu": 261.0,
+    "fraction_ge_300_hu": 0.0,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 4,
+    "voxels": 3,
+    "volume_mm3": 0.6949208334563082,
+    "centroid_ras_mm": [
+      30.658669153849274,
+      202.28290112813312,
+      -561.4879760742188
+    ],
+    "bbox_index": [
+      [
+        200,
+        202
+      ],
+      [
+        375,
+        377
+      ],
+      [
+        55,
+        56
+      ]
+    ],
+    "mean_hu": 237.6666717529297,
+    "median_hu": 220.0,
+    "fraction_ge_300_hu": 0.3333333333333333,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 5,
+    "voxels": 2,
+    "volume_mm3": 0.4632805556375388,
+    "centroid_ras_mm": [
+      10.003439903259277,
+      197.09593772888184,
+      -468.48797607421875
+    ],
+    "bbox_index": [
+      [
+        237,
+        239
+      ],
+      [
+        366,
+        367
+      ],
+      [
+        179,
+        180
+      ]
+    ],
+    "mean_hu": 417.5,
+    "median_hu": 417.5,
+    "fraction_ge_300_hu": 0.5,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 6,
+    "voxels": 1,
+    "volume_mm3": 0.2316402778187694,
+    "centroid_ras_mm": [
+      -0.8336086273193359,
+      176.53333282470703,
+      -452.73797607421875
+    ],
+    "bbox_index": [
+      [
+        257,
+        258
+      ],
+      [
+        329,
+        330
+      ],
+      [
+        200,
+        201
+      ]
+    ],
+    "mean_hu": -293.0,
+    "median_hu": -293.0,
+    "fraction_ge_300_hu": 0.0,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 7,
+    "voxels": 375,
+    "volume_mm3": 86.86510418203852,
+    "centroid_ras_mm": [
+      -8.665923360188799,
+      156.03297148132324,
+      -448.19397607421877
+    ],
+    "bbox_index": [
+      [
+        263,
+        278
+      ],
+      [
+        285,
+        299
+      ],
+      [
+        203,
+        211
+      ]
+    ],
+    "mean_hu": 1175.3572998046875,
+    "median_hu": 292.0,
+    "fraction_ge_300_hu": 0.49333333333333335,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 8,
+    "voxels": 161,
+    "volume_mm3": 37.29408472882187,
+    "centroid_ras_mm": [
+      -6.529142972105035,
+      151.6800920474603,
+      -446.53300713011936
+    ],
+    "bbox_index": [
+      [
+        265,
+        271
+      ],
+      [
+        280,
+        289
+      ],
+      [
+        205,
+        212
+      ]
+    ],
+    "mean_hu": 1613.5341796875,
+    "median_hu": 270.0,
+    "fraction_ge_300_hu": 0.4906832298136646,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 9,
+    "voxels": 73,
+    "volume_mm3": 16.909740280770166,
+    "centroid_ras_mm": [
+      -7.989791007891085,
+      146.28704282682236,
+      -444.40578429339683
+    ],
+    "bbox_index": [
+      [
+        267,
+        277
+      ],
+      [
+        273,
+        278
+      ],
+      [
+        208,
+        214
+      ]
+    ],
+    "mean_hu": 2428.369873046875,
+    "median_hu": 1248.0,
+    "fraction_ge_300_hu": 0.726027397260274,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 10,
+    "voxels": 1,
+    "volume_mm3": 0.2316402778187694,
+    "centroid_ras_mm": [
+      -6.946815490722656,
+      159.8609504699707,
+      -446.73797607421875
+    ],
+    "bbox_index": [
+      [
+        268,
+        269
+      ],
+      [
+        299,
+        300
+      ],
+      [
+        208,
+        209
+      ]
+    ],
+    "mean_hu": -258.0,
+    "median_hu": -258.0,
+    "fraction_ge_300_hu": 0.0,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 11,
+    "voxels": 2,
+    "volume_mm3": 0.4632805556375388,
+    "centroid_ras_mm": [
+      -7.780434608459473,
+      160.4166965484619,
+      -446.73797607421875
+    ],
+    "bbox_index": [
+      [
+        269,
+        271
+      ],
+      [
+        300,
+        301
+      ],
+      [
+        208,
+        209
+      ]
+    ],
+    "mean_hu": 47.0,
+    "median_hu": 47.0,
+    "fraction_ge_300_hu": 0.5,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 12,
+    "voxels": 1,
+    "volume_mm3": 0.2316402778187694,
+    "centroid_ras_mm": [
+      -8.058307647705078,
+      150.96901321411133,
+      -444.48797607421875
+    ],
+    "bbox_index": [
+      [
+        270,
+        271
+      ],
+      [
+        283,
+        284
+      ],
+      [
+        211,
+        212
+      ]
+    ],
+    "mean_hu": -247.0,
+    "median_hu": -247.0,
+    "fraction_ge_300_hu": 0.0,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 13,
+    "voxels": 29,
+    "volume_mm3": 6.717568056744312,
+    "centroid_ras_mm": [
+      -10.453764882580998,
+      142.11540327400996,
+      -445.0310795224946
+    ],
+    "bbox_index": [
+      [
+        273,
+        278
+      ],
+      [
+        266,
+        270
+      ],
+      [
+        208,
+        213
+      ]
+    ],
+    "mean_hu": 3921.3447265625,
+    "median_hu": 2412.0,
+    "fraction_ge_300_hu": 0.8275862068965517,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 14,
+    "voxels": 8,
+    "volume_mm3": 1.8531222225501551,
+    "centroid_ras_mm": [
+      -10.767569780349731,
+      147.56506848335266,
+      -447.39422607421875
+    ],
+    "bbox_index": [
+      [
+        274,
+        278
+      ],
+      [
+        276,
+        279
+      ],
+      [
+        207,
+        209
+      ]
+    ],
+    "mean_hu": 1093.875,
+    "median_hu": 709.5,
+    "fraction_ge_300_hu": 0.5,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 15,
+    "voxels": 60,
+    "volume_mm3": 13.898416669126163,
+    "centroid_ras_mm": [
+      -12.087466716766357,
+      138.66850001017252,
+      -445.0129760742187
+    ],
+    "bbox_index": [
+      [
+        275,
+        284
+      ],
+      [
+        259,
+        265
+      ],
+      [
+        207,
+        213
+      ]
+    ],
+    "mean_hu": 2306.566650390625,
+    "median_hu": 991.0,
+    "fraction_ge_300_hu": 0.6166666666666667,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 16,
+    "voxels": 58,
+    "volume_mm3": 13.435136113488625,
+    "centroid_ras_mm": [
+      -13.999041590197322,
+      144.0605145487292,
+      -447.70780366042567
+    ],
+    "bbox_index": [
+      [
+        277,
+        285
+      ],
+      [
+        268,
+        273
+      ],
+      [
+        205,
+        210
+      ]
+    ],
+    "mean_hu": 2721.103515625,
+    "median_hu": 1874.0,
+    "fraction_ge_300_hu": 0.7413793103448276,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 17,
+    "voxels": 239,
+    "volume_mm3": 55.362026398685884,
+    "centroid_ras_mm": [
+      -16.173595572116483,
+      134.47800405653948,
+      -445.27249490267064
+    ],
+    "bbox_index": [
+      [
+        278,
+        293
+      ],
+      [
+        249,
+        258
+      ],
+      [
+        206,
+        214
+      ]
+    ],
+    "mean_hu": 1714.539794921875,
+    "median_hu": 470.0,
+    "fraction_ge_300_hu": 0.5564853556485355,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 18,
+    "voxels": 8,
+    "volume_mm3": 1.8531222225501551,
+    "centroid_ras_mm": [
+      -14.79672884941101,
+      140.47930598258972,
+      -448.23797607421875
+    ],
+    "bbox_index": [
+      [
+        281,
+        284
+      ],
+      [
+        263,
+        266
+      ],
+      [
+        206,
+        207
+      ]
+    ],
+    "mean_hu": 1484.875,
+    "median_hu": 1044.5,
+    "fraction_ge_300_hu": 0.875,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 19,
+    "voxels": 442,
+    "volume_mm3": 102.38500279589607,
+    "centroid_ras_mm": [
+      -18.868951952835033,
+      130.52711334055905,
+      -446.6938584271599
+    ],
+    "bbox_index": [
+      [
+        282,
+        299
+      ],
+      [
+        240,
+        254
+      ],
+      [
+        203,
+        214
+      ]
+    ],
+    "mean_hu": 1877.6470947265625,
+    "median_hu": 818.5,
+    "fraction_ge_300_hu": 0.5927601809954751,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 20,
+    "voxels": 6,
+    "volume_mm3": 1.3898416669126163,
+    "centroid_ras_mm": [
+      -16.950244903564453,
+      139.8540916442871,
+      -446.36297607421875
+    ],
+    "bbox_index": [
+      [
+        286,
+        287
+      ],
+      [
+        262,
+        265
+      ],
+      [
+        207,
+        211
+      ]
+    ],
+    "mean_hu": 4570.33349609375,
+    "median_hu": 3252.0,
+    "fraction_ge_300_hu": 0.8333333333333334,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 21,
+    "voxels": 14,
+    "volume_mm3": 3.2429638894627715,
+    "centroid_ras_mm": [
+      -19.133533069065635,
+      125.28560515812464,
+      -447.4344046456473
+    ],
+    "bbox_index": [
+      [
+        289,
+        292
+      ],
+      [
+        236,
+        239
+      ],
+      [
+        205,
+        209
+      ]
+    ],
+    "mean_hu": 4891.9287109375,
+    "median_hu": 4897.0,
+    "fraction_ge_300_hu": 0.8571428571428571,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 22,
+    "voxels": 15,
+    "volume_mm3": 3.474604167281541,
+    "centroid_ras_mm": [
+      -23.13755124409994,
+      128.03522504170735,
+      -450.2879760742187
+    ],
+    "bbox_index": [
+      [
+        295,
+        300
+      ],
+      [
+        240,
+        244
+      ],
+      [
+        203,
+        205
+      ]
+    ],
+    "mean_hu": 2101.933349609375,
+    "median_hu": 1898.0,
+    "fraction_ge_300_hu": 0.9333333333333333,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 23,
+    "voxels": 6,
+    "volume_mm3": 1.3898416669126163,
+    "centroid_ras_mm": [
+      -39.457961082458496,
+      180.1456823348999,
+      -545.7379760742188
+    ],
+    "bbox_index": [
+      [
+        326,
+        328
+      ],
+      [
+        334,
+        338
+      ],
+      [
+        76,
+        77
+      ]
+    ],
+    "mean_hu": 431.3333435058594,
+    "median_hu": 451.0,
+    "fraction_ge_300_hu": 0.8333333333333334,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 24,
+    "voxels": 3,
+    "volume_mm3": 0.6949208334563082,
+    "centroid_ras_mm": [
+      -40.29158020019531,
+      179.8678092956543,
+      -544.9879760742188
+    ],
+    "bbox_index": [
+      [
+        328,
+        329
+      ],
+      [
+        334,
+        337
+      ],
+      [
+        77,
+        78
+      ]
+    ],
+    "mean_hu": 1316.6666259765625,
+    "median_hu": 1249.0,
+    "fraction_ge_300_hu": 1.0,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 25,
+    "voxels": 46,
+    "volume_mm3": 10.655452779663392,
+    "centroid_ras_mm": [
+      -48.67609712351924,
+      132.6414740603903,
+      -513.9608021611753
+    ],
+    "bbox_index": [
+      [
+        342,
+        346
+      ],
+      [
+        247,
+        254
+      ],
+      [
+        117,
+        122
+      ]
+    ],
+    "mean_hu": 167.52174377441406,
+    "median_hu": 243.0,
+    "fraction_ge_300_hu": 0.41304347826086957,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 26,
+    "voxels": 2,
+    "volume_mm3": 0.4632805556375388,
+    "centroid_ras_mm": [
+      -55.29672431945801,
+      118.7357406616211,
+      -505.61297607421875
+    ],
+    "bbox_index": [
+      [
+        355,
+        356
+      ],
+      [
+        225,
+        226
+      ],
+      [
+        129,
+        131
+      ]
+    ],
+    "mean_hu": 242.5,
+    "median_hu": 242.5,
+    "fraction_ge_300_hu": 0.5,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 27,
+    "voxels": 2,
+    "volume_mm3": 0.4632805556375388,
+    "centroid_ras_mm": [
+      -56.130343437194824,
+      115.40126419067383,
+      -503.73797607421875
+    ],
+    "bbox_index": [
+      [
+        356,
+        358
+      ],
+      [
+        219,
+        220
+      ],
+      [
+        132,
+        133
+      ]
+    ],
+    "mean_hu": 391.0,
+    "median_hu": 391.0,
+    "fraction_ge_300_hu": 0.5,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "skull",
+    "component_id": 28,
+    "voxels": 4,
+    "volume_mm3": 0.9265611112750776,
+    "centroid_ras_mm": [
+      -55.99140691757202,
+      118.17999458312988,
+      -505.98797607421875
+    ],
+    "bbox_index": [
+      [
+        356,
+        358
+      ],
+      [
+        224,
+        225
+      ],
+      [
+        128,
+        131
+      ]
+    ],
+    "mean_hu": -296.75,
+    "median_hu": -668.0,
+    "fraction_ge_300_hu": 0.25,
+    "touches_fov": false,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "mandible",
+    "component_id": 1,
+    "voxels": 17260,
+    "volume_mm3": 3998.1111951519597,
+    "centroid_ras_mm": [
+      65.40208295985694,
+      137.16062287499702,
+      -588.2299082874284
+    ],
+    "bbox_index": [
+      [
+        119,
+        155
+      ],
+      [
+        236,
+        303
+      ],
+      [
+        0,
+        46
+      ]
+    ],
+    "mean_hu": 836.6869506835938,
+    "median_hu": 695.0,
+    "fraction_ge_300_hu": 0.7299536500579374,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "mandible",
+    "component_id": 2,
+    "voxels": 16732,
+    "volume_mm3": 3875.8051284636495,
+    "centroid_ras_mm": [
+      -19.496971569134246,
+      163.34558998304436,
+      -587.6610127703698
+    ],
+    "bbox_index": [
+      [
+        269,
+        311
+      ],
+      [
+        281,
+        347
+      ],
+      [
+        0,
+        47
+      ]
+    ],
+    "mean_hu": 819.9473266601562,
+    "median_hu": 649.0,
+    "fraction_ge_300_hu": 0.7264523069567296,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 1,
+    "voxels": 1475,
+    "volume_mm3": 341.66940978268485,
+    "centroid_ras_mm": [
+      54.638139100155584,
+      181.81989094491732,
+      -599.9856031928629
+    ],
+    "bbox_index": [
+      [
+        147,
+        167
+      ],
+      [
+        331,
+        349
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "mean_hu": 1500.634521484375,
+    "median_hu": 1555.0,
+    "fraction_ge_300_hu": 0.9979661016949153,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 2,
+    "voxels": 1277,
+    "volume_mm3": 295.8046347745685,
+    "centroid_ras_mm": [
+      54.683118071888416,
+      173.92519950567976,
+      -599.4719228244145
+    ],
+    "bbox_index": [
+      [
+        149,
+        166
+      ],
+      [
+        320,
+        331
+      ],
+      [
+        0,
+        11
+      ]
+    ],
+    "mean_hu": 1444.28662109375,
+    "median_hu": 1571.0,
+    "fraction_ge_300_hu": 0.966327329678935,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 3,
+    "voxels": 1,
+    "volume_mm3": 0.2316402778187694,
+    "centroid_ras_mm": [
+      54.74099922180176,
+      195.4286994934082,
+      -602.7379760742188
+    ],
+    "bbox_index": [
+      [
+        157,
+        158
+      ],
+      [
+        363,
+        364
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "mean_hu": 1288.0,
+    "median_hu": 1288.0,
+    "fraction_ge_300_hu": 1.0,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 4,
+    "voxels": 368,
+    "volume_mm3": 85.24362223730714,
+    "centroid_ras_mm": [
+      52.22655025254126,
+      200.08005254164988,
+      -600.5715358568275
+    ],
+    "bbox_index": [
+      [
+        157,
+        166
+      ],
+      [
+        367,
+        377
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "mean_hu": 1436.4891357421875,
+    "median_hu": 1408.5,
+    "fraction_ge_300_hu": 0.9918478260869565,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 5,
+    "voxels": 21,
+    "volume_mm3": 4.864445834194157,
+    "centroid_ras_mm": [
+      44.975746699741904,
+      207.46986452738446,
+      -602.6308332170759
+    ],
+    "bbox_index": [
+      [
+        173,
+        177
+      ],
+      [
+        382,
+        388
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "mean_hu": 1565.952392578125,
+    "median_hu": 1545.0,
+    "fraction_ge_300_hu": 1.0,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 6,
+    "voxels": 123,
+    "volume_mm3": 28.491754171708635,
+    "centroid_ras_mm": [
+      35.80948646669465,
+      209.57989232133073,
+      -601.890415098609
+    ],
+    "bbox_index": [
+      [
+        188,
+        195
+      ],
+      [
+        385,
+        393
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "mean_hu": 1324.869873046875,
+    "median_hu": 1316.0,
+    "fraction_ge_300_hu": 1.0,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 7,
+    "voxels": 59,
+    "volume_mm3": 13.666776391307394,
+    "centroid_ras_mm": [
+      30.72146532091044,
+      210.12300258571818,
+      -602.1786540403205
+    ],
+    "bbox_index": [
+      [
+        198,
+        204
+      ],
+      [
+        387,
+        393
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "mean_hu": 1451.7119140625,
+    "median_hu": 1474.0,
+    "fraction_ge_300_hu": 1.0,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 8,
+    "voxels": 363,
+    "volume_mm3": 84.08542084821329,
+    "centroid_ras_mm": [
+      25.43036926942095,
+      209.14781962938548,
+      -600.5871496279377
+    ],
+    "bbox_index": [
+      [
+        206,
+        215
+      ],
+      [
+        384,
+        394
+      ],
+      [
+        0,
+        9
+      ]
+    ],
+    "mean_hu": 1537.7135009765625,
+    "median_hu": 1599.0,
+    "fraction_ge_300_hu": 0.9972451790633609,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  },
+  {
+    "label": "teeth_upper",
+    "component_id": 9,
+    "voxels": 1927,
+    "volume_mm3": 446.3708153567686,
+    "centroid_ras_mm": [
+      7.561416073667004,
+      183.95241319273316,
+      -598.0425946523194
+    ],
+    "bbox_index": [
+      [
+        237,
+        250
+      ],
+      [
+        335,
+        354
+      ],
+      [
+        0,
+        18
+      ]
+    ],
+    "mean_hu": 1531.4903564453125,
+    "median_hu": 1709.0,
+    "fraction_ge_300_hu": 0.9579657498702646,
+    "touches_fov": true,
+    "action": "retained",
+    "reason": "No independent evidence justifies deletion"
+  }
+]

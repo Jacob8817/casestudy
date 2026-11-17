@@ -1,0 +1,1358 @@
+{
+  "schema_version": 1,
+  "selection": "official train/val only; brain >= 800 mL and skull >= 300 mL",
+  "overlap_policy": "skull wins; brain is removed where the two source masks overlap",
+  "min_brain_ml": 800.0,
+  "min_skull_ml": 300.0,
+  "scanned": {
+    "train": 1082,
+    "val": 57
+  },
+  "selected_counts": {
+    "train": 98,
+    "val": 5
+  },
+  "cases": [
+    {
+      "case_id": "s0101",
+      "split": "train",
+      "brain_ml": 826.6961249999999,
+      "skull_ml": 352.93725,
+      "overlap_voxels_skull_wins": 2446,
+      "shape": [
+        119,
+        119,
+        74
+      ],
+      "ct_path": "s0101/ct.nii.gz"
+    },
+    {
+      "case_id": "s0103",
+      "split": "train",
+      "brain_ml": 1375.417125,
+      "skull_ml": 703.84275,
+      "overlap_voxels_skull_wins": 6668,
+      "shape": [
+        178,
+        178,
+        117
+      ],
+      "ct_path": "s0103/ct.nii.gz"
+    },
+    {
+      "case_id": "s0152",
+      "split": "train",
+      "brain_ml": 1310.39775,
+      "skull_ml": 834.391125,
+      "overlap_voxels_skull_wins": 7584,
+      "shape": [
+        233,
+        233,
+        224
+      ],
+      "ct_path": "s0152/ct.nii.gz"
+    },
+    {
+      "case_id": "s0159",
+      "split": "train",
+      "brain_ml": 945.16875,
+      "skull_ml": 465.79725,
+      "overlap_voxels_skull_wins": 49,
+      "shape": [
+        173,
+        173,
+        74
+      ],
+      "ct_path": "s0159/ct.nii.gz"
+    },
+    {
+      "case_id": "s0187",
+      "split": "train",
+      "brain_ml": 1394.425125,
+      "skull_ml": 860.75325,
+      "overlap_voxels_skull_wins": 5877,
+      "shape": [
+        180,
+        180,
+        125
+      ],
+      "ct_path": "s0187/ct.nii.gz"
+    },
+    {
+      "case_id": "s0224",
+      "split": "train",
+      "brain_ml": 1346.189625,
+      "skull_ml": 923.720625,
+      "overlap_voxels_skull_wins": 7083,
+      "shape": [
+        333,
+        333,
+        621
+      ],
+      "ct_path": "s0224/ct.nii.gz"
+    },
+    {
+      "case_id": "s0289",
+      "split": "train",
+      "brain_ml": 1140.591375,
+      "skull_ml": 721.63575,
+      "overlap_voxels_skull_wins": 8446,
+      "shape": [
+        145,
+        145,
+        233
+      ],
+      "ct_path": "s0289/ct.nii.gz"
+    },
+    {
+      "case_id": "s0292",
+      "split": "train",
+      "brain_ml": 1315.64925,
+      "skull_ml": 863.8919999999999,
+      "overlap_voxels_skull_wins": 7530,
+      "shape": [
+        148,
+        148,
+        233
+      ],
+      "ct_path": "s0292/ct.nii.gz"
+    },
+    {
+      "case_id": "s0333",
+      "split": "train",
+      "brain_ml": 1341.559125,
+      "skull_ml": 725.949,
+      "overlap_voxels_skull_wins": 6237,
+      "shape": [
+        219,
+        219,
+        217
+      ],
+      "ct_path": "s0333/ct.nii.gz"
+    },
+    {
+      "case_id": "s0340",
+      "split": "train",
+      "brain_ml": 1518.213375,
+      "skull_ml": 707.551875,
+      "overlap_voxels_skull_wins": 3906,
+      "shape": [
+        163,
+        163,
+        100
+      ],
+      "ct_path": "s0340/ct.nii.gz"
+    },
+    {
+      "case_id": "s0382",
+      "split": "train",
+      "brain_ml": 1384.04025,
+      "skull_ml": 863.416125,
+      "overlap_voxels_skull_wins": 4032,
+      "shape": [
+        232,
+        232,
+        309
+      ],
+      "ct_path": "s0382/ct.nii.gz"
+    },
+    {
+      "case_id": "s0388",
+      "split": "train",
+      "brain_ml": 1168.340625,
+      "skull_ml": 728.031375,
+      "overlap_voxels_skull_wins": 3684,
+      "shape": [
+        154,
+        154,
+        102
+      ],
+      "ct_path": "s0388/ct.nii.gz"
+    },
+    {
+      "case_id": "s0400",
+      "split": "train",
+      "brain_ml": 1094.6509295850535,
+      "skull_ml": 724.6125338515681,
+      "overlap_voxels_skull_wins": 2984,
+      "shape": [
+        225,
+        160,
+        203
+      ],
+      "ct_path": "s0400/ct.nii.gz"
+    },
+    {
+      "case_id": "s0410",
+      "split": "train",
+      "brain_ml": 1140.746625,
+      "skull_ml": 480.141,
+      "overlap_voxels_skull_wins": 2391,
+      "shape": [
+        151,
+        151,
+        75
+      ],
+      "ct_path": "s0410/ct.nii.gz"
+    },
+    {
+      "case_id": "s0412",
+      "split": "train",
+      "brain_ml": 1395.6232499999999,
+      "skull_ml": 854.512875,
+      "overlap_voxels_skull_wins": 2089,
+      "shape": [
+        313,
+        313,
+        431
+      ],
+      "ct_path": "s0412/ct.nii.gz"
+    },
+    {
+      "case_id": "s0417",
+      "split": "train",
+      "brain_ml": 1369.5582132482373,
+      "skull_ml": 579.5583639435589,
+      "overlap_voxels_skull_wins": 1190,
+      "shape": [
+        142,
+        161,
+        86
+      ],
+      "ct_path": "s0417/ct.nii.gz"
+    },
+    {
+      "case_id": "s0449",
+      "split": "train",
+      "brain_ml": 1311.201,
+      "skull_ml": 616.032,
+      "overlap_voxels_skull_wins": 4331,
+      "shape": [
+        140,
+        140,
+        107
+      ],
+      "ct_path": "s0449/ct.nii.gz"
+    },
+    {
+      "case_id": "s0460",
+      "split": "train",
+      "brain_ml": 1414.6076458891037,
+      "skull_ml": 803.0408147850216,
+      "overlap_voxels_skull_wins": 2285,
+      "shape": [
+        115,
+        139,
+        102
+      ],
+      "ct_path": "s0460/ct.nii.gz"
+    },
+    {
+      "case_id": "s0474",
+      "split": "train",
+      "brain_ml": 1074.400875,
+      "skull_ml": 473.299875,
+      "overlap_voxels_skull_wins": 1723,
+      "shape": [
+        137,
+        137,
+        73
+      ],
+      "ct_path": "s0474/ct.nii.gz"
+    },
+    {
+      "case_id": "s0478",
+      "split": "train",
+      "brain_ml": 1094.758875,
+      "skull_ml": 681.25725,
+      "overlap_voxels_skull_wins": 1885,
+      "shape": [
+        181,
+        181,
+        237
+      ],
+      "ct_path": "s0478/ct.nii.gz"
+    },
+    {
+      "case_id": "s0497",
+      "split": "train",
+      "brain_ml": 1378.036125,
+      "skull_ml": 988.9762499999999,
+      "overlap_voxels_skull_wins": 7791,
+      "shape": [
+        188,
+        188,
+        244
+      ],
+      "ct_path": "s0497/ct.nii.gz"
+    },
+    {
+      "case_id": "s0503",
+      "split": "train",
+      "brain_ml": 1345.872375,
+      "skull_ml": 728.544375,
+      "overlap_voxels_skull_wins": 6267,
+      "shape": [
+        174,
+        174,
+        233
+      ],
+      "ct_path": "s0503/ct.nii.gz"
+    },
+    {
+      "case_id": "s0511",
+      "split": "train",
+      "brain_ml": 1316.06775,
+      "skull_ml": 814.748625,
+      "overlap_voxels_skull_wins": 5045,
+      "shape": [
+        284,
+        284,
+        465
+      ],
+      "ct_path": "s0511/ct.nii.gz"
+    },
+    {
+      "case_id": "s0514",
+      "split": "train",
+      "brain_ml": 1359.2542026522558,
+      "skull_ml": 783.5602539952109,
+      "overlap_voxels_skull_wins": 3195,
+      "shape": [
+        121,
+        140,
+        108
+      ],
+      "ct_path": "s0514/ct.nii.gz"
+    },
+    {
+      "case_id": "s0518",
+      "split": "train",
+      "brain_ml": 988.216875,
+      "skull_ml": 593.22375,
+      "overlap_voxels_skull_wins": 3814,
+      "shape": [
+        145,
+        145,
+        236
+      ],
+      "ct_path": "s0518/ct.nii.gz"
+    },
+    {
+      "case_id": "s0535",
+      "split": "train",
+      "brain_ml": 1077.273,
+      "skull_ml": 544.2524999999999,
+      "overlap_voxels_skull_wins": 2755,
+      "shape": [
+        133,
+        133,
+        211
+      ],
+      "ct_path": "s0535/ct.nii.gz"
+    },
+    {
+      "case_id": "s0539",
+      "split": "train",
+      "brain_ml": 1171.506375,
+      "skull_ml": 494.494875,
+      "overlap_voxels_skull_wins": 2533,
+      "shape": [
+        114,
+        134,
+        80
+      ],
+      "ct_path": "s0539/ct.nii.gz"
+    },
+    {
+      "case_id": "s0556",
+      "split": "train",
+      "brain_ml": 1350.6345,
+      "skull_ml": 836.038125,
+      "overlap_voxels_skull_wins": 4470,
+      "shape": [
+        333,
+        333,
+        484
+      ],
+      "ct_path": "s0556/ct.nii.gz"
+    },
+    {
+      "case_id": "s0567",
+      "split": "train",
+      "brain_ml": 1516.822875,
+      "skull_ml": 806.34825,
+      "overlap_voxels_skull_wins": 4892,
+      "shape": [
+        161,
+        161,
+        112
+      ],
+      "ct_path": "s0567/ct.nii.gz"
+    },
+    {
+      "case_id": "s0568",
+      "split": "train",
+      "brain_ml": 999.216,
+      "skull_ml": 485.90887499999997,
+      "overlap_voxels_skull_wins": 2039,
+      "shape": [
+        157,
+        157,
+        141
+      ],
+      "ct_path": "s0568/ct.nii.gz"
+    },
+    {
+      "case_id": "s0575",
+      "split": "train",
+      "brain_ml": 1240.8255,
+      "skull_ml": 586.348875,
+      "overlap_voxels_skull_wins": 3844,
+      "shape": [
+        143,
+        143,
+        103
+      ],
+      "ct_path": "s0575/ct.nii.gz"
+    },
+    {
+      "case_id": "s0588",
+      "split": "train",
+      "brain_ml": 1365.99075,
+      "skull_ml": 824.5158749999999,
+      "overlap_voxels_skull_wins": 5326,
+      "shape": [
+        184,
+        184,
+        117
+      ],
+      "ct_path": "s0588/ct.nii.gz"
+    },
+    {
+      "case_id": "s0591",
+      "split": "train",
+      "brain_ml": 1334.181375,
+      "skull_ml": 881.789625,
+      "overlap_voxels_skull_wins": 5261,
+      "shape": [
+        275,
+        275,
+        531
+      ],
+      "ct_path": "s0591/ct.nii.gz"
+    },
+    {
+      "case_id": "s0610",
+      "split": "train",
+      "brain_ml": 1138.66425,
+      "skull_ml": 796.6046249999999,
+      "overlap_voxels_skull_wins": 1372,
+      "shape": [
+        240,
+        240,
+        206
+      ],
+      "ct_path": "s0610/ct.nii.gz"
+    },
+    {
+      "case_id": "s0616",
+      "split": "train",
+      "brain_ml": 1517.197516318632,
+      "skull_ml": 1004.7746356924407,
+      "overlap_voxels_skull_wins": 5260,
+      "shape": [
+        337,
+        261,
+        644
+      ],
+      "ct_path": "s0616/ct.nii.gz"
+    },
+    {
+      "case_id": "s0622",
+      "split": "train",
+      "brain_ml": 1316.9349686129078,
+      "skull_ml": 879.4438697896005,
+      "overlap_voxels_skull_wins": 2530,
+      "shape": [
+        263,
+        146,
+        241
+      ],
+      "ct_path": "s0622/ct.nii.gz"
+    },
+    {
+      "case_id": "s0643",
+      "split": "train",
+      "brain_ml": 1340.20575,
+      "skull_ml": 862.315875,
+      "overlap_voxels_skull_wins": 9716,
+      "shape": [
+        178,
+        178,
+        263
+      ],
+      "ct_path": "s0643/ct.nii.gz"
+    },
+    {
+      "case_id": "s0660",
+      "split": "train",
+      "brain_ml": 1520.55225,
+      "skull_ml": 876.1938749999999,
+      "overlap_voxels_skull_wins": 5070,
+      "shape": [
+        202,
+        202,
+        252
+      ],
+      "ct_path": "s0660/ct.nii.gz"
+    },
+    {
+      "case_id": "s0690",
+      "split": "train",
+      "brain_ml": 1087.5566084645482,
+      "skull_ml": 720.6468629644422,
+      "overlap_voxels_skull_wins": 13318,
+      "shape": [
+        281,
+        162,
+        538
+      ],
+      "ct_path": "s0690/ct.nii.gz"
+    },
+    {
+      "case_id": "s0706",
+      "split": "train",
+      "brain_ml": 865.30275,
+      "skull_ml": 323.848125,
+      "overlap_voxels_skull_wins": 1410,
+      "shape": [
+        194,
+        194,
+        68
+      ],
+      "ct_path": "s0706/ct.nii.gz"
+    },
+    {
+      "case_id": "s0713",
+      "split": "train",
+      "brain_ml": 895.0027305115676,
+      "skull_ml": 495.0787392197999,
+      "overlap_voxels_skull_wins": 674,
+      "shape": [
+        161,
+        161,
+        76
+      ],
+      "ct_path": "s0713/ct.nii.gz"
+    },
+    {
+      "case_id": "s0727",
+      "split": "train",
+      "brain_ml": 1116.74025,
+      "skull_ml": 749.5065,
+      "overlap_voxels_skull_wins": 21472,
+      "shape": [
+        247,
+        247,
+        525
+      ],
+      "ct_path": "s0727/ct.nii.gz"
+    },
+    {
+      "case_id": "s0748",
+      "split": "train",
+      "brain_ml": 1295.757,
+      "skull_ml": 601.799625,
+      "overlap_voxels_skull_wins": 3116,
+      "shape": [
+        140,
+        140,
+        87
+      ],
+      "ct_path": "s0748/ct.nii.gz"
+    },
+    {
+      "case_id": "s0754",
+      "split": "train",
+      "brain_ml": 1244.8586388539852,
+      "skull_ml": 1039.864509891854,
+      "overlap_voxels_skull_wins": 3921,
+      "shape": [
+        376,
+        202,
+        649
+      ],
+      "ct_path": "s0754/ct.nii.gz"
+    },
+    {
+      "case_id": "s0766",
+      "split": "train",
+      "brain_ml": 1314.3228926389036,
+      "skull_ml": 617.3752581668812,
+      "overlap_voxels_skull_wins": 3932,
+      "shape": [
+        118,
+        138,
+        100
+      ],
+      "ct_path": "s0766/ct.nii.gz"
+    },
+    {
+      "case_id": "s0777",
+      "split": "train",
+      "brain_ml": 1376.233875,
+      "skull_ml": 895.613625,
+      "overlap_voxels_skull_wins": 11126,
+      "shape": [
+        305,
+        305,
+        536
+      ],
+      "ct_path": "s0777/ct.nii.gz"
+    },
+    {
+      "case_id": "s0786",
+      "split": "train",
+      "brain_ml": 1314.21825,
+      "skull_ml": 773.215875,
+      "overlap_voxels_skull_wins": 4844,
+      "shape": [
+        174,
+        174,
+        155
+      ],
+      "ct_path": "s0786/ct.nii.gz"
+    },
+    {
+      "case_id": "s0790",
+      "split": "train",
+      "brain_ml": 1288.747125,
+      "skull_ml": 863.5545,
+      "overlap_voxels_skull_wins": 2721,
+      "shape": [
+        291,
+        291,
+        538
+      ],
+      "ct_path": "s0790/ct.nii.gz"
+    },
+    {
+      "case_id": "s0812",
+      "split": "train",
+      "brain_ml": 1196.724375,
+      "skull_ml": 795.393,
+      "overlap_voxels_skull_wins": 6683,
+      "shape": [
+        328,
+        328,
+        549
+      ],
+      "ct_path": "s0812/ct.nii.gz"
+    },
+    {
+      "case_id": "s0820",
+      "split": "train",
+      "brain_ml": 1376.109,
+      "skull_ml": 895.7115,
+      "overlap_voxels_skull_wins": 4508,
+      "shape": [
+        193,
+        193,
+        252
+      ],
+      "ct_path": "s0820/ct.nii.gz"
+    },
+    {
+      "case_id": "s0855",
+      "split": "train",
+      "brain_ml": 1149.460875,
+      "skull_ml": 684.500625,
+      "overlap_voxels_skull_wins": 3349,
+      "shape": [
+        167,
+        167,
+        114
+      ],
+      "ct_path": "s0855/ct.nii.gz"
+    },
+    {
+      "case_id": "s0857",
+      "split": "train",
+      "brain_ml": 1272.769875,
+      "skull_ml": 977.558625,
+      "overlap_voxels_skull_wins": 7557,
+      "shape": [
+        179,
+        179,
+        227
+      ],
+      "ct_path": "s0857/ct.nii.gz"
+    },
+    {
+      "case_id": "s0875",
+      "split": "train",
+      "brain_ml": 981.446625,
+      "skull_ml": 609.01875,
+      "overlap_voxels_skull_wins": 4405,
+      "shape": [
+        190,
+        190,
+        170
+      ],
+      "ct_path": "s0875/ct.nii.gz"
+    },
+    {
+      "case_id": "s0922",
+      "split": "train",
+      "brain_ml": 1285.713077486231,
+      "skull_ml": 771.258411449495,
+      "overlap_voxels_skull_wins": 3279,
+      "shape": [
+        121,
+        143,
+        120
+      ],
+      "ct_path": "s0922/ct.nii.gz"
+    },
+    {
+      "case_id": "s0949",
+      "split": "train",
+      "brain_ml": 1293.3101329022923,
+      "skull_ml": 740.9846263879161,
+      "overlap_voxels_skull_wins": 3295,
+      "shape": [
+        101,
+        180,
+        225
+      ],
+      "ct_path": "s0949/ct.nii.gz"
+    },
+    {
+      "case_id": "s0960",
+      "split": "train",
+      "brain_ml": 1440.048375,
+      "skull_ml": 939.70125,
+      "overlap_voxels_skull_wins": 7478,
+      "shape": [
+        220,
+        220,
+        248
+      ],
+      "ct_path": "s0960/ct.nii.gz"
+    },
+    {
+      "case_id": "s0974",
+      "split": "train",
+      "brain_ml": 1399.67325,
+      "skull_ml": 685.9215,
+      "overlap_voxels_skull_wins": 5285,
+      "shape": [
+        187,
+        187,
+        224
+      ],
+      "ct_path": "s0974/ct.nii.gz"
+    },
+    {
+      "case_id": "s0984",
+      "split": "train",
+      "brain_ml": 1451.449125,
+      "skull_ml": 682.94475,
+      "overlap_voxels_skull_wins": 5766,
+      "shape": [
+        140,
+        140,
+        113
+      ],
+      "ct_path": "s0984/ct.nii.gz"
+    },
+    {
+      "case_id": "s0986",
+      "split": "train",
+      "brain_ml": 996.1515576933082,
+      "skull_ml": 742.4189781041778,
+      "overlap_voxels_skull_wins": 238,
+      "shape": [
+        331,
+        145,
+        571
+      ],
+      "ct_path": "s0986/ct.nii.gz"
+    },
+    {
+      "case_id": "s0993",
+      "split": "train",
+      "brain_ml": 1440.142875,
+      "skull_ml": 738.83475,
+      "overlap_voxels_skull_wins": 5270,
+      "shape": [
+        146,
+        146,
+        107
+      ],
+      "ct_path": "s0993/ct.nii.gz"
+    },
+    {
+      "case_id": "s0997",
+      "split": "train",
+      "brain_ml": 1228.23675,
+      "skull_ml": 586.348875,
+      "overlap_voxels_skull_wins": 4395,
+      "shape": [
+        137,
+        137,
+        96
+      ],
+      "ct_path": "s0997/ct.nii.gz"
+    },
+    {
+      "case_id": "s1011",
+      "split": "train",
+      "brain_ml": 1326.054418534759,
+      "skull_ml": 844.6477578744316,
+      "overlap_voxels_skull_wins": 2830,
+      "shape": [
+        181,
+        164,
+        267
+      ],
+      "ct_path": "s1011/ct.nii.gz"
+    },
+    {
+      "case_id": "s1014",
+      "split": "train",
+      "brain_ml": 1264.7170069379538,
+      "skull_ml": 687.2275896903056,
+      "overlap_voxels_skull_wins": 2590,
+      "shape": [
+        111,
+        133,
+        116
+      ],
+      "ct_path": "s1014/ct.nii.gz"
+    },
+    {
+      "case_id": "s1029",
+      "split": "train",
+      "brain_ml": 1261.8585,
+      "skull_ml": 714.25125,
+      "overlap_voxels_skull_wins": 7402,
+      "shape": [
+        321,
+        321,
+        545
+      ],
+      "ct_path": "s1029/ct.nii.gz"
+    },
+    {
+      "case_id": "s1034",
+      "split": "train",
+      "brain_ml": 1137.92175,
+      "skull_ml": 770.779125,
+      "overlap_voxels_skull_wins": 5950,
+      "shape": [
+        184,
+        184,
+        233
+      ],
+      "ct_path": "s1034/ct.nii.gz"
+    },
+    {
+      "case_id": "s1045",
+      "split": "train",
+      "brain_ml": 1251.3723767736292,
+      "skull_ml": 875.1645011518482,
+      "overlap_voxels_skull_wins": 3297,
+      "shape": [
+        299,
+        205,
+        645
+      ],
+      "ct_path": "s1045/ct.nii.gz"
+    },
+    {
+      "case_id": "s1047",
+      "split": "train",
+      "brain_ml": 1021.339125,
+      "skull_ml": 391.658625,
+      "overlap_voxels_skull_wins": 1410,
+      "shape": [
+        129,
+        129,
+        62
+      ],
+      "ct_path": "s1047/ct.nii.gz"
+    },
+    {
+      "case_id": "s1055",
+      "split": "train",
+      "brain_ml": 1021.28175,
+      "skull_ml": 521.3025,
+      "overlap_voxels_skull_wins": 2169,
+      "shape": [
+        171,
+        171,
+        70
+      ],
+      "ct_path": "s1055/ct.nii.gz"
+    },
+    {
+      "case_id": "s1056",
+      "split": "train",
+      "brain_ml": 1382.91975,
+      "skull_ml": 719.627625,
+      "overlap_voxels_skull_wins": 5710,
+      "shape": [
+        191,
+        191,
+        110
+      ],
+      "ct_path": "s1056/ct.nii.gz"
+    },
+    {
+      "case_id": "s1072",
+      "split": "train",
+      "brain_ml": 1228.15575,
+      "skull_ml": 742.203,
+      "overlap_voxels_skull_wins": 5137,
+      "shape": [
+        167,
+        167,
+        109
+      ],
+      "ct_path": "s1072/ct.nii.gz"
+    },
+    {
+      "case_id": "s1082",
+      "split": "train",
+      "brain_ml": 1386.07875,
+      "skull_ml": 902.17125,
+      "overlap_voxels_skull_wins": 2601,
+      "shape": [
+        333,
+        333,
+        542
+      ],
+      "ct_path": "s1082/ct.nii.gz"
+    },
+    {
+      "case_id": "s1088",
+      "split": "train",
+      "brain_ml": 1348.08975,
+      "skull_ml": 841.822875,
+      "overlap_voxels_skull_wins": 7035,
+      "shape": [
+        333,
+        333,
+        544
+      ],
+      "ct_path": "s1088/ct.nii.gz"
+    },
+    {
+      "case_id": "s1093",
+      "split": "train",
+      "brain_ml": 1259.708625,
+      "skull_ml": 760.708125,
+      "overlap_voxels_skull_wins": 5281,
+      "shape": [
+        199,
+        199,
+        239
+      ],
+      "ct_path": "s1093/ct.nii.gz"
+    },
+    {
+      "case_id": "s1107",
+      "split": "train",
+      "brain_ml": 1412.073,
+      "skull_ml": 1055.561625,
+      "overlap_voxels_skull_wins": 6457,
+      "shape": [
+        229,
+        229,
+        253
+      ],
+      "ct_path": "s1107/ct.nii.gz"
+    },
+    {
+      "case_id": "s1113",
+      "split": "train",
+      "brain_ml": 1380.34125,
+      "skull_ml": 796.797,
+      "overlap_voxels_skull_wins": 8747,
+      "shape": [
+        206,
+        206,
+        219
+      ],
+      "ct_path": "s1113/ct.nii.gz"
+    },
+    {
+      "case_id": "s1129",
+      "split": "train",
+      "brain_ml": 1461.78,
+      "skull_ml": 766.3679999999999,
+      "overlap_voxels_skull_wins": 5711,
+      "shape": [
+        174,
+        174,
+        251
+      ],
+      "ct_path": "s1129/ct.nii.gz"
+    },
+    {
+      "case_id": "s1138",
+      "split": "train",
+      "brain_ml": 1356.287625,
+      "skull_ml": 904.260375,
+      "overlap_voxels_skull_wins": 4877,
+      "shape": [
+        182,
+        182,
+        260
+      ],
+      "ct_path": "s1138/ct.nii.gz"
+    },
+    {
+      "case_id": "s1148",
+      "split": "train",
+      "brain_ml": 1311.3731629333604,
+      "skull_ml": 672.2291442595532,
+      "overlap_voxels_skull_wins": 4290,
+      "shape": [
+        105,
+        120,
+        102
+      ],
+      "ct_path": "s1148/ct.nii.gz"
+    },
+    {
+      "case_id": "s1150",
+      "split": "train",
+      "brain_ml": 1262.99925,
+      "skull_ml": 729.783,
+      "overlap_voxels_skull_wins": 3563,
+      "shape": [
+        167,
+        167,
+        101
+      ],
+      "ct_path": "s1150/ct.nii.gz"
+    },
+    {
+      "case_id": "s1154",
+      "split": "train",
+      "brain_ml": 1240.5183749999999,
+      "skull_ml": 756.5805,
+      "overlap_voxels_skull_wins": 6277,
+      "shape": [
+        201,
+        201,
+        239
+      ],
+      "ct_path": "s1154/ct.nii.gz"
+    },
+    {
+      "case_id": "s1159",
+      "split": "train",
+      "brain_ml": 1183.6665,
+      "skull_ml": 689.988375,
+      "overlap_voxels_skull_wins": 34642,
+      "shape": [
+        329,
+        329,
+        537
+      ],
+      "ct_path": "s1159/ct.nii.gz"
+    },
+    {
+      "case_id": "s1163",
+      "split": "train",
+      "brain_ml": 1174.435875,
+      "skull_ml": 762.598125,
+      "overlap_voxels_skull_wins": 4248,
+      "shape": [
+        171,
+        171,
+        228
+      ],
+      "ct_path": "s1163/ct.nii.gz"
+    },
+    {
+      "case_id": "s1171",
+      "split": "train",
+      "brain_ml": 1432.981125,
+      "skull_ml": 819.882,
+      "overlap_voxels_skull_wins": 5425,
+      "shape": [
+        333,
+        333,
+        544
+      ],
+      "ct_path": "s1171/ct.nii.gz"
+    },
+    {
+      "case_id": "s1194",
+      "split": "train",
+      "brain_ml": 1290.99825,
+      "skull_ml": 795.153375,
+      "overlap_voxels_skull_wins": 2062,
+      "shape": [
+        162,
+        162,
+        147
+      ],
+      "ct_path": "s1194/ct.nii.gz"
+    },
+    {
+      "case_id": "s1206",
+      "split": "train",
+      "brain_ml": 1508.87475,
+      "skull_ml": 859.831875,
+      "overlap_voxels_skull_wins": 6293,
+      "shape": [
+        279,
+        279,
+        538
+      ],
+      "ct_path": "s1206/ct.nii.gz"
+    },
+    {
+      "case_id": "s1215",
+      "split": "train",
+      "brain_ml": 1186.48125,
+      "skull_ml": 497.34,
+      "overlap_voxels_skull_wins": 4503,
+      "shape": [
+        303,
+        303,
+        92
+      ],
+      "ct_path": "s1215/ct.nii.gz"
+    },
+    {
+      "case_id": "s1220",
+      "split": "train",
+      "brain_ml": 869.8455,
+      "skull_ml": 490.249125,
+      "overlap_voxels_skull_wins": 2161,
+      "shape": [
+        198,
+        198,
+        163
+      ],
+      "ct_path": "s1220/ct.nii.gz"
+    },
+    {
+      "case_id": "s1227",
+      "split": "train",
+      "brain_ml": 1212.165,
+      "skull_ml": 582.967125,
+      "overlap_voxels_skull_wins": 3879,
+      "shape": [
+        165,
+        165,
+        98
+      ],
+      "ct_path": "s1227/ct.nii.gz"
+    },
+    {
+      "case_id": "s1231",
+      "split": "train",
+      "brain_ml": 1004.383125,
+      "skull_ml": 838.839375,
+      "overlap_voxels_skull_wins": 2451,
+      "shape": [
+        177,
+        177,
+        229
+      ],
+      "ct_path": "s1231/ct.nii.gz"
+    },
+    {
+      "case_id": "s1300",
+      "split": "train",
+      "brain_ml": 1546.7185437692501,
+      "skull_ml": 776.7528354679331,
+      "overlap_voxels_skull_wins": 5698,
+      "shape": [
+        167,
+        167,
+        101
+      ],
+      "ct_path": "s1300/ct.nii.gz"
+    },
+    {
+      "case_id": "s1304",
+      "split": "train",
+      "brain_ml": 1557.754875,
+      "skull_ml": 998.179875,
+      "overlap_voxels_skull_wins": 3255,
+      "shape": [
+        333,
+        333,
+        546
+      ],
+      "ct_path": "s1304/ct.nii.gz"
+    },
+    {
+      "case_id": "s1314",
+      "split": "train",
+      "brain_ml": 1262.813625,
+      "skull_ml": 731.757375,
+      "overlap_voxels_skull_wins": 4464,
+      "shape": [
+        333,
+        333,
+        546
+      ],
+      "ct_path": "s1314/ct.nii.gz"
+    },
+    {
+      "case_id": "s1321",
+      "split": "train",
+      "brain_ml": 1405.37025,
+      "skull_ml": 806.668875,
+      "overlap_voxels_skull_wins": 2550,
+      "shape": [
+        275,
+        275,
+        540
+      ],
+      "ct_path": "s1321/ct.nii.gz"
+    },
+    {
+      "case_id": "s1369",
+      "split": "train",
+      "brain_ml": 1306.432125,
+      "skull_ml": 752.540625,
+      "overlap_voxels_skull_wins": 9890,
+      "shape": [
+        290,
+        290,
+        549
+      ],
+      "ct_path": "s1369/ct.nii.gz"
+    },
+    {
+      "case_id": "s1380",
+      "split": "train",
+      "brain_ml": 1312.0987499999999,
+      "skull_ml": 834.350625,
+      "overlap_voxels_skull_wins": 1970,
+      "shape": [
+        320,
+        320,
+        543
+      ],
+      "ct_path": "s1380/ct.nii.gz"
+    },
+    {
+      "case_id": "s1384",
+      "split": "train",
+      "brain_ml": 1193.747625,
+      "skull_ml": 784.144125,
+      "overlap_voxels_skull_wins": 8050,
+      "shape": [
+        329,
+        329,
+        523
+      ],
+      "ct_path": "s1384/ct.nii.gz"
+    },
+    {
+      "case_id": "s1388",
+      "split": "train",
+      "brain_ml": 1340.458875,
+      "skull_ml": 887.695875,
+      "overlap_voxels_skull_wins": 9800,
+      "shape": [
+        316,
+        316,
+        525
+      ],
+      "ct_path": "s1388/ct.nii.gz"
+    },
+    {
+      "case_id": "s1397",
+      "split": "train",
+      "brain_ml": 1453.41675,
+      "skull_ml": 1157.6891249999999,
+      "overlap_voxels_skull_wins": 11203,
+      "shape": [
+        320,
+        320,
+        547
+      ],
+      "ct_path": "s1397/ct.nii.gz"
+    },
+    {
+      "case_id": "s0346",
+      "split": "val",
+      "brain_ml": 1480.156875,
+      "skull_ml": 850.74975,
+      "overlap_voxels_skull_wins": 8679,
+      "shape": [
+        215,
+        215,
+        241
+      ],
+      "ct_path": "s0346/ct.nii.gz"
+    },
+    {
+      "case_id": "s0792",
+      "split": "val",
+      "brain_ml": 1279.0001542338184,
+      "skull_ml": 672.4720886042769,
+      "overlap_voxels_skull_wins": 3488,
+      "shape": [
+        125,
+        152,
+        109
+      ],
+      "ct_path": "s0792/ct.nii.gz"
+    },
+    {
+      "case_id": "s0874",
+      "split": "val",
+      "brain_ml": 1485.9517675259383,
+      "skull_ml": 951.2707503993705,
+      "overlap_voxels_skull_wins": 5679,
+      "shape": [
+        142,
+        184,
+        247
+      ],
+      "ct_path": "s0874/ct.nii.gz"
+    },
+    {
+      "case_id": "s1161",
+      "split": "val",
+      "brain_ml": 1285.669125,
+      "skull_ml": 861.627375,
+      "overlap_voxels_skull_wins": 4586,
+      "shape": [
+        313,
+        313,
+        544
+      ],
+      "ct_path": "s1161/ct.nii.gz"
+    },
+    {
+      "case_id": "s1260",
+      "split": "val",
+      "brain_ml": 1351.377,
+      "skull_ml": 700.4745,
+      "overlap_voxels_skull_wins": 5927,
+      "shape": [
+        135,
+        135,
+        113
+      ],
+      "ct_path": "s1260/ct.nii.gz"
+    }
+  ],
+  "test_split_accessed": false,
+  "manifest_file_sha256": "af365823dd2dbf05b56115420bfcfd3472016036b5477c479beaf5913b01959f"
+}

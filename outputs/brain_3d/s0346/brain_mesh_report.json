@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "case_id": "s0346",
+  "input_source": "TotalSegmentator reference mask (not a model prediction)",
+  "ct_path": "F:\\csstdy\\Totalsegmentator_dataset_v201\\s0346\\ct.nii.gz",
+  "brain_mask_path": "F:\\csstdy\\Totalsegmentator_dataset_v201\\s0346\\segmentations\\brain.nii.gz",
+  "coordinate_system": "NIfTI patient-space millimetres",
+  "brain_voxels": 438565,
+  "mask_volume_ml": 1480.156875,
+  "vertices": 46324,
+  "faces": 92644,
+  "watertight": true,
+  "surface_area_mm2": 70665.06364852174,
+  "mesh_volume_ml_if_watertight": 1479.9651276731806,
+  "full_resolution_exports": true,
+  "surface_smoothing": {
+    "method": "Taubin",
+    "iterations": 20,
+    "lambda": 0.5,
+    "nu": 0.525
+  },
+  "interactive_html_face_cap": 150000,
+  "ply": "s0346_brain.ply",
+  "stl": "s0346_brain.stl",
+  "glb": "s0346_brain.glb",
+  "interactive_html": "s0346_brain.html",
+  "overlay_png": "s0346_brain_overlay.png",
+  "preview_png": "s0346_brain_preview.png"
+}

@@ -1,0 +1,27 @@
+{
+  "method": "threshold_skull_gt_300_HU",
+  "brain_dice": null,
+  "skull_dice": 0.7919114090455882,
+  "cases": [
+    {
+      "case_id": "s0346",
+      "skull_dice": 0.7315678368386369
+    },
+    {
+      "case_id": "s0792",
+      "skull_dice": 0.8420884407908755
+    },
+    {
+      "case_id": "s0874",
+      "skull_dice": 0.8009137648458723
+    },
+    {
+      "case_id": "s1161",
+      "skull_dice": 0.7721503372499262
+    },
+    {
+      "case_id": "s1260",
+      "skull_dice": 0.8128366655026301
+    }
+  ]
+}

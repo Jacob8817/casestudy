@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "phase": 5,
+  "status": "passed",
+  "priority_formula": {
+    "uncertainty": 0.45,
+    "anatomical_violation": 0.35,
+    "boundary_complexity": 0.2
+  },
+  "selected_priority_threshold": {
+    "criterion": "maximum_validation_voxel_error_f1",
+    "threshold": 0.4128813147544861,
+    "f1": 0.4627231361568078,
+    "precision": 0.3723943661971831,
+    "recall": 0.61090573012939,
+    "flagged_fraction": 0.01775,
+    "samples": 100000
+  },
+  "refinement": "phase3_model_local_flip_tta",
+  "prediction_was_modified_only_inside_selected_rois": true,
+  "mean_rescue_voxel_fraction": 0.01727691713250243,
+  "total_rois": 15,
+  "total_rescue_seconds": 1147.474244,
+  "means": {
+    "brain": {
+      "before_dice": 0.9135862188369736,
+      "after_dice": 0.915737642721268,
+      "before_hd95_mm": 130.49050363516074,
+      "after_hd95_mm": 130.21442079131486,
+      "dice_delta": 0.0021514238842944566,
+      "hd95_delta_mm": -0.27608284384587023
+    },
+    "skull": {
+      "before_dice": 0.8919249075388143,
+      "after_dice": 0.8947538746905481,
+      "before_hd95_mm": 129.74770537800057,
+      "after_hd95_mm": 112.21985009048626,
+      "dice_delta": 0.0028289671517338633,
+      "hd95_delta_mm": -17.527855287514313
+    }
+  },
+  "cases": [
+    {
+      "case_id": "s0346",
+      "rescue_voxel_fraction": 0.007990143825640865,
+      "rois": 3,
+      "before_dice": {
+        "brain": 0.9830836608905336,
+        "skull": 0.9065987875648507
+      },
+      "after_dice": {
+        "brain": 0.9862074796250806,
+        "skull": 0.9069127662432954
+      },
+      "before_hd95_mm": {
+        "brain": 3.3541019662496847,
+        "skull": 91.45511175203208
+      },
+      "after_hd95_mm": {
+        "brain": 2.1213203435596424,
+        "skull": 4.743416490252569
+      },
+      "elapsed_seconds": 166.24025950000004
+    },
+    {
+      "case_id": "s0792",
+      "rescue_voxel_fraction": 0.027043457267020763,
+      "rois": 3,
+      "before_dice": {
+        "brain": 0.9871840739062339,
+        "skull": 0.954515162869767
+      },
+      "after_dice": {
+        "brain": 0.9873522199089444,
+        "skull": 0.950411036952629
+      },
+      "before_hd95_mm": {
+        "brain": 2.1213203435596424,
+        "skull": 1.5
+      },
+      "after_hd95_mm": {
+        "brain": 1.5,
+        "skull": 1.5
+      },
+      "elapsed_seconds": 23.79602799999998
+    },
+    {
+      "case_id": "s0874",
+      "rescue_voxel_fraction": 0.013915299577787088,
+      "rois": 3,
+      "before_dice": {
+        "brain": 0.9876782922456914,
+        "skull": 0.9175178926205597
+      },
+      "after_dice": {
+        "brain": 0.9858953107410694,
+        "skull": 0.911921014541939
+      },
+      "before_hd95_mm": {
+        "brain": 1.5,
+        "skull": 5.408326913195984
+      },
+      "after_hd95_mm": {
+        "brain": 1.5,
+        "skull": 6.5383484153110105
+      },
+      "elapsed_seconds": 95.22242440000002
+    },
+    {
+      "case_id": "s1161",
+      "rescue_voxel_fraction": 0.007469068096570764,
+      "rois": 3,
+      "before_dice": {
+        "brain": 0.6210352422907489,
+        "skull": 0.7339845312590865
+      },
+      "after_dice": {
+        "brain": 0.6323323460628568,
+        "skull": 0.7562247038630248
+      },
+      "before_hd95_mm": {
+        "brain": 643.9770958659943,
+        "skull": 548.8750882247748
+      },
+      "after_hd95_mm": {
+        "brain": 644.4507836130147,
+        "skull": 546.8174855468677
+      },
+      "elapsed_seconds": 838.1410328
+    },
+    {
+      "case_id": "s1260",
+      "rescue_voxel_fraction": 0.029966616895492675,
+      "rois": 3,
+      "before_dice": {
+        "brain": 0.98894982485166,
+        "skull": 0.9470081633798075
+      },
+      "after_dice": {
+        "brain": 0.9869008572683894,
+        "skull": 0.9482998518518518
+      },
+      "before_hd95_mm": {
+        "brain": 1.5,
+        "skull": 1.5
+      },
+      "after_hd95_mm": {
+        "brain": 1.5,
+        "skull": 1.5
+      },
+      "elapsed_seconds": 24.07449930000007
+    }
+  ],
+  "official_test_split_accessed": false
+}

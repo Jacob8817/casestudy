@@ -1,0 +1,13 @@
+finding_class,plane_range,start_slice,end_slice,peak_slice,map_definition
+intraparenchymal,sagittal/LR voxel axis,119,329,183,neural axial score x native-HU/anatomical weighting
+intraparenchymal,coronal/AP voxel axis,138,389,357,neural axial score x native-HU/anatomical weighting
+intraparenchymal,axial/SI voxel axis,92,99,95,neural axial score x native-HU/anatomical weighting
+intraventricular,sagittal/LR voxel axis,131,314,183,neural axial score x native-HU/anatomical weighting
+intraventricular,coronal/AP voxel axis,150,376,358,neural axial score x native-HU/anatomical weighting
+intraventricular,axial/SI voxel axis,92,98,95,neural axial score x native-HU/anatomical weighting
+subarachnoid,sagittal/LR voxel axis,113,343,223,neural axial score x native-HU/anatomical weighting
+subarachnoid,coronal/AP voxel axis,139,400,251,neural axial score x native-HU/anatomical weighting
+subarachnoid,axial/SI voxel axis,113,202,202,neural axial score x native-HU/anatomical weighting
+subdural,sagittal/LR voxel axis,116,340,250,neural axial score x native-HU/anatomical weighting
+subdural,coronal/AP voxel axis,138,398,384,neural axial score x native-HU/anatomical weighting
+subdural,axial/SI voxel axis,103,128,109,neural axial score x native-HU/anatomical weighting

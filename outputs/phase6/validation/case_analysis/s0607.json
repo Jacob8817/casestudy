@@ -1,0 +1,321 @@
+{
+  "case_id": "s0607",
+  "split": "val",
+  "policies": {
+    "none": {
+      "mean_foreground_dice": 0.9450904316968692,
+      "per_class": [
+        {
+          "class_id": 1,
+          "organ": "liver",
+          "dice": 0.9781579218749152,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 2,
+          "organ": "spleen",
+          "dice": 0.9793098510882016,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 3,
+          "organ": "kidney_left",
+          "dice": 0.9631117730594715,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 4,
+          "organ": "kidney_right",
+          "dice": 0.9649181841658384,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 5,
+          "organ": "stomach",
+          "dice": 0.9520958965636573,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 6,
+          "organ": "pancreas",
+          "dice": 0.8327988300792776,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 7,
+          "organ": "aorta",
+          "dice": 0.9023713406701397,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 8,
+          "organ": "inferior_vena_cava",
+          "dice": 0.9064768632741085,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 9,
+          "organ": "lung_left",
+          "dice": 0.9861016735553728,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 10,
+          "organ": "lung_right",
+          "dice": 0.9855619826377112,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        }
+      ]
+    },
+    "largest_component": {
+      "mean_foreground_dice": 0.9479057250986938,
+      "per_class": [
+        {
+          "class_id": 1,
+          "organ": "liver",
+          "dice": 0.9781563871331921,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 2,
+          "organ": "spleen",
+          "dice": 0.97940000204568,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 3,
+          "organ": "kidney_left",
+          "dice": 0.9673334492955297,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 4,
+          "organ": "kidney_right",
+          "dice": 0.9768665230067182,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 5,
+          "organ": "stomach",
+          "dice": 0.9521344550190527,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 6,
+          "organ": "pancreas",
+          "dice": 0.8359861948179055,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 7,
+          "organ": "aorta",
+          "dice": 0.9057352403967741,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 8,
+          "organ": "inferior_vena_cava",
+          "dice": 0.9082017356665244,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 9,
+          "organ": "lung_left",
+          "dice": 0.9872449545022872,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 10,
+          "organ": "lung_right",
+          "dice": 0.9879983091032734,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        }
+      ]
+    },
+    "remove_below_1ml": {
+      "mean_foreground_dice": 0.9463807533024646,
+      "per_class": [
+        {
+          "class_id": 1,
+          "organ": "liver",
+          "dice": 0.9781563871331921,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 2,
+          "organ": "spleen",
+          "dice": 0.97940000204568,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 3,
+          "organ": "kidney_left",
+          "dice": 0.9673334492955297,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 4,
+          "organ": "kidney_right",
+          "dice": 0.9663171423645397,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 5,
+          "organ": "stomach",
+          "dice": 0.9521344550190527,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 6,
+          "organ": "pancreas",
+          "dice": 0.8359861948179055,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 7,
+          "organ": "aorta",
+          "dice": 0.9023030871643658,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 8,
+          "organ": "inferior_vena_cava",
+          "dice": 0.9082017356665244,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 9,
+          "organ": "lung_left",
+          "dice": 0.9872449545022872,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        },
+        {
+          "class_id": 10,
+          "organ": "lung_right",
+          "dice": 0.9867301250155696,
+          "hd95_mm": null,
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "false_positive_on_empty": false,
+          "missing_prediction": false
+        }
+      ]
+    }
+  }
+}

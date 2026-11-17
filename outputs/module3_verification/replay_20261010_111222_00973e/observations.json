@@ -1,0 +1,73 @@
+[
+  {
+    "case_id": "s0346",
+    "probability_max_error": 0.0,
+    "probability_sum_max_error": 1.7881393432617188e-07,
+    "entropy_max_error": 4.758938287885428e-08,
+    "entropy_vs_original_max_error": 0.0,
+    "initial_prediction_changed_voxels": 0,
+    "violation_checks": {
+      "probability_ambiguity": 2.384185791015625e-07,
+      "sdf_sign_disagreement": 0.0,
+      "weighted_V": 0.0,
+      "all_V_components_recomputed_max_error": 5.960464477539063e-08
+    },
+    "violation_probability_basis": "Uncalibrated phase3 softmax, as used to select the frozen Q threshold; U uses calibrated softmax."
+  },
+  {
+    "case_id": "s0792",
+    "probability_max_error": 0.0,
+    "probability_sum_max_error": 1.7881393432617188e-07,
+    "entropy_max_error": 4.7700289718122235e-08,
+    "entropy_vs_original_max_error": 0.0,
+    "initial_prediction_changed_voxels": 0,
+    "violation_checks": {
+      "probability_ambiguity": 2.384185791015625e-07,
+      "sdf_sign_disagreement": 0.0,
+      "weighted_V": 0.0
+    },
+    "violation_probability_basis": "Uncalibrated phase3 softmax, as used to select the frozen Q threshold; U uses calibrated softmax."
+  },
+  {
+    "case_id": "s0874",
+    "probability_max_error": 0.0,
+    "probability_sum_max_error": 1.7881393432617188e-07,
+    "entropy_max_error": 4.7670908331909345e-08,
+    "entropy_vs_original_max_error": 0.0,
+    "initial_prediction_changed_voxels": 0,
+    "violation_checks": {
+      "probability_ambiguity": 2.384185791015625e-07,
+      "sdf_sign_disagreement": 0.0,
+      "weighted_V": 0.0
+    },
+    "violation_probability_basis": "Uncalibrated phase3 softmax, as used to select the frozen Q threshold; U uses calibrated softmax."
+  },
+  {
+    "case_id": "s1161",
+    "probability_max_error": 0.0,
+    "probability_sum_max_error": 1.7881393432617188e-07,
+    "entropy_max_error": 4.777501561026298e-08,
+    "entropy_vs_original_max_error": 0.0,
+    "initial_prediction_changed_voxels": 0,
+    "violation_checks": {
+      "probability_ambiguity": 2.980232238769531e-07,
+      "sdf_sign_disagreement": 0.0,
+      "weighted_V": 0.0
+    },
+    "violation_probability_basis": "Uncalibrated phase3 softmax, as used to select the frozen Q threshold; U uses calibrated softmax."
+  },
+  {
+    "case_id": "s1260",
+    "probability_max_error": 0.0,
+    "probability_sum_max_error": 1.7881393432617188e-07,
+    "entropy_max_error": 4.768345374106531e-08,
+    "entropy_vs_original_max_error": 0.0,
+    "initial_prediction_changed_voxels": 0,
+    "violation_checks": {
+      "probability_ambiguity": 2.384185791015625e-07,
+      "sdf_sign_disagreement": 0.0,
+      "weighted_V": 0.0
+    },
+    "violation_probability_basis": "Uncalibrated phase3 softmax, as used to select the frozen Q threshold; U uses calibrated softmax."
+  }
+]

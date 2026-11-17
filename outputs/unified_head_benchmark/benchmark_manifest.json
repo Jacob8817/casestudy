@@ -1,0 +1,60 @@
+{
+  "cohort": "98 train / 5 validation complete-head CTs from official TotalSegmentator public dataset",
+  "evaluation": "same five reference-mask-defined head crops, exclusive brain=1/skull=2; skull wins overlaps",
+  "test_split_accessed": false,
+  "clinical_ct_only_validity": false,
+  "released_totalsegmentator_independent_external_validation": false,
+  "input_preprocessing_not_identical_between_models": true,
+  "validation_used_for_checkpoint_selection": true,
+  "method_status": {
+    "hu_threshold_morphology": {
+      "status": "scored_skull_only",
+      "recipe": ">300 HU, 3x3x3 closing, remove components <100 voxels"
+    },
+    "monai_unet_3d": {
+      "status": "scored",
+      "checkpoint": "F:\\csstdy\\outputs\\brain_skull_benchmark\\unet3d\\best.pt",
+      "checkpoint_sha256": "790c1412e5e5c9de471a4cc0d00b0ca19f8b878f8c74bc6da429761c53952d5d",
+      "selected_epoch": 28,
+      "parameter_count": 1188630,
+      "training_cases": 98,
+      "validation_cases": 5
+    },
+    "monai_segresnet": {
+      "status": "scored",
+      "checkpoint": "F:\\csstdy\\outputs\\brain_skull_benchmark\\segresnet3d\\best.pt",
+      "checkpoint_sha256": "fd5bfcc59c7d7d6cd574b606366925b8c72f90f568590bf99a3a8a93d1610a9f",
+      "selected_epoch": 27,
+      "parameter_count": 4701363,
+      "training_cases": 98,
+      "validation_cases": 5
+    },
+    "monai_swinunetr": {
+      "status": "pending_training",
+      "checkpoint": null
+    },
+    "nnunet_v2_fresh": {
+      "status": "pending_training_and_inference",
+      "prediction_dir": "F:\\csstdy\\outputs\\unified_head_benchmark\\predictions\\nnunet_v2_fresh"
+    },
+    "totalsegmentator_released_nnunet": {
+      "status": "scored_reference_only",
+      "version": "2.18.0",
+      "input": "oracle-head-crop HU NIfTI"
+    },
+    "original_monai_unet_joint": {
+      "status": "scored",
+      "checkpoint": "F:\\csstdy\\outputs\\original_monai_head_ablation_matched\\original_monai_brain_skull\\best.pt",
+      "checkpoint_sha256": "621da17259455a2d19b724c3b5666bc945cea2f3241dd1b8b631a873d9cf5f1e",
+      "selected_epoch": 28,
+      "parameter_count": 4807482,
+      "training_cases": 98,
+      "validation_cases": 5
+    }
+  },
+  "sources": {
+    "nnunet": "https://github.com/MIC-DKFZ/nnUNet",
+    "totalsegmentator_training": "https://github.com/wasserth/TotalSegmentator/blob/master/resources/train_nnunet.md",
+    "swinunetr": "https://github.com/Project-MONAI/research-contributions/tree/main/SwinUNETR/BTCV"
+  }
+}

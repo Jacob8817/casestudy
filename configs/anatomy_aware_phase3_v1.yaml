@@ -1,0 +1,51 @@
+schema_version: 1
+experiment:
+  id: anatomy_aware_brain_skull_phase3_v1
+  description: Anatomy-aware fine-tuning and independent brain-skull violation mapping.
+
+locks:
+  phase1_contract: outputs/anatomy_aware_framework/phase1/frozen_contract.json
+  phase2_config: configs/anatomy_aware_v1.yaml
+  phase2_checkpoint: outputs/anatomy_aware_framework/phase2/best.pt
+  development_inventory: outputs/brain_skull_benchmark/development_inventory.json
+  official_test_locked: true
+
+targets:
+  enclosure_method: axial_skull_convex_hull
+  brain_core_distance_mm: 3.0
+
+loss:
+  early_weight: 0.02
+  middle_weight: 0.05
+  late_weight: 0.10
+  early_fraction: 0.333333
+  middle_fraction: 0.666667
+  brain_outside_enclosure_weight: 1.0
+  skull_in_brain_core_weight: 1.0
+  probability_ambiguity_weight: 0.25
+  sdf_sign_consistency_weight: 0.25
+
+quality_control:
+  distance_reference_percentiles: [1.0, 99.0]
+  distance_samples_per_case: 5000
+  disconnected_minimum_ml: 1.0
+  disconnected_minimum_largest_fraction: 0.01
+  violation_weights:
+    brain_outside_enclosure: 0.30
+    probability_ambiguity: 0.15
+    disconnected_components: 0.20
+    surface_distance: 0.20
+    sdf_sign_disagreement: 0.15
+
+training:
+  epochs: 15
+  validation_interval_epochs: 5
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  gradient_clip_norm: 12.0
+  automatic_mixed_precision: true
+  random_seed: 43
+  checkpoint_metric: validation_macro_dice
+
+outputs:
+  root: outputs/anatomy_aware_framework/phase3

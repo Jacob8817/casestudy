@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "case_id": "s0346",
+      "brain_outside_enclosure_voxels": 2740,
+      "brain_outside_enclosure_fraction": 0.005721767566766137,
+      "disconnected_major_components": {
+        "brain": 3,
+        "skull": 2
+      },
+      "surface_distance_mean_mm": 4.4177565574646,
+      "surface_distance_max_mm": 31.7844295501709,
+      "probability_ambiguity_mean": 0.0009270943119190633,
+      "sdf_sign_disagreement_fraction": 0.02249119743990808,
+      "violation_mean": 0.004948118701577187,
+      "violation_nonzero_fraction": 1.0,
+      "violation_above_0_05_fraction": 0.025038632523131266
+    },
+    {
+      "case_id": "s0792",
+      "brain_outside_enclosure_voxels": 0,
+      "brain_outside_enclosure_fraction": 0.0,
+      "disconnected_major_components": {
+        "brain": 0,
+        "skull": 0
+      },
+      "surface_distance_mean_mm": 1.946277379989624,
+      "surface_distance_max_mm": 16.294170379638672,
+      "probability_ambiguity_mean": 0.0038835867308080196,
+      "sdf_sign_disagreement_fraction": 0.03753404152583293,
+      "violation_mean": 0.006212644279003143,
+      "violation_nonzero_fraction": 1.0,
+      "violation_above_0_05_fraction": 0.03830758087880251
+    },
+    {
+      "case_id": "s0874",
+      "brain_outside_enclosure_voxels": 2700,
+      "brain_outside_enclosure_fraction": 0.005626254185828924,
+      "disconnected_major_components": {
+        "brain": 1,
+        "skull": 3
+      },
+      "surface_distance_mean_mm": 4.007038116455078,
+      "surface_distance_max_mm": 109.41777801513672,
+      "probability_ambiguity_mean": 0.001507488777860999,
+      "sdf_sign_disagreement_fraction": 0.030755471041351082,
+      "violation_mean": 0.006905553862452507,
+      "violation_nonzero_fraction": 1.0,
+      "violation_above_0_05_fraction": 0.03507010643335457
+    },
+    {
+      "case_id": "s1161",
+      "brain_outside_enclosure_voxels": 194539,
+      "brain_outside_enclosure_fraction": 0.19792087397358668,
+      "disconnected_major_components": {
+        "brain": 8,
+        "skull": 17
+      },
+      "surface_distance_mean_mm": 27.73110580444336,
+      "surface_distance_max_mm": 224.72483825683594,
+      "probability_ambiguity_mean": 0.0005521554849110544,
+      "sdf_sign_disagreement_fraction": 0.013297142163217297,
+      "violation_mean": 0.006809875834733248,
+      "violation_nonzero_fraction": 0.9999879163456867,
+      "violation_above_0_05_fraction": 0.02415179126290249
+    },
+    {
+      "case_id": "s1260",
+      "brain_outside_enclosure_voxels": 0,
+      "brain_outside_enclosure_fraction": 0.0,
+      "disconnected_major_components": {
+        "brain": 0,
+        "skull": 0
+      },
+      "surface_distance_mean_mm": 1.784458875656128,
+      "surface_distance_max_mm": 12.903488159179688,
+      "probability_ambiguity_mean": 0.004132928792387247,
+      "sdf_sign_disagreement_fraction": 0.04315961979678794,
+      "violation_mean": 0.007093882188200951,
+      "violation_nonzero_fraction": 1.0,
+      "violation_above_0_05_fraction": 0.043912742634473215
+    }
+  ],
+  "means": {
+    "brain_outside_enclosure_fraction": 0.041853779145236344,
+    "surface_distance_mean_mm": 7.977327346801758,
+    "surface_distance_max_mm": 79.02494087219239,
+    "probability_ambiguity_mean": 0.002200650819577277,
+    "sdf_sign_disagreement_fraction": 0.029447494393419465,
+    "violation_mean": 0.006394014973193407,
+    "violation_nonzero_fraction": 0.9999975832691372,
+    "violation_above_0_05_fraction": 0.03329617074653281,
+    "disconnected_major_components_brain": 2.4,
+    "disconnected_major_components_skull": 4.4
+  },
+  "prediction_was_modified": false,
+  "official_test_split_accessed": false
+}

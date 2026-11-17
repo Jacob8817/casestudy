@@ -1,0 +1,27 @@
+{
+  "config_sha256": "8033b87ad9e9fab70930ee608a886c635684e27556380538cb3e47fec13b7186",
+  "counters": {
+    "amp_overflow_skips": 6,
+    "backward_calls": 54100,
+    "checkpoint_write_attempts": 61,
+    "checkpoints_written": 61,
+    "epochs_completed": 50,
+    "gradient_checks": 27050,
+    "loss_evaluations": 54100,
+    "model_forward_calls": 54100,
+    "optimizer_steps": 27044,
+    "resume_events": 1,
+    "scheduler_steps": 50,
+    "training_batches_consumed": 54100,
+    "validation_runs_completed": 10
+  },
+  "experiment_id": "gate3_full_baseline_v1",
+  "gate": "full_baseline",
+  "resumed_from": "outputs/training/gate3_full_baseline/baseline_v1/checkpoints/last.pt",
+  "run_id": "baseline_v1",
+  "schema_version": 1,
+  "scope_sha256": "6e4a4613b1ef4161d371f363fb27ea121adc6320a021e06d64fb3edadc8c182f",
+  "started_utc": "2026-08-27T08:14:51.879663Z",
+  "status": "completed",
+  "updated_utc": "2026-08-27T19:37:50.032808Z"
+}

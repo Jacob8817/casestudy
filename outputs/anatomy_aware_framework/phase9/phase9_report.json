@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "phase": 9,
+  "status": "passed",
+  "interpretation": "model_derived_visualization_not_statistical_confidence_interval",
+  "maximum_offset_mm": 3.0,
+  "representative_case": "s0346",
+  "combined_glb": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase9\\s0346_confidence_envelope.glb",
+  "cases": [
+    {
+      "case_id": "s0346",
+      "organs": {
+        "brain": {
+          "mean_offset_mm": 1.7698537111282349,
+          "maximum_offset_mm": 2.9865899085998535,
+          "vertices": 22796
+        },
+        "skull": {
+          "mean_offset_mm": 1.469054102897644,
+          "maximum_offset_mm": 2.99448299407959,
+          "vertices": 53337
+        }
+      }
+    }
+  ],
+  "official_test_split_accessed": false
+}

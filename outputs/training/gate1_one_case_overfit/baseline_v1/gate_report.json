@@ -1,0 +1,3807 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-08-27T07:22:33.675606Z",
+  "generated_at_utc": "2026-08-27T07:24:58.333683Z",
+  "duration_seconds": 144.65809249999984,
+  "status": "passed",
+  "gate": "one_case_overfit",
+  "claim": "train-only fixed-patch memorization diagnostic; not validation evidence",
+  "run_dir": "outputs/training/gate1_one_case_overfit/baseline_v1",
+  "last_checkpoint": "outputs/training/gate1_one_case_overfit/baseline_v1/checkpoints/last.pt",
+  "config_sha256": "e66289ca03957e123be35a502d37b9d6470e9ff6dc8ee256be6dbe270737013c",
+  "workflow_config_sha256": "e04de4443c3b99d8927e0c605c34044e1e1618f457b4a18458eb40e1e7cf9911",
+  "scope_sha256": "705a494c5f6a4c43785e417839c90533c86af6e8b226eee2b2b83f8b38470b89",
+  "provenance_sha256": "c121ec56ebe8b48db100569bbd2f676c4667d2be7e3352c4e42c829fa8106a4a",
+  "case_id": "s0014",
+  "fixed_sample_indices": [
+    0,
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    39
+  ],
+  "expected_selected_class_ids": [
+    10,
+    2,
+    2,
+    7,
+    2,
+    9,
+    9,
+    7,
+    3,
+    5,
+    6,
+    5,
+    10,
+    9,
+    8,
+    5,
+    9,
+    6,
+    8,
+    2,
+    1,
+    4,
+    3,
+    5,
+    7,
+    3,
+    4,
+    4,
+    6,
+    1,
+    4,
+    3
+  ],
+  "initial_bank_metrics": {
+    "loss": 3.8282456770539284,
+    "mean_represented_class_dice": 0.03683128556907683,
+    "represented_classes": [
+      {
+        "class_id": 1,
+        "dice": 0.07769218812271149,
+        "truth_voxels": 2122116,
+        "prediction_voxels": 2156049
+      },
+      {
+        "class_id": 2,
+        "dice": 0.040332869275701795,
+        "truth_voxels": 743965,
+        "prediction_voxels": 4686395
+      },
+      {
+        "class_id": 3,
+        "dice": 0.025831637128965648,
+        "truth_voxels": 375170,
+        "prediction_voxels": 2341189
+      },
+      {
+        "class_id": 4,
+        "dice": 0.017241150057493625,
+        "truth_voxels": 338794,
+        "prediction_voxels": 3120720
+      },
+      {
+        "class_id": 5,
+        "dice": 0.09308277185675201,
+        "truth_voxels": 3706406,
+        "prediction_voxels": 2415844
+      },
+      {
+        "class_id": 6,
+        "dice": 0.01096513777524968,
+        "truth_voxels": 131233,
+        "prediction_voxels": 2611277
+      },
+      {
+        "class_id": 7,
+        "dice": 0.01722124653071275,
+        "truth_voxels": 280599,
+        "prediction_voxels": 1530652
+      },
+      {
+        "class_id": 8,
+        "dice": 0.015482310572538882,
+        "truth_voxels": 189679,
+        "prediction_voxels": 3195733
+      },
+      {
+        "class_id": 9,
+        "dice": 0.04545422134938129,
+        "truth_voxels": 655543,
+        "prediction_voxels": 3271353
+      },
+      {
+        "class_id": 10,
+        "dice": 0.02500932302126112,
+        "truth_voxels": 537141,
+        "prediction_voxels": 1621494
+      }
+    ],
+    "patches": 32,
+    "traces": [
+      {
+        "sample_index": 0,
+        "selected_class_id": 10
+      },
+      {
+        "sample_index": 1,
+        "selected_class_id": 2
+      },
+      {
+        "sample_index": 3,
+        "selected_class_id": 2
+      },
+      {
+        "sample_index": 5,
+        "selected_class_id": 7
+      },
+      {
+        "sample_index": 6,
+        "selected_class_id": 2
+      },
+      {
+        "sample_index": 7,
+        "selected_class_id": 9
+      },
+      {
+        "sample_index": 8,
+        "selected_class_id": 9
+      },
+      {
+        "sample_index": 9,
+        "selected_class_id": 7
+      },
+      {
+        "sample_index": 12,
+        "selected_class_id": 3
+      },
+      {
+        "sample_index": 13,
+        "selected_class_id": 5
+      },
+      {
+        "sample_index": 14,
+        "selected_class_id": 6
+      },
+      {
+        "sample_index": 15,
+        "selected_class_id": 5
+      },
+      {
+        "sample_index": 16,
+        "selected_class_id": 10
+      },
+      {
+        "sample_index": 17,
+        "selected_class_id": 9
+      },
+      {
+        "sample_index": 18,
+        "selected_class_id": 8
+      },
+      {
+        "sample_index": 19,
+        "selected_class_id": 5
+      },
+      {
+        "sample_index": 20,
+        "selected_class_id": 9
+      },
+      {
+        "sample_index": 21,
+        "selected_class_id": 6
+      },
+      {
+        "sample_index": 22,
+        "selected_class_id": 8
+      },
+      {
+        "sample_index": 23,
+        "selected_class_id": 2
+      },
+      {
+        "sample_index": 24,
+        "selected_class_id": 1
+      },
+      {
+        "sample_index": 25,
+        "selected_class_id": 4
+      },
+      {
+        "sample_index": 27,
+        "selected_class_id": 3
+      },
+      {
+        "sample_index": 28,
+        "selected_class_id": 5
+      },
+      {
+        "sample_index": 29,
+        "selected_class_id": 7
+      },
+      {
+        "sample_index": 30,
+        "selected_class_id": 3
+      },
+      {
+        "sample_index": 31,
+        "selected_class_id": 4
+      },
+      {
+        "sample_index": 32,
+        "selected_class_id": 4
+      },
+      {
+        "sample_index": 33,
+        "selected_class_id": 6
+      },
+      {
+        "sample_index": 34,
+        "selected_class_id": 1
+      },
+      {
+        "sample_index": 36,
+        "selected_class_id": 4
+      },
+      {
+        "sample_index": 39,
+        "selected_class_id": 3
+      }
+    ]
+  },
+  "final_bank_metrics": {
+    "loss": 0.5930633135139942,
+    "mean_represented_class_dice": 0.9463322689986728,
+    "represented_classes": [
+      {
+        "class_id": 1,
+        "dice": 0.9686488792731156,
+        "truth_voxels": 2122116,
+        "prediction_voxels": 2106122
+      },
+      {
+        "class_id": 2,
+        "dice": 0.9705350714860452,
+        "truth_voxels": 743965,
+        "prediction_voxels": 743668
+      },
+      {
+        "class_id": 3,
+        "dice": 0.9609705330122742,
+        "truth_voxels": 375170,
+        "prediction_voxels": 375263
+      },
+      {
+        "class_id": 4,
+        "dice": 0.9611874177134114,
+        "truth_voxels": 338794,
+        "prediction_voxels": 335678
+      },
+      {
+        "class_id": 5,
+        "dice": 0.9708008517191781,
+        "truth_voxels": 3706406,
+        "prediction_voxels": 3727030
+      },
+      {
+        "class_id": 6,
+        "dice": 0.8308024102066609,
+        "truth_voxels": 131233,
+        "prediction_voxels": 127500
+      },
+      {
+        "class_id": 7,
+        "dice": 0.9365235576331652,
+        "truth_voxels": 280599,
+        "prediction_voxels": 272173
+      },
+      {
+        "class_id": 8,
+        "dice": 0.9200090472452469,
+        "truth_voxels": 189679,
+        "prediction_voxels": 186126
+      },
+      {
+        "class_id": 9,
+        "dice": 0.9732563282083301,
+        "truth_voxels": 655543,
+        "prediction_voxels": 651383
+      },
+      {
+        "class_id": 10,
+        "dice": 0.970588593489301,
+        "truth_voxels": 537141,
+        "prediction_voxels": 530302
+      }
+    ],
+    "patches": 32,
+    "traces": []
+  },
+  "loss_reduction_fraction": 0.8450822221079622,
+  "checkpoint_reload_parity": true,
+  "counters": {
+    "epochs_completed": 50,
+    "training_batches_consumed": 1600,
+    "model_forward_calls": 1600,
+    "loss_evaluations": 1600,
+    "backward_calls": 1600,
+    "gradient_checks": 1600,
+    "optimizer_steps": 1600,
+    "scheduler_steps": 50,
+    "validation_runs_completed": 0,
+    "checkpoint_write_attempts": 51,
+    "checkpoints_written": 51,
+    "resume_events": 0
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 2.594763617962599,
+      "bank_loss": 1.9928877539932728,
+      "mean_represented_class_dice": 0.04498570745101536,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.17106768981548132,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 628608
+        },
+        {
+          "class_id": 2,
+          "dice": 8.863938543359433e-05,
+          "truth_voxels": 743965,
+          "prediction_voxels": 625
+        },
+        {
+          "class_id": 3,
+          "dice": 0.0,
+          "truth_voxels": 375170,
+          "prediction_voxels": 4
+        },
+        {
+          "class_id": 4,
+          "dice": 0.0,
+          "truth_voxels": 338794,
+          "prediction_voxels": 0
+        },
+        {
+          "class_id": 5,
+          "dice": 0.27870074530923866,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 2114131
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 0
+        },
+        {
+          "class_id": 7,
+          "dice": 0.0,
+          "truth_voxels": 280599,
+          "prediction_voxels": 0
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0,
+          "truth_voxels": 189679,
+          "prediction_voxels": 33
+        },
+        {
+          "class_id": 9,
+          "dice": 0.0,
+          "truth_voxels": 655543,
+          "prediction_voxels": 92
+        },
+        {
+          "class_id": 10,
+          "dice": 0.0,
+          "truth_voxels": 537141,
+          "prediction_voxels": 394
+        }
+      ]
+    },
+    {
+      "epoch": 2,
+      "training_loss": 1.9359856359660625,
+      "bank_loss": 1.7926116771996021,
+      "mean_represented_class_dice": 0.06786607089781989,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.12485302812354433,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 413233
+        },
+        {
+          "class_id": 2,
+          "dice": 0.0018195334158116916,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1281
+        },
+        {
+          "class_id": 3,
+          "dice": 0.0,
+          "truth_voxels": 375170,
+          "prediction_voxels": 42
+        },
+        {
+          "class_id": 4,
+          "dice": 0.0,
+          "truth_voxels": 338794,
+          "prediction_voxels": 13
+        },
+        {
+          "class_id": 5,
+          "dice": 0.4639552225938369,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 5746933
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 16
+        },
+        {
+          "class_id": 7,
+          "dice": 0.0,
+          "truth_voxels": 280599,
+          "prediction_voxels": 167
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0,
+          "truth_voxels": 189679,
+          "prediction_voxels": 1729
+        },
+        {
+          "class_id": 9,
+          "dice": 0.08487378113533715,
+          "truth_voxels": 655543,
+          "prediction_voxels": 47878
+        },
+        {
+          "class_id": 10,
+          "dice": 0.0031591437096687883,
+          "truth_voxels": 537141,
+          "prediction_voxels": 4778
+        }
+      ]
+    },
+    {
+      "epoch": 3,
+      "training_loss": 1.7983333729207516,
+      "bank_loss": 1.7139416858553886,
+      "mean_represented_class_dice": 0.10860284446131233,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.0672125375197294,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 314602
+        },
+        {
+          "class_id": 2,
+          "dice": 0.019138364860204617,
+          "truth_voxels": 743965,
+          "prediction_voxels": 38965
+        },
+        {
+          "class_id": 3,
+          "dice": 7.880179247810623e-05,
+          "truth_voxels": 375170,
+          "prediction_voxels": 5532
+        },
+        {
+          "class_id": 4,
+          "dice": 0.0007606174355579942,
+          "truth_voxels": 338794,
+          "prediction_voxels": 5663
+        },
+        {
+          "class_id": 5,
+          "dice": 0.475054946348313,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 6064489
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 95
+        },
+        {
+          "class_id": 7,
+          "dice": 0.00012054001928640309,
+          "truth_voxels": 280599,
+          "prediction_voxels": 1465
+        },
+        {
+          "class_id": 8,
+          "dice": 0.00028958227756461304,
+          "truth_voxels": 189679,
+          "prediction_voxels": 3703
+        },
+        {
+          "class_id": 9,
+          "dice": 0.520271336927559,
+          "truth_voxels": 655543,
+          "prediction_voxels": 598691
+        },
+        {
+          "class_id": 10,
+          "dice": 0.003101717432430179,
+          "truth_voxels": 537141,
+          "prediction_voxels": 2560
+        }
+      ]
+    },
+    {
+      "epoch": 4,
+      "training_loss": 1.7232868187129498,
+      "bank_loss": 1.6416375674307346,
+      "mean_represented_class_dice": 0.1573710805128187,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.40011637207546713,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2662537
+        },
+        {
+          "class_id": 2,
+          "dice": 0.05550530495026417,
+          "truth_voxels": 743965,
+          "prediction_voxels": 70840
+        },
+        {
+          "class_id": 3,
+          "dice": 0.00017863428832624927,
+          "truth_voxels": 375170,
+          "prediction_voxels": 5496
+        },
+        {
+          "class_id": 4,
+          "dice": 0.00212259921387392,
+          "truth_voxels": 338794,
+          "prediction_voxels": 1355
+        },
+        {
+          "class_id": 5,
+          "dice": 0.5509477313674727,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4016352
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 124
+        },
+        {
+          "class_id": 7,
+          "dice": 0.0006240758535832946,
+          "truth_voxels": 280599,
+          "prediction_voxels": 1418
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0,
+          "truth_voxels": 189679,
+          "prediction_voxels": 843
+        },
+        {
+          "class_id": 9,
+          "dice": 0.5441336841379814,
+          "truth_voxels": 655543,
+          "prediction_voxels": 577812
+        },
+        {
+          "class_id": 10,
+          "dice": 0.02008240324121824,
+          "truth_voxels": 537141,
+          "prediction_voxels": 16478
+        }
+      ]
+    },
+    {
+      "epoch": 5,
+      "training_loss": 1.620116576552391,
+      "bank_loss": 1.6284625232219696,
+      "mean_represented_class_dice": 0.13483104724091355,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.14511869755455561,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1033425
+        },
+        {
+          "class_id": 2,
+          "dice": 0.04575203332386905,
+          "truth_voxels": 743965,
+          "prediction_voxels": 90752
+        },
+        {
+          "class_id": 3,
+          "dice": 5.708977107001801e-05,
+          "truth_voxels": 375170,
+          "prediction_voxels": 10188
+        },
+        {
+          "class_id": 4,
+          "dice": 0.0015074341233622848,
+          "truth_voxels": 338794,
+          "prediction_voxels": 856
+        },
+        {
+          "class_id": 5,
+          "dice": 0.5116660435535617,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 6321201
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 0
+        },
+        {
+          "class_id": 7,
+          "dice": 0.001305635876603218,
+          "truth_voxels": 280599,
+          "prediction_voxels": 1256
+        },
+        {
+          "class_id": 8,
+          "dice": 4.212676998257005e-05,
+          "truth_voxels": 189679,
+          "prediction_voxels": 224
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6164945487939302,
+          "truth_voxels": 655543,
+          "prediction_voxels": 790559
+        },
+        {
+          "class_id": 10,
+          "dice": 0.026366862642200856,
+          "truth_voxels": 537141,
+          "prediction_voxels": 25004
+        }
+      ]
+    },
+    {
+      "epoch": 6,
+      "training_loss": 1.5766422152519226,
+      "bank_loss": 1.5034760348498821,
+      "mean_represented_class_dice": 0.20424574093584877,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.3743034589009056,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1308945
+        },
+        {
+          "class_id": 2,
+          "dice": 0.33204525892332887,
+          "truth_voxels": 743965,
+          "prediction_voxels": 630438
+        },
+        {
+          "class_id": 3,
+          "dice": 0.013173884438252254,
+          "truth_voxels": 375170,
+          "prediction_voxels": 12415
+        },
+        {
+          "class_id": 4,
+          "dice": 0.030634977498152832,
+          "truth_voxels": 338794,
+          "prediction_voxels": 18510
+        },
+        {
+          "class_id": 5,
+          "dice": 0.6408511817866878,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4107483
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0002738059020383328,
+          "truth_voxels": 131233,
+          "prediction_voxels": 247
+        },
+        {
+          "class_id": 7,
+          "dice": 0.06326203986614287,
+          "truth_voxels": 280599,
+          "prediction_voxels": 28686
+        },
+        {
+          "class_id": 8,
+          "dice": 7.378673525319391e-05,
+          "truth_voxels": 189679,
+          "prediction_voxels": 57
+        },
+        {
+          "class_id": 9,
+          "dice": 0.5720855004757937,
+          "truth_voxels": 655543,
+          "prediction_voxels": 1339019
+        },
+        {
+          "class_id": 10,
+          "dice": 0.01575351483193248,
+          "truth_voxels": 537141,
+          "prediction_voxels": 40127
+        }
+      ]
+    },
+    {
+      "epoch": 7,
+      "training_loss": 1.5261431597173214,
+      "bank_loss": 1.4801038950681686,
+      "mean_represented_class_dice": 0.2718472857836567,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.46286601459263815,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2414281
+        },
+        {
+          "class_id": 2,
+          "dice": 0.4631649819924139,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1323497
+        },
+        {
+          "class_id": 3,
+          "dice": 0.010493205837946653,
+          "truth_voxels": 375170,
+          "prediction_voxels": 22230
+        },
+        {
+          "class_id": 4,
+          "dice": 0.029277059864280756,
+          "truth_voxels": 338794,
+          "prediction_voxels": 18414
+        },
+        {
+          "class_id": 5,
+          "dice": 0.5907761082826276,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3541294
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 12
+        },
+        {
+          "class_id": 7,
+          "dice": 0.26870999226781256,
+          "truth_voxels": 280599,
+          "prediction_voxels": 113856
+        },
+        {
+          "class_id": 8,
+          "dice": 0.000440560980982451,
+          "truth_voxels": 189679,
+          "prediction_voxels": 987
+        },
+        {
+          "class_id": 9,
+          "dice": 0.5691897577822598,
+          "truth_voxels": 655543,
+          "prediction_voxels": 552750
+        },
+        {
+          "class_id": 10,
+          "dice": 0.3235551762356051,
+          "truth_voxels": 537141,
+          "prediction_voxels": 306474
+        }
+      ]
+    },
+    {
+      "epoch": 8,
+      "training_loss": 1.4946470521390438,
+      "bank_loss": 1.3915817365050316,
+      "mean_represented_class_dice": 0.298180284714417,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.5441229603580948,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2190038
+        },
+        {
+          "class_id": 2,
+          "dice": 0.4715610776267553,
+          "truth_voxels": 743965,
+          "prediction_voxels": 690038
+        },
+        {
+          "class_id": 3,
+          "dice": 0.0376226276815775,
+          "truth_voxels": 375170,
+          "prediction_voxels": 31447
+        },
+        {
+          "class_id": 4,
+          "dice": 0.029835201018386617,
+          "truth_voxels": 338794,
+          "prediction_voxels": 24133
+        },
+        {
+          "class_id": 5,
+          "dice": 0.7051513861156951,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3590135
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 31
+        },
+        {
+          "class_id": 7,
+          "dice": 0.32820339877714405,
+          "truth_voxels": 280599,
+          "prediction_voxels": 401411
+        },
+        {
+          "class_id": 8,
+          "dice": 0.00014719179090354732,
+          "truth_voxels": 189679,
+          "prediction_voxels": 549
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6511481977129239,
+          "truth_voxels": 655543,
+          "prediction_voxels": 954023
+        },
+        {
+          "class_id": 10,
+          "dice": 0.21401080606268885,
+          "truth_voxels": 537141,
+          "prediction_voxels": 164132
+        }
+      ]
+    },
+    {
+      "epoch": 9,
+      "training_loss": 1.4081498496234417,
+      "bank_loss": 1.3628206178545952,
+      "mean_represented_class_dice": 0.3046589221607331,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.47447248419270854,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2153917
+        },
+        {
+          "class_id": 2,
+          "dice": 0.38705332843123563,
+          "truth_voxels": 743965,
+          "prediction_voxels": 580638
+        },
+        {
+          "class_id": 3,
+          "dice": 0.06420165376213731,
+          "truth_voxels": 375170,
+          "prediction_voxels": 62015
+        },
+        {
+          "class_id": 4,
+          "dice": 0.022269156132734686,
+          "truth_voxels": 338794,
+          "prediction_voxels": 11107
+        },
+        {
+          "class_id": 5,
+          "dice": 0.7017574584542378,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4356089
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 3
+        },
+        {
+          "class_id": 7,
+          "dice": 0.5133216238280187,
+          "truth_voxels": 280599,
+          "prediction_voxels": 325746
+        },
+        {
+          "class_id": 8,
+          "dice": 0.00014754314319588986,
+          "truth_voxels": 189679,
+          "prediction_voxels": 96
+        },
+        {
+          "class_id": 9,
+          "dice": 0.623021880189126,
+          "truth_voxels": 655543,
+          "prediction_voxels": 694034
+        },
+        {
+          "class_id": 10,
+          "dice": 0.26034409347393644,
+          "truth_voxels": 537141,
+          "prediction_voxels": 207366
+        }
+      ]
+    },
+    {
+      "epoch": 10,
+      "training_loss": 1.3748873434960842,
+      "bank_loss": 1.3559001609683037,
+      "mean_represented_class_dice": 0.3024515182927553,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.5175265150525898,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2511007
+        },
+        {
+          "class_id": 2,
+          "dice": 0.49791280882326144,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1341613
+        },
+        {
+          "class_id": 3,
+          "dice": 0.059426506675941494,
+          "truth_voxels": 375170,
+          "prediction_voxels": 38854
+        },
+        {
+          "class_id": 4,
+          "dice": 0.089604039302994,
+          "truth_voxels": 338794,
+          "prediction_voxels": 50184
+        },
+        {
+          "class_id": 5,
+          "dice": 0.6668748809095715,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3273584
+        },
+        {
+          "class_id": 6,
+          "dice": 6.087307203567162e-05,
+          "truth_voxels": 131233,
+          "prediction_voxels": 188
+        },
+        {
+          "class_id": 7,
+          "dice": 0.3693023774796962,
+          "truth_voxels": 280599,
+          "prediction_voxels": 346746
+        },
+        {
+          "class_id": 8,
+          "dice": 0.00044224026281707046,
+          "truth_voxels": 189679,
+          "prediction_voxels": 263
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6752194502804201,
+          "truth_voxels": 655543,
+          "prediction_voxels": 1049399
+        },
+        {
+          "class_id": 10,
+          "dice": 0.14814549106822583,
+          "truth_voxels": 537141,
+          "prediction_voxels": 104053
+        }
+      ]
+    },
+    {
+      "epoch": 11,
+      "training_loss": 1.3233110047876835,
+      "bank_loss": 1.2759969308972359,
+      "mean_represented_class_dice": 0.3564869367737608,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.502674328632083,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1718848
+        },
+        {
+          "class_id": 2,
+          "dice": 0.6193903735832335,
+          "truth_voxels": 743965,
+          "prediction_voxels": 842482
+        },
+        {
+          "class_id": 3,
+          "dice": 0.04241775149714148,
+          "truth_voxels": 375170,
+          "prediction_voxels": 22588
+        },
+        {
+          "class_id": 4,
+          "dice": 0.24206687534158097,
+          "truth_voxels": 338794,
+          "prediction_voxels": 164381
+        },
+        {
+          "class_id": 5,
+          "dice": 0.7264003343354775,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4256853
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0,
+          "truth_voxels": 131233,
+          "prediction_voxels": 6
+        },
+        {
+          "class_id": 7,
+          "dice": 0.5993566429044825,
+          "truth_voxels": 280599,
+          "prediction_voxels": 214305
+        },
+        {
+          "class_id": 8,
+          "dice": 0.001061308982772118,
+          "truth_voxels": 189679,
+          "prediction_voxels": 652
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6835613342151607,
+          "truth_voxels": 655543,
+          "prediction_voxels": 1021278
+        },
+        {
+          "class_id": 10,
+          "dice": 0.1479404182456767,
+          "truth_voxels": 537141,
+          "prediction_voxels": 90098
+        }
+      ]
+    },
+    {
+      "epoch": 12,
+      "training_loss": 1.3070838935673237,
+      "bank_loss": 1.295992437750101,
+      "mean_represented_class_dice": 0.3228804788880729,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.457554817366063,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1850667
+        },
+        {
+          "class_id": 2,
+          "dice": 0.4741309296393315,
+          "truth_voxels": 743965,
+          "prediction_voxels": 829613
+        },
+        {
+          "class_id": 3,
+          "dice": 0.02200900230731406,
+          "truth_voxels": 375170,
+          "prediction_voxels": 21395
+        },
+        {
+          "class_id": 4,
+          "dice": 0.03446000643179525,
+          "truth_voxels": 338794,
+          "prediction_voxels": 21914
+        },
+        {
+          "class_id": 5,
+          "dice": 0.7156051140363028,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 5144372
+        },
+        {
+          "class_id": 6,
+          "dice": 0.00015234729088429985,
+          "truth_voxels": 131233,
+          "prediction_voxels": 46
+        },
+        {
+          "class_id": 7,
+          "dice": 0.6542582299846378,
+          "truth_voxels": 280599,
+          "prediction_voxels": 174414
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0015360740682290434,
+          "truth_voxels": 189679,
+          "prediction_voxels": 416
+        },
+        {
+          "class_id": 9,
+          "dice": 0.66619041130333,
+          "truth_voxels": 655543,
+          "prediction_voxels": 1098418
+        },
+        {
+          "class_id": 10,
+          "dice": 0.20290785645284126,
+          "truth_voxels": 537141,
+          "prediction_voxels": 157460
+        }
+      ]
+    },
+    {
+      "epoch": 13,
+      "training_loss": 1.301376897841692,
+      "bank_loss": 1.2172244749963284,
+      "mean_represented_class_dice": 0.39449589572993193,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.5864340039376768,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1780185
+        },
+        {
+          "class_id": 2,
+          "dice": 0.6233335102940296,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1026673
+        },
+        {
+          "class_id": 3,
+          "dice": 0.16208592089874313,
+          "truth_voxels": 375170,
+          "prediction_voxels": 110486
+        },
+        {
+          "class_id": 4,
+          "dice": 0.16456853575957486,
+          "truth_voxels": 338794,
+          "prediction_voxels": 62595
+        },
+        {
+          "class_id": 5,
+          "dice": 0.746394420520901,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4173326
+        },
+        {
+          "class_id": 6,
+          "dice": 3.045507495755324e-05,
+          "truth_voxels": 131233,
+          "prediction_voxels": 108
+        },
+        {
+          "class_id": 7,
+          "dice": 0.7359000908229112,
+          "truth_voxels": 280599,
+          "prediction_voxels": 222578
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0005050133092049197,
+          "truth_voxels": 189679,
+          "prediction_voxels": 415
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6822512560665087,
+          "truth_voxels": 655543,
+          "prediction_voxels": 1028086
+        },
+        {
+          "class_id": 10,
+          "dice": 0.24345575061481134,
+          "truth_voxels": 537141,
+          "prediction_voxels": 196824
+        }
+      ]
+    },
+    {
+      "epoch": 14,
+      "training_loss": 1.2208598628640175,
+      "bank_loss": 1.1629573628306389,
+      "mean_represented_class_dice": 0.4200391219078159,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.6079132483096202,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1528395
+        },
+        {
+          "class_id": 2,
+          "dice": 0.6217154796678999,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1231704
+        },
+        {
+          "class_id": 3,
+          "dice": 0.14482959824042674,
+          "truth_voxels": 375170,
+          "prediction_voxels": 108129
+        },
+        {
+          "class_id": 4,
+          "dice": 0.34101213488697973,
+          "truth_voxels": 338794,
+          "prediction_voxels": 179299
+        },
+        {
+          "class_id": 5,
+          "dice": 0.805758091110785,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4402184
+        },
+        {
+          "class_id": 6,
+          "dice": 4.5712196013896505e-05,
+          "truth_voxels": 131233,
+          "prediction_voxels": 23
+        },
+        {
+          "class_id": 7,
+          "dice": 0.7708300033033897,
+          "truth_voxels": 280599,
+          "prediction_voxels": 282459
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0016029082832642756,
+          "truth_voxels": 189679,
+          "prediction_voxels": 1224
+        },
+        {
+          "class_id": 9,
+          "dice": 0.689752272623122,
+          "truth_voxels": 655543,
+          "prediction_voxels": 1002893
+        },
+        {
+          "class_id": 10,
+          "dice": 0.21693177045665776,
+          "truth_voxels": 537141,
+          "prediction_voxels": 122412
+        }
+      ]
+    },
+    {
+      "epoch": 15,
+      "training_loss": 1.190642599016428,
+      "bank_loss": 1.1772671714425087,
+      "mean_represented_class_dice": 0.4242745295175192,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.555151323815843,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1615564
+        },
+        {
+          "class_id": 2,
+          "dice": 0.5805668309334954,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1521049
+        },
+        {
+          "class_id": 3,
+          "dice": 0.26269332297521186,
+          "truth_voxels": 375170,
+          "prediction_voxels": 129426
+        },
+        {
+          "class_id": 4,
+          "dice": 0.4500640896735599,
+          "truth_voxels": 338794,
+          "prediction_voxels": 392213
+        },
+        {
+          "class_id": 5,
+          "dice": 0.812351314588563,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3667384
+        },
+        {
+          "class_id": 6,
+          "dice": 0.0008061388231894198,
+          "truth_voxels": 131233,
+          "prediction_voxels": 258
+        },
+        {
+          "class_id": 7,
+          "dice": 0.6781368206621455,
+          "truth_voxels": 280599,
+          "prediction_voxels": 223550
+        },
+        {
+          "class_id": 8,
+          "dice": 0.004729072285753147,
+          "truth_voxels": 189679,
+          "prediction_voxels": 1479
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6958131215789068,
+          "truth_voxels": 655543,
+          "prediction_voxels": 965832
+        },
+        {
+          "class_id": 10,
+          "dice": 0.20243325983852292,
+          "truth_voxels": 537141,
+          "prediction_voxels": 93289
+        }
+      ]
+    },
+    {
+      "epoch": 16,
+      "training_loss": 1.14580456353724,
+      "bank_loss": 1.0754348300397396,
+      "mean_represented_class_dice": 0.5019063935216235,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.6898576295771103,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1573174
+        },
+        {
+          "class_id": 2,
+          "dice": 0.7931754770377987,
+          "truth_voxels": 743965,
+          "prediction_voxels": 858843
+        },
+        {
+          "class_id": 3,
+          "dice": 0.43138767166827596,
+          "truth_voxels": 375170,
+          "prediction_voxels": 288683
+        },
+        {
+          "class_id": 4,
+          "dice": 0.44054300696490123,
+          "truth_voxels": 338794,
+          "prediction_voxels": 295673
+        },
+        {
+          "class_id": 5,
+          "dice": 0.8344000901081994,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3919981
+        },
+        {
+          "class_id": 6,
+          "dice": 0.00013707392853879192,
+          "truth_voxels": 131233,
+          "prediction_voxels": 83
+        },
+        {
+          "class_id": 7,
+          "dice": 0.7671462558060497,
+          "truth_voxels": 280599,
+          "prediction_voxels": 293156
+        },
+        {
+          "class_id": 8,
+          "dice": 0.011314828873612945,
+          "truth_voxels": 189679,
+          "prediction_voxels": 2635
+        },
+        {
+          "class_id": 9,
+          "dice": 0.7059899695961398,
+          "truth_voxels": 655543,
+          "prediction_voxels": 982078
+        },
+        {
+          "class_id": 10,
+          "dice": 0.3451119316556075,
+          "truth_voxels": 537141,
+          "prediction_voxels": 196789
+        }
+      ]
+    },
+    {
+      "epoch": 17,
+      "training_loss": 1.1120533905923367,
+      "bank_loss": 1.1157473102211952,
+      "mean_represented_class_dice": 0.48554324452327274,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.6455292782353133,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1869074
+        },
+        {
+          "class_id": 2,
+          "dice": 0.6804727238603897,
+          "truth_voxels": 743965,
+          "prediction_voxels": 1025017
+        },
+        {
+          "class_id": 3,
+          "dice": 0.2319277351147068,
+          "truth_voxels": 375170,
+          "prediction_voxels": 121226
+        },
+        {
+          "class_id": 4,
+          "dice": 0.45340216650112247,
+          "truth_voxels": 338794,
+          "prediction_voxels": 303532
+        },
+        {
+          "class_id": 5,
+          "dice": 0.8116899654727491,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4358528
+        },
+        {
+          "class_id": 6,
+          "dice": 0.002430982876764362,
+          "truth_voxels": 131233,
+          "prediction_voxels": 401
+        },
+        {
+          "class_id": 7,
+          "dice": 0.7857193804489166,
+          "truth_voxels": 280599,
+          "prediction_voxels": 266184
+        },
+        {
+          "class_id": 8,
+          "dice": 0.03461162823144845,
+          "truth_voxels": 189679,
+          "prediction_voxels": 11005
+        },
+        {
+          "class_id": 9,
+          "dice": 0.6696780057187119,
+          "truth_voxels": 655543,
+          "prediction_voxels": 662586
+        },
+        {
+          "class_id": 10,
+          "dice": 0.5399705787726047,
+          "truth_voxels": 537141,
+          "prediction_voxels": 451261
+        }
+      ]
+    },
+    {
+      "epoch": 18,
+      "training_loss": 1.1167578361928463,
+      "bank_loss": 1.1053515616804361,
+      "mean_represented_class_dice": 0.49912763105515356,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.56023336693913,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1610375
+        },
+        {
+          "class_id": 2,
+          "dice": 0.6691044473781633,
+          "truth_voxels": 743965,
+          "prediction_voxels": 687665
+        },
+        {
+          "class_id": 3,
+          "dice": 0.3674695990114082,
+          "truth_voxels": 375170,
+          "prediction_voxels": 183200
+        },
+        {
+          "class_id": 4,
+          "dice": 0.46965587595016484,
+          "truth_voxels": 338794,
+          "prediction_voxels": 356217
+        },
+        {
+          "class_id": 5,
+          "dice": 0.7846998360088606,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4797712
+        },
+        {
+          "class_id": 6,
+          "dice": 0.010783452356815127,
+          "truth_voxels": 131233,
+          "prediction_voxels": 1934
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8426239425130382,
+          "truth_voxels": 280599,
+          "prediction_voxels": 264916
+        },
+        {
+          "class_id": 8,
+          "dice": 0.046951228535770835,
+          "truth_voxels": 189679,
+          "prediction_voxels": 13042
+        },
+        {
+          "class_id": 9,
+          "dice": 0.7252135498662133,
+          "truth_voxels": 655543,
+          "prediction_voxels": 847970
+        },
+        {
+          "class_id": 10,
+          "dice": 0.5145410119919717,
+          "truth_voxels": 537141,
+          "prediction_voxels": 333775
+        }
+      ]
+    },
+    {
+      "epoch": 19,
+      "training_loss": 1.0833429209887981,
+      "bank_loss": 1.0255445521324873,
+      "mean_represented_class_dice": 0.5747724291015056,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.7653448938700489,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2224395
+        },
+        {
+          "class_id": 2,
+          "dice": 0.7776814402244885,
+          "truth_voxels": 743965,
+          "prediction_voxels": 573163
+        },
+        {
+          "class_id": 3,
+          "dice": 0.430224422618175,
+          "truth_voxels": 375170,
+          "prediction_voxels": 225126
+        },
+        {
+          "class_id": 4,
+          "dice": 0.540893974263395,
+          "truth_voxels": 338794,
+          "prediction_voxels": 432481
+        },
+        {
+          "class_id": 5,
+          "dice": 0.8665592413894713,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 4255097
+        },
+        {
+          "class_id": 6,
+          "dice": 0.027553402845251387,
+          "truth_voxels": 131233,
+          "prediction_voxels": 6681
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8179097783610704,
+          "truth_voxels": 280599,
+          "prediction_voxels": 263439
+        },
+        {
+          "class_id": 8,
+          "dice": 0.13109426288494663,
+          "truth_voxels": 189679,
+          "prediction_voxels": 25708
+        },
+        {
+          "class_id": 9,
+          "dice": 0.7076483007327565,
+          "truth_voxels": 655543,
+          "prediction_voxels": 517698
+        },
+        {
+          "class_id": 10,
+          "dice": 0.6828145738254525,
+          "truth_voxels": 537141,
+          "prediction_voxels": 651785
+        }
+      ]
+    },
+    {
+      "epoch": 20,
+      "training_loss": 0.99935157969594,
+      "bank_loss": 0.9536148495972157,
+      "mean_represented_class_dice": 0.600312466409353,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.8204431639828831,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 1940308
+        },
+        {
+          "class_id": 2,
+          "dice": 0.8946164126046708,
+          "truth_voxels": 743965,
+          "prediction_voxels": 691249
+        },
+        {
+          "class_id": 3,
+          "dice": 0.3995427213480719,
+          "truth_voxels": 375170,
+          "prediction_voxels": 180290
+        },
+        {
+          "class_id": 4,
+          "dice": 0.5729974601991751,
+          "truth_voxels": 338794,
+          "prediction_voxels": 509304
+        },
+        {
+          "class_id": 5,
+          "dice": 0.8934309611196709,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3885968
+        },
+        {
+          "class_id": 6,
+          "dice": 0.14753218884120173,
+          "truth_voxels": 131233,
+          "prediction_voxels": 21615
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8431299902180455,
+          "truth_voxels": 280599,
+          "prediction_voxels": 229524
+        },
+        {
+          "class_id": 8,
+          "dice": 0.3515117178228813,
+          "truth_voxels": 189679,
+          "prediction_voxels": 71547
+        },
+        {
+          "class_id": 9,
+          "dice": 0.7293632563593432,
+          "truth_voxels": 655543,
+          "prediction_voxels": 963099
+        },
+        {
+          "class_id": 10,
+          "dice": 0.35055679159758674,
+          "truth_voxels": 537141,
+          "prediction_voxels": 161325
+        }
+      ]
+    },
+    {
+      "epoch": 21,
+      "training_loss": 0.948077904060483,
+      "bank_loss": 0.9326137471944094,
+      "mean_represented_class_dice": 0.6579799503369621,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.8565927466160632,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2237008
+        },
+        {
+          "class_id": 2,
+          "dice": 0.8682038390422214,
+          "truth_voxels": 743965,
+          "prediction_voxels": 850391
+        },
+        {
+          "class_id": 3,
+          "dice": 0.5736699981559156,
+          "truth_voxels": 375170,
+          "prediction_voxels": 476201
+        },
+        {
+          "class_id": 4,
+          "dice": 0.25837970065680166,
+          "truth_voxels": 338794,
+          "prediction_voxels": 85535
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9191296106141914,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3581045
+        },
+        {
+          "class_id": 6,
+          "dice": 0.2870681252030759,
+          "truth_voxels": 131233,
+          "prediction_voxels": 53427
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8393664712635649,
+          "truth_voxels": 280599,
+          "prediction_voxels": 277734
+        },
+        {
+          "class_id": 8,
+          "dice": 0.4830144848741339,
+          "truth_voxels": 189679,
+          "prediction_voxels": 134038
+        },
+        {
+          "class_id": 9,
+          "dice": 0.76290781165555,
+          "truth_voxels": 655543,
+          "prediction_voxels": 536061
+        },
+        {
+          "class_id": 10,
+          "dice": 0.7314667152881034,
+          "truth_voxels": 537141,
+          "prediction_voxels": 631068
+        }
+      ]
+    },
+    {
+      "epoch": 22,
+      "training_loss": 0.9398529585450888,
+      "bank_loss": 0.8958983961492777,
+      "mean_represented_class_dice": 0.7135074044531673,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.8720566745935047,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2011941
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9049390164946125,
+          "truth_voxels": 743965,
+          "prediction_voxels": 707903
+        },
+        {
+          "class_id": 3,
+          "dice": 0.6555009642162856,
+          "truth_voxels": 375170,
+          "prediction_voxels": 395404
+        },
+        {
+          "class_id": 4,
+          "dice": 0.5722034697758059,
+          "truth_voxels": 338794,
+          "prediction_voxels": 271793
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9292312094824451,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3771834
+        },
+        {
+          "class_id": 6,
+          "dice": 0.2065935966982589,
+          "truth_voxels": 131233,
+          "prediction_voxels": 30621
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8376329889179451,
+          "truth_voxels": 280599,
+          "prediction_voxels": 306386
+        },
+        {
+          "class_id": 8,
+          "dice": 0.5744808559032897,
+          "truth_voxels": 189679,
+          "prediction_voxels": 190177
+        },
+        {
+          "class_id": 9,
+          "dice": 0.833765300681795,
+          "truth_voxels": 655543,
+          "prediction_voxels": 666702
+        },
+        {
+          "class_id": 10,
+          "dice": 0.7486699677677301,
+          "truth_voxels": 537141,
+          "prediction_voxels": 515841
+        }
+      ]
+    },
+    {
+      "epoch": 23,
+      "training_loss": 0.9091642741113901,
+      "bank_loss": 0.864722104743123,
+      "mean_represented_class_dice": 0.7424570765371723,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.8768643107493932,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2031765
+        },
+        {
+          "class_id": 2,
+          "dice": 0.891752738444501,
+          "truth_voxels": 743965,
+          "prediction_voxels": 823622
+        },
+        {
+          "class_id": 3,
+          "dice": 0.6870420415598001,
+          "truth_voxels": 375170,
+          "prediction_voxels": 496634
+        },
+        {
+          "class_id": 4,
+          "dice": 0.536196262294324,
+          "truth_voxels": 338794,
+          "prediction_voxels": 180348
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9231158334000059,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3892922
+        },
+        {
+          "class_id": 6,
+          "dice": 0.3813975035387981,
+          "truth_voxels": 131233,
+          "prediction_voxels": 63042
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8509988592822253,
+          "truth_voxels": 280599,
+          "prediction_voxels": 232236
+        },
+        {
+          "class_id": 8,
+          "dice": 0.6476426876973591,
+          "truth_voxels": 189679,
+          "prediction_voxels": 128586
+        },
+        {
+          "class_id": 9,
+          "dice": 0.8527541623356493,
+          "truth_voxels": 655543,
+          "prediction_voxels": 715382
+        },
+        {
+          "class_id": 10,
+          "dice": 0.7768063660696668,
+          "truth_voxels": 537141,
+          "prediction_voxels": 430866
+        }
+      ]
+    },
+    {
+      "epoch": 24,
+      "training_loss": 0.8671198412775993,
+      "bank_loss": 0.8177075795829296,
+      "mean_represented_class_dice": 0.7858362178441125,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.905744774238881,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2101862
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9259372053854221,
+          "truth_voxels": 743965,
+          "prediction_voxels": 766483
+        },
+        {
+          "class_id": 3,
+          "dice": 0.7473474251372915,
+          "truth_voxels": 375170,
+          "prediction_voxels": 396910
+        },
+        {
+          "class_id": 4,
+          "dice": 0.6841628180762411,
+          "truth_voxels": 338794,
+          "prediction_voxels": 288925
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9391808715569001,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3846744
+        },
+        {
+          "class_id": 6,
+          "dice": 0.35566165945814665,
+          "truth_voxels": 131233,
+          "prediction_voxels": 62288
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8640311002244884,
+          "truth_voxels": 280599,
+          "prediction_voxels": 237468
+        },
+        {
+          "class_id": 8,
+          "dice": 0.7197848418424726,
+          "truth_voxels": 189679,
+          "prediction_voxels": 141984
+        },
+        {
+          "class_id": 9,
+          "dice": 0.8839384777336169,
+          "truth_voxels": 655543,
+          "prediction_voxels": 681989
+        },
+        {
+          "class_id": 10,
+          "dice": 0.8325730047876657,
+          "truth_voxels": 537141,
+          "prediction_voxels": 481936
+        }
+      ]
+    },
+    {
+      "epoch": 25,
+      "training_loss": 0.824353788048029,
+      "bank_loss": 0.8063163533806801,
+      "mean_represented_class_dice": 0.7986465780642817,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.8972592909066289,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2065231
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9019813411455501,
+          "truth_voxels": 743965,
+          "prediction_voxels": 772634
+        },
+        {
+          "class_id": 3,
+          "dice": 0.75227556952839,
+          "truth_voxels": 375170,
+          "prediction_voxels": 371676
+        },
+        {
+          "class_id": 4,
+          "dice": 0.7336162817899274,
+          "truth_voxels": 338794,
+          "prediction_voxels": 349435
+        },
+        {
+          "class_id": 5,
+          "dice": 0.938529535612007,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3790967
+        },
+        {
+          "class_id": 6,
+          "dice": 0.4755287464025166,
+          "truth_voxels": 131233,
+          "prediction_voxels": 107823
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8796204175760093,
+          "truth_voxels": 280599,
+          "prediction_voxels": 285286
+        },
+        {
+          "class_id": 8,
+          "dice": 0.7609284615947866,
+          "truth_voxels": 189679,
+          "prediction_voxels": 165403
+        },
+        {
+          "class_id": 9,
+          "dice": 0.8655139028384773,
+          "truth_voxels": 655543,
+          "prediction_voxels": 781178
+        },
+        {
+          "class_id": 10,
+          "dice": 0.7812122332485256,
+          "truth_voxels": 537141,
+          "prediction_voxels": 398702
+        }
+      ]
+    },
+    {
+      "epoch": 26,
+      "training_loss": 0.8184793218970299,
+      "bank_loss": 0.8011753689497709,
+      "mean_represented_class_dice": 0.821223675292224,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.888486933894672,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2009911
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9356309103678988,
+          "truth_voxels": 743965,
+          "prediction_voxels": 752452
+        },
+        {
+          "class_id": 3,
+          "dice": 0.8217021545993627,
+          "truth_voxels": 375170,
+          "prediction_voxels": 383022
+        },
+        {
+          "class_id": 4,
+          "dice": 0.7996255881438329,
+          "truth_voxels": 338794,
+          "prediction_voxels": 301143
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9215197536196972,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3998106
+        },
+        {
+          "class_id": 6,
+          "dice": 0.47042339264921174,
+          "truth_voxels": 131233,
+          "prediction_voxels": 75738
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8855302425907868,
+          "truth_voxels": 280599,
+          "prediction_voxels": 260889
+        },
+        {
+          "class_id": 8,
+          "dice": 0.7083775394570447,
+          "truth_voxels": 189679,
+          "prediction_voxels": 114766
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9126732712113781,
+          "truth_voxels": 655543,
+          "prediction_voxels": 618832
+        },
+        {
+          "class_id": 10,
+          "dice": 0.8682669663883537,
+          "truth_voxels": 537141,
+          "prediction_voxels": 583899
+        }
+      ]
+    },
+    {
+      "epoch": 27,
+      "training_loss": 0.8090763296931982,
+      "bank_loss": 0.7561980318278074,
+      "mean_represented_class_dice": 0.8502200575279714,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9314026966965991,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2066416
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9468847660592927,
+          "truth_voxels": 743965,
+          "prediction_voxels": 740129
+        },
+        {
+          "class_id": 3,
+          "dice": 0.8559326802567973,
+          "truth_voxels": 375170,
+          "prediction_voxels": 406770
+        },
+        {
+          "class_id": 4,
+          "dice": 0.8270644911987338,
+          "truth_voxels": 338794,
+          "prediction_voxels": 309465
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9454309934401361,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3794207
+        },
+        {
+          "class_id": 6,
+          "dice": 0.5328913601368691,
+          "truth_voxels": 131233,
+          "prediction_voxels": 102567
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8939180189341316,
+          "truth_voxels": 280599,
+          "prediction_voxels": 277969
+        },
+        {
+          "class_id": 8,
+          "dice": 0.7960078970970432,
+          "truth_voxels": 189679,
+          "prediction_voxels": 159310
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9046797520212982,
+          "truth_voxels": 655543,
+          "prediction_voxels": 727479
+        },
+        {
+          "class_id": 10,
+          "dice": 0.8679879194388125,
+          "truth_voxels": 537141,
+          "prediction_voxels": 458177
+        }
+      ]
+    },
+    {
+      "epoch": 28,
+      "training_loss": 0.7631450444459915,
+      "bank_loss": 0.7479072865098715,
+      "mean_represented_class_dice": 0.8565943470535501,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9259684434166334,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2026939
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9466871166054887,
+          "truth_voxels": 743965,
+          "prediction_voxels": 749764
+        },
+        {
+          "class_id": 3,
+          "dice": 0.849215344804155,
+          "truth_voxels": 375170,
+          "prediction_voxels": 338583
+        },
+        {
+          "class_id": 4,
+          "dice": 0.851597783075054,
+          "truth_voxels": 338794,
+          "prediction_voxels": 333669
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9526446235323092,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3622709
+        },
+        {
+          "class_id": 6,
+          "dice": 0.5452451910051477,
+          "truth_voxels": 131233,
+          "prediction_voxels": 90227
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8726800226441188,
+          "truth_voxels": 280599,
+          "prediction_voxels": 245807
+        },
+        {
+          "class_id": 8,
+          "dice": 0.7470557215679381,
+          "truth_voxels": 189679,
+          "prediction_voxels": 231307
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9464430301234085,
+          "truth_voxels": 655543,
+          "prediction_voxels": 653605
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9284061937612478,
+          "truth_voxels": 537141,
+          "prediction_voxels": 529739
+        }
+      ]
+    },
+    {
+      "epoch": 29,
+      "training_loss": 0.7322987709194422,
+      "bank_loss": 0.718016168102622,
+      "mean_represented_class_dice": 0.8661517589622785,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9399532336598115,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2060807
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9421990788713861,
+          "truth_voxels": 743965,
+          "prediction_voxels": 747032
+        },
+        {
+          "class_id": 3,
+          "dice": 0.7562886998419504,
+          "truth_voxels": 375170,
+          "prediction_voxels": 263237
+        },
+        {
+          "class_id": 4,
+          "dice": 0.8001374220638758,
+          "truth_voxels": 338794,
+          "prediction_voxels": 447106
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9594458025382623,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3717807
+        },
+        {
+          "class_id": 6,
+          "dice": 0.6528210343858705,
+          "truth_voxels": 131233,
+          "prediction_voxels": 121458
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8979085373408777,
+          "truth_voxels": 280599,
+          "prediction_voxels": 276284
+        },
+        {
+          "class_id": 8,
+          "dice": 0.817246013656212,
+          "truth_voxels": 189679,
+          "prediction_voxels": 216583
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9556981564449168,
+          "truth_voxels": 655543,
+          "prediction_voxels": 646615
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9398196108196211,
+          "truth_voxels": 537141,
+          "prediction_voxels": 535318
+        }
+      ]
+    },
+    {
+      "epoch": 30,
+      "training_loss": 0.7182564735412598,
+      "bank_loss": 0.7064498951658607,
+      "mean_represented_class_dice": 0.891516627025986,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9329679981411869,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2026768
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9484889109278786,
+          "truth_voxels": 743965,
+          "prediction_voxels": 752373
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9207701413135634,
+          "truth_voxels": 375170,
+          "prediction_voxels": 363188
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9192021314898826,
+          "truth_voxels": 338794,
+          "prediction_voxels": 355556
+        },
+        {
+          "class_id": 5,
+          "dice": 0.950317745754575,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3667414
+        },
+        {
+          "class_id": 6,
+          "dice": 0.6687113375266414,
+          "truth_voxels": 131233,
+          "prediction_voxels": 138085
+        },
+        {
+          "class_id": 7,
+          "dice": 0.8973364249829068,
+          "truth_voxels": 280599,
+          "prediction_voxels": 257625
+        },
+        {
+          "class_id": 8,
+          "dice": 0.8449419329440325,
+          "truth_voxels": 189679,
+          "prediction_voxels": 191346
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9290009271113858,
+          "truth_voxels": 655543,
+          "prediction_voxels": 703517
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9034287200678088,
+          "truth_voxels": 537141,
+          "prediction_voxels": 473936
+        }
+      ]
+    },
+    {
+      "epoch": 31,
+      "training_loss": 0.700867903418839,
+      "bank_loss": 0.6879078699275851,
+      "mean_represented_class_dice": 0.9018845422143548,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9466663164488098,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2103825
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9508092959616677,
+          "truth_voxels": 743965,
+          "prediction_voxels": 741153
+        },
+        {
+          "class_id": 3,
+          "dice": 0.931202890325881,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375472
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9172390178482259,
+          "truth_voxels": 338794,
+          "prediction_voxels": 362116
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9596841527127316,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3685774
+        },
+        {
+          "class_id": 6,
+          "dice": 0.6938796512739087,
+          "truth_voxels": 131233,
+          "prediction_voxels": 140843
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9041528822189087,
+          "truth_voxels": 280599,
+          "prediction_voxels": 280722
+        },
+        {
+          "class_id": 8,
+          "dice": 0.8564318041773793,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186825
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9397688015688465,
+          "truth_voxels": 655543,
+          "prediction_voxels": 662113
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9190106096071897,
+          "truth_voxels": 537141,
+          "prediction_voxels": 479202
+        }
+      ]
+    },
+    {
+      "epoch": 32,
+      "training_loss": 0.6840040069073439,
+      "bank_loss": 0.6669698525220156,
+      "mean_represented_class_dice": 0.9135156186938138,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9511767500922605,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2118589
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9560716185545665,
+          "truth_voxels": 743965,
+          "prediction_voxels": 758048
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9440011093377707,
+          "truth_voxels": 375170,
+          "prediction_voxels": 374827
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9374200746309961,
+          "truth_voxels": 338794,
+          "prediction_voxels": 347784
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9619102912348989,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3679316
+        },
+        {
+          "class_id": 6,
+          "dice": 0.7142505713560183,
+          "truth_voxels": 131233,
+          "prediction_voxels": 120799
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9098886418168874,
+          "truth_voxels": 280599,
+          "prediction_voxels": 288286
+        },
+        {
+          "class_id": 8,
+          "dice": 0.8489267087565193,
+          "truth_voxels": 189679,
+          "prediction_voxels": 174621
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9614456118792541,
+          "truth_voxels": 655543,
+          "prediction_voxels": 653024
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9500648092789669,
+          "truth_voxels": 537141,
+          "prediction_voxels": 508234
+        }
+      ]
+    },
+    {
+      "epoch": 33,
+      "training_loss": 0.6645808843895793,
+      "bank_loss": 0.6532691298052669,
+      "mean_represented_class_dice": 0.9213856997579398,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9560496083687194,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2092818
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9617883761989154,
+          "truth_voxels": 743965,
+          "prediction_voxels": 746236
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9467827060274905,
+          "truth_voxels": 375170,
+          "prediction_voxels": 368141
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9467315525498124,
+          "truth_voxels": 338794,
+          "prediction_voxels": 331922
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9638416498611823,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3686022
+        },
+        {
+          "class_id": 6,
+          "dice": 0.7333775328388513,
+          "truth_voxels": 131233,
+          "prediction_voxels": 110097
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9174522455397298,
+          "truth_voxels": 280599,
+          "prediction_voxels": 284165
+        },
+        {
+          "class_id": 8,
+          "dice": 0.865849232274456,
+          "truth_voxels": 189679,
+          "prediction_voxels": 190535
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9658730286641386,
+          "truth_voxels": 655543,
+          "prediction_voxels": 647444
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9561110652561033,
+          "truth_voxels": 537141,
+          "prediction_voxels": 516906
+        }
+      ]
+    },
+    {
+      "epoch": 34,
+      "training_loss": 0.652253745123744,
+      "bank_loss": 0.6403817953541875,
+      "mean_represented_class_dice": 0.9268239496355856,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9567822765433676,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2104599
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9634035804068565,
+          "truth_voxels": 743965,
+          "prediction_voxels": 746536
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9524453797016506,
+          "truth_voxels": 375170,
+          "prediction_voxels": 372812
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9491897464152889,
+          "truth_voxels": 338794,
+          "prediction_voxels": 336365
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9661220169534624,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3722283
+        },
+        {
+          "class_id": 6,
+          "dice": 0.7651371378623345,
+          "truth_voxels": 131233,
+          "prediction_voxels": 122745
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9164826910216831,
+          "truth_voxels": 280599,
+          "prediction_voxels": 265216
+        },
+        {
+          "class_id": 8,
+          "dice": 0.8711255281478122,
+          "truth_voxels": 189679,
+          "prediction_voxels": 200600
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9673988619105997,
+          "truth_voxels": 655543,
+          "prediction_voxels": 656129
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9601522773928004,
+          "truth_voxels": 537141,
+          "prediction_voxels": 534062
+        }
+      ]
+    },
+    {
+      "epoch": 35,
+      "training_loss": 0.638294025324285,
+      "bank_loss": 0.6295947311446071,
+      "mean_represented_class_dice": 0.9318691005232316,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9608994134629079,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2119048
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9650669672004355,
+          "truth_voxels": 743965,
+          "prediction_voxels": 749378
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9545426045520096,
+          "truth_voxels": 375170,
+          "prediction_voxels": 374433
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9528146675188789,
+          "truth_voxels": 338794,
+          "prediction_voxels": 337094
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9671419807053915,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3687162
+        },
+        {
+          "class_id": 6,
+          "dice": 0.7708274460466467,
+          "truth_voxels": 131233,
+          "prediction_voxels": 127092
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9190253987113957,
+          "truth_voxels": 280599,
+          "prediction_voxels": 263090
+        },
+        {
+          "class_id": 8,
+          "dice": 0.8950884805676539,
+          "truth_voxels": 189679,
+          "prediction_voxels": 181815
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9694052016677477,
+          "truth_voxels": 655543,
+          "prediction_voxels": 648731
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9638788447992487,
+          "truth_voxels": 537141,
+          "prediction_voxels": 527609
+        }
+      ]
+    },
+    {
+      "epoch": 36,
+      "training_loss": 0.6282197926193476,
+      "bank_loss": 0.6229171464219689,
+      "mean_represented_class_dice": 0.9357843811908013,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9622231954104633,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2081707
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9667571929314075,
+          "truth_voxels": 743965,
+          "prediction_voxels": 740687
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9565495224752147,
+          "truth_voxels": 375170,
+          "prediction_voxels": 372854
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9556854996617893,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335342
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9665128371651505,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3764636
+        },
+        {
+          "class_id": 6,
+          "dice": 0.7912399854547161,
+          "truth_voxels": 131233,
+          "prediction_voxels": 124520
+        },
+        {
+          "class_id": 7,
+          "dice": 0.925536556443656,
+          "truth_voxels": 280599,
+          "prediction_voxels": 271766
+        },
+        {
+          "class_id": 8,
+          "dice": 0.8988750629435247,
+          "truth_voxels": 189679,
+          "prediction_voxels": 195587
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9699687465844045,
+          "truth_voxels": 655543,
+          "prediction_voxels": 652794
+        },
+        {
+          "class_id": 10,
+          "dice": 0.964495212837686,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530715
+        }
+      ]
+    },
+    {
+      "epoch": 37,
+      "training_loss": 0.6211694031953812,
+      "bank_loss": 0.6164280138909817,
+      "mean_represented_class_dice": 0.9376598294470592,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9634008424060754,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2103637
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9669237152630195,
+          "truth_voxels": 743965,
+          "prediction_voxels": 738245
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9575239826906669,
+          "truth_voxels": 375170,
+          "prediction_voxels": 376101
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9560596789022014,
+          "truth_voxels": 338794,
+          "prediction_voxels": 337760
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9680223300880442,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3701357
+        },
+        {
+          "class_id": 6,
+          "dice": 0.796125048183811,
+          "truth_voxels": 131233,
+          "prediction_voxels": 125596
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9284151631693527,
+          "truth_voxels": 280599,
+          "prediction_voxels": 280260
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9027340889092624,
+          "truth_voxels": 189679,
+          "prediction_voxels": 189899
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9708859800960243,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651834
+        },
+        {
+          "class_id": 10,
+          "dice": 0.966507464762132,
+          "truth_voxels": 537141,
+          "prediction_voxels": 527126
+        }
+      ]
+    },
+    {
+      "epoch": 38,
+      "training_loss": 0.6165877263993025,
+      "bank_loss": 0.6124314395710826,
+      "mean_represented_class_dice": 0.9393504301031435,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9655452002277239,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2118106
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9673106460705497,
+          "truth_voxels": 743965,
+          "prediction_voxels": 752822
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9574663936897904,
+          "truth_voxels": 375170,
+          "prediction_voxels": 380938
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9571411374026302,
+          "truth_voxels": 338794,
+          "prediction_voxels": 342372
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9688093497135066,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3725180
+        },
+        {
+          "class_id": 6,
+          "dice": 0.803452421650233,
+          "truth_voxels": 131233,
+          "prediction_voxels": 129106
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9259300186100192,
+          "truth_voxels": 280599,
+          "prediction_voxels": 289524
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9094075454393643,
+          "truth_voxels": 189679,
+          "prediction_voxels": 187582
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9713150078107822,
+          "truth_voxels": 655543,
+          "prediction_voxels": 649704
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9671265804168356,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530378
+        }
+      ]
+    },
+    {
+      "epoch": 39,
+      "training_loss": 0.6123345512896776,
+      "bank_loss": 0.6078355982899666,
+      "mean_represented_class_dice": 0.9405634578298194,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9658968489729769,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2103300
+        },
+        {
+          "class_id": 2,
+          "dice": 0.968199105445001,
+          "truth_voxels": 743965,
+          "prediction_voxels": 749515
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9590435924069387,
+          "truth_voxels": 375170,
+          "prediction_voxels": 376727
+        },
+        {
+          "class_id": 4,
+          "dice": 0.957655549687086,
+          "truth_voxels": 338794,
+          "prediction_voxels": 339028
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9693581991777784,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3703276
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8085547156024121,
+          "truth_voxels": 131233,
+          "prediction_voxels": 134258
+        },
+        {
+          "class_id": 7,
+          "dice": 0.928016596013349,
+          "truth_voxels": 280599,
+          "prediction_voxels": 273751
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9094015835795628,
+          "truth_voxels": 189679,
+          "prediction_voxels": 190725
+        },
+        {
+          "class_id": 9,
+          "dice": 0.971567934615621,
+          "truth_voxels": 655543,
+          "prediction_voxels": 646297
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9679404527974685,
+          "truth_voxels": 537141,
+          "prediction_voxels": 528501
+        }
+      ]
+    },
+    {
+      "epoch": 40,
+      "training_loss": 0.6074997093528509,
+      "bank_loss": 0.6037627933546901,
+      "mean_represented_class_dice": 0.942508640908105,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9664661916543013,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2101353
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9690431361944603,
+          "truth_voxels": 743965,
+          "prediction_voxels": 742652
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9593956839906412,
+          "truth_voxels": 375170,
+          "prediction_voxels": 374504
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9586010650792566,
+          "truth_voxels": 338794,
+          "prediction_voxels": 333832
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9693684280853537,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3747472
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8167808154987498,
+          "truth_voxels": 131233,
+          "prediction_voxels": 135524
+        },
+        {
+          "class_id": 7,
+          "dice": 0.930635838150289,
+          "truth_voxels": 280599,
+          "prediction_voxels": 268503
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9139475792120437,
+          "truth_voxels": 189679,
+          "prediction_voxels": 187347
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9721379711386904,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651397
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9687097000772634,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530634
+        }
+      ]
+    },
+    {
+      "epoch": 41,
+      "training_loss": 0.6042607976123691,
+      "bank_loss": 0.6012065811082721,
+      "mean_represented_class_dice": 0.9435746690036243,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9670368078678034,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2100867
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9693384329310631,
+          "truth_voxels": 743965,
+          "prediction_voxels": 740858
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9600724861382288,
+          "truth_voxels": 375170,
+          "prediction_voxels": 373111
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9594673006347101,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335057
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9696270968896658,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3735688
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8208802456499488,
+          "truth_voxels": 131233,
+          "prediction_voxels": 131580
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9327951571340138,
+          "truth_voxels": 280599,
+          "prediction_voxels": 275105
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9147188374111822,
+          "truth_voxels": 189679,
+          "prediction_voxels": 183557
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9723737688111017,
+          "truth_voxels": 655543,
+          "prediction_voxels": 655385
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9694365565685249,
+          "truth_voxels": 537141,
+          "prediction_voxels": 533419
+        }
+      ]
+    },
+    {
+      "epoch": 42,
+      "training_loss": 0.6014555506408215,
+      "bank_loss": 0.5990621456876397,
+      "mean_represented_class_dice": 0.9438246234445433,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9677064994157473,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2107218
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9697319038458951,
+          "truth_voxels": 743965,
+          "prediction_voxels": 742815
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9600855348058402,
+          "truth_voxels": 375170,
+          "prediction_voxels": 374934
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9605542637722833,
+          "truth_voxels": 338794,
+          "prediction_voxels": 337274
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9697434127480251,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3751408
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8190539278673871,
+          "truth_voxels": 131233,
+          "prediction_voxels": 119361
+        },
+        {
+          "class_id": 7,
+          "dice": 0.933263010484773,
+          "truth_voxels": 280599,
+          "prediction_voxels": 269246
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9156767073941153,
+          "truth_voxels": 189679,
+          "prediction_voxels": 182306
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9726899377695022,
+          "truth_voxels": 655543,
+          "prediction_voxels": 650569
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9697410363418643,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530113
+        }
+      ]
+    },
+    {
+      "epoch": 43,
+      "training_loss": 0.5988589143380523,
+      "bank_loss": 0.5968992449343204,
+      "mean_represented_class_dice": 0.9448285748809754,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9679496109445914,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2105945
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9699955217196596,
+          "truth_voxels": 743965,
+          "prediction_voxels": 743213
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9605769999200832,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375610
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9603526712144878,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335375
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9703407397357041,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3722842
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8235240124068245,
+          "truth_voxels": 131233,
+          "prediction_voxels": 130236
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9349017132846207,
+          "truth_voxels": 280599,
+          "prediction_voxels": 270798
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9176869949508428,
+          "truth_voxels": 189679,
+          "prediction_voxels": 185037
+        },
+        {
+          "class_id": 9,
+          "dice": 0.972910364062138,
+          "truth_voxels": 655543,
+          "prediction_voxels": 652448
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9700471205708021,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530970
+        }
+      ]
+    },
+    {
+      "epoch": 44,
+      "training_loss": 0.5970705272629857,
+      "bank_loss": 0.5955900317057967,
+      "mean_represented_class_dice": 0.9454697953611207,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9680829476303211,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2106094
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9702080870388679,
+          "truth_voxels": 743965,
+          "prediction_voxels": 743922
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9605739353682872,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375019
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9606895395204507,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335047
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9703988690301298,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3733580
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8275770870282212,
+          "truth_voxels": 131233,
+          "prediction_voxels": 125879
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9353350068280032,
+          "truth_voxels": 280599,
+          "prediction_voxels": 271539
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9187343924339834,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186741
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9729928382096903,
+          "truth_voxels": 655543,
+          "prediction_voxels": 650555
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9701052505232519,
+          "truth_voxels": 537141,
+          "prediction_voxels": 529267
+        }
+      ]
+    },
+    {
+      "epoch": 45,
+      "training_loss": 0.5957046952098608,
+      "bank_loss": 0.5945571400225163,
+      "mean_represented_class_dice": 0.9458387108147205,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9683570983511703,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2105246
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9703302446371017,
+          "truth_voxels": 743965,
+          "prediction_voxels": 744689
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9608547088248419,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375495
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9608725479591701,
+          "truth_voxels": 338794,
+          "prediction_voxels": 336103
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9706298342125236,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3727328
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8285419556238965,
+          "truth_voxels": 131233,
+          "prediction_voxels": 127600
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9360935702970726,
+          "truth_voxels": 280599,
+          "prediction_voxels": 272397
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9192421406389586,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186433
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9731406033419723,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651709
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9703244042604968,
+          "truth_voxels": 537141,
+          "prediction_voxels": 531279
+        }
+      ]
+    },
+    {
+      "epoch": 46,
+      "training_loss": 0.5947991572320461,
+      "bank_loss": 0.5938801541924477,
+      "mean_represented_class_dice": 0.9460741015930237,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9684255857838353,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2104059
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9703278785563226,
+          "truth_voxels": 743965,
+          "prediction_voxels": 742683
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9608515595530539,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375077
+        },
+        {
+          "class_id": 4,
+          "dice": 0.961123798317385,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335989
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9707354603701455,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3725592
+        },
+        {
+          "class_id": 6,
+          "dice": 0.829761310760162,
+          "truth_voxels": 131233,
+          "prediction_voxels": 127304
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9363440930203966,
+          "truth_voxels": 280599,
+          "prediction_voxels": 272484
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9195727000441557,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186263
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9731628204863335,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651338
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9704358090384472,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530299
+        }
+      ]
+    },
+    {
+      "epoch": 47,
+      "training_loss": 0.5939716417342424,
+      "bank_loss": 0.5934554310515523,
+      "mean_represented_class_dice": 0.9462259055946565,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9686239597262273,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2106939
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9705159242775164,
+          "truth_voxels": 743965,
+          "prediction_voxels": 743889
+        },
+        {
+          "class_id": 3,
+          "dice": 0.960871082645751,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375528
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9611018307026217,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335865
+        },
+        {
+          "class_id": 5,
+          "dice": 0.970761061432668,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3727961
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8303489129973659,
+          "truth_voxels": 131233,
+          "prediction_voxels": 128058
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9364265582204792,
+          "truth_voxels": 280599,
+          "prediction_voxels": 272179
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9198668925910458,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186258
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9732281150707407,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651201
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9705147182821489,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530239
+        }
+      ]
+    },
+    {
+      "epoch": 48,
+      "training_loss": 0.593505865894258,
+      "bank_loss": 0.5931988805532455,
+      "mean_represented_class_dice": 0.9463027625980305,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9686210091621186,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2106382
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9705200268341967,
+          "truth_voxels": 743965,
+          "prediction_voxels": 743689
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9609816598214607,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375477
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9612409534805478,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335913
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9707899307132136,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3726613
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8306012619077076,
+          "truth_voxels": 131233,
+          "prediction_voxels": 127423
+        },
+        {
+          "class_id": 7,
+          "dice": 0.93650308357771,
+          "truth_voxels": 280599,
+          "prediction_voxels": 272168
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9199747717347626,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186090
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9732384935317367,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651222
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9705564352168495,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530189
+        }
+      ]
+    },
+    {
+      "epoch": 49,
+      "training_loss": 0.5932212304323912,
+      "bank_loss": 0.5930921444669366,
+      "mean_represented_class_dice": 0.9463148244559056,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9686502864937834,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2106248
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9705402951146052,
+          "truth_voxels": 743965,
+          "prediction_voxels": 743796
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9609603927280287,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375273
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9611755565835202,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335678
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9707979636992161,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3726877
+        },
+        {
+          "class_id": 6,
+          "dice": 0.830679569626515,
+          "truth_voxels": 131233,
+          "prediction_voxels": 127519
+        },
+        {
+          "class_id": 7,
+          "dice": 0.936504548053057,
+          "truth_voxels": 280599,
+          "prediction_voxels": 272165
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9200014900274591,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186153
+        },
+        {
+          "class_id": 9,
+          "dice": 0.973250926465108,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651306
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9705872157677632,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530252
+        }
+      ]
+    },
+    {
+      "epoch": 50,
+      "training_loss": 0.5930980229750276,
+      "bank_loss": 0.5930633135139942,
+      "mean_represented_class_dice": 0.9463322689986728,
+      "represented_classes": [
+        {
+          "class_id": 1,
+          "dice": 0.9686488792731156,
+          "truth_voxels": 2122116,
+          "prediction_voxels": 2106122
+        },
+        {
+          "class_id": 2,
+          "dice": 0.9705350714860452,
+          "truth_voxels": 743965,
+          "prediction_voxels": 743668
+        },
+        {
+          "class_id": 3,
+          "dice": 0.9609705330122742,
+          "truth_voxels": 375170,
+          "prediction_voxels": 375263
+        },
+        {
+          "class_id": 4,
+          "dice": 0.9611874177134114,
+          "truth_voxels": 338794,
+          "prediction_voxels": 335678
+        },
+        {
+          "class_id": 5,
+          "dice": 0.9708008517191781,
+          "truth_voxels": 3706406,
+          "prediction_voxels": 3727030
+        },
+        {
+          "class_id": 6,
+          "dice": 0.8308024102066609,
+          "truth_voxels": 131233,
+          "prediction_voxels": 127500
+        },
+        {
+          "class_id": 7,
+          "dice": 0.9365235576331652,
+          "truth_voxels": 280599,
+          "prediction_voxels": 272173
+        },
+        {
+          "class_id": 8,
+          "dice": 0.9200090472452469,
+          "truth_voxels": 189679,
+          "prediction_voxels": 186126
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9732563282083301,
+          "truth_voxels": 655543,
+          "prediction_voxels": 651383
+        },
+        {
+          "class_id": 10,
+          "dice": 0.970588593489301,
+          "truth_voxels": 537141,
+          "prediction_voxels": 530302
+        }
+      ]
+    }
+  ],
+  "acceptance": {
+    "completed_configured_epochs": true,
+    "finite_initial_and_final_loss": true,
+    "minimum_loss_reduction": true,
+    "minimum_mean_represented_class_dice": true,
+    "minimum_optimizer_steps": true,
+    "checkpoint_reload_parity": true,
+    "train_only_scope": true,
+    "validation_split_not_accessed": true,
+    "test_split_not_accessed": true
+  },
+  "validation_split_accessed": false,
+  "test_split_accessed": false,
+  "contract_checks": {
+    "manifest_sha256": true,
+    "organ_schema_sha256": true,
+    "preprocessing_sha256": true,
+    "split_counts": true,
+    "output_channels": true,
+    "roi_size": true,
+    "gpu_report_passed": true,
+    "gpu_environment_id": true,
+    "test_locked": true
+  },
+  "provenance_compatibility_migration": {
+    "schema_version": 1,
+    "migrated_at_utc": "2026-08-27T14:31:24.660346Z",
+    "reason": "cap full training at 50 epochs and permit standard recoverable AMP overflow backoff",
+    "trajectory_preserved_through_epoch": 16,
+    "old_config_sha256": "762470d64a2950878f09e0e49e5e0b09d99ddbea7a153e20e09c4f32574af588",
+    "new_config_sha256": "8033b87ad9e9fab70930ee608a886c635684e27556380538cb3e47fec13b7186",
+    "scheduler_t_max_preserved": 100,
+    "checkpoint_amp_scale_preserved": 16384.0,
+    "next_overflow_behavior": "skip optimizer update, halve scale, continue; NaNs fail closed",
+    "test_split_accessed": false,
+    "archive": "outputs/training/recovery_archive/20260827_full_epoch16_amp_overflow",
+    "original_report_sha256": "9e2a013fa36d6d808e821bdf26b67fced82962a235db70aac20294ded085edb1",
+    "stage_execution_not_repeated": true,
+    "stage_config_unchanged": true
+  }
+}

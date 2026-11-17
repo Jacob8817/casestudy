@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "status": "trained",
+  "phase": 3,
+  "selected_epoch": 10,
+  "completed_epochs": 15,
+  "parameter_count": 1206642,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.9830836608905336,
+          "skull": 0.9065987875648507
+        },
+        "sdf_mae_normalized": {
+          "brain": 0.14897948503494263,
+          "skull": 0.2583445906639099
+        },
+        "inference_seconds": 1.0178565999995044,
+        "boundary_sdf_mae_normalized": {
+          "brain": 0.17466183006763458,
+          "skull": 0.17741751670837402
+        },
+        "hd95_mm": {
+          "brain": 3.3541019662496847,
+          "skull": 91.45511175203208
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9871840739062339,
+          "skull": 0.954515162869767
+        },
+        "sdf_mae_normalized": {
+          "brain": 0.11391958594322205,
+          "skull": 0.17627620697021484
+        },
+        "inference_seconds": 0.3798527999997532,
+        "boundary_sdf_mae_normalized": {
+          "brain": 0.14069296419620514,
+          "skull": 0.15400591492652893
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9876782922456914,
+          "skull": 0.9175178926205597
+        },
+        "sdf_mae_normalized": {
+          "brain": 0.12493903934955597,
+          "skull": 0.22568708658218384
+        },
+        "inference_seconds": 0.49427379999997356,
+        "boundary_sdf_mae_normalized": {
+          "brain": 0.14004479348659515,
+          "skull": 0.17623865604400635
+        },
+        "hd95_mm": {
+          "brain": 1.5000000156412217,
+          "skull": 5.40832697342347
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.6210352422907489,
+          "skull": 0.7339845312590865
+        },
+        "sdf_mae_normalized": {
+          "brain": 0.19353897869586945,
+          "skull": 0.3224833607673645
+        },
+        "inference_seconds": 3.998950799999875,
+        "boundary_sdf_mae_normalized": {
+          "brain": 0.19913215935230255,
+          "skull": 0.2217671424150467
+        },
+        "hd95_mm": {
+          "brain": 643.9770958659943,
+          "skull": 548.8750882247748
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.98894982485166,
+          "skull": 0.9470081633798075
+        },
+        "sdf_mae_normalized": {
+          "brain": 0.11427834630012512,
+          "skull": 0.15601755678653717
+        },
+        "inference_seconds": 0.4123822999999902,
+        "boundary_sdf_mae_normalized": {
+          "brain": 0.1484847366809845,
+          "skull": 0.13066323101520538
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.9135862188369736,
+      "skull": 0.8919249075388143
+    },
+    "macro_mean_dice": 0.9027555631878939,
+    "mean_sdf_mae_normalized": {
+      "brain": 0.13913108706474303,
+      "skull": 0.22776176035404205
+    },
+    "mean_boundary_sdf_mae_normalized": {
+      "brain": 0.1606032967567444,
+      "skull": 0.17201849222183227
+    },
+    "mean_inference_seconds": 1.2606632599998193,
+    "mean_hd95_mm": {
+      "brain": 130.4905036282183,
+      "skull": 129.74770538419054
+    }
+  },
+  "total_training_seconds": 293.5522826999986,
+  "peak_gpu_memory_mb": 2051.68798828125,
+  "initial_checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\best.pt",
+  "initial_checkpoint_sha256": "a843b79365dfb4426b62dfed0f77b6917e45e27dc03beb276d2de35ac99f6684",
+  "best_checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\best.pt",
+  "best_checkpoint_sha256": "d0f1336d46aa426bea2879a37d09c4d92656877f45a7cbf3cf3a12fdee8e44d2",
+  "contract_sha256": "c2ec2f2fa18060e9930769b339a24a200e30a0cc6688395150fc6c6566878931",
+  "official_test_split_accessed": false
+}

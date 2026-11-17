@@ -1,0 +1,71 @@
+{
+  "contract": {
+    "case_id": "CASE_001",
+    "source_ct_sha256": "29deec8768052bee85f26b2eec8abe773128532202391c8c777e8a7600307db1",
+    "checkpoint_sha256": "d0f1336d46aa426bea2879a37d09c4d92656877f45a7cbf3cf3a12fdee8e44d2",
+    "calibration_sha256": "d35d2d443057ab8f20b8b8b36903abc51750175962a0f4e3bdb2805d91e12f5f",
+    "spacing_mm": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "orientation": "RAS",
+    "interpolation_order": 1,
+    "seed": 2026
+  },
+  "case_id": "CASE_001",
+  "source_ct_sha256": "29deec8768052bee85f26b2eec8abe773128532202391c8c777e8a7600307db1",
+  "temperature": 1.1064573224712873,
+  "model_affine": [
+    [
+      1.5,
+      0.0,
+      0.0,
+      -141.9931125640869
+    ],
+    [
+      0.0,
+      1.5,
+      0.0,
+      -6.307126998901367
+    ],
+    [
+      0.0,
+      0.0,
+      1.5,
+      -602.7379760742188
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "model_shape": [
+    191,
+    191,
+    114
+  ],
+  "classes": {
+    "background": 0,
+    "brain": 1,
+    "skull": 2
+  },
+  "source_ct": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\input\\CASE_001_bone_kernel_ct.nii.gz",
+  "checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\best.pt",
+  "calibration": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase4\\phase4_report.json",
+  "confidence_definition": "P(skull|CT) = softmax(logits / fixed_temperature)[2]",
+  "uncertainty_definition": "H = -sum(p log p)/log(3); predictive uncertainty, not epistemic",
+  "limitation": "External case; calibration transfer is unverified. MONAI probability is not TotalSegmentator confidence. No separate mandible/teeth probability exists.",
+  "official_test_accessed": false,
+  "calibration_refitted": false,
+  "model_retrained": false,
+  "output_hashes": {
+    "logits_probabilities.npz": "74caa4986225e85b03a593563209c3895442f9c9db62eed419d792ca656e83d6",
+    "model_ct.nii.gz": "7a73c2a9f2df5761f3bc04db04f6945901dcdd6e9e3a54e57cc09059d279c96f",
+    "prediction.nii.gz": "8f63962bf12c2e755583c7f5f10be0b8ba9bcbf4705c9ee98bfee1273b62c897",
+    "predictive_entropy.nii.gz": "b26b0b8912845a21a7dfe65dab8cee33b3914e73177fd03305edd5e922dccc13",
+    "skull_probability.nii.gz": "5ba89917cc1493f23efde70e05ba272480582c8959acad087e50bd9e40057a52"
+  }
+}

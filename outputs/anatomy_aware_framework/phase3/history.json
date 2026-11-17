@@ -1,0 +1,377 @@
+[
+  {
+    "epoch": 1,
+    "total_loss": 0.26807151027784054,
+    "base_multitask_loss": 0.26556376972216733,
+    "anatomy_loss": 0.12538709020128055,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.12244582201895225,
+      "skull_in_brain_core": 0.0009037459781025899,
+      "probability_ambiguity": 0.0039012726640289563,
+      "sdf_sign_consistency": 0.004248809173931272
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.02,
+    "sampling_modes": {
+      "foreground_brain": 45,
+      "foreground_skull": 34,
+      "ct_context_background": 19
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 23.10727719999977,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 2,
+    "total_loss": 0.26507929130932506,
+    "base_multitask_loss": 0.2626304161183688,
+    "anatomy_loss": 0.1224437538719717,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.11930451924366267,
+      "skull_in_brain_core": 0.0009650760653176822,
+      "probability_ambiguity": 0.004108506353077246,
+      "sdf_sign_consistency": 0.004588138383376051
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.02,
+    "sampling_modes": {
+      "foreground_brain": 41,
+      "foreground_skull": 35,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 21.872084200000245,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 3,
+    "total_loss": 0.23218871272948324,
+    "base_multitask_loss": 0.2301975910228734,
+    "anatomy_loss": 0.09955614692488761,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.09732612808886411,
+      "skull_in_brain_core": 0.0002654018142456319,
+      "probability_ambiguity": 0.003804289193980441,
+      "sdf_sign_consistency": 0.004054173698876889
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.02,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 40,
+      "ct_context_background": 18
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 17.683609099999558,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 4,
+    "total_loss": 0.22374907607326702,
+    "base_multitask_loss": 0.22138718428204254,
+    "anatomy_loss": 0.11809463955566515,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.11596012781281537,
+      "skull_in_brain_core": 0.00024101111577173078,
+      "probability_ambiguity": 0.003841311735311824,
+      "sdf_sign_consistency": 0.0037326882456723905
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.02,
+    "sampling_modes": {
+      "foreground_brain": 46,
+      "foreground_skull": 37,
+      "ct_context_background": 15
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 17.951856799999405,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 5,
+    "total_loss": 0.27817482436646,
+    "base_multitask_loss": 0.2705867360441052,
+    "anatomy_loss": 0.15176178445345817,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.14987626302736687,
+      "skull_in_brain_core": 0.00017958967747494617,
+      "probability_ambiguity": 0.0032531381347330446,
+      "sdf_sign_consistency": 0.0035705900363795155
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 31,
+      "foreground_skull": 45,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": 0.8886135471457272,
+    "validation_brain_dice": 0.9245252990935281,
+    "validation_skull_dice": 0.8527017951979262,
+    "best": true,
+    "elapsed_seconds": 24.899866499999916,
+    "peak_gpu_memory_mb": 2051.68798828125
+  },
+  {
+    "epoch": 6,
+    "total_loss": 0.2134532934929035,
+    "base_multitask_loss": 0.20871852266089042,
+    "anatomy_loss": 0.09469540902931357,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.09250340461915826,
+      "skull_in_brain_core": 0.00016952462235575677,
+      "probability_ambiguity": 0.003960349208761486,
+      "sdf_sign_consistency": 0.004129575740674282
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 37,
+      "foreground_skull": 42,
+      "ct_context_background": 19
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 17.331077199999527,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 7,
+    "total_loss": 0.21971802873422905,
+    "base_multitask_loss": 0.21480436942407063,
+    "anatomy_loss": 0.09827316561309925,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.09610784170533351,
+      "skull_in_brain_core": 0.00037166987631652014,
+      "probability_ambiguity": 0.0034197338204277764,
+      "sdf_sign_consistency": 0.003754887071780252
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 38,
+      "foreground_skull": 47,
+      "ct_context_background": 13
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 18.682526000000507,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 8,
+    "total_loss": 0.1811818847318693,
+    "base_multitask_loss": 0.17759625111915628,
+    "anatomy_loss": 0.07171264850909878,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.06973104946411361,
+      "skull_in_brain_core": 0.00010668637256755146,
+      "probability_ambiguity": 0.0036602385518507414,
+      "sdf_sign_consistency": 0.003839411260797737
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 42,
+      "ct_context_background": 16
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 16.761283199999525,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 9,
+    "total_loss": 0.19324174040586364,
+    "base_multitask_loss": 0.1895725841881061,
+    "anatomy_loss": 0.07338312685808014,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.07136214065444713,
+      "skull_in_brain_core": 0.0001276732405502265,
+      "probability_ambiguity": 0.0037504143634179148,
+      "sdf_sign_consistency": 0.0038228335407828645
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 43,
+      "foreground_skull": 39,
+      "ct_context_background": 16
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 16.294493299999885,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 10,
+    "total_loss": 0.2760185419144679,
+    "base_multitask_loss": 0.26886505405513605,
+    "anatomy_loss": 0.1430697665758887,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.14098014025616326,
+      "skull_in_brain_core": 0.0003113015240211209,
+      "probability_ambiguity": 0.00311085975809707,
+      "sdf_sign_consistency": 0.004002443711957609
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 38,
+      "foreground_skull": 41,
+      "ct_context_background": 19
+    },
+    "validation_macro_dice": 0.9027555631878939,
+    "validation_brain_dice": 0.9135862188369736,
+    "validation_skull_dice": 0.8919249075388143,
+    "best": true,
+    "elapsed_seconds": 24.493260100000043,
+    "peak_gpu_memory_mb": 2051.68798828125
+  },
+  {
+    "epoch": 11,
+    "total_loss": 0.22364911224160874,
+    "base_multitask_loss": 0.2136198210396937,
+    "anatomy_loss": 0.10029291991638589,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.09801913995238001,
+      "skull_in_brain_core": 0.0005226802528266823,
+      "probability_ambiguity": 0.0032524814270072037,
+      "sdf_sign_consistency": 0.0037519188142828264
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.1,
+    "sampling_modes": {
+      "foreground_brain": 30,
+      "foreground_skull": 45,
+      "ct_context_background": 23
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 19.014664400000584,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 12,
+    "total_loss": 0.23694320680687622,
+    "base_multitask_loss": 0.22692115525049822,
+    "anatomy_loss": 0.10022048850196927,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.09823593707937553,
+      "skull_in_brain_core": 0.00019304762138615063,
+      "probability_ambiguity": 0.0032668084066950097,
+      "sdf_sign_consistency": 0.003899210471213244
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.1,
+    "sampling_modes": {
+      "foreground_brain": 46,
+      "foreground_skull": 38,
+      "ct_context_background": 14
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 18.344926900000246,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 13,
+    "total_loss": 0.20196117323880292,
+    "base_multitask_loss": 0.19378430624397433,
+    "anatomy_loss": 0.08176866445894715,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.07986868242554994,
+      "skull_in_brain_core": 0.00018739370753161094,
+      "probability_ambiguity": 0.003267085643064816,
+      "sdf_sign_consistency": 0.00358326348407213
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.1,
+    "sampling_modes": {
+      "foreground_brain": 33,
+      "foreground_skull": 48,
+      "ct_context_background": 17
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 16.710756099999344,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 14,
+    "total_loss": 0.22705094793773428,
+    "base_multitask_loss": 0.21683650642481386,
+    "anatomy_loss": 0.10214441654400672,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.10023834310411948,
+      "skull_in_brain_core": 0.00016592668904701096,
+      "probability_ambiguity": 0.0034893162403616825,
+      "sdf_sign_consistency": 0.0034712654807514567
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.1,
+    "sampling_modes": {
+      "foreground_brain": 44,
+      "foreground_skull": 37,
+      "ct_context_background": 17
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 17.029144500000257,
+    "peak_gpu_memory_mb": 327.78466796875
+  },
+  {
+    "epoch": 15,
+    "total_loss": 0.23741549074801863,
+    "base_multitask_loss": 0.22602340077259103,
+    "anatomy_loss": 0.11392091151935105,
+    "anatomy_terms": {
+      "brain_outside_enclosure": 0.11180768555815881,
+      "skull_in_brain_core": 0.0005205191625779606,
+      "probability_ambiguity": 0.003076601870403391,
+      "sdf_sign_consistency": 0.0032942221314071355
+    },
+    "sdf_weight": 0.25,
+    "anatomy_weight": 0.1,
+    "sampling_modes": {
+      "foreground_brain": 35,
+      "foreground_skull": 41,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": 0.8697004482726707,
+    "validation_brain_dice": 0.9150680140089891,
+    "validation_skull_dice": 0.8243328825363522,
+    "best": false,
+    "elapsed_seconds": 23.3754571999998,
+    "peak_gpu_memory_mb": 2051.68798828125
+  }
+]

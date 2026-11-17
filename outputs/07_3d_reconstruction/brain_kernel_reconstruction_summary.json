@@ -1,0 +1,27 @@
+{
+  "source_series": "BRAIN_HR36F",
+  "modality": "CT",
+  "source_slices": 227,
+  "source_shape": [
+    227,
+    512,
+    512
+  ],
+  "voxel_spacing_mm": [
+    0.75,
+    0.55574609375,
+    0.55574609375
+  ],
+  "display_downsample": [
+    3,
+    6,
+    6
+  ],
+  "display_hu_range": [
+    -5,
+    80
+  ],
+  "rendering": "brain-window CT volume; not a segmented brain mask",
+  "interactive_html_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\CASE_001_brain_kernel_volume.html",
+  "clinical_use": false
+}

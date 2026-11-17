@@ -1,0 +1,189 @@
+{
+  "best_checkpoint": "F:\\csstdy\\outputs\\training\\gate2_deterministic_pilot\\baseline_v1\\checkpoints\\best.pt",
+  "best_validation_mean_foreground_dice": 0.021090222182464525,
+  "completed_utc": "2026-08-27T07:30:46.709804Z",
+  "contract_checks": {
+    "gpu_environment_id": true,
+    "gpu_report_passed": true,
+    "manifest_sha256": true,
+    "organ_schema_sha256": true,
+    "output_channels": true,
+    "preprocessing_sha256": true,
+    "roi_size": true,
+    "split_counts": true,
+    "test_locked": true
+  },
+  "counters": {
+    "backward_calls": 32,
+    "checkpoint_write_attempts": 3,
+    "checkpoints_written": 3,
+    "epochs_completed": 1,
+    "gradient_checks": 16,
+    "loss_evaluations": 32,
+    "model_forward_calls": 32,
+    "optimizer_steps": 16,
+    "resume_events": 0,
+    "scheduler_steps": 1,
+    "training_batches_consumed": 32,
+    "validation_runs_completed": 1
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "training_loss": 3.709211327135563,
+      "validation": {
+        "mean_foreground_dice": 0.021090222182464525,
+        "per_class": [
+          {
+            "class_id": 1,
+            "dice": 0.07193212331988454,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 294.287052154541,
+            "missing_prediction_cases": 0,
+            "organ": "liver",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 2,
+            "dice": 0.007460619180487452,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 365.48087310791016,
+            "missing_prediction_cases": 0,
+            "organ": "spleen",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 3,
+            "dice": 0.003850174934823705,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 371.1548881530762,
+            "missing_prediction_cases": 0,
+            "organ": "kidney_left",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 4,
+            "dice": 0.0025363082252193307,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 409.2581787109375,
+            "missing_prediction_cases": 0,
+            "organ": "kidney_right",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 5,
+            "dice": 0.020096622397197124,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 324.0107955932617,
+            "missing_prediction_cases": 0,
+            "organ": "stomach",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 6,
+            "dice": 0.0013206639603671414,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 381.5782470703125,
+            "missing_prediction_cases": 0,
+            "organ": "pancreas",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 7,
+            "dice": 0.010375964271343364,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 247.29621124267578,
+            "missing_prediction_cases": 0,
+            "organ": "aorta",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 8,
+            "dice": 0.003978093588207417,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 326.64122009277344,
+            "missing_prediction_cases": 0,
+            "organ": "inferior_vena_cava",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 9,
+            "dice": 0.05652671054463861,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 308.46667098999023,
+            "missing_prediction_cases": 0,
+            "organ": "lung_left",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          },
+          {
+            "class_id": 10,
+            "dice": 0.03282494140247657,
+            "false_positive_empty_cases": 0,
+            "ground_truth_empty_cases": 0,
+            "hd95_mm": 286.35082244873047,
+            "missing_prediction_cases": 0,
+            "organ": "lung_right",
+            "valid_dice_cases": 4,
+            "valid_hd95_cases": 4
+          }
+        ],
+        "validation_cases": 4
+      }
+    }
+  ],
+  "last_checkpoint": "F:\\csstdy\\outputs\\training\\gate2_deterministic_pilot\\baseline_v1\\checkpoints\\last.pt",
+  "paused_after_epoch": 1,
+  "resumed_from": null,
+  "run_dir": "F:\\csstdy\\outputs\\training\\gate2_deterministic_pilot\\baseline_v1",
+  "run_id": "baseline_v1",
+  "schema_version": 1,
+  "scope": {
+    "gate": "deterministic_pilot",
+    "schema_version": 1,
+    "train_case_ids": [
+      "s0004",
+      "s0014",
+      "s0068",
+      "s0099",
+      "s0191",
+      "s0215",
+      "s0224",
+      "s0237",
+      "s0287",
+      "s0386",
+      "s0579",
+      "s0606",
+      "s0647",
+      "s1165",
+      "s1171",
+      "s1304"
+    ],
+    "validation_case_ids": [
+      "s0249",
+      "s0650",
+      "s1017",
+      "s1161"
+    ]
+  },
+  "scope_sha256": "8a7a8b6922bcff0ed6972f8ec9f1b444ea2c0781a6d8d681a06a215652a55584",
+  "status": "paused",
+  "stopped_early": false
+}

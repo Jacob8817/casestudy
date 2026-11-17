@@ -1,0 +1,59 @@
+schema_version: 1
+name: major_organs_v1
+description: Initial 10-organ CT segmentation target for 8 GB-class GPUs.
+background:
+  id: 0
+  name: background
+merge_mode: union
+overlap_policy: priority
+overlap_resolution:
+  method: official_totalsegmentator_v2_last_label_wins
+  priority_low_to_high:
+    - spleen
+    - kidney_right
+    - kidney_left
+    - liver
+    - stomach
+    - pancreas
+    - lung_left
+    - lung_right
+    - aorta
+    - inferior_vena_cava
+  reference: https://github.com/wasserth/TotalSegmentator/blob/master/totalsegmentator/libs.py
+  rationale: Match the official v2 binary-mask to multilabel conversion order; later classes overwrite earlier classes.
+labels:
+  - id: 1
+    name: liver
+    source_masks: [liver]
+  - id: 2
+    name: spleen
+    source_masks: [spleen]
+  - id: 3
+    name: kidney_left
+    source_masks: [kidney_left]
+  - id: 4
+    name: kidney_right
+    source_masks: [kidney_right]
+  - id: 5
+    name: stomach
+    source_masks: [stomach]
+  - id: 6
+    name: pancreas
+    source_masks: [pancreas]
+  - id: 7
+    name: aorta
+    source_masks: [aorta]
+  - id: 8
+    name: inferior_vena_cava
+    source_masks: [inferior_vena_cava]
+  - id: 9
+    name: lung_left
+    source_masks:
+      - lung_upper_lobe_left
+      - lung_lower_lobe_left
+  - id: 10
+    name: lung_right
+    source_masks:
+      - lung_upper_lobe_right
+      - lung_middle_lobe_right
+      - lung_lower_lobe_right

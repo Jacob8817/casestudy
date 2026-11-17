@@ -1,0 +1,8 @@
+{
+  "path": "C:\\Users\\Pranjal\\Downloads\\CS16_Review2_Ten_References.pptx",
+  "sha256": "2a614e63aaa1e944b44c4b17082de28464fa65fc8c86c7cc1c4e6a18414dea6f",
+  "slides": {
+    "8": "SRM Institute of Science and Technology  |  21CSC601T Case Studies  |  Review 2\nREVIEW 2  \u2022  FIVE-MODULE WORKFLOW\nSystem Architecture\n8",
+    "10": "SRM Institute of Science and Technology  |  21CSC601T Case Studies  |  Review 2\nREVIEW 2  \u2022  CRITERION 4 OF 6  \u2022  6 MARKS\nModule 3: Uncertainty-Guided Local Refinement\nCalibrate the confidence signal, identify suspicious regions, and revise only the selected voxels.\nCalibration and selection\nSelective local correction\n10\nFit one positive temperature on validation logits using NLL.\nCompute normalised three-class predictive entropy U(x).\nCombine U(x), anatomical violations V(x) and boundary signal B(x).\nChoose candidate regions using a validation-selected threshold.\nRefine at most three 96\u00b3 ROIs per case by local flip ensembling.\nReuse the frozen model and replace only selected voxels."
+  }
+}

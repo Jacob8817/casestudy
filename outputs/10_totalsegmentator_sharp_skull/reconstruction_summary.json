@@ -1,0 +1,54 @@
+{
+  "segmentation_method": "TotalSegmentator pretrained nnU-Net predictions only",
+  "totalsegmentator_version": "2.18.0",
+  "nnunet_version": "2.8.1",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "skull_task": "craniofacial_structures",
+  "skull_input_series": "BONE_HR60F",
+  "skull_labels_combined": [
+    "skull",
+    "mandible",
+    "teeth_upper",
+    "teeth_lower"
+  ],
+  "model_ran_during_this_execution": false,
+  "inference_or_cache_seconds": 0.0008814334869384766,
+  "label_voxels": {
+    "skull": 2116682,
+    "mandible": 33992,
+    "teeth_upper": 5614,
+    "teeth_lower": 0
+  },
+  "combined_bony_head": {
+    "voxels": 2156288,
+    "volume_ml": 499.4831513772786,
+    "vertices": 624131,
+    "triangles": 1248774,
+    "watertight": true,
+    "mesh_step_size": 1,
+    "smoothing_iterations": 2
+  },
+  "brain": {
+    "source": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\segmentations\\brain.nii.gz",
+    "volume_ml": 1152.485433598391,
+    "vertices": 236274,
+    "triangles": 472544,
+    "watertight": true,
+    "mesh_step_size": 1,
+    "smoothing_iterations": 6
+  },
+  "outputs": {
+    "sharp_skull_ply": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\meshes\\CASE_001_totalsegmentator_sharp_skull.ply",
+    "sharp_skull_stl": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\meshes\\CASE_001_totalsegmentator_sharp_skull.stl",
+    "sharp_skull_glb": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\meshes\\CASE_001_totalsegmentator_sharp_skull.glb",
+    "brain_glb": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\meshes\\CASE_001_totalsegmentator_brain.glb",
+    "combined_glb": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\meshes\\CASE_001_totalsegmentator_sharp_skull_and_brain.glb",
+    "combined_html": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\CASE_001_totalsegmentator_sharp_skull_and_brain.html",
+    "skull_html": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\CASE_001_totalsegmentator_sharp_skull_only.html",
+    "brain_html": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\CASE_001_totalsegmentator_brain_only.html"
+  },
+  "overlay_path": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\CASE_001_sharp_skull_overlay.png",
+  "totalsegmentator_report": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\craniofacial_totalsegmentator_report.json",
+  "total_notebook_seconds": 62.653666734695435,
+  "clinical_use": false
+}

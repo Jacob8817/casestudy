@@ -1,0 +1,55 @@
+{
+  "segmentation_method": "TotalSegmentator pretrained nnU-Net inference only",
+  "totalsegmentator_version": "2.18.0",
+  "nnunet_version": "2.8.1",
+  "pytorch_version": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "task": "total",
+  "roi_subset": [
+    "brain",
+    "skull"
+  ],
+  "input_series": "BRAIN_HR36F",
+  "input_dicom_slices": 227,
+  "input_nifti": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\input\\CASE_001_brain_kernel_ct.nii.gz",
+  "model_ran_during_this_execution": true,
+  "inference_or_cache_seconds": 296.9823977947235,
+  "brain_mask": {
+    "path": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\segmentations\\brain.nii.gz",
+    "voxels": 4975324,
+    "volume_ml": 1152.485433598391,
+    "raw_connected_components": 1
+  },
+  "skull_mask": {
+    "path": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\segmentations\\skull.nii.gz",
+    "voxels": 2496034,
+    "volume_ml": 578.1820092050942,
+    "raw_connected_components": 9
+  },
+  "brain_mesh": {
+    "vertices": 59054,
+    "triangles": 118104,
+    "watertight": true
+  },
+  "skull_mesh": {
+    "vertices": 129539,
+    "triangles": 259190,
+    "watertight": true
+  },
+  "outputs": {
+    "brain_ply": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_brain.ply",
+    "brain_stl": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_brain.stl",
+    "brain_glb": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_brain.glb",
+    "skull_ply": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_skull.ply",
+    "skull_stl": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_skull.stl",
+    "skull_glb": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_skull.glb",
+    "combined_glb": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\meshes\\CASE_001_totalsegmentator_skull_and_brain.glb",
+    "combined_html": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\CASE_001_totalsegmentator_skull_and_brain.html",
+    "skull_html": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\CASE_001_totalsegmentator_skull_only.html",
+    "brain_html": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\CASE_001_totalsegmentator_brain_only.html"
+  },
+  "overlay_path": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\CASE_001_totalsegmentator_overlay.png",
+  "totalsegmentator_report": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\totalsegmentator_report.json",
+  "total_notebook_seconds": 323.36052560806274,
+  "clinical_use": false
+}

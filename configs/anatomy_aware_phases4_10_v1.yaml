@@ -1,0 +1,83 @@
+schema_version: 1
+experiment:
+  id: anatomy_aware_brain_skull_phases4_10_v1
+  description: Calibrated uncertainty, selective rescue, surface evaluation, adaptive meshes, confidence, and final ablation.
+
+locks:
+  phase3_report: outputs/anatomy_aware_framework/phase3/phase3_report.json
+  phase3_checkpoint: outputs/anatomy_aware_framework/phase3/best.pt
+  development_inventory: outputs/brain_skull_benchmark/development_inventory.json
+  dataset_manifest: data/splits/dataset_manifest.json
+  official_test_locked_until_phase10: true
+
+phase4_uncertainty:
+  method: scalar_temperature_scaled_softmax_entropy
+  interpretation: post_hoc_predictive_uncertainty_not_epistemic
+  calibration_split: validation
+  calibration_samples_per_case: 20000
+  error_analysis_samples_per_case: 20000
+  ece_bins: 15
+  threshold_criterion: maximum_validation_voxel_error_f1
+  random_seed: 44
+
+phase5_rescue:
+  priority_weights:
+    uncertainty: 0.45
+    anatomical_violation: 0.35
+    boundary_complexity: 0.20
+  threshold_criterion: maximum_validation_voxel_error_f1
+  threshold_samples_per_case: 20000
+  minimum_component_ml: 0.25
+  maximum_rois_per_case: 3
+  roi_size: [96, 96, 96]
+  roi_margin_voxels: 8
+  refinement: phase3_model_local_flip_tta
+  tta_spatial_axes: [0, 1, 2]
+  replacement_scope: priority_mask_inside_roi
+  random_seed: 45
+
+phase6_surface_evaluation:
+  surface_dice_tolerances_mm: [1.0, 2.0]
+  mesh_sample_points: 25000
+  reconstruction_optimization: evaluate_phase3_sdf_and_selective_rescue_without_additional_test_tuning
+  random_seed: 46
+
+phase7_adaptive_mesh:
+  priority_weights:
+    uncertainty: 0.35
+    curvature: 0.30
+    boundary_complexity: 0.20
+    anisotropy: 0.15
+  priority_bins: [0.33, 0.66]
+  low_priority_cluster_mm: 3.0
+  medium_priority_cluster_mm: 1.5
+  high_priority_cluster_mm: 0.0
+  representative_validation_case: s0346
+
+phase8_surface_confidence:
+  confidence_definition: one_minus_normalized_predictive_entropy
+  interpolation_order: 1
+  colormap: RdYlGn
+
+phase9_confidence_envelope:
+  maximum_offset_mm: 3.0
+  interpretation: model_derived_visualization_not_statistical_confidence_interval
+
+phase10_final:
+  test_split: test
+  expected_test_cases: 89
+  test_policy: one_shot_no_tuning_case_level_resume
+  mesh_case_id_predeclared: s1075
+  mesh_case_selection_rule: closest_manifest_physical_extent_to_development_head_median_before_test_labels_or_predictions
+  bootstrap_repetitions: 1000
+  random_seed: 47
+
+outputs:
+  root: outputs/anatomy_aware_framework
+  phase4: outputs/anatomy_aware_framework/phase4
+  phase5: outputs/anatomy_aware_framework/phase5
+  phase6: outputs/anatomy_aware_framework/phase6
+  phase7: outputs/anatomy_aware_framework/phase7
+  phase8: outputs/anatomy_aware_framework/phase8
+  phase9: outputs/anatomy_aware_framework/phase9
+  phase10: outputs/anatomy_aware_framework/phase10

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "phase": 4,
+  "status": "passed",
+  "method": "scalar_temperature_scaled_softmax_entropy",
+  "interpretation": "post_hoc_predictive_uncertainty_not_epistemic",
+  "temperature_scaling": {
+    "temperature": 1.1064573224712873,
+    "nll_before": 0.03017535583331213,
+    "nll_after": 0.02988350496219222,
+    "optimizer_iterations": 11
+  },
+  "temperature_refitted": false,
+  "error_threshold_reselected": false,
+  "calibration_before": {
+    "samples": 100000,
+    "nll": 0.03017535583331213,
+    "ece_15_bin": 0.00172351968230845,
+    "maximum_calibration_gap": 0.076530087483134,
+    "multiclass_brier": 0.015443799455893636,
+    "voxel_accuracy": 0.99004,
+    "mean_confidence": 0.991362107042968
+  },
+  "calibration_after": {
+    "samples": 100000,
+    "nll": 0.02988350496219222,
+    "ece_15_bin": 0.0006645527649538486,
+    "maximum_calibration_gap": 0.04016860611464179,
+    "multiclass_brier": 0.015413560001576598,
+    "voxel_accuracy": 0.99004,
+    "mean_confidence": 0.9899332668402596
+  },
+  "selected_error_threshold": {
+    "criterion": "maximum_validation_voxel_error_f1",
+    "threshold": 0.5152482986450195,
+    "f1": 0.45299484331614437,
+    "precision": 0.3845117845117845,
+    "recall": 0.5511583011583011,
+    "flagged_fraction": 0.01485,
+    "samples": 100000
+  },
+  "uncertainty_error_analysis": {
+    "samples": 100000,
+    "error_prevalence": 0.01036,
+    "error_detection_auroc": 0.9729263217122438,
+    "error_detection_auprc": 0.3556406060850955,
+    "area_under_risk_coverage_curve": 0.00036529828149551484,
+    "mean_uncertainty_correct": 0.02265598903310287,
+    "mean_uncertainty_error": 0.48334747558754276
+  },
+  "cases": [
+    {
+      "case_id": "s0346",
+      "mean_entropy": 0.016132574528455734,
+      "mean_entropy_correct": 0.013718444854021072,
+      "mean_entropy_error": 0.4835803508758545,
+      "error_fraction": 0.005137957267469912,
+      "inference_seconds": 9.231732100000045
+    },
+    {
+      "case_id": "s0792",
+      "mean_entropy": 0.032911017537117004,
+      "mean_entropy_correct": 0.02641645446419716,
+      "mean_entropy_error": 0.5418500304222107,
+      "error_fraction": 0.012600193143408982,
+      "inference_seconds": 1.3818280999998933
+    },
+    {
+      "case_id": "s0874",
+      "mean_entropy": 0.022009845823049545,
+      "mean_entropy_correct": 0.017956513911485672,
+      "mean_entropy_error": 0.5050005912780762,
+      "error_fraction": 0.008322311088853132,
+      "inference_seconds": 3.749972600000092
+    },
+    {
+      "case_id": "s1161",
+      "mean_entropy": 0.02786833979189396,
+      "mean_entropy_correct": 0.024997446686029434,
+      "mean_entropy_error": 0.2789088487625122,
+      "error_fraction": 0.011306679093566812,
+      "inference_seconds": 34.49401420000004
+    },
+    {
+      "case_id": "s1260",
+      "mean_entropy": 0.036514777690172195,
+      "mean_entropy_correct": 0.029227184131741524,
+      "mean_entropy_error": 0.567581832408905,
+      "error_fraction": 0.013536788181167074,
+      "inference_seconds": 1.5792487000003348
+    }
+  ],
+  "validation_cases": 5,
+  "official_test_split_accessed": false
+}

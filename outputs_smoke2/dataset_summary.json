@@ -1,0 +1,162 @@
+{
+  "audit_version": "1.0.0",
+  "generated_at_utc": "2026-08-18T07:53:16.655192+00:00",
+  "search_root": "F:\\csstdy\\Totalsegmentator_dataset_v201\\s0001",
+  "dataset_root": "F:\\csstdy\\Totalsegmentator_dataset_v201",
+  "metadata_file": "F:\\csstdy\\Totalsegmentator_dataset_v201\\meta.csv",
+  "integrity_mode": "header",
+  "intensity_statistics_enabled": true,
+  "integrity_scope": {
+    "ct": "Every CT payload streamed to EOF with gzip CRC validation while calculating scaled intensity statistics",
+    "masks": "Every mask NIfTI header, gzip signature/trailer, advertised uncompressed size, datatype, and CT-grid geometry; payload CRC not checked"
+  },
+  "subject_count": 1,
+  "ct_file_count": 1,
+  "valid_ct_header_count": 1,
+  "valid_ct_payload_count": 1,
+  "mask_file_count": 117,
+  "unique_mask_labels": 117,
+  "metadata_row_count": 1228,
+  "metadata_columns": [
+    "image_id",
+    "age",
+    "gender",
+    "institute",
+    "study_type",
+    "split",
+    "manufacturer",
+    "scanner_model",
+    "kvp",
+    "pathology",
+    "pathology_location"
+  ],
+  "metadata_missing_values": {
+    "image_id": 0,
+    "age": 1,
+    "gender": 2,
+    "institute": 5,
+    "study_type": 5,
+    "split": 0,
+    "manufacturer": 16,
+    "scanner_model": 16,
+    "kvp": 16,
+    "pathology": 24,
+    "pathology_location": 24
+  },
+  "metadata_distributions": {
+    "split": {
+      "test": 89,
+      "train": 1082,
+      "val": 57
+    },
+    "gender": {
+      "<missing>": 2,
+      "f": 510,
+      "m": 716
+    },
+    "institute": {
+      "<missing>": 5,
+      "A": 82,
+      "B": 53,
+      "C": 97,
+      "D": 1,
+      "E": 56,
+      "F": 6,
+      "G": 21,
+      "H": 1,
+      "I": 898,
+      "J": 8
+    },
+    "study_type": {
+      "<missing>": 5,
+      "ct  intervention": 40,
+      "ct  operation": 12,
+      "ct abdomen": 60,
+      "ct abdomen-pelvis": 87,
+      "ct angiography abdomen-pelvis": 14,
+      "ct angiography abdomen-pelvis-leg": 13,
+      "ct angiography head": 65,
+      "ct angiography neck": 6,
+      "ct angiography neck-thx-abd-pelvis-leg": 50,
+      "ct angiography pelvis-leg": 17,
+      "ct angiography thorax": 14,
+      "ct angiography thorax-abdomen-pelvis": 17,
+      "ct aortic valve": 34,
+      "ct chest": 5,
+      "ct coronary arteries": 3,
+      "ct gesichtshead": 1,
+      "ct head": 10,
+      "ct headbasis-felsenleg": 1,
+      "ct heart": 34,
+      "ct heart-thorakale aorta": 46,
+      "ct hip right": 4,
+      "ct left artrium": 13,
+      "ct lower limb left": 1,
+      "ct neck": 65,
+      "ct neck-thorax-abdomen-pelvis": 114,
+      "ct orbita": 4,
+      "ct pelvis": 55,
+      "ct polytrauma": 48,
+      "ct polytrauma head": 2,
+      "ct spine": 41,
+      "ct thorax": 14,
+      "ct thorax-abdomen": 54,
+      "ct thorax-abdomen-pelvis": 143,
+      "ct thorax-chest": 39,
+      "ct thorax-neck": 79,
+      "ct upper leg left": 11,
+      "ct upper limb both": 1,
+      "ct whole body": 6
+    }
+  },
+  "ct_compressed_bytes": 12056325,
+  "mask_compressed_bytes": 5574656,
+  "mask_advertised_uncompressed_bytes": 1166643036,
+  "total_compressed_bytes_audited": 17630981,
+  "ct_shape_counts": {
+    "249x188x213": 1
+  },
+  "ct_datatype_counts": {
+    "4": 1
+  },
+  "ct_orientation_counts": {
+    "RAS": 1
+  },
+  "ct_spacing_ranges": {
+    "x": {
+      "min_mm": 1.4999998807907104,
+      "max_mm": 1.4999998807907104
+    },
+    "y": {
+      "min_mm": 1.5,
+      "max_mm": 1.5
+    },
+    "z": {
+      "min_mm": 1.4999998807907104,
+      "max_mm": 1.4999998807907104
+    }
+  },
+  "ct_intensity_statistics": {
+    "cases_with_statistics": 1,
+    "payload_crc_checked_cases": 1,
+    "total_finite_voxels": 9970956,
+    "total_nonfinite_voxels": 0,
+    "global_min_hu": -1327.0,
+    "global_max_hu": 2462.0,
+    "voxel_weighted_mean_hu": -322.8429447487282,
+    "voxel_weighted_std_hu": 434.90932004040855,
+    "case_mean_hu_min": -322.8429447487282,
+    "case_mean_hu_max": -322.8429447487282
+  },
+  "mask_count_distribution": {
+    "117": 1
+  },
+  "severity_counts": {
+    "warning": 1227
+  },
+  "issue_category_counts": {
+    "metadata_subject_missing_on_disk": 1227
+  },
+  "elapsed_seconds": 0.403,
+  "workers": 1
+}

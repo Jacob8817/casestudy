@@ -1,0 +1,4 @@
+branch,model,pretraining_target,outputs,local_ground_truth_available,valid_local_accuracy_metric
+hemorrhage CNN-LSTM,ResNet50 + bidirectional LSTM,RSNA ICH subtypes,6,False,not estimable
+skull fracture,YOLOv8 detector,depressed skull fracture,1,False,not estimable
+midline,geometric low-HU midpoint,none,1,False,not estimable

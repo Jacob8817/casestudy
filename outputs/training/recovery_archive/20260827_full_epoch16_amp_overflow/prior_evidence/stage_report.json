@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T07:40:04.906594Z",
+  "status": "passed",
+  "gate": "deterministic_pilot",
+  "config_sha256": "cea2ee56002012566001fe3045312a75ba59b9fe39a8aa5dc7957834a7824605",
+  "workflow_config_sha256": "e04de4443c3b99d8927e0c605c34044e1e1618f457b4a18458eb40e1e7cf9911",
+  "scope_sha256": "8a7a8b6922bcff0ed6972f8ec9f1b444ea2c0781a6d8d681a06a215652a55584",
+  "provenance_sha256": "0436d92e2523d091cfe87dc7013653a54ad7c3034c3ec1c3d6727177430e256a",
+  "train_case_count": 16,
+  "validation_case_count": 4,
+  "cache_prewarm": {
+    "train_report": "outputs/training/cache_prewarm/deterministic_pilot_train.json",
+    "validation_report": "outputs/training/cache_prewarm/deterministic_pilot_val.json",
+    "train_cases": 16,
+    "validation_cases": 4
+  },
+  "test_split_accessed": false,
+  "last_checkpoint": "outputs/training/gate2_deterministic_pilot/baseline_v1/checkpoints/last.pt",
+  "best_checkpoint": "outputs/training/gate2_deterministic_pilot/baseline_v1/checkpoints/best.pt",
+  "best_validation_mean_foreground_dice": 0.023542084080196184,
+  "counters": {
+    "epochs_completed": 3,
+    "training_batches_consumed": 96,
+    "model_forward_calls": 96,
+    "loss_evaluations": 96,
+    "backward_calls": 96,
+    "gradient_checks": 48,
+    "optimizer_steps": 48,
+    "scheduler_steps": 3,
+    "validation_runs_completed": 3,
+    "checkpoint_write_attempts": 7,
+    "checkpoints_written": 7,
+    "resume_events": 1
+  },
+  "acceptance": {
+    "overfit_prerequisite_passed": true,
+    "completed_required_epochs": true,
+    "finite_training_loss": true,
+    "finite_validation_dice": true,
+    "last_checkpoint_exists": true,
+    "resume_event_recorded": true,
+    "test_split_not_accessed": true
+  }
+}

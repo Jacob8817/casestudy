@@ -1,0 +1,852 @@
+[
+  {
+    "case_id": "s0346",
+    "rescue_voxel_fraction": 0.007990143825640865,
+    "rois": 3,
+    "roi_locations": [
+      {
+        "slices_start_stop": [
+          [
+            47,
+            143
+          ],
+          [
+            88,
+            184
+          ],
+          [
+            116,
+            212
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 42721,
+        "origin_ras_mm": [
+          -90.6845703125,
+          137.3154296875,
+          224.0
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            47,
+            143
+          ],
+          [
+            110,
+            206
+          ],
+          [
+            56,
+            152
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 25543,
+        "origin_ras_mm": [
+          -90.6845703125,
+          170.3154296875,
+          134.0
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            119,
+            215
+          ],
+          [
+            23,
+            119
+          ],
+          [
+            21,
+            117
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 10004,
+        "origin_ras_mm": [
+          17.3154296875,
+          39.8154296875,
+          81.5
+        ]
+      }
+    ],
+    "priority_candidate_voxels": 89012,
+    "selected_replacement_voxels": 63244,
+    "changed_voxels": 25565,
+    "changed_outside_selection": 0,
+    "before_dice": {
+      "brain": 0.9830836608905336,
+      "skull": 0.9065987875648507
+    },
+    "after_dice": {
+      "brain": 0.9862074796250806,
+      "skull": 0.9069127662432954
+    },
+    "before_hd95_mm": {
+      "brain": 3.3541019662496847,
+      "skull": 91.45511175203208
+    },
+    "after_hd95_mm": {
+      "brain": 2.1213203435596424,
+      "skull": 4.743416490252569
+    },
+    "elapsed_seconds": 3.3242029999996703,
+    "priority_formula_max_error": 0.0,
+    "priority_vs_original_max_error": 0.0,
+    "refined_vs_original_changed_voxels": 0,
+    "surface_metrics": {
+      "brain": {
+        "before": {
+          "dice": 0.9830836608905336,
+          "iou": 0.9667301262475919,
+          "precision": 0.9729676774074487,
+          "recall": 0.9934122069571933,
+          "assd_mm": 4.003569389574147,
+          "hd95_mm": 3.3541019662496847,
+          "hausdorff_mm": 169.02810417205774,
+          "surface_rmse_mm": 17.784143638310724,
+          "volume_error_percent": 2.1012547512596362,
+          "surface_dice_1mm": 0.644558809768878,
+          "surface_dice_2mm": 0.9285112753813044
+        },
+        "after": {
+          "dice": 0.9862074796250806,
+          "iou": 0.9727902502776039,
+          "precision": 0.9820367982691851,
+          "recall": 0.9904137375955486,
+          "assd_mm": 2.287035146009177,
+          "hd95_mm": 2.1213203435596424,
+          "hausdorff_mm": 159.95936984121937,
+          "surface_rmse_mm": 12.193615564673436,
+          "volume_error_percent": 0.8530168463267006,
+          "surface_dice_1mm": 0.6505413499193734,
+          "surface_dice_2mm": 0.9490132841895109
+        }
+      },
+      "skull": {
+        "before": {
+          "dice": 0.9065987875648507,
+          "iou": 0.8291547304449527,
+          "precision": 0.9251996795215951,
+          "recall": 0.8887310869030522,
+          "assd_mm": 6.6690314188326285,
+          "hd95_mm": 91.45511175203208,
+          "hausdorff_mm": 186.92913095609256,
+          "surface_rmse_mm": 27.495637851817158,
+          "volume_error_percent": -3.9416996596237612,
+          "surface_dice_1mm": 0.6384564187557911,
+          "surface_dice_2mm": 0.8912328552598954
+        },
+        "after": {
+          "dice": 0.9069127662432954,
+          "iou": 0.8296801373541179,
+          "precision": 0.9466991166863007,
+          "recall": 0.8703356950736688,
+          "assd_mm": 4.765272151507519,
+          "hd95_mm": 4.743416490252569,
+          "hausdorff_mm": 186.92913095609256,
+          "surface_rmse_mm": 21.827147195757085,
+          "volume_error_percent": -8.066282123503415,
+          "surface_dice_1mm": 0.6376206174009369,
+          "surface_dice_2mm": 0.8918614117741268
+        }
+      }
+    }
+  },
+  {
+    "case_id": "s0792",
+    "rescue_voxel_fraction": 0.027043457267020763,
+    "rois": 3,
+    "roi_locations": [
+      {
+        "slices_start_stop": [
+          [
+            12,
+            108
+          ],
+          [
+            13,
+            109
+          ],
+          [
+            0,
+            96
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 46804,
+        "origin_ras_mm": [
+          -76.96111361682415,
+          83.15531703829765,
+          221.97421756386757
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            16,
+            112
+          ],
+          [
+            12,
+            108
+          ],
+          [
+            13,
+            109
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 42369,
+        "origin_ras_mm": [
+          -70.11052127182484,
+          86.1736261844635,
+          241.01264822483063
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            12,
+            108
+          ],
+          [
+            24,
+            120
+          ],
+          [
+            13,
+            109
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 40931,
+        "origin_ras_mm": [
+          -77.67283894121647,
+          103.25962814688683,
+          237.71509978175163
+        ]
+      }
+    ],
+    "priority_candidate_voxels": 56007,
+    "selected_replacement_voxels": 53771,
+    "changed_voxels": 13783,
+    "changed_outside_selection": 0,
+    "before_dice": {
+      "brain": 0.9871840739062339,
+      "skull": 0.954515162869767
+    },
+    "after_dice": {
+      "brain": 0.9873522199089444,
+      "skull": 0.950411036952629
+    },
+    "before_hd95_mm": {
+      "brain": 2.1213203435596424,
+      "skull": 1.5
+    },
+    "after_hd95_mm": {
+      "brain": 1.5,
+      "skull": 1.5
+    },
+    "elapsed_seconds": 1.0346707999997307,
+    "priority_formula_max_error": 0.0,
+    "priority_vs_original_max_error": 0.0,
+    "refined_vs_original_changed_voxels": 0,
+    "surface_metrics": {
+      "brain": {
+        "before": {
+          "dice": 0.9871840739062339,
+          "iou": 0.9746924870283297,
+          "precision": 0.9823211879402233,
+          "recall": 0.9920953458951994,
+          "assd_mm": 0.5617774246777554,
+          "hd95_mm": 2.1213203435596424,
+          "hausdorff_mm": 7.5,
+          "surface_rmse_mm": 1.052924666174866,
+          "volume_error_percent": 0.9950063253212598,
+          "surface_dice_1mm": 0.6733490061979055,
+          "surface_dice_2mm": 0.9466125240435991
+        },
+        "after": {
+          "dice": 0.9873522199089444,
+          "iou": 0.9750203766013918,
+          "precision": 0.9807724144455219,
+          "recall": 0.9940209068513216,
+          "assd_mm": 0.5637119290584536,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 6.363961030678928,
+          "surface_rmse_mm": 1.0400068366890662,
+          "volume_error_percent": 1.350822291763766,
+          "surface_dice_1mm": 0.668049082902219,
+          "surface_dice_2mm": 0.9511308734875369
+        }
+      },
+      "skull": {
+        "before": {
+          "dice": 0.954515162869767,
+          "iou": 0.9129880501087229,
+          "precision": 0.9565671024909526,
+          "recall": 0.9524720076687193,
+          "assd_mm": 0.43612840153433724,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 18.309833423600555,
+          "surface_rmse_mm": 1.036125063858547,
+          "volume_error_percent": -0.42810324665873695,
+          "surface_dice_1mm": 0.7527281599959614,
+          "surface_dice_2mm": 0.9694664838077289
+        },
+        "after": {
+          "dice": 0.950411036952629,
+          "iou": 0.9055078420348578,
+          "precision": 0.9635226223691471,
+          "recall": 0.9376515048857973,
+          "assd_mm": 0.4654400034230346,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 18.309833423600555,
+          "surface_rmse_mm": 1.0557918588981552,
+          "volume_error_percent": -2.6850555329709764,
+          "surface_dice_1mm": 0.7371416064784416,
+          "surface_dice_2mm": 0.963609273195616
+        }
+      }
+    }
+  },
+  {
+    "case_id": "s0874",
+    "rescue_voxel_fraction": 0.013915299577787088,
+    "rois": 3,
+    "roi_locations": [
+      {
+        "slices_start_stop": [
+          [
+            20,
+            116
+          ],
+          [
+            56,
+            152
+          ],
+          [
+            116,
+            212
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 54907,
+        "origin_ras_mm": [
+          -73.82393410801888,
+          108.39024715870619,
+          238.49968172144145
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            21,
+            117
+          ],
+          [
+            88,
+            184
+          ],
+          [
+            85,
+            181
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 39288,
+        "origin_ras_mm": [
+          -77.5094491764903,
+          156.21544965915382,
+          191.94176483806223
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            46,
+            142
+          ],
+          [
+            18,
+            114
+          ],
+          [
+            0,
+            96
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 6671,
+        "origin_ras_mm": [
+          -43.141752645373344,
+          52.570085659623146,
+          62.4646096911747
+        ]
+      }
+    ],
+    "priority_candidate_voxels": 89804,
+    "selected_replacement_voxels": 67913,
+    "changed_voxels": 23947,
+    "changed_outside_selection": 0,
+    "before_dice": {
+      "brain": 0.9876782922456914,
+      "skull": 0.9175178926205597
+    },
+    "after_dice": {
+      "brain": 0.9858953107410694,
+      "skull": 0.911921014541939
+    },
+    "before_hd95_mm": {
+      "brain": 1.5,
+      "skull": 5.408326913195984
+    },
+    "after_hd95_mm": {
+      "brain": 1.5,
+      "skull": 6.5383484153110105
+    },
+    "elapsed_seconds": 1.9085190000000694,
+    "priority_formula_max_error": 0.0,
+    "priority_vs_original_max_error": 0.0,
+    "refined_vs_original_changed_voxels": 0,
+    "surface_metrics": {
+      "brain": {
+        "before": {
+          "dice": 0.9876782922456914,
+          "iou": 0.9756565375217676,
+          "precision": 0.9840261647493039,
+          "recall": 0.9913576298368856,
+          "assd_mm": 1.2766494989748454,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 196.66024000798942,
+          "surface_rmse_mm": 10.367152154910046,
+          "volume_error_percent": 0.745047779237603,
+          "surface_dice_1mm": 0.6503678551216752,
+          "surface_dice_2mm": 0.9683833239011507
+        },
+        "after": {
+          "dice": 0.9858953107410694,
+          "iou": 0.9721829720179328,
+          "precision": 0.9823727357669436,
+          "recall": 0.9894432390020318,
+          "assd_mm": 0.7658627339236982,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 195.90941784406385,
+          "surface_rmse_mm": 4.274506917570403,
+          "volume_error_percent": 0.7197373234883331,
+          "surface_dice_1mm": 0.6050232628513069,
+          "surface_dice_2mm": 0.9559897113893407
+        }
+      },
+      "skull": {
+        "before": {
+          "dice": 0.9175178926205597,
+          "iou": 0.847605596772182,
+          "precision": 0.9443691249206642,
+          "recall": 0.8921513670004044,
+          "assd_mm": 5.897334249064514,
+          "hd95_mm": 5.408326913195984,
+          "hausdorff_mm": 199.83805943813607,
+          "surface_rmse_mm": 27.33040761428601,
+          "volume_error_percent": -5.529380042432714,
+          "surface_dice_1mm": 0.6341033237956871,
+          "surface_dice_2mm": 0.896726958971203
+        },
+        "after": {
+          "dice": 0.911921014541939,
+          "iou": 0.8381018535690562,
+          "precision": 0.944141611745266,
+          "recall": 0.8818270192792115,
+          "assd_mm": 6.31957971065554,
+          "hd95_mm": 6.5383484153110105,
+          "hausdorff_mm": 200.05186827420533,
+          "surface_rmse_mm": 28.307168312788914,
+          "volume_error_percent": -6.6001319813523125,
+          "surface_dice_1mm": 0.6139254259820276,
+          "surface_dice_2mm": 0.8981541844026025
+        }
+      }
+    }
+  },
+  {
+    "case_id": "s1161",
+    "rescue_voxel_fraction": 0.007469068096570764,
+    "rois": 3,
+    "roi_locations": [
+      {
+        "slices_start_stop": [
+          [
+            82,
+            178
+          ],
+          [
+            128,
+            224
+          ],
+          [
+            142,
+            238
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 84485,
+        "origin_ras_mm": [
+          -111.0419921875,
+          144.4580078125,
+          478.0
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            115,
+            211
+          ],
+          [
+            117,
+            213
+          ],
+          [
+            403,
+            499
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 49371,
+        "origin_ras_mm": [
+          -61.5419921875,
+          127.9580078125,
+          869.5
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            62,
+            158
+          ],
+          [
+            62,
+            158
+          ],
+          [
+            0,
+            96
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 48707,
+        "origin_ras_mm": [
+          -141.0419921875,
+          45.4580078125,
+          265.0
+        ]
+      }
+    ],
+    "priority_candidate_voxels": 398065,
+    "selected_replacement_voxels": 182563,
+    "changed_voxels": 74607,
+    "changed_outside_selection": 0,
+    "before_dice": {
+      "brain": 0.6210352422907489,
+      "skull": 0.7339845312590865
+    },
+    "after_dice": {
+      "brain": 0.6323323460628568,
+      "skull": 0.7562247038630248
+    },
+    "before_hd95_mm": {
+      "brain": 643.9770958659943,
+      "skull": 548.8750882247748
+    },
+    "after_hd95_mm": {
+      "brain": 644.4507836130147,
+      "skull": 546.8174855468677
+    },
+    "elapsed_seconds": 12.737128499999926,
+    "priority_formula_max_error": 0.0,
+    "priority_vs_original_max_error": 0.0,
+    "refined_vs_original_changed_voxels": 0,
+    "surface_metrics": {
+      "brain": {
+        "before": {
+          "dice": 0.6210352422907489,
+          "iou": 0.45036338950563054,
+          "precision": 0.4526524342410123,
+          "recall": 0.9888960630046791,
+          "assd_mm": 158.49982445397228,
+          "hd95_mm": 643.9770958659943,
+          "hausdorff_mm": 674.279615589853,
+          "surface_rmse_mm": 353.28711978073517,
+          "volume_error_percent": 118.46697116802576,
+          "surface_dice_1mm": 0.23764703948179627,
+          "surface_dice_2mm": 0.3656772241905122
+        },
+        "after": {
+          "dice": 0.6323323460628568,
+          "iou": 0.46234357026909567,
+          "precision": 0.4640385444666893,
+          "recall": 0.9921616142291944,
+          "assd_mm": 153.36225242781265,
+          "hd95_mm": 644.4507836130147,
+          "hausdorff_mm": 674.279615589853,
+          "surface_rmse_mm": 346.1523196893085,
+          "volume_error_percent": 113.81017289619055,
+          "surface_dice_1mm": 0.26135089686098656,
+          "surface_dice_2mm": 0.3974828335201794
+        }
+      },
+      "skull": {
+        "before": {
+          "dice": 0.7339845312590865,
+          "iou": 0.5797595285222334,
+          "precision": 0.6671236826088349,
+          "recall": 0.8157400987869031,
+          "assd_mm": 70.70623424114206,
+          "hd95_mm": 548.8750882247748,
+          "hausdorff_mm": 657.8367958696139,
+          "surface_rmse_mm": 191.9952422977819,
+          "volume_error_percent": 22.27719087964214,
+          "surface_dice_1mm": 0.44204342699736016,
+          "surface_dice_2mm": 0.6350076691117394
+        },
+        "after": {
+          "dice": 0.7562247038630248,
+          "iou": 0.6080074963795894,
+          "precision": 0.6885062460811268,
+          "recall": 0.8387172587221942,
+          "assd_mm": 68.26195858380997,
+          "hd95_mm": 546.8174855468677,
+          "hausdorff_mm": 657.8367958696139,
+          "surface_rmse_mm": 188.01320730575554,
+          "volume_error_percent": 21.816942619772266,
+          "surface_dice_1mm": 0.4648327372185988,
+          "surface_dice_2mm": 0.6553387334315169
+        }
+      }
+    }
+  },
+  {
+    "case_id": "s1260",
+    "rescue_voxel_fraction": 0.029966616895492675,
+    "rois": 3,
+    "roi_locations": [
+      {
+        "slices_start_stop": [
+          [
+            20,
+            116
+          ],
+          [
+            16,
+            112
+          ],
+          [
+            0,
+            96
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 52080,
+        "origin_ras_mm": [
+          -64.802734375,
+          103.697265625,
+          211.0
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            39,
+            135
+          ],
+          [
+            39,
+            135
+          ],
+          [
+            0,
+            96
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 37115,
+        "origin_ras_mm": [
+          -36.302734375,
+          138.197265625,
+          211.0
+        ]
+      },
+      {
+        "slices_start_stop": [
+          [
+            39,
+            135
+          ],
+          [
+            39,
+            135
+          ],
+          [
+            0,
+            96
+          ]
+        ],
+        "padded_inference_shape": [
+          96,
+          96,
+          96
+        ],
+        "selected_voxels": 37115,
+        "origin_ras_mm": [
+          -36.302734375,
+          138.197265625,
+          211.0
+        ]
+      }
+    ],
+    "priority_candidate_voxels": 61714,
+    "selected_replacement_voxels": 57797,
+    "changed_voxels": 14225,
+    "changed_outside_selection": 0,
+    "before_dice": {
+      "brain": 0.98894982485166,
+      "skull": 0.9470081633798075
+    },
+    "after_dice": {
+      "brain": 0.9869008572683894,
+      "skull": 0.9482998518518518
+    },
+    "before_hd95_mm": {
+      "brain": 1.5,
+      "skull": 1.5
+    },
+    "after_hd95_mm": {
+      "brain": 1.5,
+      "skull": 1.5
+    },
+    "elapsed_seconds": 1.0109856999997646,
+    "priority_formula_max_error": 0.0,
+    "priority_vs_original_max_error": 0.0,
+    "refined_vs_original_changed_voxels": 0,
+    "surface_metrics": {
+      "brain": {
+        "before": {
+          "dice": 0.98894982485166,
+          "iou": 0.9781411933453873,
+          "precision": 0.996103946201026,
+          "recall": 0.9818977339846533,
+          "assd_mm": 0.505062567005384,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 7.5,
+          "surface_rmse_mm": 0.9782942319655935,
+          "volume_error_percent": -1.4261776866312954,
+          "surface_dice_1mm": 0.6962545107636152,
+          "surface_dice_2mm": 0.9712762868638268
+        },
+        "after": {
+          "dice": 0.9869008572683894,
+          "iou": 0.974140452441226,
+          "precision": 0.9945349845934446,
+          "recall": 0.9793830374593453,
+          "assd_mm": 0.5901336487290951,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 7.648529270389178,
+          "surface_rmse_mm": 1.0591393216505252,
+          "volume_error_percent": -1.523520777933538,
+          "surface_dice_1mm": 0.6479358750726805,
+          "surface_dice_2mm": 0.9575546141706122
+        }
+      },
+      "skull": {
+        "before": {
+          "dice": 0.9470081633798075,
+          "iou": 0.899349957374254,
+          "precision": 0.9197696806771534,
+          "recall": 0.9759091872723418,
+          "assd_mm": 0.5511283152112714,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 16.294170736800325,
+          "surface_rmse_mm": 1.2584652536532486,
+          "volume_error_percent": 6.103648312679477,
+          "surface_dice_1mm": 0.6983660524308483,
+          "surface_dice_2mm": 0.9647356377213056
+        },
+        "after": {
+          "dice": 0.9482998518518518,
+          "iou": 0.9016827215643496,
+          "precision": 0.9333028503175055,
+          "recall": 0.9637866903077842,
+          "assd_mm": 0.5335766774574346,
+          "hd95_mm": 1.5,
+          "hausdorff_mm": 15.443445211480501,
+          "surface_rmse_mm": 1.2551029876063842,
+          "volume_error_percent": 3.266232389615896,
+          "surface_dice_1mm": 0.7141469835231422,
+          "surface_dice_2mm": 0.9611634122264223
+        }
+      }
+    }
+  }
+]

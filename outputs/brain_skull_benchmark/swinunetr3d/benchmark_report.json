@@ -1,0 +1,84 @@
+{
+  "model": "swinunetr3d",
+  "task": "joint",
+  "status": "trained",
+  "parameter_count": 4078509,
+  "selected_epoch": 29,
+  "completed_epochs": 30,
+  "total_epoch_seconds": 953.0170355000009,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.979627237371004,
+          "skull": 0.9363297194250494
+        },
+        "hd95_mm": {
+          "brain": 84.02678144496551,
+          "skull": 2.598076211353316
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9856163837755997,
+          "skull": 0.945315014234435
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9781170967398662,
+          "skull": 0.9368678600975163
+        },
+        "hd95_mm": {
+          "brain": 63.08922295113586,
+          "skull": 2.1213203436599635
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.9852946392096542,
+          "skull": 0.931255212077642
+        },
+        "hd95_mm": {
+          "brain": 2.1213203435596424,
+          "skull": 3.3541019662496847
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.9895621664524233,
+          "skull": 0.9488595370904361
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.9836435047097094,
+      "skull": 0.9397254685850157
+    },
+    "macro_mean_dice": 0.9616844866473626,
+    "mean_hd95_mm": {
+      "brain": 30.571729006573452,
+      "skull": 2.214699698397072
+    }
+  },
+  "best_checkpoint": "F:\\csstdy\\outputs\\brain_skull_benchmark\\swinunetr3d\\best.pt",
+  "best_checkpoint_bytes": 56640569,
+  "best_checkpoint_sha256": "a998a597f4bf6c0bb210c42c7e78ab202c8acf1e0020663e1ef1a5a5fc9c185c",
+  "contract_sha256": "13cfdccc998741205c5d969aa06d8e80ffff2c2c65bbb77f4340eef0bbaadacd",
+  "test_split_accessed": false
+}

@@ -1,0 +1,105 @@
+{
+  "case": "CASE_001",
+  "method": "patient-specific dual-window SIREN implicit neural representation",
+  "source_ct": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\input\\CASE_001_brain_kernel_ct.nii.gz",
+  "brain_mask": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\segmentations\\brain.nii.gz",
+  "skull_mask": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\segmentations\\skull.nii.gz",
+  "original_shape": [
+    512,
+    512,
+    227
+  ],
+  "working_shape": [
+    260,
+    322,
+    223
+  ],
+  "downsample": 1,
+  "held_out_every": 9,
+  "held_out_z_indices": [
+    4,
+    13,
+    22,
+    31,
+    40,
+    49,
+    58,
+    67,
+    76,
+    85,
+    94,
+    103,
+    112,
+    121,
+    130,
+    139,
+    148,
+    157,
+    166,
+    175,
+    184,
+    193,
+    202,
+    211
+  ],
+  "training_steps": 3600,
+  "batch_size": 32768,
+  "trainable_parameters": 66818,
+  "training_seconds": 17.515693500000452,
+  "inference_seconds": 1.4202873999993244,
+  "raw_working_crop_bytes_float32": 74678240,
+  "checkpoint_bytes": 273685,
+  "raw_to_checkpoint_ratio": 272.8620128980397,
+  "metrics": [
+    {
+      "Method": "Neural field",
+      "Region/window": "Brain, -100 to 150 HU",
+      "MAE_HU": 4.784181594848633,
+      "RMSE_HU": 6.433667866338413,
+      "PSNR_dB": 31.789627433603428,
+      "SSIM": 0.717918638147766,
+      "Evaluated_voxels": 552212
+    },
+    {
+      "Method": "Neural field",
+      "Region/window": "Head, -1000 to 2000 HU",
+      "MAE_HU": 36.94156265258789,
+      "RMSE_HU": 73.74298827897131,
+      "PSNR_dB": 32.18801044451283,
+      "SSIM": 0.6710561292948934,
+      "Evaluated_voxels": 896762
+    },
+    {
+      "Method": "Linear slice interpolation",
+      "Region/window": "Brain, -100 to 150 HU",
+      "MAE_HU": 2.203070640563965,
+      "RMSE_HU": 3.966686282924158,
+      "PSNR_dB": 35.990243085976736,
+      "SSIM": 0.9201946316422459,
+      "Evaluated_voxels": 552212
+    },
+    {
+      "Method": "Linear slice interpolation",
+      "Region/window": "Head, -1000 to 2000 HU",
+      "MAE_HU": 18.477296829223633,
+      "RMSE_HU": 46.239222245060795,
+      "PSNR_dB": 36.242214683686655,
+      "SSIM": 0.9671029259948357,
+      "Evaluated_voxels": 896762
+    }
+  ],
+  "outputs": {
+    "checkpoint": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\model\\CASE_001_dual_window_siren.pt",
+    "neural_nifti": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\volumes\\CASE_001_neural_ct_reconstruction.nii.gz",
+    "metrics_csv": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\held_out_metrics.csv",
+    "slice_comparison": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\figures\\held_out_slice_comparison.png",
+    "training_curve": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\figures\\training_curve.png",
+    "ray_composited_views": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\figures\\neural_ray_composited_views.png",
+    "interactive_cutaway": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\CASE_001_neural_3d_cutaway.html",
+    "skull_and_brain_3d": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\CASE_001_neural_skull_and_brain.html",
+    "skull_only_3d": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\CASE_001_neural_skull_only.html",
+    "brain_only_3d": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\CASE_001_neural_brain_only.html",
+    "interactive_volume": "F:\\csstdy\\outputs\\11_neural_ct_rendering\\CASE_001_neural_ct_volume.html"
+  },
+  "interpretation_note": "Low-HU internal rendering is visualization-only and is not a clinical segmentation or diagnosis."
+}

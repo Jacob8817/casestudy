@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "phase": 1,
+  "status": "passed",
+  "contract_path": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\frozen_contract.json",
+  "contract_sha256": "fe0dd108e76f1cfeeb60f2809eef2e2845fb53f7d6af9c696bdd2e54cc4c8405",
+  "acceptance": {
+    "official_test_split_unopened": true,
+    "development_counts_exact": true,
+    "checkpoint_hash_verified": true,
+    "checkpoint_contract_verified": true,
+    "oracle_brain_dice_reproduced": true,
+    "oracle_skull_dice_reproduced": true,
+    "ct_only_crop_retained_all_reference_voxels": true,
+    "training_performed": false
+  },
+  "oracle_result": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.965108741965605,
+          "skull": 0.8999782602176977
+        },
+        "hd95_mm": {
+          "brain": 132.6206997417824,
+          "skull": 36.43487340447336
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9849547282092848,
+          "skull": 0.9549973613191903
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9075699289438087,
+          "skull": 0.932880788163924
+        },
+        "hd95_mm": {
+          "brain": 147.48898398290035,
+          "skull": 3.0000000343529787
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.9777599937026882,
+          "skull": 0.9220434324645347
+        },
+        "hd95_mm": {
+          "brain": 28.188424878272112,
+          "skull": 7.5
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.9889542759886057,
+          "skull": 0.9465813313892218
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.9648695337619986,
+      "skull": 0.9312962347109137
+    },
+    "macro_mean_dice": 0.9480828842364561,
+    "mean_hd95_mm": {
+      "brain": 62.38388577923223,
+      "skull": 9.986974681909746
+    }
+  },
+  "ct_only_result": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.7442257411980138,
+          "skull": 0.5156686903158781
+        },
+        "hd95_mm": {
+          "brain": 209.1733730664589,
+          "skull": 189.74258878807362
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9842568221546786,
+          "skull": 0.9547803391036223
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.6001253188793311,
+          "skull": 0.6866065587330712
+        },
+        "hd95_mm": {
+          "brain": 211.67546125642681,
+          "skull": 161.6297866726225
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.07233171097666702,
+          "skull": 0.12262310442608802
+        },
+        "hd95_mm": {
+          "brain": 653.686851634634,
+          "skull": 580.591078126421
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.98893794575712,
+          "skull": 0.9452454398361019
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.6779755077931621,
+      "skull": 0.6449848264829523
+    },
+    "macro_mean_dice": 0.6614801671380572,
+    "mean_hd95_mm": {
+      "brain": 215.6314012501452,
+      "skull": 186.99269071156792
+    }
+  },
+  "runtime": {
+    "oracle_five_cases_seconds": 5.513307900000655,
+    "ct_only_five_cases_seconds": 34.885805700000674,
+    "oracle_peak_gpu_memory_mb": 120.7158203125,
+    "ct_only_peak_gpu_memory_mb": 1478.59326171875
+  },
+  "outputs": {
+    "comparison_csv": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\oracle_vs_ct_only.csv",
+    "per_case_csv": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\per_case_metrics.csv",
+    "visual_qa": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\oracle_vs_ct_only_s0346.png"
+  },
+  "official_test_split_accessed": false,
+  "next_phase": "multi-task segmentation plus spacing-aware signed distance fields"
+}

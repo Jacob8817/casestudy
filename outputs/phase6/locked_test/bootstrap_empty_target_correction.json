@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "applied",
+  "applied_at_utc": "2026-08-31T14:18:58.953469+00:00",
+  "report_sha256_before": "a952636de7c8cc08d5da8e33d430e1b17d0771043263993df6fc81702fcbdd9e",
+  "report_sha256_after": "54631cbcca1df1cf7c11c5696d0920b2c41cc35231aef311548f5aebd5dbee2c",
+  "changed_field": "patient_level_macro_dice_ci95",
+  "inference_rerun": false,
+  "test_data_reopened": false,
+  "threshold_or_postprocessing_changed": false,
+  "corrected_summary": {
+    "method": "patient_level_nonparametric_bootstrap",
+    "empty_target_policy": "patients_with_no_selected_ground_truth_organs_excluded",
+    "valid_patients": 79,
+    "excluded_patients": 10,
+    "replicates": 2000,
+    "point_estimate": 0.851158978379694,
+    "ci95_lower": 0.8079360699354663,
+    "ci95_upper": 0.8881384723584554
+  }
+}

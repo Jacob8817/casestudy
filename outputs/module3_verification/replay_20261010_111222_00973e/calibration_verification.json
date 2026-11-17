@@ -1,0 +1,11 @@
+{
+  "temperature": 1.1064573224712873,
+  "nll_before": 0.03017535583331213,
+  "nll_after": 0.02988350496219222,
+  "nll_at_0_99_T": 0.029886539586344102,
+  "nll_at_1_01_T": 0.029886515018222207,
+  "derivative_wrt_inverse_temperature": 4.6889167874155644e-08,
+  "curvature_wrt_inverse_temperature": 0.07399794862011291,
+  "validation_samples": 100000,
+  "refitted": false
+}

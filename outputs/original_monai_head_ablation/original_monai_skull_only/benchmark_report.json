@@ -1,0 +1,72 @@
+{
+  "model": "original_monai_skull_only",
+  "task": "skull_only",
+  "status": "trained",
+  "parameter_count": 4806481,
+  "selected_epoch": 50,
+  "completed_epochs": 50,
+  "total_epoch_seconds": 191.73737950000168,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "skull": 0.9433894409306617
+        },
+        "hd95_mm": {
+          "skull": 2.1213203435596424
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "skull": 0.9606103583894102
+        },
+        "hd95_mm": {
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "skull": 0.9591977894144813
+        },
+        "hd95_mm": {
+          "skull": 1.5000000156412217
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "skull": 0.9418065492831847
+        },
+        "hd95_mm": {
+          "skull": 2.1213203435596424
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "skull": 0.9619769861965025
+        },
+        "hd95_mm": {
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "skull": 0.953396224842848
+    },
+    "macro_mean_dice": 0.953396224842848,
+    "mean_hd95_mm": {
+      "skull": 1.7485281346965806
+    }
+  },
+  "best_checkpoint": "F:\\csstdy\\outputs\\original_monai_head_ablation\\original_monai_skull_only\\best.pt",
+  "best_checkpoint_bytes": 57754241,
+  "best_checkpoint_sha256": "70e675d6187720693f8f1b4bc4520c8d444c087a85840220df9b7ace8aaff68c",
+  "contract_sha256": "7950313f9b1134dd2ca099e78cffae351285c30e59608b4b9bb7c6b9d9fbfe92",
+  "test_split_accessed": false
+}

@@ -1,0 +1,9 @@
+# GPU training environment for Windows / CPython 3.13 / NVIDIA driver 592.82.
+# The +cu130 wheel bundles the CUDA 13.0 runtime and cuDNN; a system CUDA
+# Toolkit is not required unless custom CUDA extensions are compiled later.
+-r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+torch==2.13.0+cu130
+monai==1.6.0
+nibabel==5.4.0

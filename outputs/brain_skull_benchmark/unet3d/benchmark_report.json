@@ -1,0 +1,80 @@
+{
+  "model": "unet3d",
+  "status": "trained",
+  "selected_epoch": 28,
+  "completed_epochs": 30,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.9651099147040593,
+          "skull": 0.8999707637410417
+        },
+        "hd95_mm": {
+          "brain": 132.6206997417824,
+          "skull": 36.43487340447336
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9849520219054195,
+          "skull": 0.9549975864319962
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9075737624248542,
+          "skull": 0.9328823760704419
+        },
+        "hd95_mm": {
+          "brain": 147.48135631191963,
+          "skull": 3.0000000343529787
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.9777599937026882,
+          "skull": 0.9220434324645347
+        },
+        "hd95_mm": {
+          "brain": 28.188424878272112,
+          "skull": 7.5
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.9889529850689098,
+          "skull": 0.9465815810319165
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.9648697355611862,
+      "skull": 0.9312951479479862
+    },
+    "macro_mean_dice": 0.9480824417545861,
+    "mean_hd95_mm": {
+      "brain": 62.38236024503608,
+      "skull": 9.986974681909746
+    }
+  },
+  "best_checkpoint": "F:\\csstdy\\outputs\\brain_skull_benchmark\\unet3d\\best.pt",
+  "best_checkpoint_sha256": "790c1412e5e5c9de471a4cc0d00b0ca19f8b878f8c74bc6da429761c53952d5d",
+  "contract_sha256": "ce9434374dcdde2a5033e2af070cd3ba030deb894f12b3ad22aff653ab61b60b",
+  "test_split_accessed": false
+}

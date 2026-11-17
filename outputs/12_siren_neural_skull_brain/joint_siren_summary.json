@@ -1,0 +1,104 @@
+{
+  "case": "CASE_001",
+  "method": "joint patient-specific SIREN neural implicit rendering",
+  "network_outputs": [
+    "soft_window_hu",
+    "wide_window_hu",
+    "brain_sdf",
+    "skull_sdf"
+  ],
+  "pseudo_label_source": "cached TotalSegmentator brain and skull masks",
+  "source_ct": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\input\\CASE_001_brain_kernel_ct.nii.gz",
+  "native_crop_shape": [
+    264,
+    326,
+    225
+  ],
+  "spacing_mm": [
+    0.5557460784912109,
+    0.5557460784912109,
+    0.75
+  ],
+  "held_out_z_indices": [
+    5,
+    14,
+    23,
+    32,
+    41,
+    50,
+    59,
+    68,
+    77,
+    86,
+    95,
+    104,
+    113,
+    122,
+    131,
+    140,
+    149,
+    158,
+    167,
+    176,
+    185,
+    194,
+    203,
+    212
+  ],
+  "training_steps": 5000,
+  "trainable_parameters": 130084,
+  "training_seconds": 46.97158780000018,
+  "inference_seconds": 2.2425367000000733,
+  "surface_metrics": [
+    {
+      "Structure": "Brain",
+      "Dice": 0.9908690769453702,
+      "IoU": 0.9819033926202746,
+      "SDF_MAE_mm_near_surface": 0.24668285250663757,
+      "ASSD_mm": 0.4254356324672699,
+      "HD95_mm": 1.1114921569824219,
+      "Held_out_voxels": 2065536
+    },
+    {
+      "Structure": "Skull",
+      "Dice": 0.9576274276712589,
+      "IoU": 0.9186997558194043,
+      "SDF_MAE_mm_near_surface": 0.2574831247329712,
+      "ASSD_mm": 0.4492162764072418,
+      "HD95_mm": 1.1114921569824219,
+      "Held_out_voxels": 2065536
+    }
+  ],
+  "hu_metrics": [
+    {
+      "Region": "Brain window",
+      "MAE_HU": 6.313934326171875,
+      "RMSE_HU": 8.67353343963623,
+      "PSNR_dB": 29.19487902963938,
+      "SSIM": 0.7051294301777787,
+      "Evaluated_voxels": 553147
+    },
+    {
+      "Region": "Whole-head window",
+      "MAE_HU": 54.79747009277344,
+      "RMSE_HU": 101.98995971679688,
+      "PSNR_dB": 29.37127668939294,
+      "SSIM": 0.6953966716632194,
+      "Evaluated_voxels": 922148
+    }
+  ],
+  "outputs": {
+    "checkpoint": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\model\\CASE_001_joint_siren_hu_brain_skull_sdf.pt",
+    "brain_glb": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\meshes\\CASE_001_siren_brain.glb",
+    "skull_glb": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\meshes\\CASE_001_siren_skull.glb",
+    "combined_glb": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\meshes\\CASE_001_siren_skull_brain_internal.glb",
+    "combined_html": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\CASE_001_siren_skull_brain_internal.html",
+    "skull_html": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\CASE_001_siren_skull_only.html",
+    "brain_html": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\CASE_001_siren_brain_internal.html",
+    "surface_metrics": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\held_out_surface_metrics.csv",
+    "hu_metrics": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\held_out_hu_metrics.csv",
+    "held_out_comparison": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\figures\\held_out_siren_comparison.png",
+    "ray_renderings": "F:\\csstdy\\outputs\\12_siren_neural_skull_brain\\figures\\joint_siren_ray_renderings.png"
+  },
+  "limitation": "Pseudo-label fidelity is not clinical ground-truth accuracy; low-HU detail is visualization-only."
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "operation": "cache_prewarm_only_no_model_execution",
+  "status": "passed",
+  "split": "train",
+  "selected_case_ids": [
+    "s0014"
+  ],
+  "is_full_split": false,
+  "cases_requested": 1,
+  "cases_completed": 1,
+  "cache_hits": 0,
+  "cache_misses_written": 1,
+  "verify_source_hashes": true,
+  "source_files_hashed": 14,
+  "source_bytes_hashed": 19975551,
+  "cache_bytes": 125966352,
+  "voxels": 25193168,
+  "elapsed_seconds": 2.7356973999994807,
+  "voxels_per_second": 9209047.755064132,
+  "cache_mib_per_second": 43.912340097925984,
+  "cases": [
+    {
+      "position": 1,
+      "case_id": "s0014",
+      "split": "train",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        286,
+        286,
+        308
+      ],
+      "voxels": 25193168,
+      "cache_bytes": 125966352,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 19975551,
+      "elapsed_seconds": 2.735562299999401
+    }
+  ],
+  "generated_at_utc": "2026-08-27T07:00:53.116790Z",
+  "config_sha256": "582aab409588f6b990c5ea07a7a9fc4279e1039401e79c392c5ff17715f95b10",
+  "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+  "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+  "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+  "selected_case_ids_sha256": "bcf9c054cadc591ca54001721ea87a6e0291ca833ad9253693cbaabd44b78040",
+  "source_bundle_sha256": "422547244070e740bfbc8bd72441a15bf9c92fd071bd2fbf7f0f110e824bc1d7",
+  "source_hashes_verified": true,
+  "cache_hashes_verified": true,
+  "test_split_accessed": false
+}

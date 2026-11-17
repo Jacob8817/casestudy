@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "operation": "cache_prewarm_only_no_model_execution",
+  "status": "passed",
+  "split": "val",
+  "selected_case_ids": [
+    "s0249",
+    "s1017",
+    "s1161",
+    "s0650"
+  ],
+  "is_full_split": false,
+  "cases_requested": 4,
+  "cases_completed": 4,
+  "cache_hits": 0,
+  "cache_misses_written": 4,
+  "verify_source_hashes": true,
+  "source_files_hashed": 56,
+  "source_bytes_hashed": 129779906,
+  "cache_bytes": 579373303,
+  "voxels": 115874251,
+  "elapsed_seconds": 13.958849399999963,
+  "voxels_per_second": 8301131.968656408,
+  "cache_mib_per_second": 39.58302169823235,
+  "cases": [
+    {
+      "position": 1,
+      "case_id": "s0249",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        285,
+        285,
+        69
+      ],
+      "voxels": 5604525,
+      "cache_bytes": 28023137,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 7913623,
+      "elapsed_seconds": 0.9381416999995054
+    },
+    {
+      "position": 2,
+      "case_id": "s1017",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        144,
+        144,
+        277
+      ],
+      "voxels": 5743872,
+      "cache_bytes": 28719872,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 8991588,
+      "elapsed_seconds": 1.0646445000002132
+    },
+    {
+      "position": 3,
+      "case_id": "s1161",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        313,
+        313,
+        544
+      ],
+      "voxels": 53295136,
+      "cache_bytes": 266476192,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 58100454,
+      "elapsed_seconds": 5.976279299999987
+    },
+    {
+      "position": 4,
+      "case_id": "s0650",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        333,
+        333,
+        462
+      ],
+      "voxels": 51230718,
+      "cache_bytes": 256154102,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 54774241,
+      "elapsed_seconds": 5.97917359999974
+    }
+  ],
+  "generated_at_utc": "2026-08-27T07:25:55.838574Z",
+  "config_sha256": "cea2ee56002012566001fe3045312a75ba59b9fe39a8aa5dc7957834a7824605",
+  "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+  "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+  "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+  "selected_case_ids_sha256": "2530278a4673f002c5ac7ec037991c66abbb57378989d27bc773ee445bd46e41",
+  "source_bundle_sha256": "d2dfec41b1367f3e102a945e0371510d8b7333314f0a3a610f891e2c67ca050d",
+  "source_hashes_verified": true,
+  "cache_hashes_verified": true,
+  "test_split_accessed": false
+}

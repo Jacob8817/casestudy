@@ -1,0 +1,58 @@
+{
+  "source_series": {
+    "brain": "BRAIN_HR36F",
+    "skull": "BONE_HR60F"
+  },
+  "source_slices": 227,
+  "source_shape": [
+    227,
+    512,
+    512
+  ],
+  "voxel_spacing_mm": [
+    0.75,
+    0.55574609375,
+    0.55574609375
+  ],
+  "working_shape": [
+    227,
+    256,
+    256
+  ],
+  "mask_parameters": {
+    "bone_threshold_hu": 250.0,
+    "soft_tissue_range_hu": [
+      -10.0,
+      100.0
+    ],
+    "minimum_head_depth_mm": 7.0,
+    "brain_component_rule": "single largest connected 3-D component"
+  },
+  "brain_envelope_volume_ml": 1194.8988340822561,
+  "skull_mesh": {
+    "vertices": 65039,
+    "triangles": 132086,
+    "watertight": false
+  },
+  "brain_mesh": {
+    "vertices": 25371,
+    "triangles": 50790,
+    "watertight": true,
+    "connected_bodies": 1
+  },
+  "outputs": {
+    "skull_ply": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_skull.ply",
+    "skull_stl": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_skull.stl",
+    "skull_glb": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_skull.glb",
+    "brain_ply": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_brain.ply",
+    "brain_stl": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_brain.stl",
+    "brain_glb": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_brain.glb",
+    "combined_glb": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_skull_and_brain.glb",
+    "combined_html": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_skull_and_brain.html",
+    "skull_html": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_skull_only.html",
+    "brain_html": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_brain_only.html"
+  },
+  "overlay_path": "F:\\csstdy\\outputs\\08_clean_skull_brain_reconstruction\\CASE_001_clean_masks_overlay.png",
+  "elapsed_seconds": 10.382327795028687,
+  "validated_clinical_segmentation": false
+}

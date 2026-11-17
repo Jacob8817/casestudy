@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "phase": 3,
+  "status": "passed",
+  "config": "F:\\csstdy\\configs\\anatomy_aware_phase3_v1.yaml",
+  "config_sha256": "f3c55049de361086b81632c9a78fdecad4bb2e20575654319229a7c6d4e7d8ac",
+  "acceptance": {
+    "phase2_passed": true,
+    "official_test_split_unopened": true,
+    "frozen_development_counts": true,
+    "phase2_initial_checkpoint_hash_verified": true,
+    "anatomy_targets_retain_brain": true,
+    "distance_reference_training_only": true,
+    "training_completed": true,
+    "best_checkpoint_hash_verified": true,
+    "validation_metrics_finite": true,
+    "qc_metrics_finite": true,
+    "qc_did_not_modify_predictions": true,
+    "violation_nifti_saved_for_all_validation_cases": true
+  },
+  "model_report": {
+    "schema_version": 1,
+    "status": "trained",
+    "phase": 3,
+    "selected_epoch": 10,
+    "completed_epochs": 15,
+    "parameter_count": 1206642,
+    "train_cases": 98,
+    "validation_cases": 5,
+    "validation": {
+      "cases": [
+        {
+          "case_id": "s0346",
+          "dice": {
+            "brain": 0.9830836608905336,
+            "skull": 0.9065987875648507
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.14897948503494263,
+            "skull": 0.2583445906639099
+          },
+          "inference_seconds": 1.0178565999995044,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.17466183006763458,
+            "skull": 0.17741751670837402
+          },
+          "hd95_mm": {
+            "brain": 3.3541019662496847,
+            "skull": 91.45511175203208
+          }
+        },
+        {
+          "case_id": "s0792",
+          "dice": {
+            "brain": 0.9871840739062339,
+            "skull": 0.954515162869767
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.11391958594322205,
+            "skull": 0.17627620697021484
+          },
+          "inference_seconds": 0.3798527999997532,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.14069296419620514,
+            "skull": 0.15400591492652893
+          },
+          "hd95_mm": {
+            "brain": 2.121320293206269,
+            "skull": 1.4999999707223965
+          }
+        },
+        {
+          "case_id": "s0874",
+          "dice": {
+            "brain": 0.9876782922456914,
+            "skull": 0.9175178926205597
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.12493903934955597,
+            "skull": 0.22568708658218384
+          },
+          "inference_seconds": 0.49427379999997356,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.14004479348659515,
+            "skull": 0.17623865604400635
+          },
+          "hd95_mm": {
+            "brain": 1.5000000156412217,
+            "skull": 5.40832697342347
+          }
+        },
+        {
+          "case_id": "s1161",
+          "dice": {
+            "brain": 0.6210352422907489,
+            "skull": 0.7339845312590865
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.19353897869586945,
+            "skull": 0.3224833607673645
+          },
+          "inference_seconds": 3.998950799999875,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.19913215935230255,
+            "skull": 0.2217671424150467
+          },
+          "hd95_mm": {
+            "brain": 643.9770958659943,
+            "skull": 548.8750882247748
+          }
+        },
+        {
+          "case_id": "s1260",
+          "dice": {
+            "brain": 0.98894982485166,
+            "skull": 0.9470081633798075
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.11427834630012512,
+            "skull": 0.15601755678653717
+          },
+          "inference_seconds": 0.4123822999999902,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.1484847366809845,
+            "skull": 0.13066323101520538
+          },
+          "hd95_mm": {
+            "brain": 1.5,
+            "skull": 1.5
+          }
+        }
+      ],
+      "mean_dice": {
+        "brain": 0.9135862188369736,
+        "skull": 0.8919249075388143
+      },
+      "macro_mean_dice": 0.9027555631878939,
+      "mean_sdf_mae_normalized": {
+        "brain": 0.13913108706474303,
+        "skull": 0.22776176035404205
+      },
+      "mean_boundary_sdf_mae_normalized": {
+        "brain": 0.1606032967567444,
+        "skull": 0.17201849222183227
+      },
+      "mean_inference_seconds": 1.2606632599998193,
+      "mean_hd95_mm": {
+        "brain": 130.4905036282183,
+        "skull": 129.74770538419054
+      }
+    },
+    "total_training_seconds": 293.5522826999986,
+    "peak_gpu_memory_mb": 2051.68798828125,
+    "initial_checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\best.pt",
+    "initial_checkpoint_sha256": "a843b79365dfb4426b62dfed0f77b6917e45e27dc03beb276d2de35ac99f6684",
+    "best_checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\best.pt",
+    "best_checkpoint_sha256": "d0f1336d46aa426bea2879a37d09c4d92656877f45a7cbf3cf3a12fdee8e44d2",
+    "contract_sha256": "c2ec2f2fa18060e9930769b339a24a200e30a0cc6688395150fc6c6566878931",
+    "official_test_split_accessed": false
+  },
+  "phase2_model_report": {
+    "schema_version": 1,
+    "status": "trained",
+    "phase": 2,
+    "selected_epoch": 25,
+    "completed_epochs": 30,
+    "parameter_count": 1206642,
+    "train_cases": 98,
+    "validation_cases": 5,
+    "validation": {
+      "cases": [
+        {
+          "case_id": "s0346",
+          "dice": {
+            "brain": 0.933741509024945,
+            "skull": 0.8251430173372931
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.1764977127313614,
+            "skull": 0.3423565626144409
+          },
+          "inference_seconds": 1.1086335999998482,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.19436445832252502,
+            "skull": 0.1779806911945343
+          },
+          "hd95_mm": {
+            "brain": 152.7497954172116,
+            "skull": 138.30130151231404
+          }
+        },
+        {
+          "case_id": "s0792",
+          "dice": {
+            "brain": 0.9860818376802444,
+            "skull": 0.937444976422774
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.12899276614189148,
+            "skull": 0.1846267282962799
+          },
+          "inference_seconds": 0.36136439999972936,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.16828948259353638,
+            "skull": 0.1371661126613617
+          },
+          "hd95_mm": {
+            "brain": 2.121320293206269,
+            "skull": 1.4999999707223965
+          }
+        },
+        {
+          "case_id": "s0874",
+          "dice": {
+            "brain": 0.9430790293232556,
+            "skull": 0.8901010479965643
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.1477251499891281,
+            "skull": 0.2802876830101013
+          },
+          "inference_seconds": 0.502735500000199,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.15735585987567902,
+            "skull": 0.15089942514896393
+          },
+          "hd95_mm": {
+            "brain": 79.00316531983081,
+            "skull": 122.55605958438474
+          }
+        },
+        {
+          "case_id": "s1161",
+          "dice": {
+            "brain": 0.5485843094729067,
+            "skull": 0.5507763192231258
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.22770410776138306,
+            "skull": 0.41876107454299927
+          },
+          "inference_seconds": 4.182460899999569,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.1942438930273056,
+            "skull": 0.20278236269950867
+          },
+          "hd95_mm": {
+            "brain": 645.7593204887232,
+            "skull": 546.5247478162297
+          }
+        },
+        {
+          "case_id": "s1260",
+          "dice": {
+            "brain": 0.9874646488785404,
+            "skull": 0.9178185439911708
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.1258433312177658,
+            "skull": 0.16543614864349365
+          },
+          "inference_seconds": 0.46702259999983653,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.1709696501493454,
+            "skull": 0.1211913451552391
+          },
+          "hd95_mm": {
+            "brain": 1.5,
+            "skull": 1.5
+          }
+        }
+      ],
+      "mean_dice": {
+        "brain": 0.8797902668759784,
+        "skull": 0.8242567809941856
+      },
+      "macro_mean_dice": 0.852023523935082,
+      "mean_sdf_mae_normalized": {
+        "brain": 0.16135261356830596,
+        "skull": 0.278293639421463
+      },
+      "mean_boundary_sdf_mae_normalized": {
+        "brain": 0.17704466879367828,
+        "skull": 0.15800398737192153
+      },
+      "mean_inference_seconds": 1.3244433999998364,
+      "mean_hd95_mm": {
+        "brain": 176.2267203037944,
+        "skull": 162.07642177673017
+      }
+    },
+    "total_training_seconds": 458.50019029999976,
+    "peak_gpu_memory_mb": 1978.5283203125,
+    "best_checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\best.pt",
+    "best_checkpoint_sha256": "a843b79365dfb4426b62dfed0f77b6917e45e27dc03beb276d2de35ac99f6684",
+    "contract_sha256": "1dfed3e1e5e97269fc6d0884283958077794e6b56e3a1aa55aebde8f0edec8ba",
+    "official_test_split_accessed": false
+  },
+  "segmentation_comparison": [
+    {
+      "organ": "brain",
+      "phase2_dice": 0.8797902668759784,
+      "phase3_dice": 0.9135862188369736,
+      "dice_delta": 0.03379595196099516,
+      "phase2_hd95_mm": 176.2267203037944,
+      "phase3_hd95_mm": 130.4905036282183,
+      "hd95_delta_mm": -45.73621667557609
+    },
+    {
+      "organ": "skull",
+      "phase2_dice": 0.8242567809941856,
+      "phase3_dice": 0.8919249075388143,
+      "dice_delta": 0.06766812654462862,
+      "phase2_hd95_mm": 162.07642177673017,
+      "phase3_hd95_mm": 129.74770538419054,
+      "hd95_delta_mm": -32.32871639253963
+    }
+  ],
+  "quality_control": {
+    "phase2": {
+      "cases": [
+        {
+          "case_id": "s0346",
+          "brain_outside_enclosure_voxels": 2740,
+          "brain_outside_enclosure_fraction": 0.005721767566766137,
+          "disconnected_major_components": {
+            "brain": 3,
+            "skull": 2
+          },
+          "surface_distance_mean_mm": 4.4177565574646,
+          "surface_distance_max_mm": 31.7844295501709,
+          "probability_ambiguity_mean": 0.0009270943119190633,
+          "sdf_sign_disagreement_fraction": 0.02249119743990808,
+          "violation_mean": 0.004948118701577187,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.025038632523131266
+        },
+        {
+          "case_id": "s0792",
+          "brain_outside_enclosure_voxels": 0,
+          "brain_outside_enclosure_fraction": 0.0,
+          "disconnected_major_components": {
+            "brain": 0,
+            "skull": 0
+          },
+          "surface_distance_mean_mm": 1.946277379989624,
+          "surface_distance_max_mm": 16.294170379638672,
+          "probability_ambiguity_mean": 0.0038835867308080196,
+          "sdf_sign_disagreement_fraction": 0.03753404152583293,
+          "violation_mean": 0.006212644279003143,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.03830758087880251
+        },
+        {
+          "case_id": "s0874",
+          "brain_outside_enclosure_voxels": 2700,
+          "brain_outside_enclosure_fraction": 0.005626254185828924,
+          "disconnected_major_components": {
+            "brain": 1,
+            "skull": 3
+          },
+          "surface_distance_mean_mm": 4.007038116455078,
+          "surface_distance_max_mm": 109.41777801513672,
+          "probability_ambiguity_mean": 0.001507488777860999,
+          "sdf_sign_disagreement_fraction": 0.030755471041351082,
+          "violation_mean": 0.006905553862452507,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.03507010643335457
+        },
+        {
+          "case_id": "s1161",
+          "brain_outside_enclosure_voxels": 194539,
+          "brain_outside_enclosure_fraction": 0.19792087397358668,
+          "disconnected_major_components": {
+            "brain": 8,
+            "skull": 17
+          },
+          "surface_distance_mean_mm": 27.73110580444336,
+          "surface_distance_max_mm": 224.72483825683594,
+          "probability_ambiguity_mean": 0.0005521554849110544,
+          "sdf_sign_disagreement_fraction": 0.013297142163217297,
+          "violation_mean": 0.006809875834733248,
+          "violation_nonzero_fraction": 0.9999879163456867,
+          "violation_above_0_05_fraction": 0.02415179126290249
+        },
+        {
+          "case_id": "s1260",
+          "brain_outside_enclosure_voxels": 0,
+          "brain_outside_enclosure_fraction": 0.0,
+          "disconnected_major_components": {
+            "brain": 0,
+            "skull": 0
+          },
+          "surface_distance_mean_mm": 1.784458875656128,
+          "surface_distance_max_mm": 12.903488159179688,
+          "probability_ambiguity_mean": 0.004132928792387247,
+          "sdf_sign_disagreement_fraction": 0.04315961979678794,
+          "violation_mean": 0.007093882188200951,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.043912742634473215
+        }
+      ],
+      "means": {
+        "brain_outside_enclosure_fraction": 0.041853779145236344,
+        "surface_distance_mean_mm": 7.977327346801758,
+        "surface_distance_max_mm": 79.02494087219239,
+        "probability_ambiguity_mean": 0.002200650819577277,
+        "sdf_sign_disagreement_fraction": 0.029447494393419465,
+        "violation_mean": 0.006394014973193407,
+        "violation_nonzero_fraction": 0.9999975832691372,
+        "violation_above_0_05_fraction": 0.03329617074653281,
+        "disconnected_major_components_brain": 2.4,
+        "disconnected_major_components_skull": 4.4
+      },
+      "prediction_was_modified": false,
+      "official_test_split_accessed": false
+    },
+    "phase3": {
+      "cases": [
+        {
+          "case_id": "s0346",
+          "brain_outside_enclosure_voxels": 286,
+          "brain_outside_enclosure_fraction": 0.000651600864852057,
+          "disconnected_major_components": {
+            "brain": 0,
+            "skull": 3
+          },
+          "surface_distance_mean_mm": 2.987797975540161,
+          "surface_distance_max_mm": 59.18825912475586,
+          "probability_ambiguity_mean": 0.0006396880489774048,
+          "sdf_sign_disagreement_fraction": 0.012754589786112937,
+          "violation_mean": 0.002214544452726841,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.012948391975925082
+        },
+        {
+          "case_id": "s0792",
+          "brain_outside_enclosure_voxels": 0,
+          "brain_outside_enclosure_fraction": 0.0,
+          "disconnected_major_components": {
+            "brain": 0,
+            "skull": 0
+          },
+          "surface_distance_mean_mm": 1.9009517431259155,
+          "surface_distance_max_mm": 13.91042709350586,
+          "probability_ambiguity_mean": 0.0031660767272114754,
+          "sdf_sign_disagreement_fraction": 0.03995702559150169,
+          "violation_mean": 0.006468465086072683,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.04035924674070497
+        },
+        {
+          "case_id": "s0874",
+          "brain_outside_enclosure_voxels": 156,
+          "brain_outside_enclosure_fraction": 0.00035629372306385194,
+          "disconnected_major_components": {
+            "brain": 0,
+            "skull": 0
+          },
+          "surface_distance_mean_mm": 1.967177152633667,
+          "surface_distance_max_mm": 16.770509719848633,
+          "probability_ambiguity_mean": 0.0011147314216941595,
+          "sdf_sign_disagreement_fraction": 0.021827298060498178,
+          "violation_mean": 0.00344855641014874,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.022000689226009108
+        },
+        {
+          "case_id": "s1161",
+          "brain_outside_enclosure_voxels": 213952,
+          "brain_outside_enclosure_fraction": 0.2602167094174581,
+          "disconnected_major_components": {
+            "brain": 6,
+            "skull": 6
+          },
+          "surface_distance_mean_mm": 24.484365463256836,
+          "surface_distance_max_mm": 209.45286560058594,
+          "probability_ambiguity_mean": 0.00025570474099367857,
+          "sdf_sign_disagreement_fraction": 0.006184335471064376,
+          "violation_mean": 0.004222998395562172,
+          "violation_nonzero_fraction": 0.9999839572601897,
+          "violation_above_0_05_fraction": 0.013832237898783108
+        },
+        {
+          "case_id": "s1260",
+          "brain_outside_enclosure_voxels": 0,
+          "brain_outside_enclosure_fraction": 0.0,
+          "disconnected_major_components": {
+            "brain": 0,
+            "skull": 0
+          },
+          "surface_distance_mean_mm": 1.8207361698150635,
+          "surface_distance_max_mm": 12.09338665008545,
+          "probability_ambiguity_mean": 0.0033154103439301252,
+          "sdf_sign_disagreement_fraction": 0.045910387608191605,
+          "violation_mean": 0.007383869960904121,
+          "violation_nonzero_fraction": 1.0,
+          "violation_above_0_05_fraction": 0.04631875402114668
+        }
+      ],
+      "means": {
+        "brain_outside_enclosure_fraction": 0.052244920801074804,
+        "surface_distance_mean_mm": 6.632205700874328,
+        "surface_distance_max_mm": 62.28308963775635,
+        "probability_ambiguity_mean": 0.0016983222565613687,
+        "sdf_sign_disagreement_fraction": 0.02532672730347376,
+        "violation_mean": 0.004747686861082912,
+        "violation_nonzero_fraction": 0.9999967914520379,
+        "violation_above_0_05_fraction": 0.027091863972513792,
+        "disconnected_major_components_brain": 1.2,
+        "disconnected_major_components_skull": 1.8
+      },
+      "prediction_was_modified": false,
+      "official_test_split_accessed": false
+    }
+  },
+  "distance_reference": {
+    "lower_mm": 1.4999998807907104,
+    "upper_mm": 34.63018798828125,
+    "median_mm": 1.5,
+    "lower_percentile": 1.0,
+    "upper_percentile": 99.0,
+    "samples": 490000,
+    "training_cases": 98,
+    "case_ids": [
+      "s0101",
+      "s0103",
+      "s0152",
+      "s0159",
+      "s0187",
+      "s0224",
+      "s0289",
+      "s0292",
+      "s0333",
+      "s0340",
+      "s0382",
+      "s0388",
+      "s0400",
+      "s0410",
+      "s0412",
+      "s0417",
+      "s0449",
+      "s0460",
+      "s0474",
+      "s0478",
+      "s0497",
+      "s0503",
+      "s0511",
+      "s0514",
+      "s0518",
+      "s0535",
+      "s0539",
+      "s0556",
+      "s0567",
+      "s0568",
+      "s0575",
+      "s0588",
+      "s0591",
+      "s0610",
+      "s0616",
+      "s0622",
+      "s0643",
+      "s0660",
+      "s0690",
+      "s0706",
+      "s0713",
+      "s0727",
+      "s0748",
+      "s0754",
+      "s0766",
+      "s0777",
+      "s0786",
+      "s0790",
+      "s0812",
+      "s0820",
+      "s0855",
+      "s0857",
+      "s0875",
+      "s0922",
+      "s0949",
+      "s0960",
+      "s0974",
+      "s0984",
+      "s0986",
+      "s0993",
+      "s0997",
+      "s1011",
+      "s1014",
+      "s1029",
+      "s1034",
+      "s1045",
+      "s1047",
+      "s1055",
+      "s1056",
+      "s1072",
+      "s1082",
+      "s1088",
+      "s1093",
+      "s1107",
+      "s1113",
+      "s1129",
+      "s1138",
+      "s1148",
+      "s1150",
+      "s1154",
+      "s1159",
+      "s1163",
+      "s1171",
+      "s1194",
+      "s1206",
+      "s1215",
+      "s1220",
+      "s1227",
+      "s1231",
+      "s1300",
+      "s1304",
+      "s1314",
+      "s1321",
+      "s1369",
+      "s1380",
+      "s1384",
+      "s1388",
+      "s1397"
+    ]
+  },
+  "outputs": {
+    "comparison_csv": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\phase2_vs_phase3.csv",
+    "qc_comparison_csv": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\phase2_vs_phase3_qc.csv",
+    "history": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\history.json",
+    "learning_curves": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\phase3_learning_curves.png",
+    "target_visual": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\anatomy_targets_s0346.png",
+    "violation_visual": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\phase2_vs_phase3_violation_s0346.png"
+  },
+  "official_test_split_accessed": false,
+  "next_phase": "uncertainty estimation and selective rescue"
+}

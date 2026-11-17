@@ -1,0 +1,37 @@
+schema_version: 1
+environment_id: windows_cuda130_rtx4060_v1
+platform:
+  operating_system: Windows 11
+  python: 3.13
+  architecture: x86_64
+hardware_target:
+  gpu: NVIDIA GeForce RTX 4060 Laptop GPU
+  compute_capability: [8, 9]
+  vram_mib: 8188
+  observed_driver: 592.82
+  driver_reported_max_cuda_version: 13.1
+framework:
+  torch: 2.13.0+cu130
+  torch_index_url: https://download.pytorch.org/whl/cu130
+  pytorch_cuda_runtime: '13.0'
+  cudnn: 9.20.0
+  monai: 1.6.0
+  nibabel: 5.4.0
+cuda_toolkit:
+  required_for_prebuilt_wheel: false
+  required_for_custom_cuda_extensions: true
+verification:
+  script: scripts/verify_gpu_stack.py
+  real_case: s0014
+  real_case_split: train
+  real_patch_sample_index: 14
+  fail_on_cpu_fallback: true
+  require_cudnn: true
+  require_amp_training_step: true
+  expected_check_count: 7
+reproducibility:
+  random_seed: 42
+  deterministic_controls_enabled: true
+  strict_determinism: false
+  strict_determinism_limitation: CUDA 5D CrossEntropy is not marked strictly deterministic by this PyTorch build.
+  cudnn_benchmark_validation: false

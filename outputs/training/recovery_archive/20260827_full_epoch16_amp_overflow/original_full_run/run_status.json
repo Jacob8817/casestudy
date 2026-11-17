@@ -1,0 +1,27 @@
+{
+  "config_sha256": "762470d64a2950878f09e0e49e5e0b09d99ddbea7a153e20e09c4f32574af588",
+  "counters": {
+    "backward_calls": 17394,
+    "checkpoint_write_attempts": 20,
+    "checkpoints_written": 20,
+    "epochs_completed": 16,
+    "gradient_checks": 8697,
+    "loss_evaluations": 17394,
+    "model_forward_calls": 17394,
+    "optimizer_steps": 8696,
+    "resume_events": 0,
+    "scheduler_steps": 16,
+    "training_batches_consumed": 17394,
+    "validation_runs_completed": 3
+  },
+  "experiment_id": "gate3_full_baseline_v1",
+  "gate": "full_baseline",
+  "message": "NonFiniteTrainingError: Non-finite gradients before optimizer step at batch 81: model.0.conv.unit0.conv.weight",
+  "resumed_from": null,
+  "run_id": "baseline_v1",
+  "schema_version": 1,
+  "scope_sha256": "6e4a4613b1ef4161d371f363fb27ea121adc6320a021e06d64fb3edadc8c182f",
+  "started_utc": "2026-08-27T08:14:51.879663Z",
+  "status": "failed",
+  "updated_utc": "2026-08-27T10:36:16.441340Z"
+}

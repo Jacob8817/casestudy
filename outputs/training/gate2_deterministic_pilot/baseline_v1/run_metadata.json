@@ -1,0 +1,375 @@
+{
+  "config": {
+    "augmentations": {
+      "contrast": {
+        "enabled": true,
+        "gamma_range": [
+          0.9,
+          1.1
+        ],
+        "probability": 0.15
+      },
+      "gaussian_noise": {
+        "enabled": true,
+        "mean": 0.0,
+        "probability": 0.15,
+        "std": 0.01
+      },
+      "laterality_unsafe_flips_enabled": false,
+      "output_clamp": [
+        0.0,
+        1.0
+      ],
+      "spatial_affine": {
+        "enabled": true,
+        "image_mode": "bilinear",
+        "label_mode": "nearest",
+        "padding_mode": "zeros",
+        "probability": 0.5,
+        "rotate_range_radians": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "scale_range": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "translate_range_voxels": [
+          5.0,
+          5.0,
+          5.0
+        ]
+      }
+    },
+    "data": {
+      "cache": {
+        "mode": "lazy_fingerprinted_disk",
+        "notebook_write_enabled": true,
+        "root": "data/cache/baseline_v1"
+      },
+      "expected_split_counts": {
+        "test": 89,
+        "train": 1082,
+        "val": 57
+      },
+      "loader": {
+        "batch_size": 1,
+        "notebook_workers": 0,
+        "persistent_workers": false,
+        "pin_memory": true,
+        "prefetch_factor": 1,
+        "production_workers": 2
+      },
+      "roi_size": [
+        96,
+        96,
+        96
+      ],
+      "test_split_locked": true,
+      "train_patches_per_case": 2,
+      "train_split": "train",
+      "validation_mode": "deterministic_full_volume",
+      "validation_split": "val"
+    },
+    "experiment": {
+      "description": "Deterministic 16-train/4-validation pipeline pilot; not the final baseline result.",
+      "execution_mode": "training",
+      "id": "gate2_deterministic_pilot_v1",
+      "stage": "deterministic_pilot",
+      "status": "authorized_not_started",
+      "training_enabled": true
+    },
+    "locks": {
+      "gpu_environment_id": "windows_cuda130_rtx4060_v1",
+      "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+      "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+      "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71"
+    },
+    "loss": {
+      "implementation": "monai.losses.DiceCELoss",
+      "include_background": false,
+      "label_smoothing": 0.0,
+      "lambda_ce": 1.0,
+      "lambda_dice": 1.0,
+      "softmax": true,
+      "to_onehot_y": true
+    },
+    "model": {
+      "activation": "PRELU",
+      "channels": [
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "dropout": 0.0,
+      "implementation": "monai.networks.nets.UNet",
+      "in_channels": 1,
+      "normalization": "INSTANCE",
+      "num_res_units": 2,
+      "out_channels": 11,
+      "spatial_dims": 3,
+      "strides": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "optimization": {
+      "learning_rate": 0.0001,
+      "optimizer": "AdamW",
+      "scheduler": "CosineAnnealingLR",
+      "scheduler_t_max_epochs": 3,
+      "weight_decay": 1e-05
+    },
+    "outputs": {
+      "augmentation_figure": "outputs/training/gate2_deterministic_pilot/augmentation_contract.png",
+      "checkpoint_metric": "validation_mean_foreground_dice",
+      "checkpoint_mode": "max",
+      "run_root": "outputs/training/gate2_deterministic_pilot",
+      "setup_report": "outputs/training/gate2_deterministic_pilot/setup.json"
+    },
+    "reproducibility": {
+      "deterministic_controls_enabled": true,
+      "random_seed": 42,
+      "strict_cuda_determinism": false,
+      "strict_cuda_determinism_limitation": "CUDA 5D CrossEntropy is not marked strictly deterministic by this PyTorch build."
+    },
+    "schema_version": 2,
+    "training": {
+      "amp_initial_scale": 1024.0,
+      "automatic_mixed_precision": true,
+      "early_stopping_patience_validations": 3,
+      "gradient_accumulation_steps": 2,
+      "gradient_clip_norm": 12.0,
+      "max_epochs": 3,
+      "validation_interval_epochs": 1
+    },
+    "validation": {
+      "full_volume": true,
+      "metrics": {
+        "dice": true,
+        "empty_target_policy": "nan_excluded_from_class_mean",
+        "hd95": true,
+        "include_background": false
+      },
+      "shuffle": false,
+      "sliding_window": {
+        "blend_mode": "gaussian",
+        "overlap": 0.5,
+        "roi_size": [
+          96,
+          96,
+          96
+        ],
+        "sw_batch_size": 1
+      }
+    }
+  },
+  "config_sha256": "cea2ee56002012566001fe3045312a75ba59b9fe39a8aa5dc7957834a7824605",
+  "created_utc": "2026-08-27T07:25:55.899573Z",
+  "experiment_id": "gate2_deterministic_pilot_v1",
+  "experiment_sha256": "74a63948da74e54bc14b0f65479637b2ca2dec7406add61b5aabd039c861062a",
+  "loader_contracts": {
+    "train": {
+      "batch_size": 1,
+      "case_ids": [
+        "s0014",
+        "s0099",
+        "s0386",
+        "s0237",
+        "s0068",
+        "s0647",
+        "s0579",
+        "s0215",
+        "s1165",
+        "s0191",
+        "s0004",
+        "s0606",
+        "s0287",
+        "s0224",
+        "s1304",
+        "s1171"
+      ],
+      "collate_fn": "torch.utils.data._utils.collate.default_collate",
+      "drop_last": false,
+      "generator_initial_seed": 42,
+      "num_workers": 0,
+      "persistent_workers": false,
+      "pin_memory": true,
+      "prefetch_factor": null,
+      "role": "train",
+      "sampler": "RandomSampler",
+      "sampler_replacement": false,
+      "schema_version": 1,
+      "worker_init_fn": "src.training.data.seed_data_loader_worker"
+    },
+    "validation": {
+      "batch_size": 1,
+      "case_ids": [
+        "s0249",
+        "s1017",
+        "s1161",
+        "s0650"
+      ],
+      "collate_fn": "torch.utils.data._utils.collate.default_collate",
+      "drop_last": false,
+      "generator_initial_seed": 43,
+      "num_workers": 0,
+      "persistent_workers": false,
+      "pin_memory": true,
+      "prefetch_factor": null,
+      "role": "validation",
+      "sampler": "SequentialSampler",
+      "sampler_replacement": false,
+      "schema_version": 1,
+      "worker_init_fn": "src.training.data.seed_data_loader_worker"
+    }
+  },
+  "loader_contracts_sha256": "cbd4fe89af292a543b94bf04804cab3f767b9a4233e14b32d87a59d09c353efa",
+  "provenance": {
+    "baseline_config_sha256": "cea2ee56002012566001fe3045312a75ba59b9fe39a8aa5dc7957834a7824605",
+    "experiment_sha256": "74a63948da74e54bc14b0f65479637b2ca2dec7406add61b5aabd039c861062a",
+    "gpu_validation_run_id": "gpu-20260818T094306Z-173ab4b6",
+    "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+    "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+    "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+    "scope_sha256": "8a7a8b6922bcff0ed6972f8ec9f1b444ea2c0781a6d8d681a06a215652a55584",
+    "source_hashes": {
+      "configs/dataset.yaml": {
+        "sha256": "6db59019b2b427247b68a07b5597ff3f6fc2160cf7eeeb640b20dacbe2ab066f",
+        "size_bytes": 1482
+      },
+      "configs/environment_gpu.yaml": {
+        "sha256": "26cdd432ef3635f0168f17fcf9d25daeb618e82d45ac9564a2885de7ec069930",
+        "size_bytes": 1066
+      },
+      "configs/organs_v1.yaml": {
+        "sha256": "9f360b66b2d5cf16dc9350332a60b3365e4bfb3c4a60097ecf3f1e8934132472",
+        "size_bytes": 1406
+      },
+      "configs/training_gate1_overfit_v2.yaml": {
+        "sha256": "374d2748cbfd3a3aaf2b0acd2d9f05fab54982019c865810055451e3fb9734b8",
+        "size_bytes": 3169
+      },
+      "configs/training_gate2_pilot_v2.yaml": {
+        "sha256": "66f12309429162d5ef29da1cfac4b6594a3538dbfd091637a6491428d7772969",
+        "size_bytes": 3181
+      },
+      "configs/training_gate3_full_v2.yaml": {
+        "sha256": "0057df286f4c68c3b7b4311692c005efce61198bf72b87556a746a7b8ce8cab5",
+        "size_bytes": 3161
+      },
+      "configs/training_workflow_v1.yaml": {
+        "sha256": "50118f1ef858ce939fe0520aac827f037e11ec30504a80444c7e01389b87f300",
+        "size_bytes": 2144
+      },
+      "data/splits/dataset_manifest.json": {
+        "sha256": "af365823dd2dbf05b56115420bfcfd3472016036b5477c479beaf5913b01959f",
+        "size_bytes": 6169647
+      },
+      "requirements-gpu.txt": {
+        "sha256": "ecb62b582ff6bde31250d273edea54560e0907cd07f631ef63e867c64aedd119",
+        "size_bytes": 354
+      },
+      "requirements.txt": {
+        "sha256": "b85ce0432e1f0b02a0c7412851dfd2fc911954702784c5d8fc39972946a6ce86",
+        "size_bytes": 284
+      },
+      "scripts/build_staged_training_notebook.py": {
+        "sha256": "1adcb33ddc126fc29898e58793c4be3c8add1bcd4b846b0eeff3b2f792b09ec0",
+        "size_bytes": 35480
+      },
+      "scripts/prewarm_training_cache.py": {
+        "sha256": "55c61699a8e115a80c1cac81ed43b26361d5a07a6ed476e85b455f5c63e50cb2",
+        "size_bytes": 4191
+      },
+      "scripts/verify_gpu_stack.py": {
+        "sha256": "8d91cb9e6d36b7cb84991615cfac6960e80ae300dd08a308bff9ed409b590dfc",
+        "size_bytes": 26110
+      },
+      "src/dataset/label_mapping.py": {
+        "sha256": "86bfb48f4380095920ca81f93cbb7bcd87ce399df1899e9b854859bd0eb87dcc",
+        "size_bytes": 6303
+      },
+      "src/dataset/loader.py": {
+        "sha256": "70c8473bd5f353fd4bb743d84f0939da47e62751d192da7aefa48032ccacb7fa",
+        "size_bytes": 12291
+      },
+      "src/dataset/preprocessing.py": {
+        "sha256": "ada14856a81c0579f065d9005e99a9478d39e85894e5bda8194f35ca2f4d6c88",
+        "size_bytes": 16175
+      },
+      "src/training/__init__.py": {
+        "sha256": "84fb966b164c59c8fa297983e6e7ebe078ac8a837c38ed5d2d0e6465febc795d",
+        "size_bytes": 1258
+      },
+      "src/training/config.py": {
+        "sha256": "5f3795663074c43c6ef0203de75d748919cb05a82d5188288b88166e1a359c21",
+        "size_bytes": 21557
+      },
+      "src/training/data.py": {
+        "sha256": "a9a95f76d5355367276961643cec25053e3c70869dd2513dd1af45dfc58b07db",
+        "size_bytes": 36044
+      },
+      "src/training/engine.py": {
+        "sha256": "95b84fb46eb4d4dabf6a09119510eece160a273c28d714dbe6acf5e9c2f8ca48",
+        "size_bytes": 56199
+      },
+      "src/training/gates.py": {
+        "sha256": "34aaaca2edec021c454b60b67d7972b6987a9e8bc0587d814f0720c3c166f3be",
+        "size_bytes": 27388
+      },
+      "src/training/model.py": {
+        "sha256": "9ffb4d8355f862a8b713921db0698d5f5d1bd6ec21b0071303b8c1277347040a",
+        "size_bytes": 2267
+      },
+      "src/training/provenance.py": {
+        "sha256": "61678f44fc6834737e7e23409f2419e0b156c354f2803d2121ee8e355e17edef",
+        "size_bytes": 2730
+      },
+      "src/training/workflow_config.py": {
+        "sha256": "4385b8cc156eec53603eb088916aba9019d34a72b4ac54695f420b4f6c7b7766",
+        "size_bytes": 8443
+      }
+    },
+    "workflow_config_sha256": "e04de4443c3b99d8927e0c605c34044e1e1618f457b4a18458eb40e1e7cf9911"
+  },
+  "provenance_sha256": "0436d92e2523d091cfe87dc7013653a54ad7c3034c3ec1c3d6727177430e256a",
+  "random_seed": 42,
+  "run_id": "baseline_v1",
+  "schema_version": 1,
+  "scope": {
+    "gate": "deterministic_pilot",
+    "schema_version": 1,
+    "train_case_ids": [
+      "s0004",
+      "s0014",
+      "s0068",
+      "s0099",
+      "s0191",
+      "s0215",
+      "s0224",
+      "s0237",
+      "s0287",
+      "s0386",
+      "s0579",
+      "s0606",
+      "s0647",
+      "s1165",
+      "s1171",
+      "s1304"
+    ],
+    "validation_case_ids": [
+      "s0249",
+      "s0650",
+      "s1017",
+      "s1161"
+    ]
+  },
+  "scope_sha256": "8a7a8b6922bcff0ed6972f8ec9f1b444ea2c0781a6d8d681a06a215652a55584"
+}

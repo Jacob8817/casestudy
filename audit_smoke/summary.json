@@ -1,0 +1,25 @@
+{
+  "generated_at_utc": "2026-08-18T07:26:38.431908+00:00",
+  "search_root": "F:\\csstdy\\Totalsegmentator_dataset_v201\\s0000",
+  "dataset_root": "F:\\csstdy\\Totalsegmentator_dataset_v201",
+  "metadata_file": "F:\\csstdy\\Totalsegmentator_dataset_v201\\meta.csv",
+  "integrity_mode": "header",
+  "integrity_scope": "Every NIfTI header plus gzip magic/trailer and advertised uncompressed size; CRC/payload not fully decompressed",
+  "subject_count": 1,
+  "ct_file_count": 1,
+  "valid_ct_count": 1,
+  "mask_file_count": 117,
+  "unique_mask_labels": 117,
+  "metadata_row_count": 1228,
+  "ct_compressed_bytes": 11526563,
+  "mask_compressed_bytes": 5367103,
+  "total_compressed_bytes_audited": 16893666,
+  "severity_counts": {
+    "warning": 1227
+  },
+  "issue_category_counts": {
+    "metadata_subject_missing_on_disk": 1227
+  },
+  "elapsed_seconds": 0.056,
+  "workers": 1
+}

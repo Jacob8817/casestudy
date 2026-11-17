@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "phase": 8,
+  "status": "passed",
+  "confidence_definition": "one_minus_normalized_predictive_entropy",
+  "representative_case": "s0346",
+  "interactive_html": "F:\\csstdy\\outputs\\patient_skull_verification\\s0346_corrected\\s0346_confidence.html",
+  "combined_glb": "F:\\csstdy\\outputs\\patient_skull_verification\\s0346_corrected\\s0346_confidence.glb",
+  "cases": [
+    {
+      "case_id": "s0346",
+      "organs": {
+        "brain": {
+          "vertices": 49404,
+          "geometry_source": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase7\\cases\\s0346\\brain\\baseline_full_resolution.ply",
+          "geometry_sha256": "87378b32d60f4fee152cb3a69ab5cd450d34d615fec9bea9858fd2d85e4973eb",
+          "invalid_confidence_fraction": 0.0,
+          "mean_uncertainty": 0.5320174694061279,
+          "mean_confidence": 0.4679825007915497,
+          "low_confidence_vertex_fraction": 0.5638409845356651
+        },
+        "skull": {
+          "vertices": 141751,
+          "geometry_source": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase7\\cases\\s0346\\skull\\baseline_full_resolution.ply",
+          "geometry_sha256": "32b3de16a0edd0a0b86c2c5aace6ea1845034e4526eb9a6805e745ffe3add1d0",
+          "invalid_confidence_fraction": 0.0,
+          "mean_uncertainty": 0.41892489790916443,
+          "mean_confidence": 0.581075131893158,
+          "low_confidence_vertex_fraction": 0.2968938490733751
+        }
+      }
+    }
+  ],
+  "official_test_split_accessed": false
+}

@@ -1,0 +1,1036 @@
+{
+  "case_id": "CASE_001",
+  "status": "technical_geometry_verified_anatomy_requires_expert_review",
+  "input": {
+    "path": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\input\\CASE_001_bone_kernel_ct.nii.gz",
+    "sha256": "29deec8768052bee85f26b2eec8abe773128532202391c8c777e8a7600307db1",
+    "shape": [
+      512,
+      512,
+      227
+    ],
+    "affine": [
+      [
+        -0.5557460784912109,
+        0.0,
+        0.0,
+        141.99313354492188
+      ],
+      [
+        -0.0,
+        0.5557460784912109,
+        0.0,
+        -6.307126998901367
+      ],
+      [
+        0.0,
+        -0.0,
+        0.75,
+        -602.7379760742188
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "spacing_mm": [
+      0.5557460784912109,
+      0.5557460784912109,
+      0.75
+    ],
+    "orientation": [
+      "L",
+      "A",
+      "S"
+    ],
+    "qform_code": 0,
+    "sform_code": 2,
+    "world_convention": "RAS+ mm"
+  },
+  "labels": {
+    "skull": {
+      "path": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\skull.nii.gz",
+      "sha256": "4cd6c8755a01b56b4bae9b15738d86139cb102f2342333ccf895cca306d93604",
+      "shape": [
+        512,
+        512,
+        227
+      ],
+      "affine": [
+        [
+          -0.5557460784912109,
+          0.0,
+          0.0,
+          141.99313354492188
+        ],
+        [
+          -0.0,
+          0.5557460784912109,
+          0.0,
+          -6.307126998901367
+        ],
+        [
+          0.0,
+          -0.0,
+          0.75,
+          -602.7379760742188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spacing_mm": [
+        0.5557460784912109,
+        0.5557460784912109,
+        0.75
+      ],
+      "orientation": [
+        "L",
+        "A",
+        "S"
+      ],
+      "qform_code": 0,
+      "sform_code": 2,
+      "world_convention": "RAS+ mm"
+    },
+    "mandible": {
+      "path": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\mandible.nii.gz",
+      "sha256": "948e1f7deb9ca09e91bc0995b9d02fa5795dabf84720cf81b40812597dcac5e7",
+      "shape": [
+        512,
+        512,
+        227
+      ],
+      "affine": [
+        [
+          -0.5557460784912109,
+          0.0,
+          0.0,
+          141.99313354492188
+        ],
+        [
+          -0.0,
+          0.5557460784912109,
+          0.0,
+          -6.307126998901367
+        ],
+        [
+          0.0,
+          -0.0,
+          0.75,
+          -602.7379760742188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spacing_mm": [
+        0.5557460784912109,
+        0.5557460784912109,
+        0.75
+      ],
+      "orientation": [
+        "L",
+        "A",
+        "S"
+      ],
+      "qform_code": 0,
+      "sform_code": 2,
+      "world_convention": "RAS+ mm"
+    },
+    "teeth_upper": {
+      "path": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\teeth_upper.nii.gz",
+      "sha256": "75af377edef89482309b52c1899fc07f0100fb65bdc3686629190b504d5c6a8b",
+      "shape": [
+        512,
+        512,
+        227
+      ],
+      "affine": [
+        [
+          -0.5557460784912109,
+          0.0,
+          0.0,
+          141.99313354492188
+        ],
+        [
+          -0.0,
+          0.5557460784912109,
+          0.0,
+          -6.307126998901367
+        ],
+        [
+          0.0,
+          -0.0,
+          0.75,
+          -602.7379760742188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spacing_mm": [
+        0.5557460784912109,
+        0.5557460784912109,
+        0.75
+      ],
+      "orientation": [
+        "L",
+        "A",
+        "S"
+      ],
+      "qform_code": 0,
+      "sform_code": 2,
+      "world_convention": "RAS+ mm"
+    },
+    "teeth_lower": {
+      "path": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\teeth_lower.nii.gz",
+      "sha256": "c8f0b6d7d910e175bb723a7dcf151fff6fbb32a16be76c38784fcb3959047956",
+      "shape": [
+        512,
+        512,
+        227
+      ],
+      "affine": [
+        [
+          -0.5557460784912109,
+          0.0,
+          0.0,
+          141.99313354492188
+        ],
+        [
+          -0.0,
+          0.5557460784912109,
+          0.0,
+          -6.307126998901367
+        ],
+        [
+          0.0,
+          -0.0,
+          0.75,
+          -602.7379760742188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spacing_mm": [
+        0.5557460784912109,
+        0.5557460784912109,
+        0.75
+      ],
+      "orientation": [
+        "L",
+        "A",
+        "S"
+      ],
+      "qform_code": 0,
+      "sform_code": 2,
+      "world_convention": "RAS+ mm"
+    }
+  },
+  "dicom": {
+    "bone": {
+      "slices": 227,
+      "patient_ids": [
+        "CASE_001"
+      ],
+      "study_uids": [
+        "1.2.826.0.1.3680043.8.498.7834328512153682372083567572784672410"
+      ],
+      "series_uids": [
+        "1.2.826.0.1.3680043.8.498.23874822158656546165244980148096354158"
+      ],
+      "frame_uids": [
+        "1.3.12.2.1107.5.1.7.137776.30000025122809532164600000090"
+      ],
+      "sampled_pixels_per_slice": 5,
+      "maximum_HU_error": 0.0,
+      "maximum_index_rounding_error": 3.190104166606034e-05,
+      "manifest": "BONE_HR60F_dicom_manifest.json"
+    },
+    "brain": {
+      "slices": 227,
+      "patient_ids": [
+        "CASE_001"
+      ],
+      "study_uids": [
+        "1.2.826.0.1.3680043.8.498.7834328512153682372083567572784672410"
+      ],
+      "series_uids": [
+        "1.2.826.0.1.3680043.8.498.23874822158656546165244980148096354158"
+      ],
+      "frame_uids": [
+        "1.3.12.2.1107.5.1.7.137776.30000025122809532164600000090"
+      ],
+      "sampled_pixels_per_slice": 5,
+      "maximum_HU_error": 0.0,
+      "maximum_index_rounding_error": 3.190104166606034e-05,
+      "manifest": "BRAIN_HR36F_dicom_manifest.json"
+    }
+  },
+  "provenance": {
+    "original_patient": "CASE_001",
+    "old_confidence_patient": "s0346",
+    "same_patient": false,
+    "old_confidence_ct": {
+      "path": "F:\\csstdy\\Totalsegmentator_dataset_v201\\s0346\\ct.nii.gz",
+      "sha256": "59fa11ff757544a73867e2fd6945b1080e228bd8463189f6fed41b47faef2dd0",
+      "shape": [
+        215,
+        215,
+        241
+      ],
+      "affine": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -161.1845703125
+        ],
+        [
+          0.0,
+          1.5,
+          0.0,
+          5.3154296875
+        ],
+        [
+          0.0,
+          0.0,
+          1.5,
+          50.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spacing_mm": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "orientation": [
+        "R",
+        "A",
+        "S"
+      ],
+      "qform_code": 0,
+      "sform_code": 2,
+      "world_convention": "RAS+ mm"
+    },
+    "old_confidence_cache": {
+      "case_id": "s0346",
+      "split": "val",
+      "threshold_hu": -900.0,
+      "margin_voxels": [
+        10,
+        10,
+        10
+      ],
+      "max_distance_mm": 25.0,
+      "source_ct_sha256": "59fa11ff757544a73867e2fd6945b1080e228bd8463189f6fed41b47faef2dd0",
+      "source_brain_sha256": "d407cfc7473d76f163d0a1cdbb2b285e9702d0df784fb8817d24b95a3af7fdc8",
+      "source_skull_sha256": "c3574ebcca30969ae0c295e32516d66027eaa528b3757ec37142c0a740e1d79b",
+      "overlap_policy": "skull_wins",
+      "contract_sha256": "0e0923b3933316d72b9665ec727bcfeace45c5c6b13914f975fc60c029382326",
+      "image_path": "F:\\csstdy\\data\\cache\\anatomy_aware_phase2\\s0346\\image.npy",
+      "label_path": "F:\\csstdy\\data\\cache\\anatomy_aware_phase2\\s0346\\label.npy",
+      "sdf_path": "F:\\csstdy\\data\\cache\\anatomy_aware_phase2\\s0346\\sdf.npy",
+      "shape": [
+        215,
+        215,
+        241
+      ],
+      "crop_start": [
+        0,
+        0,
+        0
+      ],
+      "crop_bbox": [
+        [
+          0,
+          215
+        ],
+        [
+          0,
+          215
+        ],
+        [
+          0,
+          241
+        ]
+      ],
+      "ct_affine": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -161.1845703125
+        ],
+        [
+          0.0,
+          1.5,
+          0.0,
+          5.3154296875
+        ],
+        [
+          0.0,
+          0.0,
+          1.5,
+          50.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spacing_mm": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "class_bounds": {
+        "1": [
+          [
+            51,
+            143
+          ],
+          [
+            80,
+            190
+          ],
+          [
+            134,
+            231
+          ]
+        ],
+        "2": [
+          [
+            47,
+            147
+          ],
+          [
+            72,
+            203
+          ],
+          [
+            80,
+            237
+          ]
+        ]
+      },
+      "label_voxels": {
+        "1": 429886,
+        "2": 252074
+      },
+      "crop_selected_without_labels": true,
+      "reference_retention": {
+        "brain": 1.0,
+        "skull": 1.0
+      }
+    },
+    "new_confidence": {
+      "contract": {
+        "case_id": "CASE_001",
+        "source_ct_sha256": "29deec8768052bee85f26b2eec8abe773128532202391c8c777e8a7600307db1",
+        "checkpoint_sha256": "d0f1336d46aa426bea2879a37d09c4d92656877f45a7cbf3cf3a12fdee8e44d2",
+        "calibration_sha256": "d35d2d443057ab8f20b8b8b36903abc51750175962a0f4e3bdb2805d91e12f5f",
+        "spacing_mm": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "orientation": "RAS",
+        "interpolation_order": 1,
+        "seed": 2026
+      },
+      "case_id": "CASE_001",
+      "source_ct_sha256": "29deec8768052bee85f26b2eec8abe773128532202391c8c777e8a7600307db1",
+      "temperature": 1.1064573224712873,
+      "model_affine": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -141.9931125640869
+        ],
+        [
+          0.0,
+          1.5,
+          0.0,
+          -6.307126998901367
+        ],
+        [
+          0.0,
+          0.0,
+          1.5,
+          -602.7379760742188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "model_shape": [
+        191,
+        191,
+        114
+      ],
+      "classes": {
+        "background": 0,
+        "brain": 1,
+        "skull": 2
+      },
+      "source_ct": "F:\\csstdy\\outputs\\10_totalsegmentator_sharp_skull\\input\\CASE_001_bone_kernel_ct.nii.gz",
+      "checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\best.pt",
+      "calibration": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase4\\phase4_report.json",
+      "confidence_definition": "P(skull|CT) = softmax(logits / fixed_temperature)[2]",
+      "uncertainty_definition": "H = -sum(p log p)/log(3); predictive uncertainty, not epistemic",
+      "limitation": "External case; calibration transfer is unverified. MONAI probability is not TotalSegmentator confidence. No separate mandible/teeth probability exists.",
+      "official_test_accessed": false,
+      "calibration_refitted": false,
+      "model_retrained": false,
+      "output_hashes": {
+        "logits_probabilities.npz": "74caa4986225e85b03a593563209c3895442f9c9db62eed419d792ca656e83d6",
+        "model_ct.nii.gz": "7a73c2a9f2df5761f3bc04db04f6945901dcdd6e9e3a54e57cc09059d279c96f",
+        "prediction.nii.gz": "8f63962bf12c2e755583c7f5f10be0b8ba9bcbf4705c9ee98bfee1273b62c897",
+        "predictive_entropy.nii.gz": "b26b0b8912845a21a7dfe65dab8cee33b3914e73177fd03305edd5e922dccc13",
+        "skull_probability.nii.gz": "5ba89917cc1493f23efde70e05ba272480582c8959acad087e50bd9e40057a52"
+      }
+    }
+  },
+  "labels_metrics": {
+    "skull": {
+      "voxels": 2116682,
+      "volume_mm3": 490308.80653398845,
+      "components_6_connected": 28,
+      "fov_face_voxels": {
+        "0_low": 0,
+        "0_high": 0,
+        "1_low": 0,
+        "1_high": 0,
+        "2_low": 1308,
+        "2_high": 0
+      },
+      "hu_percentiles": [
+        -2091.0,
+        -19.0,
+        1061.0,
+        1611.0,
+        14193.0
+      ]
+    },
+    "mandible": {
+      "voxels": 33992,
+      "volume_mm3": 7873.916323615609,
+      "components_6_connected": 2,
+      "fov_face_voxels": {
+        "0_low": 0,
+        "0_high": 0,
+        "1_low": 0,
+        "1_high": 0,
+        "2_low": 1184,
+        "2_high": 0
+      },
+      "hu_percentiles": [
+        -482.0,
+        -138.0,
+        673.5,
+        1948.0,
+        2266.0
+      ]
+    },
+    "teeth_upper": {
+      "voxels": 5614,
+      "volume_mm3": 1300.4285196745714,
+      "components_6_connected": 9,
+      "fov_face_voxels": {
+        "0_low": 0,
+        "0_high": 0,
+        "1_low": 0,
+        "1_high": 0,
+        "2_low": 739,
+        "2_high": 0
+      },
+      "hu_percentiles": [
+        -473.0,
+        609.2500000000002,
+        1588.0,
+        2044.3499999999995,
+        2686.0
+      ]
+    },
+    "teeth_lower": {
+      "voxels": 0,
+      "volume_mm3": 0.0,
+      "components_6_connected": 0,
+      "fov_face_voxels": {
+        "0_low": 0,
+        "0_high": 0,
+        "1_low": 0,
+        "1_high": 0,
+        "2_low": 0,
+        "2_high": 0
+      },
+      "hu_percentiles": null
+    }
+  },
+  "component_policy": "Retain all anatomical class components; no deletion, bridging or filling",
+  "removed_volume_mm3": 0,
+  "geometry": {
+    "anatomical": {
+      "vertices": 627326,
+      "triangles": 1253806,
+      "bounds_ras_mm": [
+        [
+          -56.68608856201172,
+          57.32579803466797,
+          -602.7379760742188
+        ],
+        [
+          86.69639587402344,
+          224.60536193847656,
+          -441.86297607421875
+        ]
+      ],
+      "surface_area_mm2": 177087.72705202707,
+      "boundary_edges": 1256,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "watertight": false,
+      "winding_consistent": true,
+      "euler_number": -205,
+      "geometry_sha256": "f4b8ac5cde1ef0f865033b9433c267e35bfd694b830252a5cdd730df159f35cc"
+    },
+    "confidence": {
+      "vertices": 627326,
+      "triangles": 1253806,
+      "bounds_ras_mm": [
+        [
+          -56.68608856201172,
+          57.32579803466797,
+          -602.7379760742188
+        ],
+        [
+          86.69639587402344,
+          224.60536193847656,
+          -441.86297607421875
+        ]
+      ],
+      "surface_area_mm2": 177087.72705202707,
+      "boundary_edges": 1256,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "watertight": false,
+      "winding_consistent": true,
+      "euler_number": -205,
+      "geometry_sha256": "f4b8ac5cde1ef0f865033b9433c267e35bfd694b830252a5cdd730df159f35cc"
+    },
+    "exact_identity": true,
+    "displacement_mm": 0.0,
+    "hausdorff_mm": 0.0,
+    "bounding_box_difference_mm": 0.0,
+    "exported_ply_identity": true,
+    "original_to_native": {
+      "metric": "symmetric nearest-vertex distances; not exact triangle distances",
+      "mean_mm": 0.0570348419215269,
+      "p95_mm": 0.08204211260425946,
+      "max_mm": 5.079384560565026,
+      "bounding_box_max_difference_mm": 0.412109375
+    },
+    "prior_s0346": {
+      "full": {
+        "vertices": 141751,
+        "triangles": 283624,
+        "bounds_ras_mm": [
+          [
+            -161.1845703125,
+            5.3154296875,
+            50.0
+          ],
+          [
+            159.8154296875,
+            309.0654296875,
+            410.0
+          ]
+        ],
+        "surface_area_mm2": 232106.84291849867,
+        "boundary_edges": 190,
+        "nonmanifold_edges": 3,
+        "degenerate_faces": 0,
+        "watertight": false,
+        "winding_consistent": true,
+        "euler_number": -153,
+        "geometry_sha256": "32b3de16a0edd0a0b86c2c5aace6ea1845034e4526eb9a6805e745ffe3add1d0"
+      },
+      "adaptive": {
+        "vertices": 53337,
+        "triangles": 106447,
+        "bounds_ras_mm": [
+          [
+            -161.1845703125,
+            5.3154296875,
+            50.0
+          ],
+          [
+            159.8154296875,
+            309.0654296875,
+            410.0
+          ]
+        ],
+        "surface_area_mm2": 221714.68507652162,
+        "boundary_edges": 4701,
+        "nonmanifold_edges": 3661,
+        "degenerate_faces": 0,
+        "watertight": false,
+        "winding_consistent": true,
+        "euler_number": -206,
+        "geometry_sha256": "6ce3c07146abb679b8e8c9e474c0f0738032fe5af7c1b44d88066c37d991115c"
+      },
+      "confidence": {
+        "vertices": 53337,
+        "triangles": 106447,
+        "bounds_ras_mm": [
+          [
+            -161.1845703125,
+            5.3154296875,
+            50.0
+          ],
+          [
+            159.8154296875,
+            309.0654296875,
+            410.0
+          ]
+        ],
+        "surface_area_mm2": 221714.68507652162,
+        "boundary_edges": 4701,
+        "nonmanifold_edges": 3661,
+        "degenerate_faces": 0,
+        "watertight": false,
+        "winding_consistent": true,
+        "euler_number": -206,
+        "geometry_sha256": "6ce3c07146abb679b8e8c9e474c0f0738032fe5af7c1b44d88066c37d991115c"
+      },
+      "color_preserved_adaptive_geometry": true,
+      "adaptive_displacement": {
+        "metric": "symmetric nearest-vertex distances; not exact triangle distances",
+        "mean_mm": 0.5967907425886538,
+        "p95_mm": 1.4133006112953777,
+        "max_mm": 2.245370269623744,
+        "bounding_box_max_difference_mm": 0.0
+      },
+      "corrected_full_resolution_export": {
+        "schema_version": 1,
+        "phase": 8,
+        "status": "passed",
+        "confidence_definition": "one_minus_normalized_predictive_entropy",
+        "representative_case": "s0346",
+        "interactive_html": "F:\\csstdy\\outputs\\patient_skull_verification\\s0346_corrected\\s0346_confidence.html",
+        "combined_glb": "F:\\csstdy\\outputs\\patient_skull_verification\\s0346_corrected\\s0346_confidence.glb",
+        "cases": [
+          {
+            "case_id": "s0346",
+            "organs": {
+              "brain": {
+                "vertices": 49404,
+                "geometry_source": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase7\\cases\\s0346\\brain\\baseline_full_resolution.ply",
+                "geometry_sha256": "87378b32d60f4fee152cb3a69ab5cd450d34d615fec9bea9858fd2d85e4973eb",
+                "invalid_confidence_fraction": 0.0,
+                "mean_uncertainty": 0.5320174694061279,
+                "mean_confidence": 0.4679825007915497,
+                "low_confidence_vertex_fraction": 0.5638409845356651
+              },
+              "skull": {
+                "vertices": 141751,
+                "geometry_source": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase7\\cases\\s0346\\skull\\baseline_full_resolution.ply",
+                "geometry_sha256": "32b3de16a0edd0a0b86c2c5aace6ea1845034e4526eb9a6805e745ffe3add1d0",
+                "invalid_confidence_fraction": 0.0,
+                "mean_uncertainty": 0.41892489790916443,
+                "mean_confidence": 0.581075131893158,
+                "low_confidence_vertex_fraction": 0.2968938490733751
+              }
+            }
+          }
+        ],
+        "official_test_split_accessed": false
+      }
+    },
+    "exported_glb_identity": true
+  },
+  "confidence": {
+    "definition": "P(skull|CT) = softmax(logits / fixed_temperature)[2]",
+    "skull_vertices": 609475,
+    "valid_fraction": 1.0,
+    "invalid_percent": 0.0,
+    "range": [
+      7.567671218566829e-07,
+      0.9999929070472717
+    ],
+    "separate_mandible_teeth_confidence": "unavailable; neutral grey",
+    "geometry_thresholding": false
+  },
+  "alignment": {
+    "same_grid": true,
+    "roundtrip_max_voxels": 5.684341886080802e-14,
+    "dicom_pixel_samples_match": true
+  },
+  "mask_agreement": {
+    "dice": 0.8689219106487371,
+    "iou": 0.7682245097216168,
+    "interpretation": "Total vs craniofacial model agreement, not accuracy; class scopes differ"
+  },
+  "protected_inputs_unchanged": true,
+  "protected_hashes": {
+    "outputs\\10_totalsegmentator_sharp_skull\\input\\CASE_001_bone_kernel_ct.nii.gz": "29deec8768052bee85f26b2eec8abe773128532202391c8c777e8a7600307db1",
+    "outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\skull.nii.gz": "4cd6c8755a01b56b4bae9b15738d86139cb102f2342333ccf895cca306d93604",
+    "outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\mandible.nii.gz": "948e1f7deb9ca09e91bc0995b9d02fa5795dabf84720cf81b40812597dcac5e7",
+    "outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\teeth_upper.nii.gz": "75af377edef89482309b52c1899fc07f0100fb65bdc3686629190b504d5c6a8b",
+    "outputs\\10_totalsegmentator_sharp_skull\\craniofacial_segmentations\\teeth_lower.nii.gz": "c8f0b6d7d910e175bb723a7dcf151fff6fbb32a16be76c38784fcb3959047956",
+    "outputs\\09_totalsegmentator_dl_skull_brain\\input\\CASE_001_brain_kernel_ct.nii.gz": "5795661773d4f224bf8b6b75e0e1152fc5f71f733a0ea65d99fb8a3379a42f72",
+    "outputs\\09_totalsegmentator_dl_skull_brain\\segmentations\\skull.nii.gz": "2a710d76f04385dc8711672fb0e2ef27358ff2bf2193179b9d6fc7576ea2142d",
+    "data\\splits\\dataset_manifest.json": "af365823dd2dbf05b56115420bfcfd3472016036b5477c479beaf5913b01959f",
+    "outputs\\anatomy_aware_framework\\phase3\\best.pt": "d0f1336d46aa426bea2879a37d09c4d92656877f45a7cbf3cf3a12fdee8e44d2",
+    "outputs\\anatomy_aware_framework\\phase4\\phase4_report.json": "d35d2d443057ab8f20b8b8b36903abc51750175962a0f4e3bdb2805d91e12f5f",
+    "outputs\\anatomy_aware_framework\\phase8\\phase8_report.json": "06493f1dd6bcb2939a0df6d525f2d39583188ef4ad306fc4dee3499fc35cc104",
+    "outputs\\anatomy_aware_framework\\phase8\\s0346_confidence.glb": "1d4a703587f081cd000b44af6c14dc5cbf169ec1401e0aa25411946e4b0e454c",
+    "outputs\\anatomy_aware_framework\\phase8\\s0346_confidence.html": "de521548c9f9cee858dd9a54b10661f08c3f8fcb207161e25cbc89279703b116",
+    "outputs\\anatomy_aware_framework\\phase8\\cases\\s0346\\brain\\confidence_colored.ply": "c51f0b0c641b469ccc0e2a6d4481e310d4bc455e3a5dfdfe93fff1d95badb00d",
+    "outputs\\anatomy_aware_framework\\phase8\\cases\\s0346\\brain\\vertex_confidence.npz": "39119570c8f2b916b898d030484873305f22e6901c9a5ad529d9e6b1c6a86a0c",
+    "outputs\\anatomy_aware_framework\\phase8\\cases\\s0346\\skull\\confidence_colored.ply": "a9d3ac4331223dbbb0d321ea7f04bfd9d45458d5f330084f8791f4f9c1347a0f",
+    "outputs\\anatomy_aware_framework\\phase8\\cases\\s0346\\skull\\vertex_confidence.npz": "9aa61c07b1c8840ffa4e3899025266505b88e46d44710febd096f98d19bb36e9"
+  },
+  "opening": {
+    "status": "CT-supported absence of cranial bone; preserved",
+    "review_slices_native": [
+      80,
+      107,
+      133,
+      160,
+      187
+    ],
+    "etiology": "Not established by this technical audit. Supplied annotations mention postoperative collection; this does not prove the cause of the opening."
+  },
+  "regional_changes": {
+    "cranial_opening": "No voxels added/removed",
+    "orbits": "No voxels added/removed",
+    "maxilla": "No voxels added/removed",
+    "mandible": "Separate partial label retained; reaches inferior FOV"
+  },
+  "limitations": [
+    "No independently expert-verified segmentation or labeled landmarks supplied.",
+    "All selected reference labels remain model predictions, even when spatially and visually consistent with CT.",
+    "Mandible extends beyond inferior CT FOV; no complete jaw can be reconstructed.",
+    "No separate frontal/parietal/temporal/occipital/orbital/maxillary class labels; regional completeness cannot be certified.",
+    "Thin bones and detached components need expert review; no component removed without evidence.",
+    "External CASE_001 confidence calibration transfer is unverified; no calibration changes made."
+  ],
+  "outputs": [
+    "skull_confidence.html",
+    "skull_plus_mandible_confidence.html",
+    "confidence\\logits_probabilities.npz",
+    "confidence\\model_ct.nii.gz",
+    "confidence\\prediction.nii.gz",
+    "confidence\\predictive_entropy.nii.gz",
+    "confidence\\skull_probability.nii.gz",
+    "figures\\alignment_axial.png",
+    "figures\\components_before_after.png",
+    "figures\\confidence_legend.png",
+    "figures\\cranial_opening.png",
+    "figures\\ct_bone_evidence.png",
+    "figures\\frontal.png",
+    "figures\\geometry_confidence_comparison.png",
+    "figures\\inferior.png",
+    "figures\\lateral.png",
+    "figures\\oblique.png",
+    "figures\\opening_raw_vs_overlay.png",
+    "figures\\original_vs_corrected.png",
+    "figures\\superior.png",
+    "figures\\uncertainty_only.png",
+    "meshes\\ct_300hu_evidence.ply",
+    "meshes\\mandible_anatomical.ply",
+    "meshes\\skull_anatomical.ply",
+    "meshes\\skull_confidence.glb",
+    "meshes\\skull_confidence.ply",
+    "meshes\\skull_plus_mandible_anatomical.ply",
+    "meshes\\skull_plus_mandible_confidence.glb",
+    "meshes\\skull_plus_mandible_confidence.ply",
+    "meshes\\skull_vertex_confidence.npz",
+    "meshes\\teeth_upper_anatomical.ply",
+    "previous\\CASE_001_totalsegmentator_sharp_skull.ply",
+    "previous\\s0346_confidence_colored.ply",
+    "s0346_corrected\\s0346_confidence.glb",
+    "s0346_corrected\\s0346_confidence.html",
+    "volumes\\corrected_anatomy_mask.nii.gz",
+    "volumes\\mandible_components.nii.gz",
+    "volumes\\removed_components.nii.gz",
+    "volumes\\skull_components.nii.gz",
+    "volumes\\teeth_lower_components.nii.gz",
+    "volumes\\teeth_upper_components.nii.gz",
+    "s0346_corrected\\cases\\s0346\\brain\\confidence_colored.ply",
+    "s0346_corrected\\cases\\s0346\\brain\\vertex_confidence.npz",
+    "s0346_corrected\\cases\\s0346\\skull\\confidence_colored.ply",
+    "s0346_corrected\\cases\\s0346\\skull\\vertex_confidence.npz"
+  ],
+  "tests": {
+    "tests": 19,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "completion_conditions": {
+    "Both original outputs traceable": {
+      "status": "PASS",
+      "evidence": "CASE_001 versus s0346: mismatch explicitly identified"
+    },
+    "Original outputs same patient": {
+      "status": "FAIL",
+      "evidence": "Different patient and acquisition; new matched outputs generated"
+    },
+    "CT and masks aligned": {
+      "status": "PASS",
+      "evidence": "Affines, shapes, all-slice DICOM pixel sampling, round trips"
+    },
+    "Skull and mandible class handling": {
+      "status": "PASS",
+      "evidence": "Separate source labels retained; mandible partial at FOV"
+    },
+    "Confidence does not remove anatomy": {
+      "status": "PASS",
+      "evidence": "No thresholding; exact geometry identity"
+    },
+    "Confidence matches selected anatomical surface": {
+      "status": "PASS",
+      "evidence": "Identical vertices and triangles, including exported PLY"
+    },
+    "Cranial opening investigated": {
+      "status": "PASS",
+      "evidence": "Raw CT and overlays through multiple native slices"
+    },
+    "No CT defect filled": {
+      "status": "PASS",
+      "evidence": "Zero segmentation edits, no fill/closing/capping"
+    },
+    "Components anatomically justified": {
+      "status": "PASS",
+      "evidence": "Conservative retain-all policy; per-component CT evidence recorded"
+    },
+    "Identical comparison cameras": {
+      "status": "PASS",
+      "evidence": "Shared RAS bounds, parallel scale and view for every comparison"
+    },
+    "Automated regression tests executed": {
+      "status": "PASS",
+      "evidence": "{'tests': 19, 'failures': 0, 'errors': 0, 'skipped': 0}"
+    },
+    "3D and static exports": {
+      "status": "PASS",
+      "evidence": "PLY, GLB, HTML and PNG"
+    },
+    "Modifications and limitations documented": {
+      "status": "PASS",
+      "evidence": "Report and source audit"
+    },
+    "Independent anatomical accuracy verified": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": "No expert ground truth; no accuracy claim"
+    }
+  },
+  "dataset_protection": {
+    "subjects": 1228,
+    "split_counts": {
+      "train": 1082,
+      "val": 57,
+      "test": 89
+    },
+    "external_CT_hash_absent_from_manifest": true,
+    "note": "Exact compressed-file identity exclusion only; not independent patient linkage proof",
+    "test_payloads_accessed": false,
+    "protected_hashes_unchanged": true
+  },
+  "source_modifications": {
+    "src\\geometry\\patient_surface.py": "ed22bbd35866edbea0bade36bacf7f90b3278a68852755241c8dea207c69a5e1",
+    "src\\geometry\\confidence.py": "8c0fefa27bc63365598ae000ca42dc52aabc1114800add732d6667fc294d58f8",
+    "scripts\\infer_patient_confidence.py": "ee809b484738776a22e5b87f0cf1ae16cb9b4b91be2f19b7d6eb2b30cabe01dc",
+    "scripts\\verify_patient_skull.py": "bcb832f428519574c824e6964cc3842118c3f1711d24e075c601b7d91037fa82",
+    "tests\\test_patient_surface.py": "bab386da30582326e200273d3f16bbf97ec50dcaa7e3b4c6eaa6103757bef120",
+    "configs\\anatomy_aware_phases4_10_v1.yaml": "c8100827bd15e63830ecbce18ecc7859ba728c3dede3e50d2a2c83cbc9159dc5",
+    "README.md": "dd4e48a1e27d1bb183ee6536ec605cff3ef990c53e734a281a1849265fb1cb98"
+  },
+  "root_causes": {
+    "patient_mismatch": {
+      "status": "confirmed",
+      "evidence": "CASE_001 original versus s0346 confidence"
+    },
+    "missing_mandible": {
+      "status": "partly_explained",
+      "evidence": "Separate craniofacial label; 1184 mandible voxels touch inferior CT plane. Notebook 07 uses global largest component."
+    },
+    "missing_facial_anatomy": {
+      "status": "partly_explained",
+      "evidence": "Different patient/model/grid; upstream adaptive simplification. Specific missing bones lack independent labels."
+    },
+    "cranial_opening": {
+      "status": "CT_supported",
+      "evidence": "Native raw CT reviewed at 107,133,160 and wider overlays; no continuous bone rim in the opening. Etiology not established."
+    },
+    "fragments": {
+      "status": "unresolved_anatomical_validity",
+      "evidence": "39 total retained label components; physical volume/location/HU records in components.json"
+    },
+    "fragmentation": {
+      "status": "confirmed_topology_degradation",
+      "evidence": "s0346 nonmanifold edges: full=3; adaptive=3661"
+    },
+    "confidence_deletion": {
+      "status": "not_found_in_phase8",
+      "evidence": "Old phase8/adaptive geometry identical; reduction was upstream"
+    },
+    "coordinate_conventions": {
+      "status": "confirmed_distinct_conventions",
+      "evidence": "Notebook07 DICOM LPS; NIfTI pipelines RAS; corrected meshes use RAS mm"
+    }
+  },
+  "artifact_checks": {
+    "exported_PLY_GLB_geometry_identical": true,
+    "exported_colors_identical": true,
+    "s0346_full_surface_identity": true,
+    "all_boundary_edges_on_acquired_FOV": true,
+    "boundary_edge_count": 1256,
+    "probability_formula_max_error": 0.0,
+    "entropy_formula_max_error": 0.0,
+    "split_counts": {
+      "train": 1082,
+      "val": 57,
+      "test": 89
+    },
+    "tests": {
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "coordinates": "All mesh numeric coordinates are RAS+ millimetres; configure import units as mm.",
+    "visual_QA": "Reviewed CT opening, geometry comparison and oblique full-resolution PNGs; identical camera pairs with legend and complete framing."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "case_id": "s0792",
+  "split": "val",
+  "image_path": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\ct_only_cache\\s0792_image.npy",
+  "label_path": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\ct_only_cache\\s0792_label.npy",
+  "shape": [
+    125,
+    152,
+    109
+  ],
+  "crop_start": [
+    0,
+    0,
+    0
+  ],
+  "crop_bbox": [
+    [
+      0,
+      125
+    ],
+    [
+      0,
+      152
+    ],
+    [
+      0,
+      109
+    ]
+  ],
+  "ct_affine": [
+    [
+      1.493029236793518,
+      -0.13251672685146332,
+      0.057381436228752136,
+      -93.15474700927734
+    ],
+    [
+      0.11805400997400284,
+      1.4631848335266113,
+      0.3084059953689575,
+      62.71726608276367
+    ],
+    [
+      -0.08322753757238388,
+      -0.3025382161140442,
+      1.4668309688568115,
+      226.90594482421875
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "input_channels": [
+    "brain_window_-100_200_HU",
+    "bone_window_-300_1500_HU"
+  ],
+  "source_ct_sha256": "64b871d7911aa7fad2c6e5872175d22bc4ac8645e8c0104f78c50f2b311004f9",
+  "crop_selected_without_labels": true
+}

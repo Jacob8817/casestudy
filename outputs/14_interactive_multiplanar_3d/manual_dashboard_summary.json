@@ -1,0 +1,50 @@
+{
+  "case": "CASE_001",
+  "dashboard": "F:\\csstdy\\outputs\\14_interactive_multiplanar_3d\\CASE_001_manual_interactive_3d_multiplanar_dashboard.html",
+  "layout": "one 3D model left plus three separate 2D plane outputs right",
+  "manual_controls_only": true,
+  "model_options": [
+    "Skull",
+    "Brain",
+    "Skull + Brain",
+    "Neural CT Brain"
+  ],
+  "plane_options": [
+    "Sagittal",
+    "Coronal",
+    "Transverse / Axial"
+  ],
+  "plane_selection": "any one, any two, or all three using checkboxes",
+  "3d_plane_style": "transparent glass guide without CT texture",
+  "background": "explicit black for page, 3D scene and 2D CT panels",
+  "mask_display": "thin skull/brain/native-CSF contours; CSF off by default",
+  "csf_3d_display": "cleaned and Gaussian-smoothed native-CT surface; quantitative native mask unchanged",
+  "csf_controls": [
+    "visibility",
+    "color",
+    "opacity"
+  ],
+  "combined_opacity_controls": "separate skull and brain sliders visible only in Skull + Brain mode",
+  "2d_output": "CT image displayed separately beside the 3D model",
+  "csf_overlay": {
+    "color": "blue",
+    "source": "original CT",
+    "hu_range": [
+      0,
+      20
+    ],
+    "brain_erosion_iterations": 3,
+    "minimum_component_volume_mm3": 10.0,
+    "reference_match_notebook_11": true,
+    "measurement_mask": "F:\\csstdy\\outputs\\14_interactive_multiplanar_3d\\CASE_001_native_CT_CSF_like_0_20HU_candidates.nii.gz",
+    "clean_display_mask": "F:\\csstdy\\outputs\\14_interactive_multiplanar_3d\\CASE_001_native_CT_CSF_like_clean_display_mask.nii.gz",
+    "interpretation": "CSF-like low-HU candidate; not diagnostic"
+  },
+  "neural_provenance": "anonymized DICOM -> NIfTI CT -> SIREN neural HU reconstruction",
+  "limitations": [
+    "Blue low-HU candidates are not a dedicated ventricular segmentation.",
+    "Automated brain and skull masks may contain errors.",
+    "The SIREN neural reconstruction is not clinical ground truth.",
+    "Research visualization only; radiological interpretation requires expert review."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_test_access",
+  "frozen_at_utc": "2026-08-31T13:51:35.112889+00:00",
+  "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+  "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+  "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+  "baseline_config_sha256": "b624ba0cb4cb6b452ac80295a128eff1cbd7d57d063ff5b21686d6fb3bebcd1f",
+  "phase6_config_sha256": "7ea6cf3108b4d996c397a07ac0cda14f8fc961085de28f0409bd38969c27fe63",
+  "checkpoint_sha256": "81632bd721ffd43b10ad341ab0b2e906dab96d38a322e7f97cb8752a17fb3ba1",
+  "uncertainty_method": "temperature_scaled_softmax_predictive_entropy",
+  "temperature": 1.0354552766999794,
+  "error_flag_threshold": 0.2315673828125,
+  "postprocessing_policy": "none",
+  "postprocessing_selection_metric": "validation_macro_mean_foreground_dice",
+  "validation_report_sha256": "2940682db2758f0224160f4fa7774956ad24fc79e0a4cfcb6bb05c1564e5e376",
+  "test_case_count": 89,
+  "test_case_ids_sha256": "36516ec95434b0bece4842614173ececf841009a8f1df06725337cfaf227957b",
+  "test_rerun_policy": "exact_case_level_resume_only",
+  "mesh_selection_rule": "closest_to_test_75th_percentile_physical_volume_among_cases_with_all_native_axes_at_least_200_voxels_then_case_id",
+  "mesh_selection": {
+    "case_id": "s0244",
+    "selection_used_labels": false,
+    "target_75th_percentile_physical_volume_mm3": 80620042.84289414,
+    "native_shape": [
+      288,
+      288,
+      287
+    ],
+    "native_spacing_mm": [
+      1.5,
+      1.5,
+      1.5
+    ]
+  },
+  "test_labels_used_for_any_selection": false,
+  "protocol_sha256": "b0a5f3239922d99741569a25d3e202b7f7ac1287cb823c4d9e37f9696ddb0759"
+}

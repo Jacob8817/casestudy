@@ -1,0 +1,251 @@
+{
+  "case": "CASE_001",
+  "dominant_anatomical_class": "bilateral lateral ventricular CSF-density spaces",
+  "dominant_class_confidence": "MODERATE",
+  "left_lateral_ventricle": {
+    "supported": true,
+    "confidence": "MODERATE",
+    "voxel_count": 19008,
+    "volume_mm3": 4403.018400779169,
+    "mean_hu": 12.621422558922559,
+    "median_hu": 13.0,
+    "centroid_world_mm": [
+      -3.1377854318129152,
+      134.41071551837504,
+      -511.4605139530066
+    ],
+    "slice_range": [
+      87,
+      145
+    ],
+    "median_boundary_distance_mm": 33.79279484645389,
+    "persistence_slices": 59,
+    "axis_spans": [
+      48,
+      96,
+      59
+    ]
+  },
+  "right_lateral_ventricle": {
+    "supported": true,
+    "confidence": "MODERATE",
+    "voxel_count": 40915,
+    "volume_mm3": 9477.561966954949,
+    "mean_hu": 12.134058413784675,
+    "median_hu": 12.0,
+    "centroid_world_mm": [
+      28.130276913056086,
+      145.89348879999102,
+      -512.8804055010793
+    ],
+    "slice_range": [
+      87,
+      145
+    ],
+    "median_boundary_distance_mm": 35.92100499732306,
+    "persistence_slices": 59,
+    "axis_spans": [
+      48,
+      96,
+      59
+    ]
+  },
+  "third_ventricle": {
+    "supported": true,
+    "confidence": "MODERATE",
+    "voxel_count": 1758,
+    "volume_mm3": 407.2236084053966,
+    "mean_hu": 13.585324232081911,
+    "median_hu": 14.0,
+    "centroid_world_mm": [
+      17.1608045011657,
+      136.06123530200182,
+      -513.7396825588604
+    ],
+    "slice_range": [
+      97,
+      127
+    ],
+    "median_boundary_distance_mm": 38.276232997123586,
+    "persistence_slices": 31,
+    "axis_spans": [
+      15,
+      51,
+      31
+    ]
+  },
+  "fourth_ventricle": {
+    "supported": true,
+    "confidence": "LOW",
+    "voxel_count": 2791,
+    "volume_mm3": 646.5080153921854,
+    "mean_hu": 12.606592619132927,
+    "median_hu": 13.0,
+    "centroid_world_mm": [
+      13.85234489222232,
+      117.76781458224245,
+      -544.4182877904495
+    ],
+    "slice_range": [
+      53,
+      85
+    ],
+    "median_boundary_distance_mm": 22.801452481112285,
+    "persistence_slices": 21,
+    "axis_spans": [
+      35,
+      23,
+      26
+    ]
+  },
+  "subarachnoid_sulcal_csf": {
+    "supported": true,
+    "confidence": "MODERATE",
+    "voxel_count": 90376,
+    "volume_mm3": 20934.721748149102,
+    "mean_hu": 14.384670709037797,
+    "median_hu": 15.0,
+    "centroid_world_mm": [
+      8.367556775936336,
+      156.18608137072744,
+      -526.0208664433433
+    ],
+    "slice_range": [
+      28,
+      196
+    ],
+    "median_boundary_distance_mm": 3.5754499848213483,
+    "persistence_slices": 169,
+    "axis_spans": [
+      219,
+      235,
+      169
+    ]
+  },
+  "basal_cistern_candidate": {
+    "supported": true,
+    "confidence": "LOW",
+    "voxel_count": 117,
+    "volume_mm3": 27.10191250479602,
+    "mean_hu": 16.752136752136753,
+    "median_hu": 17.0,
+    "centroid_world_mm": [
+      14.513533078707184,
+      148.34703171558868,
+      -544.7379760742188
+    ],
+    "slice_range": [
+      75,
+      78
+    ],
+    "median_boundary_distance_mm": 8.99768282952165,
+    "persistence_slices": 4,
+    "axis_spans": [
+      19,
+      27,
+      4
+    ]
+  },
+  "report_ivh_concordance": {
+    "report_level_ivh_available": true,
+    "posterior_bilateral_regions_classified": true,
+    "spatially_concordant": true,
+    "annotation_file": "F:\\csstdy\\Single_Patient_Study\\Single_Patient_Study\\CASE_001\\REPORT\\CASE_001_structured_annotations.csv",
+    "ground_truth_role": "report-level supporting evidence only; not voxel-level ground truth"
+  },
+  "hyperdense_material_concordance": {
+    "present_within_or_adjacent_to_posterior_regions": true,
+    "exploratory_measurements": [
+      {
+        "side": "LEFT",
+        "exploratory_hu_band": "35–80 HU",
+        "candidate_voxels_within_or_adjacent": 14218,
+        "candidate_volume_mm3": 3293.461470027263,
+        "posterior_region_volume_mm3": 2488.974785162677,
+        "representative_axial_slice": 112
+      },
+      {
+        "side": "RIGHT",
+        "exploratory_hu_band": "35–80 HU",
+        "candidate_voxels_within_or_adjacent": 19351,
+        "candidate_volume_mm3": 4482.4710160710065,
+        "posterior_region_volume_mm3": 2416.4713782054023,
+        "representative_axial_slice": 112
+      },
+      {
+        "side": "LEFT",
+        "exploratory_hu_band": "40–100 HU",
+        "candidate_voxels_within_or_adjacent": 5957,
+        "candidate_volume_mm3": 1379.8811349664093,
+        "posterior_region_volume_mm3": 2488.974785162677,
+        "representative_axial_slice": 95
+      },
+      {
+        "side": "RIGHT",
+        "exploratory_hu_band": "40–100 HU",
+        "candidate_voxels_within_or_adjacent": 8611,
+        "candidate_volume_mm3": 1994.6544322974232,
+        "posterior_region_volume_mm3": 2416.4713782054023,
+        "representative_axial_slice": 107
+      }
+    ],
+    "interpretation": "Threshold-based concordance only; not independent hemorrhage diagnosis"
+  },
+  "supporting_measurements": {
+    "section7_verified_results": {
+      "nominal_hu_range": "0–20 HU",
+      "fresh_native_candidate_voxels": 225958,
+      "largest_section7_component_id": 8,
+      "largest_component_volume_mm3": 30741.444549884523,
+      "largest_component_mean_hu": 12.806340044607872,
+      "largest_component_median_hu": 13.0,
+      "largest_component_persistence_slices": 119,
+      "largest_component_median_boundary_distance_mm": 23.891169065745107,
+      "largest_component_normalized_centrality": 0.4842420839705858,
+      "native_neural_low_hu_dice": 0.5707705662472025,
+      "native_neural_low_hu_mae": 7.994066420985707,
+      "left_right_volume_ratio": 0.913615736317729
+    },
+    "deep_boundary_sensitivity": [
+      {
+        "deep_boundary_criterion_mm": "> 8",
+        "voxel_count": 130644,
+        "volume_mm3": 30262.41245535531,
+        "percentage_of_nominal_low_hu": 57.817824551465314,
+        "connected_components": 1425
+      },
+      {
+        "deep_boundary_criterion_mm": "> 10",
+        "voxel_count": 120419,
+        "volume_mm3": 27893.89061465839,
+        "percentage_of_nominal_low_hu": 53.29264730613654,
+        "connected_components": 1225
+      },
+      {
+        "deep_boundary_criterion_mm": "> 12",
+        "voxel_count": 111077,
+        "volume_mm3": 25729.90713927545,
+        "percentage_of_nominal_low_hu": 49.15825064835058,
+        "connected_components": 1058
+      }
+    ],
+    "nominal_deep_boundary_criterion_mm": 10.0,
+    "classified_left_right_volume_balance": 0.464572895026274,
+    "affine_axis_codes": [
+      "L",
+      "A",
+      "S"
+    ],
+    "estimated_midsagittal_voxel_coordinate": 136.0
+  },
+  "limitations": [
+    "Anatomical labels are CT-intensity and geometry based rather than expert manual segmentations.",
+    "The TotalSegmentator brain mask is not a dedicated ventricular segmentation.",
+    "A 26-connected low-HU mask can bridge anatomically distinct spaces.",
+    "Horn-level subdivisions are approximate and not atlas registered.",
+    "Low attenuation is not specific to cerebrospinal fluid.",
+    "Hyperdense thresholds do not independently diagnose hemorrhage.",
+    "The structured annotation is report-level rather than voxel-level ground truth.",
+    "Definitive interpretation requires expert radiological review."
+  ]
+}

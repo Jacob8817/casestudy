@@ -1,0 +1,15 @@
+# Dataset audit and Phase 3 preprocessing/visual-QA dependencies. PyTorch and
+# MONAI remain a separately pinned Phase 4 training environment.
+numpy>=1.26,<3
+PyYAML>=6.0,<7
+scipy>=1.11,<2
+pandas>=2.2,<4
+matplotlib>=3.8,<4
+ipykernel>=6,<9
+nbformat>=5,<6
+nbclient>=0.10,<1
+Jinja2>=3,<4
+scikit-learn>=1.5,<2
+scikit-image==0.26.0
+trimesh==5.0.0
+plotly==7.0.0

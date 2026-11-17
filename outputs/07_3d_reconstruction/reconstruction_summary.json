@@ -1,0 +1,27 @@
+{
+  "source_series": "BONE_HR60F",
+  "modality": "CT",
+  "source_slices": 227,
+  "source_shape": [
+    227,
+    512,
+    512
+  ],
+  "voxel_spacing_mm": [
+    0.75,
+    0.55574609375,
+    0.55574609375
+  ],
+  "bone_threshold_hu": 300.0,
+  "downsample": [
+    1,
+    2,
+    2
+  ],
+  "vertices": 264125,
+  "triangles": 530898,
+  "mesh_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\CASE_001_bone_reconstruction.ply",
+  "interactive_html_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\CASE_001_bone_reconstruction.html",
+  "elapsed_seconds": 3.672214984893799,
+  "clinical_use": false
+}

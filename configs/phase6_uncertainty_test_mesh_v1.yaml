@@ -1,0 +1,41 @@
+schema_version: 1
+experiment:
+  id: phase6_uncertainty_test_mesh_v1
+  description: Validation-calibrated uncertainty, one-shot locked test evaluation, and patient-space 3D reconstruction.
+locks:
+  manifest_sha256: 4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d
+  organ_schema_sha256: 082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05
+  preprocessing_sha256: 92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71
+  training_config_sha256: 8033b87ad9e9fab70930ee608a886c635684e27556380538cb3e47fec13b7186
+checkpoint:
+  path: outputs/training/gate3_full_baseline/baseline_v1/checkpoints/best.pt
+  expected_epoch: 50
+  expected_validation_mean_foreground_dice: 0.8915950242193361
+uncertainty:
+  method: temperature_scaled_softmax_predictive_entropy
+  interpretation: post_hoc_predictive_uncertainty_not_epistemic
+  calibration_split: val
+  calibration_sample_voxels_per_case: 20000
+  error_analysis_sample_voxels_per_case: 20000
+  ece_bins: 15
+postprocessing:
+  candidates: [none, largest_component, remove_below_1ml]
+  selection_metric: validation_macro_mean_foreground_dice
+  tie_break_order: [none, remove_below_1ml, largest_component]
+test:
+  split: test
+  expected_cases: 89
+  authorization_token: FINAL_ONE_SHOT_TEST_EVALUATION
+  rerun_policy: exact_case_level_resume_only
+mesh:
+  selection_rule: closest_to_test_75th_percentile_physical_volume_among_cases_with_all_native_axes_at_least_200_voxels_then_case_id
+  expected_case_id: s0244
+  max_html_faces_per_organ: 25000
+outputs:
+  root: outputs/phase6
+  validation: outputs/phase6/validation
+  protocol: outputs/phase6/frozen_protocol.json
+  test: outputs/phase6/locked_test
+  mesh: outputs/phase6/digital_twin
+reproducibility:
+  random_seed: 42

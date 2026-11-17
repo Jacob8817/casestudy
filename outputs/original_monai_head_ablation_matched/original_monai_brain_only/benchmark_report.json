@@ -1,0 +1,72 @@
+{
+  "model": "original_monai_brain_only",
+  "task": "brain_only",
+  "status": "trained",
+  "parameter_count": 4806481,
+  "selected_epoch": 45,
+  "completed_epochs": 50,
+  "total_epoch_seconds": 189.9803494000007,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.903478709969921
+        },
+        "hd95_mm": {
+          "brain": 129.11332231803192
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9859667408158723
+        },
+        "hd95_mm": {
+          "brain": 1.4999999928002012
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9664039013661091
+        },
+        "hd95_mm": {
+          "brain": 109.54108909017987
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.9607453476945507
+        },
+        "hd95_mm": {
+          "brain": 105.79467080278917
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.9844209499858863
+        },
+        "hd95_mm": {
+          "brain": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.960203129966468
+    },
+    "macro_mean_dice": 0.960203129966468,
+    "mean_hd95_mm": {
+      "brain": 69.48981644076022
+    }
+  },
+  "best_checkpoint": "F:\\csstdy\\outputs\\original_monai_head_ablation_matched\\original_monai_brain_only\\best.pt",
+  "best_checkpoint_bytes": 57754305,
+  "best_checkpoint_sha256": "c4e6e9c754371704621f78598451a8bc0967d23477f7a8e5f9c9458dec49c767",
+  "contract_sha256": "4f2f8534e24664d396d9f05bacaa5309ce0c33b1a653712817be86954d5e87a2",
+  "test_split_accessed": false
+}

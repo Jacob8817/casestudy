@@ -1,0 +1,414 @@
+[
+  {
+    "epoch": 1,
+    "training_loss": 2.1027719508477807
+  },
+  {
+    "epoch": 2,
+    "training_loss": 1.5170367622331418
+  },
+  {
+    "epoch": 3,
+    "training_loss": 1.4114587898064894
+  },
+  {
+    "epoch": 4,
+    "training_loss": 1.2856455342276039
+  },
+  {
+    "epoch": 5,
+    "training_loss": 1.2011852836212258,
+    "validation": {
+      "mean_foreground_dice": 0.37482695352273043,
+      "per_class": [
+        {
+          "class_id": 1,
+          "dice": 0.8157275854450426,
+          "false_positive_empty_cases": 13,
+          "ground_truth_empty_cases": 13,
+          "hd95_mm": 99.99754040891474,
+          "missing_prediction_cases": 0,
+          "organ": "liver",
+          "valid_dice_cases": 44,
+          "valid_hd95_cases": 44
+        },
+        {
+          "class_id": 2,
+          "dice": 0.6989627615729235,
+          "false_positive_empty_cases": 14,
+          "ground_truth_empty_cases": 15,
+          "hd95_mm": 146.35113201822554,
+          "missing_prediction_cases": 0,
+          "organ": "spleen",
+          "valid_dice_cases": 42,
+          "valid_hd95_cases": 42
+        },
+        {
+          "class_id": 3,
+          "dice": 0.004058375754608877,
+          "false_positive_empty_cases": 13,
+          "ground_truth_empty_cases": 21,
+          "hd95_mm": 167.67937249848336,
+          "missing_prediction_cases": 3,
+          "organ": "kidney_left",
+          "valid_dice_cases": 36,
+          "valid_hd95_cases": 33
+        },
+        {
+          "class_id": 4,
+          "dice": 0.0002442077121028302,
+          "false_positive_empty_cases": 9,
+          "ground_truth_empty_cases": 22,
+          "hd95_mm": 143.85273951868857,
+          "missing_prediction_cases": 4,
+          "organ": "kidney_right",
+          "valid_dice_cases": 35,
+          "valid_hd95_cases": 31
+        },
+        {
+          "class_id": 5,
+          "dice": 0.060734319258202794,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 15,
+          "hd95_mm": 103.34607961701184,
+          "missing_prediction_cases": 1,
+          "organ": "stomach",
+          "valid_dice_cases": 42,
+          "valid_hd95_cases": 41
+        },
+        {
+          "class_id": 6,
+          "dice": 1.1777972524262047e-05,
+          "false_positive_empty_cases": 7,
+          "ground_truth_empty_cases": 21,
+          "hd95_mm": 168.1776910509382,
+          "missing_prediction_cases": 8,
+          "organ": "pancreas",
+          "valid_dice_cases": 36,
+          "valid_hd95_cases": 28
+        },
+        {
+          "class_id": 7,
+          "dice": 0.48948270348754297,
+          "false_positive_empty_cases": 6,
+          "ground_truth_empty_cases": 6,
+          "hd95_mm": 127.49324948179955,
+          "missing_prediction_cases": 0,
+          "organ": "aorta",
+          "valid_dice_cases": 51,
+          "valid_hd95_cases": 51
+        },
+        {
+          "class_id": 8,
+          "dice": 0.0005987703144144497,
+          "false_positive_empty_cases": 3,
+          "ground_truth_empty_cases": 11,
+          "hd95_mm": 129.91984536912707,
+          "missing_prediction_cases": 10,
+          "organ": "inferior_vena_cava",
+          "valid_dice_cases": 46,
+          "valid_hd95_cases": 36
+        },
+        {
+          "class_id": 9,
+          "dice": 0.8606697881866795,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 8,
+          "hd95_mm": 192.68067796862854,
+          "missing_prediction_cases": 0,
+          "organ": "lung_left",
+          "valid_dice_cases": 49,
+          "valid_hd95_cases": 49
+        },
+        {
+          "class_id": 10,
+          "dice": 0.8177792455232625,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 8,
+          "hd95_mm": 174.00208519916146,
+          "missing_prediction_cases": 0,
+          "organ": "lung_right",
+          "valid_dice_cases": 49,
+          "valid_hd95_cases": 49
+        }
+      ],
+      "validation_cases": 57
+    }
+  },
+  {
+    "epoch": 6,
+    "training_loss": 1.11999846479809
+  },
+  {
+    "epoch": 7,
+    "training_loss": 1.0652223074612468
+  },
+  {
+    "epoch": 8,
+    "training_loss": 1.0075294055912278
+  },
+  {
+    "epoch": 9,
+    "training_loss": 0.958342737664577
+  },
+  {
+    "epoch": 10,
+    "training_loss": 0.9198423446381598,
+    "validation": {
+      "mean_foreground_dice": 0.7418765469850377,
+      "per_class": [
+        {
+          "class_id": 1,
+          "dice": 0.8883882786485967,
+          "false_positive_empty_cases": 9,
+          "ground_truth_empty_cases": 13,
+          "hd95_mm": 73.86279886419123,
+          "missing_prediction_cases": 0,
+          "organ": "liver",
+          "valid_dice_cases": 44,
+          "valid_hd95_cases": 44
+        },
+        {
+          "class_id": 2,
+          "dice": 0.8437964824194525,
+          "false_positive_empty_cases": 13,
+          "ground_truth_empty_cases": 15,
+          "hd95_mm": 73.7747953846341,
+          "missing_prediction_cases": 0,
+          "organ": "spleen",
+          "valid_dice_cases": 42,
+          "valid_hd95_cases": 42
+        },
+        {
+          "class_id": 3,
+          "dice": 0.6749095895109587,
+          "false_positive_empty_cases": 19,
+          "ground_truth_empty_cases": 21,
+          "hd95_mm": 206.2714220881462,
+          "missing_prediction_cases": 0,
+          "organ": "kidney_left",
+          "valid_dice_cases": 36,
+          "valid_hd95_cases": 36
+        },
+        {
+          "class_id": 4,
+          "dice": 0.7351291724591729,
+          "false_positive_empty_cases": 18,
+          "ground_truth_empty_cases": 22,
+          "hd95_mm": 183.2718823160444,
+          "missing_prediction_cases": 0,
+          "organ": "kidney_right",
+          "valid_dice_cases": 35,
+          "valid_hd95_cases": 35
+        },
+        {
+          "class_id": 5,
+          "dice": 0.6706256991959444,
+          "false_positive_empty_cases": 13,
+          "ground_truth_empty_cases": 15,
+          "hd95_mm": 96.3045833224342,
+          "missing_prediction_cases": 0,
+          "organ": "stomach",
+          "valid_dice_cases": 42,
+          "valid_hd95_cases": 42
+        },
+        {
+          "class_id": 6,
+          "dice": 0.3866766971050135,
+          "false_positive_empty_cases": 14,
+          "ground_truth_empty_cases": 21,
+          "hd95_mm": 114.6353572209676,
+          "missing_prediction_cases": 0,
+          "organ": "pancreas",
+          "valid_dice_cases": 36,
+          "valid_hd95_cases": 36
+        },
+        {
+          "class_id": 7,
+          "dice": 0.7532893334773296,
+          "false_positive_empty_cases": 5,
+          "ground_truth_empty_cases": 6,
+          "hd95_mm": 113.16863955703437,
+          "missing_prediction_cases": 0,
+          "organ": "aorta",
+          "valid_dice_cases": 51,
+          "valid_hd95_cases": 51
+        },
+        {
+          "class_id": 8,
+          "dice": 0.6113106753439339,
+          "false_positive_empty_cases": 7,
+          "ground_truth_empty_cases": 11,
+          "hd95_mm": 102.90588948001032,
+          "missing_prediction_cases": 0,
+          "organ": "inferior_vena_cava",
+          "valid_dice_cases": 46,
+          "valid_hd95_cases": 46
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9321010486103211,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 8,
+          "hd95_mm": 56.014143549666116,
+          "missing_prediction_cases": 0,
+          "organ": "lung_left",
+          "valid_dice_cases": 49,
+          "valid_hd95_cases": 49
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9225384930796532,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 8,
+          "hd95_mm": 100.97678777149746,
+          "missing_prediction_cases": 0,
+          "organ": "lung_right",
+          "valid_dice_cases": 49,
+          "valid_hd95_cases": 49
+        }
+      ],
+      "validation_cases": 57
+    }
+  },
+  {
+    "epoch": 11,
+    "training_loss": 0.9004888806678011
+  },
+  {
+    "epoch": 12,
+    "training_loss": 0.8654665857443307
+  },
+  {
+    "epoch": 13,
+    "training_loss": 0.8524717502089393
+  },
+  {
+    "epoch": 14,
+    "training_loss": 0.843029398987562
+  },
+  {
+    "epoch": 15,
+    "training_loss": 0.8257704982585695,
+    "validation": {
+      "mean_foreground_dice": 0.7686647921346774,
+      "per_class": [
+        {
+          "class_id": 1,
+          "dice": 0.8794013291873042,
+          "false_positive_empty_cases": 7,
+          "ground_truth_empty_cases": 13,
+          "hd95_mm": 28.767599338708923,
+          "missing_prediction_cases": 1,
+          "organ": "liver",
+          "valid_dice_cases": 44,
+          "valid_hd95_cases": 43
+        },
+        {
+          "class_id": 2,
+          "dice": 0.8777828141227159,
+          "false_positive_empty_cases": 10,
+          "ground_truth_empty_cases": 15,
+          "hd95_mm": 68.16375302700769,
+          "missing_prediction_cases": 0,
+          "organ": "spleen",
+          "valid_dice_cases": 42,
+          "valid_hd95_cases": 42
+        },
+        {
+          "class_id": 3,
+          "dice": 0.6471703157517213,
+          "false_positive_empty_cases": 20,
+          "ground_truth_empty_cases": 21,
+          "hd95_mm": 219.40723360909357,
+          "missing_prediction_cases": 0,
+          "organ": "kidney_left",
+          "valid_dice_cases": 36,
+          "valid_hd95_cases": 36
+        },
+        {
+          "class_id": 4,
+          "dice": 0.751799757713758,
+          "false_positive_empty_cases": 19,
+          "ground_truth_empty_cases": 22,
+          "hd95_mm": 188.0088213307517,
+          "missing_prediction_cases": 0,
+          "organ": "kidney_right",
+          "valid_dice_cases": 35,
+          "valid_hd95_cases": 35
+        },
+        {
+          "class_id": 5,
+          "dice": 0.7168561184462413,
+          "false_positive_empty_cases": 12,
+          "ground_truth_empty_cases": 15,
+          "hd95_mm": 84.55057382583618,
+          "missing_prediction_cases": 0,
+          "organ": "stomach",
+          "valid_dice_cases": 42,
+          "valid_hd95_cases": 42
+        },
+        {
+          "class_id": 6,
+          "dice": 0.5209587182727938,
+          "false_positive_empty_cases": 15,
+          "ground_truth_empty_cases": 21,
+          "hd95_mm": 150.7665254275004,
+          "missing_prediction_cases": 0,
+          "organ": "pancreas",
+          "valid_dice_cases": 36,
+          "valid_hd95_cases": 36
+        },
+        {
+          "class_id": 7,
+          "dice": 0.776101383231171,
+          "false_positive_empty_cases": 6,
+          "ground_truth_empty_cases": 6,
+          "hd95_mm": 134.09276374181113,
+          "missing_prediction_cases": 0,
+          "organ": "aorta",
+          "valid_dice_cases": 51,
+          "valid_hd95_cases": 51
+        },
+        {
+          "class_id": 8,
+          "dice": 0.6715695106349943,
+          "false_positive_empty_cases": 7,
+          "ground_truth_empty_cases": 11,
+          "hd95_mm": 115.5652148205301,
+          "missing_prediction_cases": 0,
+          "organ": "inferior_vena_cava",
+          "valid_dice_cases": 46,
+          "valid_hd95_cases": 46
+        },
+        {
+          "class_id": 9,
+          "dice": 0.9227226041210163,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 8,
+          "hd95_mm": 82.77013250273102,
+          "missing_prediction_cases": 0,
+          "organ": "lung_left",
+          "valid_dice_cases": 49,
+          "valid_hd95_cases": 49
+        },
+        {
+          "class_id": 10,
+          "dice": 0.9222853698650578,
+          "false_positive_empty_cases": 8,
+          "ground_truth_empty_cases": 8,
+          "hd95_mm": 71.65087505749294,
+          "missing_prediction_cases": 0,
+          "organ": "lung_right",
+          "valid_dice_cases": 49,
+          "valid_hd95_cases": 49
+        }
+      ],
+      "validation_cases": 57
+    }
+  },
+  {
+    "epoch": 16,
+    "training_loss": 0.8030236069243849
+  }
+]

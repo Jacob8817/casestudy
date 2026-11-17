@@ -1,0 +1,2 @@
+subject_id,subject_path,ct_path,ct_valid,ct_shape,ct_spacing_mm,ct_datatype,ct_size_bytes,mask_count,mask_size_bytes,issue_count,metadata_present,split,study_type
+s0000,F:\csstdy\Totalsegmentator_dataset_v201\s0000,F:\csstdy\Totalsegmentator_dataset_v201\s0000\ct.nii.gz,True,294x192x179,1.5x1.5x1.5,4,11526563,117,5367103,0,True,val,ct pelvis

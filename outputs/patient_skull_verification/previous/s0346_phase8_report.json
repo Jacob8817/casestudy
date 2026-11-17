@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "phase": 8,
+  "status": "passed",
+  "confidence_definition": "one_minus_normalized_predictive_entropy",
+  "representative_case": "s0346",
+  "interactive_html": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase8\\s0346_confidence.html",
+  "combined_glb": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase8\\s0346_confidence.glb",
+  "cases": [
+    {
+      "case_id": "s0346",
+      "organs": {
+        "brain": {
+          "vertices": 22796,
+          "mean_uncertainty": 0.58995121717453,
+          "mean_confidence": 0.4100487232208252,
+          "low_confidence_vertex_fraction": 0.7230654500789612
+        },
+        "skull": {
+          "vertices": 53337,
+          "mean_uncertainty": 0.48968470096588135,
+          "mean_confidence": 0.5103152990341187,
+          "low_confidence_vertex_fraction": 0.4849166619794889
+        }
+      }
+    }
+  ],
+  "official_test_split_accessed": false
+}

@@ -1,0 +1,6 @@
+finding_class,axis,start_slice,end_slice,peak_slice,peak_raw_probability,peak_tta_sd,selection_status,calibration_status
+intraparenchymal,axial,95,95,95,0.010344430804252625,0.014405231922864914,peak_slice_only,not locally calibrated
+intraventricular,axial,95,95,95,0.007898837327957153,0.00629934947937727,peak_slice_only,not locally calibrated
+subarachnoid,axial,202,202,202,0.013591449707746506,0.0017521808622404933,peak_slice_only,not locally calibrated
+subdural,axial,48,192,109,0.23324589431285858,0.11132534593343735,peak_review_range_below_0.50,not locally calibrated
+subdural,axial,201,202,202,0.1300286501646042,0.029287246987223625,peak_review_range_below_0.50,not locally calibrated

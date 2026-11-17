@@ -1,0 +1,4 @@
+threshold,lower_hu,upper_hu,candidate_voxels,candidate_volume_mm3,percentage_of_inner_brain,components_before_filtering,components_after_filtering,visualization_min_component_mm3
+A: -5 to 15 HU,-5.0,15.0,121049,28039.823989684217,2.6810000024362863,1292,82,10.0
+B: 0 to 20 HU,0.0,20.0,225958,52340.97389537349,5.004530384806965,2138,136,10.0
+C: 0 to 25 HU,0.0,25.0,388394,89967.69406314312,8.602171971236762,5994,162,10.0

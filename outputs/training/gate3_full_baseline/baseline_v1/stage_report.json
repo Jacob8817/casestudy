@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T19:37:50.035721Z",
+  "status": "passed",
+  "gate": "full_baseline",
+  "config_sha256": "8033b87ad9e9fab70930ee608a886c635684e27556380538cb3e47fec13b7186",
+  "workflow_config_sha256": "e04de4443c3b99d8927e0c605c34044e1e1618f457b4a18458eb40e1e7cf9911",
+  "scope_sha256": "6e4a4613b1ef4161d371f363fb27ea121adc6320a021e06d64fb3edadc8c182f",
+  "provenance_sha256": "b69e1d0acdb6f2105d103b317b953dc6c20438ed9facc53f4c0799220d415f42",
+  "train_case_count": 1082,
+  "validation_case_count": 57,
+  "cache_prewarm": {
+    "train_report": "outputs/training/cache_prewarm/full_baseline_train.json",
+    "validation_report": "outputs/training/cache_prewarm/full_baseline_val.json",
+    "train_cases": 1082,
+    "validation_cases": 57
+  },
+  "test_split_accessed": false,
+  "last_checkpoint": "outputs/training/gate3_full_baseline/baseline_v1/checkpoints/last.pt",
+  "best_checkpoint": "outputs/training/gate3_full_baseline/baseline_v1/checkpoints/best.pt",
+  "best_validation_mean_foreground_dice": 0.8915950242193361,
+  "counters": {
+    "epochs_completed": 50,
+    "training_batches_consumed": 54100,
+    "model_forward_calls": 54100,
+    "loss_evaluations": 54100,
+    "backward_calls": 54100,
+    "gradient_checks": 27050,
+    "amp_overflow_skips": 6,
+    "optimizer_steps": 27044,
+    "scheduler_steps": 50,
+    "validation_runs_completed": 10,
+    "checkpoint_write_attempts": 61,
+    "checkpoints_written": 61,
+    "resume_events": 1
+  },
+  "acceptance": {
+    "pilot_prerequisite_passed": true,
+    "training_completed_or_early_stopped": true,
+    "finite_training_loss": true,
+    "finite_validation_dice": true,
+    "last_checkpoint_exists": true,
+    "best_checkpoint_exists": true,
+    "test_split_not_accessed": true
+  }
+}

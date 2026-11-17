@@ -1,0 +1,48 @@
+schema_version: 1
+dataset:
+  id: totalsegmentator_ct_v2.0.1
+  name: TotalSegmentator CT
+  version: 2.0.1
+  modality: CT
+  expected_subjects: 1228
+  expected_masks_per_subject: 117
+  root: Totalsegmentator_dataset_v201
+  root_environment_variable: TOTALSEG_DATASET_ROOT
+  metadata: meta.csv
+  organ_schema: configs/organs_v1.yaml
+split:
+  strategy: official_meta_csv
+  column: split
+  allowed_values: [train, val, test]
+  expected_counts: {train: 1082, val: 57, test: 89}
+  test_locked: true
+  test_labels_used_for_tuning: false
+preprocessing:
+  orientation: RAS
+  spacing_mm: [1.5, 1.5, 1.5]
+  unknown_nifti_spatial_units_fallback: mm
+  spatial_units_fallback_reason: Dataset audit found uniform 1.5 spacing with unset NIfTI unit flags.
+  intensity_window_hu:
+    lower: -1000
+    upper: 1000
+    status: phase3_baseline
+    justification: Broad calibrated CT window retaining lung and abdominal anatomy.
+  normalization:
+    method: fixed_min_max
+    output_range: [0.0, 1.0]
+    per_volume_statistics: false
+  foreground_crop:
+    enabled: false
+    threshold_hu: -900
+    margin_voxels: [10, 10, 10]
+    status: implemented_but_disabled_pending_dataset_wide_retention_audit
+  roi_size: [96, 96, 96]
+  patch_sampling:
+    method: deterministic_class_balanced
+    foreground_probability: 0.9
+    body_threshold_hu: -500
+    background_only_policy: sample_valid_body_or_padded_background
+  parameters_configurable: true
+reproducibility:
+  random_seed: 42
+  patient_level_only: true

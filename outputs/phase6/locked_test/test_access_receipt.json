@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "authorized",
+  "authorization_token": "FINAL_ONE_SHOT_TEST_EVALUATION",
+  "frozen_protocol_sha256": "b0a5f3239922d99741569a25d3e202b7f7ac1287cb823c4d9e37f9696ddb0759",
+  "authorized_at_utc": "2026-08-31T13:51:35.125165+00:00",
+  "scope": "exact official test split; one final evaluation; exact case-level resume allowed"
+}

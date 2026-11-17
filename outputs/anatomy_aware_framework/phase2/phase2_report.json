@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "phase": 2,
+  "status": "passed",
+  "config": "F:\\csstdy\\configs\\anatomy_aware_v1.yaml",
+  "config_sha256": "b87c7acca4300b1252f076327ec007fc3a75d284b9f9451231325475851bfc6d",
+  "acceptance": {
+    "phase1_passed": true,
+    "official_test_split_unopened": true,
+    "frozen_development_counts": true,
+    "all_crops_ct_only": true,
+    "all_targets_retained": true,
+    "sdf_sign_and_range_verified": true,
+    "training_completed": true,
+    "best_checkpoint_hash_verified": true,
+    "validation_metrics_finite": true
+  },
+  "model_report": {
+    "schema_version": 1,
+    "status": "trained",
+    "phase": 2,
+    "selected_epoch": 25,
+    "completed_epochs": 30,
+    "parameter_count": 1206642,
+    "train_cases": 98,
+    "validation_cases": 5,
+    "validation": {
+      "cases": [
+        {
+          "case_id": "s0346",
+          "dice": {
+            "brain": 0.933741509024945,
+            "skull": 0.8251430173372931
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.1764977127313614,
+            "skull": 0.3423565626144409
+          },
+          "inference_seconds": 1.1086335999998482,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.19436445832252502,
+            "skull": 0.1779806911945343
+          },
+          "hd95_mm": {
+            "brain": 152.7497954172116,
+            "skull": 138.30130151231404
+          }
+        },
+        {
+          "case_id": "s0792",
+          "dice": {
+            "brain": 0.9860818376802444,
+            "skull": 0.937444976422774
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.12899276614189148,
+            "skull": 0.1846267282962799
+          },
+          "inference_seconds": 0.36136439999972936,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.16828948259353638,
+            "skull": 0.1371661126613617
+          },
+          "hd95_mm": {
+            "brain": 2.121320293206269,
+            "skull": 1.4999999707223965
+          }
+        },
+        {
+          "case_id": "s0874",
+          "dice": {
+            "brain": 0.9430790293232556,
+            "skull": 0.8901010479965643
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.1477251499891281,
+            "skull": 0.2802876830101013
+          },
+          "inference_seconds": 0.502735500000199,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.15735585987567902,
+            "skull": 0.15089942514896393
+          },
+          "hd95_mm": {
+            "brain": 79.00316531983081,
+            "skull": 122.55605958438474
+          }
+        },
+        {
+          "case_id": "s1161",
+          "dice": {
+            "brain": 0.5485843094729067,
+            "skull": 0.5507763192231258
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.22770410776138306,
+            "skull": 0.41876107454299927
+          },
+          "inference_seconds": 4.182460899999569,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.1942438930273056,
+            "skull": 0.20278236269950867
+          },
+          "hd95_mm": {
+            "brain": 645.7593204887232,
+            "skull": 546.5247478162297
+          }
+        },
+        {
+          "case_id": "s1260",
+          "dice": {
+            "brain": 0.9874646488785404,
+            "skull": 0.9178185439911708
+          },
+          "sdf_mae_normalized": {
+            "brain": 0.1258433312177658,
+            "skull": 0.16543614864349365
+          },
+          "inference_seconds": 0.46702259999983653,
+          "boundary_sdf_mae_normalized": {
+            "brain": 0.1709696501493454,
+            "skull": 0.1211913451552391
+          },
+          "hd95_mm": {
+            "brain": 1.5,
+            "skull": 1.5
+          }
+        }
+      ],
+      "mean_dice": {
+        "brain": 0.8797902668759784,
+        "skull": 0.8242567809941856
+      },
+      "macro_mean_dice": 0.852023523935082,
+      "mean_sdf_mae_normalized": {
+        "brain": 0.16135261356830596,
+        "skull": 0.278293639421463
+      },
+      "mean_boundary_sdf_mae_normalized": {
+        "brain": 0.17704466879367828,
+        "skull": 0.15800398737192153
+      },
+      "mean_inference_seconds": 1.3244433999998364,
+      "mean_hd95_mm": {
+        "brain": 176.2267203037944,
+        "skull": 162.07642177673017
+      }
+    },
+    "total_training_seconds": 458.50019029999976,
+    "peak_gpu_memory_mb": 1978.5283203125,
+    "best_checkpoint": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\best.pt",
+    "best_checkpoint_sha256": "a843b79365dfb4426b62dfed0f77b6917e45e27dc03beb276d2de35ac99f6684",
+    "contract_sha256": "1dfed3e1e5e97269fc6d0884283958077794e6b56e3a1aa55aebde8f0edec8ba",
+    "official_test_split_accessed": false
+  },
+  "phase1_ct_only_baseline": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.7442257411980138,
+          "skull": 0.5156686903158781
+        },
+        "hd95_mm": {
+          "brain": 209.1733730664589,
+          "skull": 189.74258878807362
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9842568221546786,
+          "skull": 0.9547803391036223
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.6001253188793311,
+          "skull": 0.6866065587330712
+        },
+        "hd95_mm": {
+          "brain": 211.67546125642681,
+          "skull": 161.6297866726225
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.07233171097666702,
+          "skull": 0.12262310442608802
+        },
+        "hd95_mm": {
+          "brain": 653.686851634634,
+          "skull": 580.591078126421
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.98893794575712,
+          "skull": 0.9452454398361019
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.6779755077931621,
+      "skull": 0.6449848264829523
+    },
+    "macro_mean_dice": 0.6614801671380572,
+    "mean_hd95_mm": {
+      "brain": 215.6314012501452,
+      "skull": 186.99269071156792
+    }
+  },
+  "measured_deltas": {
+    "brain": {
+      "dice": 0.20181475908281632,
+      "hd95_mm": -39.404680946350794
+    },
+    "skull": {
+      "dice": 0.17927195451123334,
+      "hd95_mm": -24.916268934837746
+    }
+  },
+  "outputs": {
+    "comparison_csv": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\phase1_vs_phase2.csv",
+    "history": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\history.json",
+    "learning_curves": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\phase2_learning_curves.png",
+    "sdf_target_qa": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\sdf_target_sanity_s0346.png",
+    "segmentation_sdf_visual": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\phase2_segmentation_sdf_s0346.png"
+  },
+  "official_test_split_accessed": false,
+  "next_phase": "brain-skull anatomical relational constraints and violation maps"
+}

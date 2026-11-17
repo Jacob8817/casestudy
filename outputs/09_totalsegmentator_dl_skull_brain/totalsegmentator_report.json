@@ -1,0 +1,30 @@
+{
+  "totalsegmentator_version": "2.18.0",
+  "nnunetv2_version": "2.8.1",
+  "torch_version": "2.14.0+cu130",
+  "task": "total",
+  "modality": "CT",
+  "license_required": false,
+  "device": "gpu",
+  "fast": false,
+  "fastest": false,
+  "save_lowres": false,
+  "multilabel": false,
+  "output_type": "nifti",
+  "roi_subset": [
+    "brain",
+    "skull"
+  ],
+  "input": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\input\\CASE_001_brain_kernel_ct.nii.gz",
+  "output": "F:\\csstdy\\outputs\\09_totalsegmentator_dl_skull_brain\\segmentations",
+  "num_classes": 2,
+  "classes": {
+    "90": "brain",
+    "91": "skull"
+  },
+  "runtime_seconds": 296.88,
+  "output_files": [
+    "brain.nii.gz",
+    "skull.nii.gz"
+  ]
+}

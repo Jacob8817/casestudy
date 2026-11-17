@@ -1,0 +1,542 @@
+[
+  {
+    "epoch": 1,
+    "total_loss": 0.9885261335543224,
+    "segmentation_loss": 0.9717597465734092,
+    "sdf_loss": 0.3353276441291887,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 38,
+      "ct_context_background": 20
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 19.163831200000004,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 2,
+    "total_loss": 0.5427506587335041,
+    "segmentation_loss": 0.5345723893569441,
+    "sdf_loss": 0.1635653831977017,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 45,
+      "foreground_skull": 34,
+      "ct_context_background": 19
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 15.955625199999758,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 3,
+    "total_loss": 0.4755064138800514,
+    "segmentation_loss": 0.47141517691162166,
+    "sdf_loss": 0.08182472526570972,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 41,
+      "foreground_skull": 35,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 16.169976499999848,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 4,
+    "total_loss": 0.3875218683815732,
+    "segmentation_loss": 0.3841780444645152,
+    "sdf_loss": 0.06687649350841435,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 40,
+      "ct_context_background": 18
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.34490360000018,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 5,
+    "total_loss": 0.36465090551242535,
+    "segmentation_loss": 0.36157981154261803,
+    "sdf_loss": 0.06142185624612837,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 46,
+      "foreground_skull": 37,
+      "ct_context_background": 15
+    },
+    "validation_macro_dice": 0.7203516429361023,
+    "validation_brain_dice": 0.7221445797193515,
+    "validation_skull_dice": 0.718558706152853,
+    "best": true,
+    "elapsed_seconds": 19.826795800000127,
+    "peak_gpu_memory_mb": 1978.5283203125
+  },
+  {
+    "epoch": 6,
+    "total_loss": 0.370894763466655,
+    "segmentation_loss": 0.36805748141237665,
+    "sdf_loss": 0.05674567453715266,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 31,
+      "foreground_skull": 45,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 16.759986200000185,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 7,
+    "total_loss": 0.3273076225756382,
+    "segmentation_loss": 0.3244932593435657,
+    "sdf_loss": 0.05628727015335949,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 37,
+      "foreground_skull": 42,
+      "ct_context_background": 19
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.1760333000002,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 8,
+    "total_loss": 0.2940049480114664,
+    "segmentation_loss": 0.29131596550649524,
+    "sdf_loss": 0.053779667965611636,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 38,
+      "foreground_skull": 47,
+      "ct_context_background": 13
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.926205900000241,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 9,
+    "total_loss": 0.2671134150682055,
+    "segmentation_loss": 0.2645701210261608,
+    "sdf_loss": 0.050865913228112826,
+    "sdf_weight": 0.05,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 42,
+      "ct_context_background": 16
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.268920399999843,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 10,
+    "total_loss": 0.2841691863247935,
+    "segmentation_loss": 0.27645996555077784,
+    "sdf_loss": 0.0513948032594457,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 43,
+      "foreground_skull": 39,
+      "ct_context_background": 16
+    },
+    "validation_macro_dice": 0.7651518797658932,
+    "validation_brain_dice": 0.8089356783607956,
+    "validation_skull_dice": 0.7213680811709906,
+    "best": true,
+    "elapsed_seconds": 18.41426300000012,
+    "peak_gpu_memory_mb": 1978.5283203125
+  },
+  {
+    "epoch": 11,
+    "total_loss": 0.33772690533375255,
+    "segmentation_loss": 0.33009300540600506,
+    "sdf_loss": 0.05089267111402385,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 38,
+      "foreground_skull": 41,
+      "ct_context_background": 19
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.97006599999986,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 12,
+    "total_loss": 0.3014945413689224,
+    "segmentation_loss": 0.293989504098284,
+    "sdf_loss": 0.050033596819456745,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 30,
+      "foreground_skull": 45,
+      "ct_context_background": 23
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 15.47199449999971,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 13,
+    "total_loss": 0.28127225146305807,
+    "segmentation_loss": 0.274051058809368,
+    "sdf_loss": 0.04814127319473393,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 46,
+      "foreground_skull": 38,
+      "ct_context_background": 14
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.174761900000249,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 14,
+    "total_loss": 0.24853544606237996,
+    "segmentation_loss": 0.24153080848710878,
+    "sdf_loss": 0.04669757917219279,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 33,
+      "foreground_skull": 48,
+      "ct_context_background": 17
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 13.595158500000252,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 15,
+    "total_loss": 0.2891215660742351,
+    "segmentation_loss": 0.2820891119843843,
+    "sdf_loss": 0.04688304164731989,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 44,
+      "foreground_skull": 37,
+      "ct_context_background": 17
+    },
+    "validation_macro_dice": 0.8146719639921425,
+    "validation_brain_dice": 0.8156449716157208,
+    "validation_skull_dice": 0.8136989563685642,
+    "best": true,
+    "elapsed_seconds": 19.569194300000163,
+    "peak_gpu_memory_mb": 1978.5283203125
+  },
+  {
+    "epoch": 16,
+    "total_loss": 0.2856730697866605,
+    "segmentation_loss": 0.2789682706019708,
+    "sdf_loss": 0.04469866890992437,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 35,
+      "foreground_skull": 41,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.686795999999958,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 17,
+    "total_loss": 0.2899463518845792,
+    "segmentation_loss": 0.28317713163488983,
+    "sdf_loss": 0.045128131798487535,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 37,
+      "foreground_skull": 35,
+      "ct_context_background": 26
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 13.57010020000007,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 18,
+    "total_loss": 0.2694268660353763,
+    "segmentation_loss": 0.2629016098395294,
+    "sdf_loss": 0.0435017020612651,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 44,
+      "foreground_skull": 29,
+      "ct_context_background": 25
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.412355899999966,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 19,
+    "total_loss": 0.2623096179901337,
+    "segmentation_loss": 0.25599553432239563,
+    "sdf_loss": 0.042093888438325754,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 42,
+      "foreground_skull": 42,
+      "ct_context_background": 14
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.310210899999674,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 20,
+    "total_loss": 0.24865612847616478,
+    "segmentation_loss": 0.24275751780642538,
+    "sdf_loss": 0.039324063142495494,
+    "sdf_weight": 0.15,
+    "sampling_modes": {
+      "foreground_brain": 46,
+      "foreground_skull": 32,
+      "ct_context_background": 20
+    },
+    "validation_macro_dice": 0.8383577117260625,
+    "validation_brain_dice": 0.8467073101994116,
+    "validation_skull_dice": 0.8300081132527136,
+    "best": true,
+    "elapsed_seconds": 17.39395979999972,
+    "peak_gpu_memory_mb": 1978.5283203125
+  },
+  {
+    "epoch": 21,
+    "total_loss": 0.23577115703754278,
+    "segmentation_loss": 0.22584940379067342,
+    "sdf_loss": 0.03968700662027208,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 45,
+      "foreground_skull": 37,
+      "ct_context_background": 16
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 12.710346299999856,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 22,
+    "total_loss": 0.21799636510561923,
+    "segmentation_loss": 0.20885135624937864,
+    "sdf_loss": 0.036580035786087414,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 41,
+      "foreground_skull": 44,
+      "ct_context_background": 13
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 11.549419299999954,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 23,
+    "total_loss": 0.23054608265508195,
+    "segmentation_loss": 0.22214058376088433,
+    "sdf_loss": 0.033621998541817376,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 35,
+      "foreground_skull": 45,
+      "ct_context_background": 18
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 12.60702190000029,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 24,
+    "total_loss": 0.26380379676666793,
+    "segmentation_loss": 0.2553786825464696,
+    "sdf_loss": 0.033700465091637204,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 42,
+      "foreground_skull": 34,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.397310099999686,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 25,
+    "total_loss": 0.24381160101264107,
+    "segmentation_loss": 0.23500731157861193,
+    "sdf_loss": 0.035217155208240966,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 41,
+      "foreground_skull": 41,
+      "ct_context_background": 16
+    },
+    "validation_macro_dice": 0.852023523935082,
+    "validation_brain_dice": 0.8797902668759784,
+    "validation_skull_dice": 0.8242567809941856,
+    "best": true,
+    "elapsed_seconds": 16.949536199999784,
+    "peak_gpu_memory_mb": 1978.5283203125
+  },
+  {
+    "epoch": 26,
+    "total_loss": 0.3091049301913198,
+    "segmentation_loss": 0.29995556156702186,
+    "sdf_loss": 0.03659747255852028,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 37,
+      "foreground_skull": 39,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 13.704360899999756,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 27,
+    "total_loss": 0.3017864847669796,
+    "segmentation_loss": 0.2936033837649287,
+    "sdf_loss": 0.03273241334043595,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 39,
+      "foreground_skull": 37,
+      "ct_context_background": 22
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.87683620000007,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 28,
+    "total_loss": 0.2526929577698513,
+    "segmentation_loss": 0.24450024034903975,
+    "sdf_loss": 0.03277087135582554,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 38,
+      "ct_context_background": 20
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 13.439016899999842,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 29,
+    "total_loss": 0.26395876051820055,
+    "segmentation_loss": 0.2565574595058451,
+    "sdf_loss": 0.0296052075656397,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 40,
+      "foreground_skull": 33,
+      "ct_context_background": 25
+    },
+    "validation_macro_dice": null,
+    "validation_brain_dice": null,
+    "validation_skull_dice": null,
+    "best": false,
+    "elapsed_seconds": 14.334387300000344,
+    "peak_gpu_memory_mb": 312.91552734375
+  },
+  {
+    "epoch": 30,
+    "total_loss": 0.23156873060732472,
+    "segmentation_loss": 0.22436545177229814,
+    "sdf_loss": 0.02881311492196151,
+    "sdf_weight": 0.25,
+    "sampling_modes": {
+      "foreground_brain": 44,
+      "foreground_skull": 36,
+      "ct_context_background": 18
+    },
+    "validation_macro_dice": 0.8080943839995018,
+    "validation_brain_dice": 0.8431539750360179,
+    "validation_skull_dice": 0.7730347929629857,
+    "best": false,
+    "elapsed_seconds": 17.770816100000047,
+    "peak_gpu_memory_mb": 1978.5283203125
+  }
+]

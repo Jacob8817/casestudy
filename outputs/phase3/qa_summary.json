@@ -1,0 +1,201 @@
+{
+  "stage": "phase3_preprocessing_and_patch_qa",
+  "status": "passed",
+  "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+  "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+  "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+  "dataset_root_recorded_as": "TOTALSEG_DATASET_ROOT or project-relative Totalsegmentator_dataset_v201",
+  "test_split_accessed": false,
+  "primary_case": "s0014",
+  "background_only_case": "s0099",
+  "primary_native_shape": [
+    286,
+    286,
+    308
+  ],
+  "orientation_trace": {
+    "source_orientation": "RAS",
+    "target_orientation": "RAS",
+    "axis_permutation": [
+      0,
+      1,
+      2
+    ],
+    "axis_flips": [
+      false,
+      false,
+      false
+    ],
+    "was_noop": true
+  },
+  "resample_trace": {
+    "source_spacing_mm": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "target_spacing_mm": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "source_shape": [
+      286,
+      286,
+      308
+    ],
+    "target_shape": [
+      286,
+      286,
+      308
+    ],
+    "was_noop": true,
+    "image_interpolation": "none",
+    "label_interpolation": "none"
+  },
+  "hu_window": [
+    -1000.0,
+    1000.0
+  ],
+  "normalized_range": [
+    0.0,
+    1.0
+  ],
+  "roi_size": [
+    96,
+    96,
+    96
+  ],
+  "primary_conflict_voxels": 15561,
+  "primary_exclusive_counts": {
+    "liver": 418207,
+    "spleen": 85994,
+    "kidney_left": 55780,
+    "kidney_right": 53721,
+    "stomach": 940898,
+    "pancreas": 20262,
+    "aorta": 29771,
+    "inferior_vena_cava": 21099,
+    "lung_left": 97408,
+    "lung_right": 129225
+  },
+  "foreground_patch_trace": {
+    "case_id": "s0014",
+    "sample_index": 14,
+    "mode": "foreground_class_balanced",
+    "selected_class_id": 6,
+    "center": [
+      118,
+      127,
+      208
+    ],
+    "requested_start": [
+      70,
+      79,
+      160
+    ],
+    "source_start": [
+      70,
+      79,
+      160
+    ],
+    "source_end": [
+      166,
+      175,
+      256
+    ],
+    "padding_before": [
+      0,
+      0,
+      0
+    ],
+    "padding_after": [
+      0,
+      0,
+      0
+    ],
+    "derived_seed": 16113329376083968643
+  },
+  "background_patch_trace": {
+    "case_id": "s0099",
+    "sample_index": 0,
+    "mode": "background_only_fallback",
+    "selected_class_id": 0,
+    "center": [
+      68,
+      82,
+      63
+    ],
+    "requested_start": [
+      20,
+      34,
+      15
+    ],
+    "source_start": [
+      20,
+      34,
+      15
+    ],
+    "source_end": [
+      108,
+      108,
+      77
+    ],
+    "padding_before": [
+      0,
+      0,
+      0
+    ],
+    "padding_after": [
+      8,
+      22,
+      34
+    ],
+    "derived_seed": 971702286858572692
+  },
+  "crop_preview": {
+    "globally_enabled": false,
+    "bbox": [
+      [
+        22,
+        264
+      ],
+      [
+        24,
+        264
+      ],
+      [
+        0,
+        308
+      ]
+    ],
+    "voxel_reduction_fraction": 0.2899408284023669,
+    "selected_label_retention_fraction": 1.0
+  },
+  "acceptance": {
+    "manifest fingerprint valid": true,
+    "organ schema fingerprint valid": true,
+    "locked test access rejected before path resolution": true,
+    "13 source masks loaded sequentially": true,
+    "CT finite float32": true,
+    "exclusive label uint8 with ids 0\u201310": true,
+    "exclusive counts exactly match prior full audit": true,
+    "RAS conversion is exact no-op": true,
+    "1.5 mm resampling is exact no-op": true,
+    "fixed HU normalization finite and bounded": true,
+    "foreground patch shape is image 1\u00d796\u00b3 / label 96\u00b3": true,
+    "foreground patch is exactly reproducible": true,
+    "selected center class remains in foreground patch": true,
+    "background-only fallback succeeds with padding": true,
+    "background-only patch is exactly reproducible": true,
+    "CT-only crop preview retains all selected labels": true,
+    "original dataset files unchanged": true
+  },
+  "limitations": [
+    "No segmentation model is trained or evaluated in this notebook.",
+    "The locked test split is not accessed.",
+    "NIfTI spatial units are unset; millimetres are the audited project fallback.",
+    "CT-derived foreground cropping remains disabled pending dataset-wide retention QA.",
+    "The separately pinned CUDA PyTorch/MONAI environment is validated outside this CPU-safe notebook."
+  ]
+}

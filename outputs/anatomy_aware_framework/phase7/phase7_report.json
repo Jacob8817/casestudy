@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "phase": 7,
+  "status": "passed",
+  "method": "priority-binned spatial vertex clustering",
+  "priority_formula": {
+    "uncertainty": 0.35,
+    "curvature": 0.3,
+    "boundary_complexity": 0.2,
+    "anisotropy": 0.15
+  },
+  "cases": [
+    {
+      "case_id": "s0346",
+      "organs": {
+        "brain": {
+          "baseline_vertices": 49404,
+          "baseline_faces": 98764,
+          "adaptive_vertices": 22796,
+          "adaptive_faces": 45388,
+          "vertex_reduction_fraction": 0.5385798720751356,
+          "face_reduction_fraction": 0.5404398363776275,
+          "adaptive_to_full_assd_mm": 0.5048994437458798,
+          "adaptive_to_full_hd95_mm": 1.299038105676658,
+          "anisotropy_ratio": 1.0,
+          "anisotropy_score": 0.0,
+          "mean_vertex_priority": 0.3141705095767975,
+          "high_priority_vertex_fraction": 6.072382803011902e-05
+        },
+        "skull": {
+          "baseline_vertices": 141751,
+          "baseline_faces": 283624,
+          "adaptive_vertices": 53337,
+          "adaptive_faces": 106447,
+          "vertex_reduction_fraction": 0.623727522204429,
+          "face_reduction_fraction": 0.6246897300651567,
+          "adaptive_to_full_assd_mm": 0.5967907425886538,
+          "adaptive_to_full_hd95_mm": 1.4133006112953777,
+          "anisotropy_ratio": 1.0,
+          "anisotropy_score": 0.0,
+          "mean_vertex_priority": 0.27129510045051575,
+          "high_priority_vertex_fraction": 0.00041622281324294006
+        }
+      }
+    }
+  ],
+  "official_test_split_accessed": false
+}

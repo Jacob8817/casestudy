@@ -1,0 +1,26 @@
+{
+  "config_sha256": "cea2ee56002012566001fe3045312a75ba59b9fe39a8aa5dc7957834a7824605",
+  "counters": {
+    "backward_calls": 96,
+    "checkpoint_write_attempts": 7,
+    "checkpoints_written": 7,
+    "epochs_completed": 3,
+    "gradient_checks": 48,
+    "loss_evaluations": 96,
+    "model_forward_calls": 96,
+    "optimizer_steps": 48,
+    "resume_events": 1,
+    "scheduler_steps": 3,
+    "training_batches_consumed": 96,
+    "validation_runs_completed": 3
+  },
+  "experiment_id": "gate2_deterministic_pilot_v1",
+  "gate": "deterministic_pilot",
+  "resumed_from": "outputs/training/gate2_deterministic_pilot/baseline_v1/checkpoints/last.pt",
+  "run_id": "baseline_v1",
+  "schema_version": 1,
+  "scope_sha256": "8a7a8b6922bcff0ed6972f8ec9f1b444ea2c0781a6d8d681a06a215652a55584",
+  "started_utc": "2026-08-27T07:25:55.899573Z",
+  "status": "completed",
+  "updated_utc": "2026-08-27T07:40:04.904456Z"
+}

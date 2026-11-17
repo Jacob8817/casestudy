@@ -1,0 +1,84 @@
+{
+  "model": "original_monai_brain_skull",
+  "task": "joint",
+  "status": "trained",
+  "parameter_count": 4807482,
+  "selected_epoch": 50,
+  "completed_epochs": 50,
+  "total_epoch_seconds": 199.78671620000114,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.8786639922752082,
+          "skull": 0.9276154930113875
+        },
+        "hd95_mm": {
+          "brain": 130.50862040493723,
+          "skull": 3.3541019662496847
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9851100466234923,
+          "skull": 0.9518694565590239
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9226705272068053,
+          "skull": 0.9468447389544515
+        },
+        "hd95_mm": {
+          "brain": 117.6042095615456,
+          "skull": 1.5000000171764893
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.8922054836334907,
+          "skull": 0.9274895981936103
+        },
+        "hd95_mm": {
+          "brain": 114.18734605900953,
+          "skull": 3.6742346141747673
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.9861213049604762,
+          "skull": 0.9476535934477968
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.9329542709398947,
+      "skull": 0.940294576033254
+    },
+    "macro_mean_dice": 0.9366244234865744,
+    "mean_hd95_mm": {
+      "brain": 73.18429926373973,
+      "skull": 2.3056673136646677
+    }
+  },
+  "best_checkpoint": "F:\\csstdy\\outputs\\original_monai_head_ablation\\original_monai_brain_skull\\best.pt",
+  "best_checkpoint_bytes": 57766401,
+  "best_checkpoint_sha256": "468d1ad196820f706b4c7fdfdf3ee9f1aa7f1b051e735f5ce8f37708e534b45f",
+  "contract_sha256": "19beb58a9726ac0e713b7044c4703b1e7bb93b154a8cdd41f3d7449981d3a058",
+  "test_split_accessed": false
+}

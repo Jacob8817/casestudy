@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-18T10:21:52.665135Z",
+  "status": "passed",
+  "phase": "phase4_baseline_preflight",
+  "execution_mode": "setup_only",
+  "training_status": "not_started",
+  "training_enabled": false,
+  "run_training_flag": false,
+  "test_split_accessed": false,
+  "test_path_resolution_attempts": 0,
+  "test_bytes_read": 0,
+  "dataset_write_operations": 0,
+  "cache_write_operations": 0,
+  "optimizer_created": false,
+  "loss_evaluated": false,
+  "model_quality_metrics_reported": false,
+  "inference_only_forward_calls": 1,
+  "counters": {
+    "epochs_completed": 0,
+    "training_batches_consumed": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "scheduler_steps": 0,
+    "checkpoint_write_attempts": 0
+  },
+  "fingerprints": {
+    "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+    "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+    "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+    "baseline_config_sha256": "2778c24eadf61c3172cf23e67b55fdba2e7739b85eddc6a25cf7cfbd5a3e3bfc",
+    "experiment_sha256": "a0de203536b032ca4f033f04b887a546f08c1b14eeb7bbbf1449b52b863af8fb",
+    "gpu_validation_run_id": "gpu-20260818T094306Z-173ab4b6"
+  },
+  "split_counts": {
+    "train": 1082,
+    "val": 57,
+    "test": 89
+  },
+  "access_ledger": [
+    {
+      "case_id": "s0014",
+      "split": "train",
+      "purpose": "preflight_patch_qa"
+    }
+  ],
+  "augmentation_qa": {
+    "seed": 4242,
+    "mean_absolute_image_change": 0.08688125014305115,
+    "source_label_ids": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "augmented_label_ids": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "unsafe_flip_present": false,
+    "figure": "outputs/phase4/augmentation_qa.png"
+  },
+  "model_contract": {
+    "implementation": "monai.networks.nets.UNet",
+    "parameter_count": 4817434,
+    "input_shape": [
+      1,
+      1,
+      96,
+      96,
+      96
+    ],
+    "output_shape": [
+      1,
+      11,
+      96,
+      96,
+      96
+    ],
+    "state_sha256_before": "dc52684f88a0e3c47e4921de656e5ec52b6fedefebf2d35c0a27cb0b15e3db45",
+    "state_sha256_after": "dc52684f88a0e3c47e4921de656e5ec52b6fedefebf2d35c0a27cb0b15e3db45",
+    "state_changed": false,
+    "gradients_created": false,
+    "inference_peak_allocated_mib": 139.912109375
+  },
+  "metric_contract": {
+    "synthetic_identity_dice": 1.0,
+    "synthetic_identity_hd95_mm": 0.0,
+    "empty_target_policy": "nan_excluded_from_class_mean",
+    "validation_mode": "deterministic_full_volume"
+  },
+  "training_artifacts_before": [],
+  "training_artifacts_after": [],
+  "source_hashes": {
+    "configs/baseline_unet_v1.yaml": {
+      "size_bytes": 3089,
+      "sha256": "b2303166da41adf410adf65d8a1ca945e52ffb9a57b2c62a359b0bccc4875cc4"
+    },
+    "src/training/config.py": {
+      "size_bytes": 20962,
+      "sha256": "9914a9e27d9af044c442c02cbac3e8ff68bcd1b348b39cbe324d79ff64c50123"
+    },
+    "src/training/data.py": {
+      "size_bytes": 15599,
+      "sha256": "38de618741cca3012aff3d03e77835f22272ebac4796533cc6f6f3750217b08f"
+    },
+    "src/training/model.py": {
+      "size_bytes": 2267,
+      "sha256": "9ffb4d8355f862a8b713921db0698d5f5d1bd6ec21b0071303b8c1277347040a"
+    },
+    "src/training/engine.py": {
+      "size_bytes": 16580,
+      "sha256": "0072e3c8d405fd3ea9c1621b965a9b531ef19c03dac08c5fddd245395543d59c"
+    },
+    "src/training/provenance.py": {
+      "size_bytes": 2730,
+      "sha256": "61678f44fc6834737e7e23409f2419e0b156c354f2803d2121ee8e355e17edef"
+    },
+    "src/dataset/loader.py": {
+      "size_bytes": 12291,
+      "sha256": "70c8473bd5f353fd4bb743d84f0939da47e62751d192da7aefa48032ccacb7fa"
+    },
+    "src/dataset/preprocessing.py": {
+      "size_bytes": 16175,
+      "sha256": "ada14856a81c0579f065d9005e99a9478d39e85894e5bda8194f35ca2f4d6c88"
+    },
+    "src/dataset/label_mapping.py": {
+      "size_bytes": 6303,
+      "sha256": "86bfb48f4380095920ca81f93cbb7bcd87ce399df1899e9b854859bd0eb87dcc"
+    },
+    "scripts/build_phase4_notebook.py": {
+      "size_bytes": 34319,
+      "sha256": "bd2511dfc735dec0e6f60281289cf68583ef5aed0c60f238697d35e3ec0fd246"
+    },
+    "requirements-gpu.txt": {
+      "size_bytes": 354,
+      "sha256": "ecb62b582ff6bde31250d273edea54560e0907cd07f631ef63e867c64aedd119"
+    }
+  },
+  "acceptance": {
+    "phase3_gate_passed": true,
+    "gpu_gate_passed": true,
+    "all_fingerprints_locked": true,
+    "official_split_counts": true,
+    "test_rejected_before_io": true,
+    "test_split_accessed_false": true,
+    "exact_train_dataset": true,
+    "exact_validation_dataset": true,
+    "validation_full_volume_deterministic": true,
+    "phase3_patch_exact_parity": true,
+    "paired_augmentation_reproducible": true,
+    "unsafe_laterality_flips_absent": true,
+    "augmentation_label_integrity": true,
+    "model_contract": true,
+    "frozen_inference_shape_check": true,
+    "metric_semantics_check": true,
+    "training_disabled": true,
+    "zero_phase4_training_activity": true,
+    "no_gradients_created": true,
+    "no_training_artifacts_created": true,
+    "cache_writes_disabled": true,
+    "no_model_quality_claim": true
+  },
+  "limitations": [
+    "No model fitting, backward pass, optimizer step, epoch, or checkpoint occurred.",
+    "The inference-only logits come from random weights and are not evaluated as predictions.",
+    "No Dice, HD95, loss, or model-quality number is reported for the random network.",
+    "CUDA 5D CrossEntropy is not marked strictly deterministic by this PyTorch build.",
+    "The test split remains locked for final evaluation only."
+  ]
+}

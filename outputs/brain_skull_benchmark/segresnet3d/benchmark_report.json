@@ -1,0 +1,80 @@
+{
+  "model": "segresnet3d",
+  "status": "trained",
+  "selected_epoch": 27,
+  "completed_epochs": 30,
+  "train_cases": 98,
+  "validation_cases": 5,
+  "validation": {
+    "cases": [
+      {
+        "case_id": "s0346",
+        "dice": {
+          "brain": 0.9913478387003192,
+          "skull": 0.9426868977207083
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 2.1213203435596424
+        }
+      },
+      {
+        "case_id": "s0792",
+        "dice": {
+          "brain": 0.9857522568904001,
+          "skull": 0.958731844667004
+        },
+        "hd95_mm": {
+          "brain": 2.121320293206269,
+          "skull": 1.4999999707223965
+        }
+      },
+      {
+        "case_id": "s0874",
+        "dice": {
+          "brain": 0.9882608436415006,
+          "skull": 0.9613612874124955
+        },
+        "hd95_mm": {
+          "brain": 1.5000000156412217,
+          "skull": 1.5000000156412217
+        }
+      },
+      {
+        "case_id": "s1161",
+        "dice": {
+          "brain": 0.9880557582699787,
+          "skull": 0.9516530070794711
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      },
+      {
+        "case_id": "s1260",
+        "dice": {
+          "brain": 0.9898840302268287,
+          "skull": 0.9576647368271928
+        },
+        "hd95_mm": {
+          "brain": 1.5,
+          "skull": 1.5
+        }
+      }
+    ],
+    "mean_dice": {
+      "brain": 0.9886601455458056,
+      "skull": 0.9544195547413743
+    },
+    "macro_mean_dice": 0.9715398501435899,
+    "mean_hd95_mm": {
+      "brain": 1.6242640617694981,
+      "skull": 1.6242640659846521
+    }
+  },
+  "best_checkpoint": "F:\\csstdy\\outputs\\brain_skull_benchmark\\segresnet3d\\best.pt",
+  "best_checkpoint_sha256": "fd5bfcc59c7d7d6cd574b606366925b8c72f90f568590bf99a3a8a93d1610a9f",
+  "contract_sha256": "f8fe5b038935fb244075fda0c29b89548914be114e70672291a86f4d8a0ae104",
+  "test_split_accessed": false
+}

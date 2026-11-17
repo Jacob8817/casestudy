@@ -1,0 +1,1002 @@
+{
+  "schema_version": 1,
+  "operation": "cache_prewarm_only_no_model_execution",
+  "status": "passed",
+  "split": "val",
+  "selected_case_ids": [
+    "s0000",
+    "s0021",
+    "s0032",
+    "s0045",
+    "s0095",
+    "s0123",
+    "s0216",
+    "s0249",
+    "s0324",
+    "s0346",
+    "s0352",
+    "s0420",
+    "s0458",
+    "s0466",
+    "s0506",
+    "s0544",
+    "s0546",
+    "s0572",
+    "s0607",
+    "s0614",
+    "s0618",
+    "s0625",
+    "s0650",
+    "s0655",
+    "s0675",
+    "s0698",
+    "s0747",
+    "s0760",
+    "s0792",
+    "s0794",
+    "s0808",
+    "s0824",
+    "s0832",
+    "s0839",
+    "s0867",
+    "s0874",
+    "s0918",
+    "s0991",
+    "s1002",
+    "s1017",
+    "s1024",
+    "s1046",
+    "s1059",
+    "s1106",
+    "s1133",
+    "s1161",
+    "s1197",
+    "s1199",
+    "s1223",
+    "s1233",
+    "s1238",
+    "s1260",
+    "s1278",
+    "s1286",
+    "s1287",
+    "s1305",
+    "s1337"
+  ],
+  "is_full_split": true,
+  "cases_requested": 57,
+  "cases_completed": 57,
+  "cache_hits": 4,
+  "cache_misses_written": 53,
+  "verify_source_hashes": true,
+  "source_files_hashed": 798,
+  "source_bytes_hashed": 1038605019,
+  "cache_bytes": 4186704094,
+  "voxels": 837334982,
+  "elapsed_seconds": 89.69556349999948,
+  "voxels_per_second": 9335299.866865821,
+  "cache_mib_per_second": 44.51448888930523,
+  "cases": [
+    {
+      "position": 1,
+      "case_id": "s0000",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        294,
+        192,
+        179
+      ],
+      "voxels": 10104192,
+      "cache_bytes": 50521472,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 12102082,
+      "elapsed_seconds": 1.2945535999988351
+    },
+    {
+      "position": 2,
+      "case_id": "s0021",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        185,
+        185,
+        218
+      ],
+      "voxels": 7461050,
+      "cache_bytes": 37305762,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 9544290,
+      "elapsed_seconds": 1.0043335999998817
+    },
+    {
+      "position": 3,
+      "case_id": "s0032",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        221,
+        221,
+        216
+      ],
+      "voxels": 10549656,
+      "cache_bytes": 52748792,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 13331933,
+      "elapsed_seconds": 1.304989199999909
+    },
+    {
+      "position": 4,
+      "case_id": "s0045",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        231,
+        231,
+        306
+      ],
+      "voxels": 16328466,
+      "cache_bytes": 81642842,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 22602654,
+      "elapsed_seconds": 2.0250701000004483
+    },
+    {
+      "position": 5,
+      "case_id": "s0095",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        221,
+        221,
+        413
+      ],
+      "voxels": 20171333,
+      "cache_bytes": 100857177,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 26512596,
+      "elapsed_seconds": 2.359578199999305
+    },
+    {
+      "position": 6,
+      "case_id": "s0123",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        267,
+        194,
+        213
+      ],
+      "voxels": 11032974,
+      "cache_bytes": 55165382,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 14813544,
+      "elapsed_seconds": 1.4062798999984807
+    },
+    {
+      "position": 7,
+      "case_id": "s0216",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        288,
+        288,
+        179
+      ],
+      "voxels": 14846976,
+      "cache_bytes": 74235392,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 16783034,
+      "elapsed_seconds": 1.7851334000006318
+    },
+    {
+      "position": 8,
+      "case_id": "s0249",
+      "split": "val",
+      "cache_hit_before_prewarm": true,
+      "shape": [
+        285,
+        285,
+        69
+      ],
+      "voxels": 5604525,
+      "cache_bytes": 28023137,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 7913623,
+      "elapsed_seconds": 0.11360899999999674
+    },
+    {
+      "position": 9,
+      "case_id": "s0324",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        201,
+        201,
+        261
+      ],
+      "voxels": 10544661,
+      "cache_bytes": 52723817,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 14916952,
+      "elapsed_seconds": 1.3127053000007436
+    },
+    {
+      "position": 10,
+      "case_id": "s0346",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        215,
+        215,
+        241
+      ],
+      "voxels": 11140225,
+      "cache_bytes": 55701637,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 13775748,
+      "elapsed_seconds": 1.4244853999989573
+    },
+    {
+      "position": 11,
+      "case_id": "s0352",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        100,
+        116,
+        58
+      ],
+      "voxels": 672800,
+      "cache_bytes": 3364512,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 897993,
+      "elapsed_seconds": 0.26810459999978775
+    },
+    {
+      "position": 12,
+      "case_id": "s0420",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        209,
+        209,
+        219
+      ],
+      "voxels": 9566139,
+      "cache_bytes": 47831207,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 14486358,
+      "elapsed_seconds": 1.2107986000009987
+    },
+    {
+      "position": 13,
+      "case_id": "s0458",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        243,
+        243,
+        291
+      ],
+      "voxels": 17183259,
+      "cache_bytes": 85916807,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 23525573,
+      "elapsed_seconds": 2.1576394000003347
+    },
+    {
+      "position": 14,
+      "case_id": "s0466",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        173,
+        173,
+        143
+      ],
+      "voxels": 4279847,
+      "cache_bytes": 21399747,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 6047689,
+      "elapsed_seconds": 0.6268502999992052
+    },
+    {
+      "position": 15,
+      "case_id": "s0506",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        231,
+        231,
+        177
+      ],
+      "voxels": 9444897,
+      "cache_bytes": 47224997,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 9829853,
+      "elapsed_seconds": 1.2372505000003002
+    },
+    {
+      "position": 16,
+      "case_id": "s0544",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        216,
+        216,
+        87
+      ],
+      "voxels": 4059072,
+      "cache_bytes": 20295872,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 6202493,
+      "elapsed_seconds": 0.5735917000001791
+    },
+    {
+      "position": 17,
+      "case_id": "s0546",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        304,
+        304,
+        458
+      ],
+      "voxels": 42326528,
+      "cache_bytes": 211633152,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 50221250,
+      "elapsed_seconds": 5.144245600000431
+    },
+    {
+      "position": 18,
+      "case_id": "s0572",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        185,
+        185,
+        133
+      ],
+      "voxels": 4551925,
+      "cache_bytes": 22760137,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 5586189,
+      "elapsed_seconds": 0.7443536999999196
+    },
+    {
+      "position": 19,
+      "case_id": "s0607",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        235,
+        338,
+        338
+      ],
+      "voxels": 26847340,
+      "cache_bytes": 134237212,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 31438614,
+      "elapsed_seconds": 2.99458229999982
+    },
+    {
+      "position": 20,
+      "case_id": "s0614",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        205,
+        108,
+        161
+      ],
+      "voxels": 3564540,
+      "cache_bytes": 17823212,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 5222646,
+      "elapsed_seconds": 0.5608073999992484
+    },
+    {
+      "position": 21,
+      "case_id": "s0618",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        196,
+        196,
+        189
+      ],
+      "voxels": 7260624,
+      "cache_bytes": 36303632,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 11209276,
+      "elapsed_seconds": 0.9552810999994108
+    },
+    {
+      "position": 22,
+      "case_id": "s0625",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        263,
+        198,
+        423
+      ],
+      "voxels": 22027302,
+      "cache_bytes": 110137022,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 27510227,
+      "elapsed_seconds": 2.4353924999995797
+    },
+    {
+      "position": 23,
+      "case_id": "s0650",
+      "split": "val",
+      "cache_hit_before_prewarm": true,
+      "shape": [
+        333,
+        333,
+        462
+      ],
+      "voxels": 51230718,
+      "cache_bytes": 256154102,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 54774241,
+      "elapsed_seconds": 0.5377430000007735
+    },
+    {
+      "position": 24,
+      "case_id": "s0655",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        95,
+        95,
+        92
+      ],
+      "voxels": 830300,
+      "cache_bytes": 4152012,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 1344987,
+      "elapsed_seconds": 0.331187100000534
+    },
+    {
+      "position": 25,
+      "case_id": "s0675",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        309,
+        309,
+        209
+      ],
+      "voxels": 19955529,
+      "cache_bytes": 99778157,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 24840769,
+      "elapsed_seconds": 2.2882776000005833
+    },
+    {
+      "position": 26,
+      "case_id": "s0698",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        239,
+        239,
+        185
+      ],
+      "voxels": 10567385,
+      "cache_bytes": 52837437,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 14307978,
+      "elapsed_seconds": 1.3489088000005722
+    },
+    {
+      "position": 27,
+      "case_id": "s0747",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        266,
+        266,
+        211
+      ],
+      "voxels": 14929516,
+      "cache_bytes": 74648092,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 18800094,
+      "elapsed_seconds": 1.8138471000002028
+    },
+    {
+      "position": 28,
+      "case_id": "s0760",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        247,
+        247,
+        288
+      ],
+      "voxels": 17570592,
+      "cache_bytes": 87853472,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 22138604,
+      "elapsed_seconds": 2.2113929000006465
+    },
+    {
+      "position": 29,
+      "case_id": "s0792",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        125,
+        152,
+        109
+      ],
+      "voxels": 2071000,
+      "cache_bytes": 10355512,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 2469565,
+      "elapsed_seconds": 0.461337700000513
+    },
+    {
+      "position": 30,
+      "case_id": "s0794",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        283,
+        283,
+        447
+      ],
+      "voxels": 35799783,
+      "cache_bytes": 178999427,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 42771893,
+      "elapsed_seconds": 3.985742900000332
+    },
+    {
+      "position": 31,
+      "case_id": "s0808",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        246,
+        209,
+        200
+      ],
+      "voxels": 10282800,
+      "cache_bytes": 51414512,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 15907287,
+      "elapsed_seconds": 1.3949606999995012
+    },
+    {
+      "position": 32,
+      "case_id": "s0824",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        265,
+        184,
+        200
+      ],
+      "voxels": 9752000,
+      "cache_bytes": 48760512,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 15111121,
+      "elapsed_seconds": 1.1860840000008466
+    },
+    {
+      "position": 33,
+      "case_id": "s0832",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        257,
+        257,
+        104
+      ],
+      "voxels": 6869096,
+      "cache_bytes": 34345992,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 9831323,
+      "elapsed_seconds": 0.9224506000009569
+    },
+    {
+      "position": 34,
+      "case_id": "s0839",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        96,
+        96,
+        83
+      ],
+      "voxels": 764928,
+      "cache_bytes": 3825152,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 1224380,
+      "elapsed_seconds": 0.3284296000001632
+    },
+    {
+      "position": 35,
+      "case_id": "s0867",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        103,
+        160,
+        133
+      ],
+      "voxels": 2191840,
+      "cache_bytes": 10959712,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 2860481,
+      "elapsed_seconds": 0.5148755999998684
+    },
+    {
+      "position": 36,
+      "case_id": "s0874",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        142,
+        184,
+        247
+      ],
+      "voxels": 6453616,
+      "cache_bytes": 32268592,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 8391479,
+      "elapsed_seconds": 0.8235117999993236
+    },
+    {
+      "position": 37,
+      "case_id": "s0918",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        252,
+        252,
+        459
+      ],
+      "voxels": 29148336,
+      "cache_bytes": 145742192,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 37633974,
+      "elapsed_seconds": 3.122044800000367
+    },
+    {
+      "position": 38,
+      "case_id": "s0991",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        208,
+        208,
+        411
+      ],
+      "voxels": 17781504,
+      "cache_bytes": 88908032,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 24432884,
+      "elapsed_seconds": 2.3919537999991007
+    },
+    {
+      "position": 39,
+      "case_id": "s1002",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        132,
+        132,
+        146
+      ],
+      "voxels": 2543904,
+      "cache_bytes": 12720032,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 3891139,
+      "elapsed_seconds": 0.47955609999917215
+    },
+    {
+      "position": 40,
+      "case_id": "s1017",
+      "split": "val",
+      "cache_hit_before_prewarm": true,
+      "shape": [
+        144,
+        144,
+        277
+      ],
+      "voxels": 5743872,
+      "cache_bytes": 28719872,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 8991588,
+      "elapsed_seconds": 0.12524719999964873
+    },
+    {
+      "position": 41,
+      "case_id": "s1024",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        333,
+        333,
+        415
+      ],
+      "voxels": 46018935,
+      "cache_bytes": 230095187,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 53668211,
+      "elapsed_seconds": 4.911672499998531
+    },
+    {
+      "position": 42,
+      "case_id": "s1046",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        268,
+        175,
+        437
+      ],
+      "voxels": 20495300,
+      "cache_bytes": 102477012,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 26628510,
+      "elapsed_seconds": 2.4521274000017
+    },
+    {
+      "position": 43,
+      "case_id": "s1059",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        245,
+        150,
+        147
+      ],
+      "voxels": 5402250,
+      "cache_bytes": 27011762,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 7058465,
+      "elapsed_seconds": 0.7744645000002492
+    },
+    {
+      "position": 44,
+      "case_id": "s1106",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        110,
+        110,
+        92
+      ],
+      "voxels": 1113200,
+      "cache_bytes": 5566512,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 1758036,
+      "elapsed_seconds": 0.37939150000056543
+    },
+    {
+      "position": 45,
+      "case_id": "s1133",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        203,
+        162,
+        213
+      ],
+      "voxels": 7004718,
+      "cache_bytes": 35024102,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 9675832,
+      "elapsed_seconds": 0.8951426999992691
+    },
+    {
+      "position": 46,
+      "case_id": "s1161",
+      "split": "val",
+      "cache_hit_before_prewarm": true,
+      "shape": [
+        313,
+        313,
+        544
+      ],
+      "voxels": 53295136,
+      "cache_bytes": 266476192,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 58100454,
+      "elapsed_seconds": 0.5316710999995848
+    },
+    {
+      "position": 47,
+      "case_id": "s1197",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        227,
+        227,
+        149
+      ],
+      "voxels": 7677821,
+      "cache_bytes": 38389617,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 10600036,
+      "elapsed_seconds": 0.9724665000012465
+    },
+    {
+      "position": 48,
+      "case_id": "s1199",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        255,
+        255,
+        217
+      ],
+      "voxels": 14110425,
+      "cache_bytes": 70552637,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 18814972,
+      "elapsed_seconds": 1.7783828999999969
+    },
+    {
+      "position": 49,
+      "case_id": "s1223",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        261,
+        150,
+        427
+      ],
+      "voxels": 16717050,
+      "cache_bytes": 83585762,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 21809538,
+      "elapsed_seconds": 2.051258700001199
+    },
+    {
+      "position": 50,
+      "case_id": "s1233",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        265,
+        265,
+        401
+      ],
+      "voxels": 28160225,
+      "cache_bytes": 140801637,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 24991194,
+      "elapsed_seconds": 3.0734819999997853
+    },
+    {
+      "position": 51,
+      "case_id": "s1238",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        295,
+        295,
+        457
+      ],
+      "voxels": 39770425,
+      "cache_bytes": 198852637,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 45690672,
+      "elapsed_seconds": 4.368824600000153
+    },
+    {
+      "position": 52,
+      "case_id": "s1260",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        135,
+        135,
+        113
+      ],
+      "voxels": 2059425,
+      "cache_bytes": 10297637,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 2615236,
+      "elapsed_seconds": 0.4240112000006775
+    },
+    {
+      "position": 53,
+      "case_id": "s1278",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        304,
+        304,
+        239
+      ],
+      "voxels": 22087424,
+      "cache_bytes": 110437632,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 28118190,
+      "elapsed_seconds": 2.800925900000948
+    },
+    {
+      "position": 54,
+      "case_id": "s1286",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        206,
+        206,
+        60
+      ],
+      "voxels": 2546160,
+      "cache_bytes": 12731312,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 2833087,
+      "elapsed_seconds": 0.5123414000008779
+    },
+    {
+      "position": 55,
+      "case_id": "s1287",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        239,
+        239,
+        440
+      ],
+      "voxels": 25133240,
+      "cache_bytes": 125666712,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 31110442,
+      "elapsed_seconds": 2.7430812000002334
+    },
+    {
+      "position": 56,
+      "case_id": "s1305",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        221,
+        221,
+        278
+      ],
+      "voxels": 13577798,
+      "cache_bytes": 67889502,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 16468529,
+      "elapsed_seconds": 1.6798449999987497
+    },
+    {
+      "position": 57,
+      "case_id": "s1337",
+      "split": "val",
+      "cache_hit_before_prewarm": false,
+      "shape": [
+        280,
+        280,
+        231
+      ],
+      "voxels": 18110400,
+      "cache_bytes": 90552512,
+      "source_files_hashed": 14,
+      "source_bytes_hashed": 24465211,
+      "elapsed_seconds": 2.138199600000007
+    }
+  ],
+  "generated_at_utc": "2026-08-27T08:14:51.798090Z",
+  "config_sha256": "762470d64a2950878f09e0e49e5e0b09d99ddbea7a153e20e09c4f32574af588",
+  "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+  "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+  "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+  "selected_case_ids_sha256": "9e295ff196a8b2cb37cedfbd07f2c5c86f54a52fac6d14cf2f4d3eb15affedf7",
+  "source_bundle_sha256": "d2dfec41b1367f3e102a945e0371510d8b7333314f0a3a610f891e2c67ca050d",
+  "source_hashes_verified": true,
+  "cache_hashes_verified": true,
+  "test_split_accessed": false
+}

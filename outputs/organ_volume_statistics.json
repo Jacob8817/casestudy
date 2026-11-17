@@ -1,0 +1,1549 @@
+{
+  "audit_version": "1.0.0",
+  "generated_at_utc": "2026-08-18T08:31:07.821566+00:00",
+  "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+  "organ_schema_name": "major_organs_v1",
+  "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+  "integrity_scope": "All selected source-mask payloads streamed to EOF; gzip CRC, raw binary values, identity scaling, CT geometry, and nonempty status checked.",
+  "test_policy": {
+    "locked": true,
+    "integrity_checked": true,
+    "per_organ_voxel_counts_and_volumes_redacted": true,
+    "excluded_from_volume_statistics": true
+  },
+  "overlap_resolution": {
+    "policy": "priority",
+    "method": "official_totalsegmentator_v2_last_label_wins",
+    "priority_low_to_high": [
+      "spleen",
+      "kidney_right",
+      "kidney_left",
+      "liver",
+      "stomach",
+      "pancreas",
+      "lung_left",
+      "lung_right",
+      "aorta",
+      "inferior_vena_cava"
+    ],
+    "reference": "https://github.com/wasserth/TotalSegmentator/blob/master/totalsegmentator/libs.py",
+    "raw_and_exclusive_development_metrics_reported": true
+  },
+  "case_count": 1228,
+  "split_counts": {
+    "train": 1082,
+    "val": 57,
+    "test": 89
+  },
+  "target_organ_count": 10,
+  "source_masks_per_case": 13,
+  "source_file_count": 15964,
+  "source_header_valid_count": 15964,
+  "source_geometry_valid_count": 15964,
+  "source_binary_valid_count": 15964,
+  "source_payload_valid_count": 15964,
+  "source_crc_checked_count": 15964,
+  "source_empty_count": 3962,
+  "cases_with_valid_merged_metrics": 1228,
+  "volume_units": {
+    "reported_unit": "mL",
+    "unknown_nifti_units_assumed_mm_cases": 1228,
+    "assumption": "When the NIfTI spatial-units flag is unset, affine/spacing units are treated as millimetres; the dataset-wide audit found approximately 1.5 spacing on every axis."
+  },
+  "development_cases_with_no_selected_foreground": 78,
+  "severity_counts": {
+    "warning": 664
+  },
+  "issue_category_counts": {
+    "cross_target_overlap_resolved": 664
+  },
+  "all_integrity_checks_passed": true,
+  "overlaps": {
+    "development_pair_voxels": {
+      "aorta|inferior_vena_cava": 4267,
+      "aorta|lung_left": 75736,
+      "aorta|lung_right": 484,
+      "inferior_vena_cava|lung_right": 224,
+      "kidney_left|aorta": 75,
+      "kidney_left|pancreas": 11,
+      "kidney_left|stomach": 49,
+      "kidney_right|inferior_vena_cava": 51,
+      "liver|aorta": 1584,
+      "liver|inferior_vena_cava": 23419,
+      "liver|kidney_right": 2091,
+      "liver|lung_left": 709,
+      "liver|lung_right": 12222,
+      "liver|pancreas": 4740,
+      "liver|spleen": 446,
+      "liver|stomach": 53144,
+      "pancreas|aorta": 69,
+      "pancreas|inferior_vena_cava": 291,
+      "spleen|aorta": 16,
+      "spleen|kidney_left": 1136,
+      "spleen|lung_left": 93320,
+      "spleen|pancreas": 479,
+      "spleen|stomach": 33187,
+      "stomach|aorta": 752,
+      "stomach|inferior_vena_cava": 64,
+      "stomach|lung_left": 60803,
+      "stomach|pancreas": 13057
+    },
+    "test_any_cross_target_overlap": true,
+    "test_overlap_counts_redacted": true
+  },
+  "organs": {
+    "liver": {
+      "class_id": 1,
+      "source_masks": [
+        "liver"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 825,
+          "empty_cases": 257,
+          "presence_rate": 0.7624768946395564,
+          "exclusive_present_cases": 825,
+          "present_only_raw_mask_volume_ml": {
+            "count": 825,
+            "min": 0.0135,
+            "p01": 0.806760005229708,
+            "p05": 125.63640000000001,
+            "median": 1350.80325,
+            "p95": 2271.8967749999997,
+            "p99": 2842.5543299999995,
+            "max": 4164.172875,
+            "mean": 1313.98811479636,
+            "std": 637.7649193774113
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 825,
+            "min": 0.0135,
+            "p01": 0.806760005229708,
+            "p05": 125.63640000000001,
+            "median": 1345.8385972191008,
+            "p95": 2271.8967749999997,
+            "p99": 2842.5543299999995,
+            "max": 4164.172875,
+            "mean": 1313.6016997957338,
+            "std": 637.694262569577
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 283.5500000000004,
+            "p99": 2006.5800000000045,
+            "max": 15287.0,
+            "mean": 87.29852125693161,
+            "std": 621.5600614267657
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 44,
+          "empty_cases": 13,
+          "presence_rate": 0.7719298245614035,
+          "exclusive_present_cases": 44,
+          "present_only_raw_mask_volume_ml": {
+            "count": 44,
+            "min": 50.91525,
+            "p01": 70.0978725,
+            "p05": 104.71595625,
+            "median": 1389.796299846778,
+            "p95": 2815.6327312500002,
+            "p99": 3296.936655,
+            "max": 3312.198,
+            "mean": 1404.0931900686383,
+            "std": 795.3268081963607
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 44,
+            "min": 50.91525,
+            "p01": 70.0978725,
+            "p05": 104.71595625,
+            "median": 1389.796299846778,
+            "p95": 2815.6327312500002,
+            "p99": 3296.9047275,
+            "max": 3312.198,
+            "mean": 1403.9887951822748,
+            "std": 795.3440436660316
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 96.79999999999984,
+            "p99": 527.0399999999987,
+            "max": 844.0,
+            "mean": 23.87719298245614,
+            "std": 117.1228280407411
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 869,
+          "empty_cases": 270,
+          "presence_rate": 0.7629499561018437,
+          "exclusive_present_cases": 869,
+          "present_only_raw_mask_volume_ml": {
+            "count": 869,
+            "min": 0.0135,
+            "p01": 1.0606949821238665,
+            "p05": 116.83642500000006,
+            "median": 1354.158,
+            "p95": 2287.138949999999,
+            "p99": 2922.251294604542,
+            "max": 4164.172875,
+            "mean": 1318.5503970886268,
+            "std": 646.9677785853056
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 869,
+            "min": 0.0135,
+            "p01": 1.0606949821238665,
+            "p05": 116.83642500000006,
+            "median": 1351.026,
+            "p95": 2286.636749999999,
+            "p99": 2922.251294604542,
+            "max": 4164.172875,
+            "mean": 1318.1782615874574,
+            "std": 646.9046179109132
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 275.2999999999997,
+            "p99": 1975.0399999999954,
+            "max": 15287.0,
+            "mean": 84.12467076382792,
+            "std": 606.5317893552365
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "spleen": {
+      "class_id": 2,
+      "source_masks": [
+        "spleen"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 779,
+          "empty_cases": 303,
+          "presence_rate": 0.7199630314232902,
+          "exclusive_present_cases": 779,
+          "present_only_raw_mask_volume_ml": {
+            "count": 779,
+            "min": 0.00675,
+            "p01": 0.8268075000000001,
+            "p05": 17.157487500000002,
+            "median": 176.823,
+            "p95": 438.7915124999997,
+            "p99": 879.5535543814428,
+            "max": 2543.511375,
+            "mean": 208.367426343371,
+            "std": 184.32097949839866
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 779,
+            "min": 0.00675,
+            "p01": 0.8268075000000001,
+            "p05": 17.157487500000002,
+            "median": 176.1615,
+            "p95": 437.8468499999996,
+            "p99": 858.5619993814436,
+            "max": 2543.511375,
+            "mean": 207.83344415463878,
+            "std": 182.0863242690876
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 1.0,
+            "p99": 513.2100000000141,
+            "max": 42763.0,
+            "mean": 113.91035120147875,
+            "std": 1595.1634136859939
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 42,
+          "empty_cases": 15,
+          "presence_rate": 0.7368421052631579,
+          "exclusive_present_cases": 42,
+          "present_only_raw_mask_volume_ml": {
+            "count": 42,
+            "min": 10.702125,
+            "p01": 11.29298625,
+            "p05": 26.640900000000002,
+            "median": 157.305375,
+            "p95": 364.58032499999985,
+            "p99": 949.0133812500001,
+            "max": 950.376375,
+            "mean": 199.72502545794023,
+            "std": 190.80444930608738
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 42,
+            "min": 10.702125,
+            "p01": 11.29298625,
+            "p05": 26.640900000000002,
+            "median": 157.305375,
+            "p95": 364.58032499999985,
+            "p99": 949.0133812500001,
+            "max": 950.376375,
+            "mean": 199.71610581508307,
+            "std": 190.80295833950416
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 53.279999999999916,
+            "max": 74.0,
+            "mean": 1.9473684210526316,
+            "std": 10.78403799747259
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 821,
+          "empty_cases": 318,
+          "presence_rate": 0.7208077260755048,
+          "exclusive_present_cases": 821,
+          "present_only_raw_mask_volume_ml": {
+            "count": 821,
+            "min": 0.00675,
+            "p01": 0.9254249999999999,
+            "p05": 17.195625,
+            "median": 175.8375,
+            "p95": 438.50025,
+            "p99": 937.4447267103998,
+            "max": 2543.511375,
+            "mean": 207.92530595702743,
+            "std": 184.66799661959686
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 821,
+            "min": 0.00675,
+            "p01": 0.9254249999999999,
+            "p05": 17.195625,
+            "median": 175.2435,
+            "p95": 437.450625,
+            "p99": 937.4447267103998,
+            "max": 2543.511375,
+            "mean": 207.4181844588272,
+            "std": 182.55110481839904
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 1.0,
+            "p99": 456.7799999999979,
+            "max": 42763.0,
+            "mean": 108.30728709394205,
+            "std": 1554.9305646793734
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "kidney_left": {
+      "class_id": 3,
+      "source_masks": [
+        "kidney_left"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 698,
+          "empty_cases": 384,
+          "presence_rate": 0.6451016635859519,
+          "exclusive_present_cases": 698,
+          "present_only_raw_mask_volume_ml": {
+            "count": 698,
+            "min": 0.003375,
+            "p01": 0.13972499999999996,
+            "p05": 3.20743125,
+            "median": 125.80481434733136,
+            "p95": 225.11199375,
+            "p99": 268.3696882765058,
+            "max": 437.815125,
+            "mean": 118.79569172540464,
+            "std": 67.84837594131163
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 698,
+            "min": 0.003375,
+            "p01": 0.13972499999999996,
+            "p05": 3.20743125,
+            "median": 125.80481434733136,
+            "p95": 225.11199375,
+            "p99": 268.3696882765058,
+            "max": 437.815125,
+            "mean": 118.79536292884302,
+            "std": 67.84832797179449
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 39.0,
+            "mean": 0.06284658040665435,
+            "std": 1.283237023087945
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 36,
+          "empty_cases": 21,
+          "presence_rate": 0.631578947368421,
+          "exclusive_present_cases": 36,
+          "present_only_raw_mask_volume_ml": {
+            "count": 36,
+            "min": 0.00675,
+            "p01": 0.9281250000000002,
+            "p05": 6.67406190112535,
+            "median": 102.7164375,
+            "p95": 267.77840625,
+            "p99": 287.20304999999996,
+            "max": 295.7175,
+            "mean": 109.54725006400368,
+            "std": 86.65291249282038
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 36,
+            "min": 0.00675,
+            "p01": 0.9281250000000002,
+            "p05": 6.67406190112535,
+            "median": 102.7164375,
+            "p95": 267.77840625,
+            "p99": 287.20304999999996,
+            "max": 295.7175,
+            "mean": 109.54096881428057,
+            "std": 86.65949295725474
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 29.479999999999848,
+            "max": 67.0,
+            "mean": 1.1754385964912282,
+            "std": 8.796177014521195
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 734,
+          "empty_cases": 405,
+          "presence_rate": 0.6444249341527656,
+          "exclusive_present_cases": 734,
+          "present_only_raw_mask_volume_ml": {
+            "count": 734,
+            "min": 0.003375,
+            "p01": 0.096525,
+            "p05": 3.20000625,
+            "median": 125.5348125,
+            "p95": 225.59968125,
+            "p99": 270.9316349999999,
+            "max": 437.815125,
+            "mean": 118.34208968206615,
+            "std": 68.91942386108057
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 734,
+            "min": 0.003375,
+            "p01": 0.096525,
+            "p05": 3.20000625,
+            "median": 125.5348125,
+            "p95": 225.59968125,
+            "p99": 270.9316349999999,
+            "max": 437.815125,
+            "mean": 118.34146893957293,
+            "std": 68.91982202778627
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 67.0,
+            "mean": 0.11852502194907814,
+            "std": 2.3441779864144774
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "kidney_right": {
+      "class_id": 4,
+      "source_masks": [
+        "kidney_right"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 683,
+          "empty_cases": 399,
+          "presence_rate": 0.6312384473197782,
+          "exclusive_present_cases": 683,
+          "present_only_raw_mask_volume_ml": {
+            "count": 683,
+            "min": 0.003375,
+            "p01": 0.019642499565650427,
+            "p05": 2.4505875126394923,
+            "median": 125.5365,
+            "p95": 221.4037127446728,
+            "p99": 264.8888324999999,
+            "max": 435.047625,
+            "mean": 119.34029146410376,
+            "std": 66.05947326525911
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 683,
+            "min": 0.003375,
+            "p01": 0.019642499565650427,
+            "p05": 2.4505875126394923,
+            "median": 125.5365,
+            "p95": 221.4037127446728,
+            "p99": 264.8888324999999,
+            "max": 432.6615,
+            "mean": 119.32983538793283,
+            "std": 66.04803784111613
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 2.330000000000382,
+            "max": 763.0,
+            "mean": 1.955637707948244,
+            "std": 32.94360092034376
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 35,
+          "empty_cases": 22,
+          "presence_rate": 0.6140350877192983,
+          "exclusive_present_cases": 35,
+          "present_only_raw_mask_volume_ml": {
+            "count": 35,
+            "min": 3.223125,
+            "p01": 3.810645,
+            "p05": 5.4496125,
+            "median": 127.17675,
+            "p95": 248.04292499999985,
+            "p99": 303.05657249999996,
+            "max": 310.824,
+            "mean": 116.17540752636248,
+            "std": 83.29270146325868
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 35,
+            "min": 3.223125,
+            "p01": 3.810645,
+            "p05": 5.4496125,
+            "median": 127.17675,
+            "p95": 248.04292499999985,
+            "p99": 303.05657249999996,
+            "max": 310.824,
+            "mean": 116.17290038350535,
+            "std": 83.29314215149712
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 11.43999999999994,
+            "max": 26.0,
+            "mean": 0.45614035087719296,
+            "std": 3.4134418265306135
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 718,
+          "empty_cases": 421,
+          "presence_rate": 0.630377524143986,
+          "exclusive_present_cases": 718,
+          "present_only_raw_mask_volume_ml": {
+            "count": 718,
+            "min": 0.003375,
+            "p01": 0.02197124975123044,
+            "p05": 2.7519750189592393,
+            "median": 125.539875,
+            "p95": 222.15144375,
+            "p99": 268.50639375000014,
+            "max": 435.047625,
+            "mean": 119.1860143919297,
+            "std": 67.00584485131866
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 718,
+            "min": 0.003375,
+            "p01": 0.02197124975123044,
+            "p05": 2.7519750189592393,
+            "median": 125.539875,
+            "p95": 222.15144375,
+            "p99": 268.50639375000014,
+            "max": 432.6615,
+            "mean": 119.17594579858051,
+            "std": 66.99512988911371
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 5.339999999999236,
+            "max": 763.0,
+            "mean": 1.8805970149253732,
+            "std": 32.119451126139296
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "stomach": {
+      "class_id": 5,
+      "source_masks": [
+        "stomach"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 797,
+          "empty_cases": 285,
+          "presence_rate": 0.7365988909426987,
+          "exclusive_present_cases": 797,
+          "present_only_raw_mask_volume_ml": {
+            "count": 797,
+            "min": 0.0135,
+            "p01": 0.238545,
+            "p05": 23.814673811711963,
+            "median": 228.335625,
+            "p95": 716.4355499999997,
+            "p99": 1102.158643663218,
+            "max": 3176.4555,
+            "mean": 284.58461547167997,
+            "std": 245.41343703534207
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 797,
+            "min": 0.0135,
+            "p01": 0.238545,
+            "p05": 23.06745012097708,
+            "median": 228.335625,
+            "p95": 709.0604999999995,
+            "p99": 1096.3119155693007,
+            "max": 3175.53075,
+            "mean": 284.26860198358764,
+            "std": 244.71490092931336
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 12.900000000000091,
+            "p99": 583.3300000000004,
+            "max": 31801.0,
+            "mean": 68.97042513863217,
+            "std": 1083.4272027904783
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 42,
+          "empty_cases": 15,
+          "presence_rate": 0.7368421052631579,
+          "exclusive_present_cases": 42,
+          "present_only_raw_mask_volume_ml": {
+            "count": 42,
+            "min": 3.047625,
+            "p01": 8.831700000000001,
+            "p05": 42.43978125,
+            "median": 283.3734375,
+            "p95": 568.9304999999997,
+            "p99": 1061.6158584828272,
+            "max": 1399.9635,
+            "mean": 288.2843816615604,
+            "std": 227.67738242597295
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 42,
+            "min": 3.047625,
+            "p01": 8.831700000000001,
+            "p05": 42.43978125,
+            "median": 283.3734375,
+            "p95": 568.9304999999997,
+            "p99": 1061.6158584828272,
+            "max": 1399.9635,
+            "mean": 288.2843816615604,
+            "std": 227.67738242597295
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "std": 0.0
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 839,
+          "empty_cases": 300,
+          "presence_rate": 0.7366110623353819,
+          "exclusive_present_cases": 839,
+          "present_only_raw_mask_volume_ml": {
+            "count": 839,
+            "min": 0.0135,
+            "p01": 0.3242699911770124,
+            "p05": 23.87002366317596,
+            "median": 228.77098903487538,
+            "p95": 708.2420624999993,
+            "p99": 1104.533082908357,
+            "max": 3176.4555,
+            "mean": 284.7698242678361,
+            "std": 244.55749370734716
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 839,
+            "min": 0.0135,
+            "p01": 0.3242699911770124,
+            "p05": 23.219662560488548,
+            "median": 228.77098903487538,
+            "p95": 695.0822624999988,
+            "p99": 1099.745378824162,
+            "max": 3175.53075,
+            "mean": 284.4696302868949,
+            "std": 243.89188251035392
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 2.6999999999993634,
+            "p99": 572.1199999999972,
+            "max": 31801.0,
+            "mean": 65.5188762071993,
+            "std": 1056.0768872926417
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "pancreas": {
+      "class_id": 6,
+      "source_masks": [
+        "pancreas"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 710,
+          "empty_cases": 372,
+          "presence_rate": 0.6561922365988909,
+          "exclusive_present_cases": 710,
+          "present_only_raw_mask_volume_ml": {
+            "count": 710,
+            "min": 0.003375,
+            "p01": 0.03405375,
+            "p05": 3.6757125000000004,
+            "median": 58.802625,
+            "p95": 108.1253820797971,
+            "p99": 125.41672124999997,
+            "max": 146.107125,
+            "mean": 58.02156439650381,
+            "std": 30.134428706262877
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 710,
+            "min": 0.003375,
+            "p01": 0.03405375,
+            "p05": 3.6757125000000004,
+            "median": 58.802625,
+            "p95": 108.1253820797971,
+            "p99": 125.41672124999997,
+            "max": 146.107125,
+            "mean": 58.01985312889818,
+            "std": 30.134099901888614
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 129.0,
+            "mean": 0.33271719038817005,
+            "std": 5.7304051570396375
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 36,
+          "empty_cases": 21,
+          "presence_rate": 0.631578947368421,
+          "exclusive_present_cases": 36,
+          "present_only_raw_mask_volume_ml": {
+            "count": 36,
+            "min": 0.18225,
+            "p01": 0.6098625,
+            "p05": 2.43421875,
+            "median": 60.453,
+            "p95": 102.6945,
+            "p99": 114.51948749999998,
+            "max": 118.580625,
+            "mean": 53.99465623020128,
+            "std": 33.34300985883175
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 36,
+            "min": 0.18225,
+            "p01": 0.6098625,
+            "p05": 2.43421875,
+            "median": 60.453,
+            "p95": 102.6945,
+            "p99": 114.51948749999998,
+            "max": 118.580625,
+            "mean": 53.99465623020128,
+            "std": 33.34300985883175
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "std": 0.0
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 746,
+          "empty_cases": 393,
+          "presence_rate": 0.6549604916593503,
+          "exclusive_present_cases": 746,
+          "present_only_raw_mask_volume_ml": {
+            "count": 746,
+            "min": 0.003375,
+            "p01": 0.03526875,
+            "p05": 3.36740625,
+            "median": 59.113125,
+            "p95": 107.86331249999999,
+            "p99": 124.97810624999995,
+            "max": 146.107125,
+            "mean": 57.82723638847848,
+            "std": 30.309359469964427
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 746,
+            "min": 0.003375,
+            "p01": 0.03526875,
+            "p05": 3.36740625,
+            "median": 59.113125,
+            "p95": 107.86331249999999,
+            "p99": 124.97810624999995,
+            "max": 146.107125,
+            "mean": 57.82560770215141,
+            "std": 30.309037898857245
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 129.0,
+            "mean": 0.3160667251975417,
+            "std": 5.585650118923939
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "aorta": {
+      "class_id": 7,
+      "source_masks": [
+        "aorta"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 976,
+          "empty_cases": 106,
+          "presence_rate": 0.9020332717190388,
+          "exclusive_present_cases": 976,
+          "present_only_raw_mask_volume_ml": {
+            "count": 976,
+            "min": 0.003375,
+            "p01": 2.14734375,
+            "p05": 11.7703125,
+            "median": 176.32856249999998,
+            "p95": 401.706,
+            "p99": 731.8662187499999,
+            "max": 1567.49175,
+            "mean": 187.04074665794255,
+            "std": 151.4906229581202
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 976,
+            "min": 0.003375,
+            "p01": 2.14734375,
+            "p05": 11.7703125,
+            "median": 176.32856249999998,
+            "p95": 401.706,
+            "p99": 731.079,
+            "max": 1567.49175,
+            "mean": 187.02617813847846,
+            "std": 151.48186780526984
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 4.9500000000000455,
+            "p99": 92.38000000000011,
+            "max": 552.0,
+            "mean": 3.8937153419593344,
+            "std": 31.33874868873248
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 51,
+          "empty_cases": 6,
+          "presence_rate": 0.8947368421052632,
+          "exclusive_present_cases": 51,
+          "present_only_raw_mask_volume_ml": {
+            "count": 51,
+            "min": 0.0033749996404013704,
+            "p01": 1.0006874998202007,
+            "p05": 4.9190624644349406,
+            "median": 237.222,
+            "p95": 428.87475,
+            "p99": 622.5052326349135,
+            "max": 787.8093402698269,
+            "mean": 214.0478583361499,
+            "std": 146.84497684149824
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 51,
+            "min": 0.0033749996404013704,
+            "p01": 1.0006874998202007,
+            "p05": 4.9190624644349406,
+            "median": 237.222,
+            "p95": 428.87475,
+            "p99": 622.5052326349135,
+            "max": 787.8093402698269,
+            "mean": 214.0442848067526,
+            "std": 146.84423608286286
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 3.199999999999953,
+            "p99": 19.71999999999997,
+            "max": 27.0,
+            "mean": 0.9473684210526315,
+            "std": 4.227815381417884
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 1027,
+          "empty_cases": 112,
+          "presence_rate": 0.9016681299385426,
+          "exclusive_present_cases": 1027,
+          "present_only_raw_mask_volume_ml": {
+            "count": 1027,
+            "min": 0.0033749996404013704,
+            "p01": 1.9905075,
+            "p05": 10.984949229569512,
+            "median": 180.4815,
+            "p95": 405.067500556137,
+            "p99": 736.7100525000001,
+            "max": 1567.49175,
+            "mean": 188.38189826026831,
+            "std": 151.37702943395493
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 1027,
+            "min": 0.0033749996404013704,
+            "p01": 1.9905075,
+            "p05": 10.984949229569512,
+            "median": 180.4815,
+            "p95": 405.067500556137,
+            "p99": 736.4371500000001,
+            "max": 1567.49175,
+            "mean": 188.36787574323208,
+            "std": 151.36875973553006
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 5.0,
+            "p99": 91.61999999999989,
+            "max": 552.0,
+            "mean": 3.746268656716418,
+            "std": 30.56591880076604
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "inferior_vena_cava": {
+      "class_id": 8,
+      "source_masks": [
+        "inferior_vena_cava"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 859,
+          "empty_cases": 223,
+          "presence_rate": 0.7939001848428835,
+          "exclusive_present_cases": 859,
+          "present_only_raw_mask_volume_ml": {
+            "count": 859,
+            "min": 0.02025,
+            "p01": 0.8706824914773709,
+            "p05": 7.865100000000001,
+            "median": 57.456,
+            "p95": 109.48736249999992,
+            "p99": 130.96174499999998,
+            "max": 161.81775,
+            "mean": 57.75740435811666,
+            "std": 31.03208399938758
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 859,
+            "min": 0.02025,
+            "p01": 0.8706824914773709,
+            "p05": 7.865100000000001,
+            "median": 57.456,
+            "p95": 109.48736249999992,
+            "p99": 130.96174499999998,
+            "max": 161.81775,
+            "mean": 57.75740435811666,
+            "std": 31.03208399938758
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "std": 0.0
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 46,
+          "empty_cases": 11,
+          "presence_rate": 0.8070175438596491,
+          "exclusive_present_cases": 46,
+          "present_only_raw_mask_volume_ml": {
+            "count": 46,
+            "min": 0.97875,
+            "p01": 1.15036875,
+            "p05": 2.2359373565201466,
+            "median": 53.483625,
+            "p95": 108.44972048454838,
+            "p99": 117.27753749999998,
+            "max": 120.37275,
+            "mean": 55.09313308809867,
+            "std": 32.42164933262092
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 46,
+            "min": 0.97875,
+            "p01": 1.15036875,
+            "p05": 2.2359373565201466,
+            "median": 53.483625,
+            "p95": 108.44972048454838,
+            "p99": 117.27753749999998,
+            "max": 120.37275,
+            "mean": 55.09313308809867,
+            "std": 32.42164933262092
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "std": 0.0
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 905,
+          "empty_cases": 234,
+          "presence_rate": 0.7945566286215979,
+          "exclusive_present_cases": 905,
+          "present_only_raw_mask_volume_ml": {
+            "count": 905,
+            "min": 0.02025,
+            "p01": 0.9171900000000001,
+            "p05": 7.660575000000001,
+            "median": 57.00375,
+            "p95": 110.11814999999996,
+            "p99": 130.64598000000004,
+            "max": 161.81775,
+            "mean": 57.62198283499972,
+            "std": 31.109715927201496
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 905,
+            "min": 0.02025,
+            "p01": 0.9171900000000001,
+            "p05": 7.660575000000001,
+            "median": 57.00375,
+            "p95": 110.11814999999996,
+            "p99": 130.64598000000004,
+            "max": 161.81775,
+            "mean": 57.62198283499972,
+            "std": 31.109715927201496
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "lung_left": {
+      "class_id": 9,
+      "source_masks": [
+        "lung_upper_lobe_left",
+        "lung_lower_lobe_left"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 928,
+          "empty_cases": 154,
+          "presence_rate": 0.8576709796672828,
+          "exclusive_present_cases": 928,
+          "present_only_raw_mask_volume_ml": {
+            "count": 928,
+            "min": 0.037125,
+            "p01": 2.54404125,
+            "p05": 68.62302682647437,
+            "median": 1302.0901875,
+            "p95": 2989.7314312500002,
+            "p99": 3510.91600875,
+            "max": 4331.316375,
+            "mean": 1380.2157583424269,
+            "std": 950.3813934622312
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 928,
+            "min": 0.037125,
+            "p01": 2.54404125,
+            "p05": 68.62302682647437,
+            "median": 1302.0328125,
+            "p95": 2989.7314312500002,
+            "p99": 3510.88684875,
+            "max": 4331.316375,
+            "mean": 1379.94165597185,
+            "std": 950.2460506210787
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 23.0,
+            "p99": 311.1200000000026,
+            "max": 64461.0,
+            "mean": 69.6561922365989,
+            "std": 1960.0489172343352
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 49,
+          "empty_cases": 8,
+          "presence_rate": 0.8596491228070176,
+          "exclusive_present_cases": 49,
+          "present_only_raw_mask_volume_ml": {
+            "count": 49,
+            "min": 79.85925,
+            "p01": 115.01972812025883,
+            "p05": 202.1193,
+            "median": 1502.9853087416586,
+            "p95": 2965.4565749999997,
+            "p99": 3470.7193199999997,
+            "max": 3510.594,
+            "mean": 1528.807698885645,
+            "std": 947.2609001199212
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 49,
+            "min": 79.85925,
+            "p01": 115.01972812025883,
+            "p05": 202.08285,
+            "median": 1502.9853087416586,
+            "p95": 2965.2318,
+            "p99": 3470.7193199999997,
+            "max": 3510.594,
+            "mean": 1528.7823519474694,
+            "std": 947.2537055286244
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 35.39999999999993,
+            "p99": 84.11999999999989,
+            "max": 111.0,
+            "mean": 6.456140350877193,
+            "std": 18.52079928501306
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 977,
+          "empty_cases": 162,
+          "presence_rate": 0.8577699736611062,
+          "exclusive_present_cases": 977,
+          "present_only_raw_mask_volume_ml": {
+            "count": 977,
+            "min": 0.037125,
+            "p01": 2.836755,
+            "p05": 76.84537464730278,
+            "median": 1315.571586200451,
+            "p95": 2988.001575,
+            "p99": 3510.82809,
+            "max": 4331.316375,
+            "mean": 1387.6681688712065,
+            "std": 950.7784361270226
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 977,
+            "min": 0.037125,
+            "p01": 2.836755,
+            "p05": 76.84537464730278,
+            "median": 1315.571586200451,
+            "p95": 2988.001575,
+            "p99": 3510.82809,
+            "max": 4331.316375,
+            "mean": 1387.4065424639743,
+            "std": 950.6514296213123
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 24.09999999999991,
+            "p99": 295.91999999999825,
+            "max": 64461.0,
+            "mean": 66.49341527655838,
+            "std": 1910.429421111147
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    },
+    "lung_right": {
+      "class_id": 10,
+      "source_masks": [
+        "lung_upper_lobe_right",
+        "lung_middle_lobe_right",
+        "lung_lower_lobe_right"
+      ],
+      "train_validation": {
+        "train": {
+          "case_count": 1082,
+          "cases_with_valid_metrics": 1082,
+          "present_cases": 932,
+          "empty_cases": 150,
+          "presence_rate": 0.8613678373382625,
+          "exclusive_present_cases": 932,
+          "present_only_raw_mask_volume_ml": {
+            "count": 932,
+            "min": 0.003375,
+            "p01": 2.5342536510333726,
+            "p05": 74.30416775493211,
+            "median": 1471.5961875,
+            "p95": 3531.951168749999,
+            "p99": 4248.89084249999,
+            "max": 4904.1585,
+            "mean": 1598.9972094690609,
+            "std": 1120.163921710948
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 932,
+            "min": 0.003375,
+            "p01": 2.5342536510333726,
+            "p05": 74.30416775493211,
+            "median": 1471.5961875,
+            "p95": 3531.951168749999,
+            "p99": 4248.89084249999,
+            "max": 4904.1585,
+            "mean": 1598.9946456278592,
+            "std": 1120.1646894920584
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1082,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 5.0,
+            "max": 346.0,
+            "mean": 0.6543438077634011,
+            "std": 11.620569618043046
+          }
+        },
+        "val": {
+          "case_count": 57,
+          "cases_with_valid_metrics": 57,
+          "present_cases": 49,
+          "empty_cases": 8,
+          "presence_rate": 0.8596491228070176,
+          "exclusive_present_cases": 49,
+          "present_only_raw_mask_volume_ml": {
+            "count": 49,
+            "min": 67.39875,
+            "p01": 107.10657,
+            "p05": 222.94777225705343,
+            "median": 1810.2890697387306,
+            "p95": 3809.0614499999983,
+            "p99": 4356.234809999999,
+            "max": 4474.39275,
+            "mean": 1839.6883834677212,
+            "std": 1186.6753538594612
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 49,
+            "min": 67.39875,
+            "p01": 107.10657,
+            "p05": 222.94777225705343,
+            "median": 1810.2890697387306,
+            "p95": 3809.0614499999983,
+            "p99": 4356.234809999999,
+            "max": 4474.39275,
+            "mean": 1839.6883834677212,
+            "std": 1186.6753538594612
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 57,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "std": 0.0
+          }
+        },
+        "development": {
+          "case_count": 1139,
+          "cases_with_valid_metrics": 1139,
+          "present_cases": 981,
+          "empty_cases": 158,
+          "presence_rate": 0.8612818261633012,
+          "exclusive_present_cases": 981,
+          "present_only_raw_mask_volume_ml": {
+            "count": 981,
+            "min": 0.003375,
+            "p01": 2.5656749713140212,
+            "p05": 77.77686929443301,
+            "median": 1485.33075,
+            "p95": 3577.915125,
+            "p99": 4308.345450000002,
+            "max": 4904.1585,
+            "mean": 1611.0195005250587,
+            "std": 1124.8022379177928
+          },
+          "present_only_exclusive_training_volume_ml": {
+            "count": 981,
+            "min": 0.003375,
+            "p01": 2.5656749713140212,
+            "p05": 77.77686929443301,
+            "median": 1485.33075,
+            "p95": 3577.915125,
+            "p99": 4308.345450000002,
+            "max": 4904.1585,
+            "mean": 1611.0170647452426,
+            "std": 1124.8029903756722
+          },
+          "overlap_resolution_removed_voxels": {
+            "count": 1139,
+            "min": 0.0,
+            "p01": 0.0,
+            "p05": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "p99": 4.619999999999891,
+            "max": 346.0,
+            "mean": 0.6215978928884986,
+            "std": 11.326967079661515
+          }
+        }
+      },
+      "test": {
+        "redacted": true,
+        "case_count": 89,
+        "integrity_only": true
+      }
+    }
+  }
+}

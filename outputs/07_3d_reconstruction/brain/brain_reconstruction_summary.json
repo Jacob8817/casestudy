@@ -1,0 +1,26 @@
+{
+  "source_series": "BRAIN_HR36F",
+  "source_slices": 227,
+  "source_shape": [
+    227,
+    512,
+    512
+  ],
+  "voxel_spacing_mm": [
+    0.75,
+    0.55574609375,
+    0.55574609375
+  ],
+  "mask_method": "CT-derived conservative intracranial soft-tissue envelope",
+  "mask_volume_ml": 1224.9008845128399,
+  "vertices": 111340,
+  "triangles": 222684,
+  "watertight": true,
+  "ply_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\brain\\CASE_001_brain_reconstruction.ply",
+  "stl_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\brain\\CASE_001_brain_reconstruction.stl",
+  "glb_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\brain\\CASE_001_brain_reconstruction.glb",
+  "interactive_html_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\brain\\CASE_001_brain_reconstruction.html",
+  "overlay_path": "F:\\csstdy\\outputs\\07_3d_reconstruction\\brain\\CASE_001_brain_mask_overlay.png",
+  "elapsed_seconds": 13.537567377090454,
+  "validated_clinical_segmentation": false
+}

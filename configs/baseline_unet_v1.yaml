@@ -1,0 +1,109 @@
+schema_version: 1
+experiment:
+  id: baseline_3d_unet_v1
+  stage: phase4_baseline_preflight
+  status: configured_not_trained
+  execution_mode: setup_only
+  training_enabled: false
+  description: Conventional MONAI 3D U-Net baseline for the audited 10-organ CT task.
+locks:
+  manifest_sha256: 4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d
+  organ_schema_sha256: 082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05
+  preprocessing_sha256: 92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71
+  gpu_environment_id: windows_cuda130_rtx4060_v1
+data:
+  train_split: train
+  validation_split: val
+  test_split_locked: true
+  expected_split_counts: {train: 1082, val: 57, test: 89}
+  roi_size: [96, 96, 96]
+  train_patches_per_case: 1
+  validation_mode: deterministic_full_volume
+  cache:
+    mode: lazy_fingerprinted_disk
+    root: data/cache/baseline_v1
+    notebook_write_enabled: false
+  loader:
+    batch_size: 1
+    production_workers: 2
+    notebook_workers: 0
+    pin_memory: true
+    persistent_workers: false
+    prefetch_factor: 1
+augmentations:
+  laterality_unsafe_flips_enabled: false
+  spatial_affine:
+    enabled: true
+    probability: 0.50
+    rotate_range_radians: [0.10, 0.10, 0.10]
+    translate_range_voxels: [5.0, 5.0, 5.0]
+    scale_range: [0.10, 0.10, 0.10]
+    image_mode: bilinear
+    label_mode: nearest
+    padding_mode: zeros
+  gaussian_noise:
+    enabled: true
+    probability: 0.15
+    mean: 0.0
+    std: 0.01
+  contrast:
+    enabled: true
+    probability: 0.15
+    gamma_range: [0.90, 1.10]
+  output_clamp: [0.0, 1.0]
+model:
+  implementation: monai.networks.nets.UNet
+  spatial_dims: 3
+  in_channels: 1
+  out_channels: 11
+  channels: [16, 32, 64, 128, 256]
+  strides: [2, 2, 2, 2]
+  num_res_units: 2
+  normalization: INSTANCE
+  activation: PRELU
+  dropout: 0.0
+loss:
+  implementation: monai.losses.DiceCELoss
+  include_background: false
+  to_onehot_y: true
+  softmax: true
+  lambda_dice: 1.0
+  lambda_ce: 1.0
+  label_smoothing: 0.0
+optimization:
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  scheduler: CosineAnnealingLR
+  scheduler_t_max_epochs: 300
+training:
+  max_epochs: 300
+  gradient_accumulation_steps: 2
+  automatic_mixed_precision: true
+  gradient_clip_norm: 12.0
+  validation_interval_epochs: 5
+  early_stopping_patience_validations: 12
+validation:
+  full_volume: true
+  shuffle: false
+  sliding_window:
+    roi_size: [96, 96, 96]
+    overlap: 0.50
+    sw_batch_size: 1
+    blend_mode: gaussian
+  metrics:
+    include_background: false
+    dice: true
+    hd95: true
+    empty_target_policy: nan_excluded_from_class_mean
+reproducibility:
+  random_seed: 42
+  deterministic_controls_enabled: true
+  strict_cuda_determinism: false
+  strict_cuda_determinism_limitation: CUDA 5D CrossEntropy is not marked strictly deterministic by this PyTorch build.
+outputs:
+  run_root: outputs/phase4/baseline_3d_unet_v1
+  setup_report: outputs/phase4/preflight_summary.json
+  augmentation_figure: outputs/phase4/augmentation_qa.png
+  checkpoint_metric: validation_mean_foreground_dice
+  checkpoint_mode: max

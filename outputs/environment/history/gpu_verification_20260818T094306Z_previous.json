@@ -1,0 +1,244 @@
+{
+  "status": "passed",
+  "run_id": "gpu-20260818T094219Z-b5df10bb",
+  "started_at_utc": "2026-08-18T09:42:19.568387Z",
+  "generated_at_utc": "2026-08-18T09:42:23.749955Z",
+  "duration_seconds": 4.181571199998871,
+  "previous_report_archived": "outputs/environment/history/gpu_verification_20260818T094219Z_previous.json",
+  "invocation": {
+    "python_executable": ".venv/Scripts/python.exe",
+    "script": "scripts/verify_gpu_stack.py",
+    "device": 0,
+    "dataset_root": "Totalsegmentator_dataset_v201",
+    "output": "outputs/environment/gpu_verification.json"
+  },
+  "test_split_accessed": false,
+  "test_lock_enforced": true,
+  "environment": {
+    "python": "3.13.12",
+    "python_executable": ".venv/Scripts/python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.13.0+cu130",
+    "torch_git_version": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+    "pytorch_cuda_runtime": "13.0",
+    "cudnn_version": 92000,
+    "cudnn_version_string": "9.20.0",
+    "monai": "1.6.0",
+    "nibabel": "5.4.0",
+    "numpy": "2.5.2",
+    "torch_config": "PyTorch built with:\n  - C++ Version: 202002\n  - MSVC 194234444\n  - Intel(R) oneAPI Math Kernel Library Version 2026.1-Product Build 20260612 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - CUDA Runtime 13.0\n  - NVCC architecture flags: -gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90;-gencode;arch=compute_100,code=sm_100;-gencode;arch=compute_120,code=sm_120\n  - CuDNN 92.0  (built against CUDA 13.2)\n  - Magma 2.5.4\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=cf30153c4c131c8164ee7798e5022d810682e2cb, CUDA_FLAGS=-D_WINDOWS -Xcompiler=\" /EHsc\" -DLIBCUDACXX_ENABLE_SIMPLIFIED_COMPLEX_OPERATIONS -Xcompiler /Zc:__cplusplus -Xcompiler /Zc:preprocessor -Xcompiler /w -w -Xcompiler /FS -Xfatbin -compress-all -DONNX_NAMESPACE=onnx_torch --use-local-env -gencode arch=compute_75,code=sm_75 -gencode arch=compute_80,code=sm_80 -gencode arch=compute_86,code=sm_86 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_100,code=sm_100 -gencode arch=compute_120,code=sm_120 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --Werror cross-execution-space-call --no-host-device-move-forward --expt-relaxed-constexpr --expt-extended-lambda -Xfatbin -compress-all -Xcompiler=/wd4819,/wd4503,/wd4190,/wd4244,/wd4251,/wd4275,/wd4522 -Wno-deprecated-gpu-targets --expt-extended-lambda -DCUB_WRAPPED_NAMESPACE=at_cuda_detail -DDISABLE_CUSPARSE_DEPRECATED -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__, CUDA_VERSION=13.0, CUDNN_VERSION=9.20.0, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/.ci/pytorch/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DNDEBUG -DUSE_KINETO -DHAS_CUPTI -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.13.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=OFF, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n",
+    "deterministic_algorithms": "enabled_warn_only",
+    "determinism_note": "CUDA CrossEntropy for 5D segmentation is not marked strictly deterministic in this build."
+  },
+  "driver": {
+    "nvidia_smi": {
+      "available": true,
+      "returncode": 0,
+      "output": "0, NVIDIA GeForce RTX 4060 Laptop GPU, 592.82, 8188"
+    },
+    "driver_reported_max_cuda_version": "13.1",
+    "nvcc": {
+      "available": false,
+      "returncode": null,
+      "output": "not installed (not required for prebuilt PyTorch wheels)"
+    }
+  },
+  "device": {
+    "index": 0,
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ],
+    "expected_compiled_arch": "sm_89",
+    "exact_arch_in_build": false,
+    "compiled_arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "gencode_flags": "-gencode compute=compute_75,code=sm_75 -gencode compute=compute_80,code=sm_80 -gencode compute=compute_86,code=sm_86 -gencode compute=compute_90,code=sm_90 -gencode compute=compute_100,code=sm_100 -gencode compute=compute_120,code=sm_120",
+    "total_memory_mib": 8187.5,
+    "free_memory_at_start_mib": 7096.0,
+    "runtime_total_memory_mib": 8187.5,
+    "multiprocessor_count": 24
+  },
+  "provenance": {
+    "environment_id": "windows_cuda130_rtx4060_v1",
+    "artifact_hashes": {
+      "verification_script": {
+        "path": "scripts/verify_gpu_stack.py",
+        "sha256": "f07b2b611d3f7e470d68a48a73d77f699a3dd5dd3d0660a3ac2e36cabde6e896"
+      },
+      "gpu_requirements": {
+        "path": "requirements-gpu.txt",
+        "sha256": "ecb62b582ff6bde31250d273edea54560e0907cd07f631ef63e867c64aedd119"
+      },
+      "base_requirements": {
+        "path": "requirements.txt",
+        "sha256": "b85ce0432e1f0b02a0c7412851dfd2fc911954702784c5d8fc39972946a6ce86"
+      },
+      "environment_config": {
+        "path": "configs/environment_gpu.yaml",
+        "sha256": "26cdd432ef3635f0168f17fcf9d25daeb618e82d45ac9564a2885de7ec069930"
+      }
+    },
+    "manifest_sha256": "4c94df936370ee913b0202fc5a34cba9843727d8dabb0552a3b8160dea223d8d",
+    "organ_schema_sha256": "082fa87535d1a4c91d0eaf4aa074ebf297cd0ec386183643038bf2c583989c05",
+    "preprocessing_sha256": "92ec417172ae9a564135fed9bb0ae173de5305651f96220c57b29655e92b8c71",
+    "real_case_id": "s0014",
+    "real_case_split": "train",
+    "real_patch_trace": {
+      "case_id": "s0014",
+      "sample_index": 14,
+      "mode": "foreground_class_balanced",
+      "selected_class_id": 6,
+      "center": [
+        118,
+        127,
+        208
+      ],
+      "requested_start": [
+        70,
+        79,
+        160
+      ],
+      "source_start": [
+        70,
+        79,
+        160
+      ],
+      "source_end": [
+        166,
+        175,
+        256
+      ],
+      "padding_before": [
+        0,
+        0,
+        0
+      ],
+      "padding_after": [
+        0,
+        0,
+        0
+      ],
+      "derived_seed": 16113329376083968643
+    }
+  },
+  "checks": {
+    "cuda_allocation_and_reduction": {
+      "passed": true,
+      "elapsed_seconds": 0.015442500000062864,
+      "allocated_tensor_mib": 64.0,
+      "checksum": 4194304.0
+    },
+    "cuda_matmul_cpu_parity": {
+      "passed": true,
+      "elapsed_seconds": 0.11716610000075889,
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "torch.float32",
+      "checksum": -46775.375
+    },
+    "cuda_conv3d_with_cudnn_enabled": {
+      "passed": true,
+      "elapsed_seconds": 0.13815450000038254,
+      "output_shape": [
+        1,
+        4,
+        32,
+        32,
+        32
+      ],
+      "loss": 0.3521062135696411
+    },
+    "cuda_amp_grad_scaler_optimizer": {
+      "passed": true,
+      "elapsed_seconds": 0.05636409999715397,
+      "output_dtype": "torch.float16",
+      "loss_dtype": "torch.float32",
+      "loss": 0.2932017147541046,
+      "grad_scaler_enabled": true
+    },
+    "real_phase3_patch_to_cuda": {
+      "passed": true,
+      "case_id": "s0014",
+      "split": "train",
+      "image_shape": [
+        1,
+        1,
+        96,
+        96,
+        96
+      ],
+      "label_shape": [
+        1,
+        96,
+        96,
+        96
+      ],
+      "image_dtype": "torch.float32",
+      "label_dtype": "torch.int64",
+      "label_ids": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "source_masks_checked": 13
+    },
+    "monai_paired_cuda_transform": {
+      "passed": true,
+      "elapsed_seconds": 0.013751799997407943,
+      "transform": "Flipd",
+      "image_shape": [
+        1,
+        96,
+        96,
+        96
+      ],
+      "label_shape": [
+        1,
+        96,
+        96,
+        96
+      ],
+      "device": "cuda:0"
+    },
+    "monai_real_patch_amp_training_step": {
+      "passed": true,
+      "elapsed_seconds": 0.33060520000071847,
+      "network": "MONAI UNet smoke model (not research baseline)",
+      "parameter_count": 41951,
+      "input_shape": [
+        1,
+        1,
+        96,
+        96,
+        96
+      ],
+      "logits_shape": [
+        1,
+        11,
+        96,
+        96,
+        96
+      ],
+      "logits_dtype": "torch.float16",
+      "loss": 2.631456136703491,
+      "peak_allocated_mib": 243.80712890625,
+      "peak_reserved_mib": 380.0
+    }
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "phase": "phase1_baseline_reproduction",
+  "framework": "anatomy_aware_self_correcting_geometry_adaptive",
+  "dataset_manifest_sha256": "af365823dd2dbf05b56115420bfcfd3472016036b5477c479beaf5913b01959f",
+  "development_inventory_sha256": "385e38c7006e305d57572538dcb336254a86d54a926cb46099dbd8546e7937af",
+  "selected_counts": {
+    "train": 98,
+    "val": 5
+  },
+  "validation_case_ids": [
+    "s0346",
+    "s0792",
+    "s0874",
+    "s1161",
+    "s1260"
+  ],
+  "labels": {
+    "0": "background",
+    "1": "brain",
+    "2": "skull"
+  },
+  "overlap_policy": "skull wins",
+  "model": "MONAI compact residual 3D U-Net from Notebook 15",
+  "checkpoint": "F:\\csstdy\\outputs\\brain_skull_benchmark\\unet3d\\best.pt",
+  "checkpoint_sha256": "790c1412e5e5c9de471a4cc0d00b0ca19f8b878f8c74bc6da429761c53952d5d",
+  "checkpoint_contract_sha256": "ce9434374dcdde2a5033e2af070cd3ba030deb894f12b3ad22aff653ab61b60b",
+  "selected_epoch": 28,
+  "roi": [
+    96,
+    96,
+    96
+  ],
+  "input_channels": [
+    "brain_window_-100_200_HU",
+    "bone_window_-300_1500_HU"
+  ],
+  "random_seed": 42,
+  "crop_modes": {
+    "oracle": "brain-or-skull reference bounding box plus 16 voxels; reproduction only",
+    "ct_only": {
+      "method": "existing ct_foreground_bbox",
+      "threshold_hu": -900.0,
+      "margin_voxels": [
+        10,
+        10,
+        10
+      ]
+    }
+  },
+  "official_test_split_accessed": false,
+  "training_performed": false,
+  "limitations": [
+    "Five validation cases were used for checkpoint selection.",
+    "Oracle-crop scores are not CT-only deployment estimates.",
+    "No calibration or rescue threshold is selected in Phase 1."
+  ]
+}

@@ -1,0 +1,1791 @@
+[
+  {
+    "notebook": "04_baseline_training.ipynb",
+    "sha256": "ab39373ce44b4d40776014741c8e86b802a51bbd6292cb0ad9a233479067a364",
+    "relevant_source": [
+      {
+        "cell": 12,
+        "source": "        (\"Loss\", \"DiceCELoss (foreground Dice + Cross-Entropy)\"),"
+      }
+    ]
+  },
+  {
+    "notebook": "05_staged_training.ipynb",
+    "sha256": "51ce38d250dcba1c7d6574449ade7fe86cd7f95ff24a4b60c212904e8ad02665",
+    "relevant_source": []
+  },
+  {
+    "notebook": "06_brain_only_3d_reconstruction.ipynb",
+    "sha256": "167dc9d8791e02558e0880aee76b3afbdbba80261dd7fdb6114848bcb34489ec",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "from skimage.measure import marching_cubes"
+      },
+      {
+        "cell": 1,
+        "source": "CT_PATH = None"
+      },
+      {
+        "cell": 3,
+        "source": "if (CT_PATH is None) != (BRAIN_MASK_PATH is None):"
+      },
+      {
+        "cell": 3,
+        "source": "    raise ValueError(\"Set both CT_PATH and BRAIN_MASK_PATH, or leave both as None\")"
+      },
+      {
+        "cell": 3,
+        "source": "if CT_PATH is None:"
+      },
+      {
+        "cell": 3,
+        "source": "    ct_path = case_root / \"ct.nii.gz\""
+      },
+      {
+        "cell": 3,
+        "source": "    ct_path = Path(CT_PATH).expanduser().resolve()"
+      },
+      {
+        "cell": 3,
+        "source": "if not ct_path.is_file():"
+      },
+      {
+        "cell": 3,
+        "source": "    raise FileNotFoundError(f\"CT not found: {ct_path}\")"
+      },
+      {
+        "cell": 3,
+        "source": "ct_image = nib.load(str(ct_path))"
+      },
+      {
+        "cell": 3,
+        "source": "if not np.allclose(ct_image.affine, mask_image.affine, rtol=0.0, atol=1e-4):"
+      },
+      {
+        "cell": 3,
+        "source": "    raise ValueError(\"CT and brain-mask affines do not match\")"
+      },
+      {
+        "cell": 3,
+        "source": "affine = np.asarray(mask_image.affine, dtype=np.float64)"
+      },
+      {
+        "cell": 3,
+        "source": "voxel_volume_mm3 = float(abs(np.linalg.det(affine[:3, :3])))"
+      },
+      {
+        "cell": 7,
+        "source": "voxel_vertices, faces, _normals, _values = marching_cubes("
+      },
+      {
+        "cell": 7,
+        "source": "    padded_mask, level=0.5, step_size=1, allow_degenerate=False"
+      },
+      {
+        "cell": 7,
+        "source": "world_vertices = (homogeneous @ affine.T)[:, :3].astype(np.float32)"
+      },
+      {
+        "cell": 7,
+        "source": "trimesh.smoothing.filter_taubin("
+      },
+      {
+        "cell": 7,
+        "source": "    \"ct_path\": str(ct_path),"
+      }
+    ]
+  },
+  {
+    "notebook": "06_uncertainty_locked_test_and_3d_digital_twin.ipynb",
+    "sha256": "e37a756c414f082b7fcb7f251dc07aacb9117c65f28d819d3e934935a461e51b",
+    "relevant_source": [
+      {
+        "cell": 8,
+        "source": "        (\"Entropy error threshold\", frozen_protocol[\"error_flag_threshold\"]),"
+      },
+      {
+        "cell": 13,
+        "source": "            affine=volume[\"affine\"],"
+      }
+    ]
+  },
+  {
+    "notebook": "07_3d_reconstruction.ipynb",
+    "sha256": "a0173791d8d64fbd9a9eb0563dba5b3cbf68f3a3383dd6a41a7093929451955b",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "KEEP_LARGEST_COMPONENT = True"
+      },
+      {
+        "cell": 7,
+        "source": "bone_mask = ndi.binary_closing(bone_mask, structure=ndi.generate_binary_structure(3, 1), iterations=1)"
+      },
+      {
+        "cell": 7,
+        "source": "labels, component_count = ndi.label(bone_mask, structure=ndi.generate_binary_structure(3, 2))"
+      },
+      {
+        "cell": 7,
+        "source": "component_sizes = np.bincount(labels.ravel())"
+      },
+      {
+        "cell": 7,
+        "source": "component_sizes[0] = 0"
+      },
+      {
+        "cell": 7,
+        "source": "largest_label = int(component_sizes.argmax())"
+      },
+      {
+        "cell": 7,
+        "source": "largest_voxels = int(component_sizes[largest_label])"
+      },
+      {
+        "cell": 7,
+        "source": "if KEEP_LARGEST_COMPONENT:"
+      },
+      {
+        "cell": 7,
+        "source": "print(\"Connected high-density components:\", int(component_count))"
+      },
+      {
+        "cell": 9,
+        "source": "vertices_local, faces, normals_local, _ = measure.marching_cubes("
+      },
+      {
+        "cell": 9,
+        "source": "    step_size=1,"
+      }
+    ]
+  },
+  {
+    "notebook": "07_brain_3d_reconstruction.ipynb",
+    "sha256": "118cd50e960d4fca9ac615453009f0c828b194e6eda0a692319c2117f496a24d",
+    "relevant_source": [
+      {
+        "cell": 5,
+        "source": "    head = ndi.binary_fill_holes(ndi.binary_closing(head, structure=disk(4)))"
+      },
+      {
+        "cell": 5,
+        "source": "    candidate = ndi.binary_closing(candidate, structure=disk(2))"
+      },
+      {
+        "cell": 5,
+        "source": "    brain_mask[z] = ndi.binary_fill_holes(largest_2d(candidate))"
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = ndi.binary_closing("
+      },
+      {
+        "cell": 5,
+        "source": "kept_components = [int(label) for label in ordered[:8] if sizes[label] >= 1000]"
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = np.isin(labels, kept_components)"
+      },
+      {
+        "cell": 5,
+        "source": "    brain_mask[z] = ndi.binary_fill_holes(brain_mask[z])"
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = ndi.binary_closing("
+      },
+      {
+        "cell": 9,
+        "source": "vertices_local, faces, _normals, _values = measure.marching_cubes("
+      },
+      {
+        "cell": 9,
+        "source": "    padded, level=0.5, spacing=working_spacing, step_size=1, allow_degenerate=False"
+      },
+      {
+        "cell": 9,
+        "source": "trimesh.smoothing.filter_taubin("
+      }
+    ]
+  },
+  {
+    "notebook": "08_clean_skull_brain_3d_reconstruction.ipynb",
+    "sha256": "2f549c2ebf907326e5ba7b0f7e2d80cacfb9be8a92a9900a033b8258469f54a8",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "MARCHING_CUBES_STEP = 2"
+      },
+      {
+        "cell": 5,
+        "source": "def largest_3d(mask):"
+      },
+      {
+        "cell": 5,
+        "source": "# Select the patient's head on every slice. Filling the largest component"
+      },
+      {
+        "cell": 5,
+        "source": "    head_mask[z] = ndi.binary_fill_holes("
+      },
+      {
+        "cell": 5,
+        "source": "        ndi.binary_closing(head_slice, structure=disk(4))"
+      },
+      {
+        "cell": 5,
+        "source": "skull_mask = ndi.binary_closing("
+      },
+      {
+        "cell": 5,
+        "source": "skull_labels, skull_component_count = ndi.label("
+      },
+      {
+        "cell": 5,
+        "source": "minimum_skull_component = max(250, int(largest_skull_size * 0.002))"
+      },
+      {
+        "cell": 5,
+        "source": "kept_skull_labels = np.flatnonzero(skull_sizes >= minimum_skull_component)"
+      },
+      {
+        "cell": 5,
+        "source": "    candidate = ndi.binary_closing(candidate, structure=disk(2))"
+      },
+      {
+        "cell": 5,
+        "source": "    brain_mask[z] = ndi.binary_fill_holes(largest_2d(candidate))"
+      },
+      {
+        "cell": 5,
+        "source": "# one 3-D component. This is the key change that removes the floating cap."
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = ndi.binary_closing("
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = largest_3d(brain_mask)"
+      },
+      {
+        "cell": 5,
+        "source": "    brain_mask[z] = ndi.binary_fill_holes(brain_mask[z])"
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = ndi.binary_closing("
+      },
+      {
+        "cell": 5,
+        "source": "brain_mask = largest_3d(brain_mask)"
+      },
+      {
+        "cell": 5,
+        "source": "print(\"Skull components found / retained:\", skull_component_count, \"/\", len(kept_skull_labels))"
+      },
+      {
+        "cell": 9,
+        "source": "    vertices_local, faces, _normals, _values = measure.marching_cubes("
+      },
+      {
+        "cell": 9,
+        "source": "        step_size=MARCHING_CUBES_STEP,"
+      },
+      {
+        "cell": 9,
+        "source": "    trimesh.smoothing.filter_taubin("
+      },
+      {
+        "cell": 11,
+        "source": "        \"brain_component_rule\": \"single largest connected 3-D component\","
+      }
+    ]
+  },
+  {
+    "notebook": "09_totalsegmentator_dl_skull_brain_3d_reconstruction.ipynb",
+    "sha256": "0aafc234e8248a50ddd642a5af29fb9be5081bb8345193198020132463f45a31",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "CT_NIFTI = INPUT_DIR / \"CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 1,
+        "source": "MESH_STEP_SIZE = 2"
+      },
+      {
+        "cell": 3,
+        "source": "if FORCE_RERUN or not CT_NIFTI.exists():"
+      },
+      {
+        "cell": 3,
+        "source": "        str(DICOM_SERIES_DIR), str(CT_NIFTI), reorient_nifti=True"
+      },
+      {
+        "cell": 3,
+        "source": "    print(\"Created:\", CT_NIFTI)"
+      },
+      {
+        "cell": 3,
+        "source": "    print(\"Using cached NIfTI input:\", CT_NIFTI)"
+      },
+      {
+        "cell": 3,
+        "source": "ct_image = nib.load(CT_NIFTI)"
+      },
+      {
+        "cell": 5,
+        "source": "        input=CT_NIFTI,"
+      },
+      {
+        "cell": 7,
+        "source": "if not np.allclose(brain_image.affine, ct_image.affine, atol=1e-4):"
+      },
+      {
+        "cell": 7,
+        "source": "    raise RuntimeError(\"Brain-mask affine does not match the input CT.\")"
+      },
+      {
+        "cell": 7,
+        "source": "if not np.allclose(skull_image.affine, ct_image.affine, atol=1e-4):"
+      },
+      {
+        "cell": 7,
+        "source": "    raise RuntimeError(\"Skull-mask affine does not match the input CT.\")"
+      },
+      {
+        "cell": 7,
+        "source": "voxel_volume_mm3 = float(abs(np.linalg.det(ct_image.affine[:3, :3])))"
+      },
+      {
+        "cell": 7,
+        "source": "brain_components = int(ndi.label(brain_mask)[1])"
+      },
+      {
+        "cell": 7,
+        "source": "skull_components = int(ndi.label(skull_mask)[1])"
+      },
+      {
+        "cell": 7,
+        "source": "print(\"Brain connected components (raw prediction):\", brain_components)"
+      },
+      {
+        "cell": 7,
+        "source": "print(\"Skull connected components (raw prediction):\", skull_components)"
+      },
+      {
+        "cell": 11,
+        "source": "def prediction_to_mesh(mask, affine, smoothing_iterations):"
+      },
+      {
+        "cell": 11,
+        "source": "    vertices_voxel, faces, _normals, _values = measure.marching_cubes("
+      },
+      {
+        "cell": 11,
+        "source": "        step_size=MESH_STEP_SIZE,"
+      },
+      {
+        "cell": 11,
+        "source": "    vertices_world = nib.affines.apply_affine(affine, vertices_voxel).astype(np.float32)"
+      },
+      {
+        "cell": 11,
+        "source": "    trimesh.smoothing.filter_taubin("
+      },
+      {
+        "cell": 11,
+        "source": "skull_mesh = prediction_to_mesh(skull_mask, skull_image.affine, 5)"
+      },
+      {
+        "cell": 11,
+        "source": "brain_mesh = prediction_to_mesh(brain_mask, brain_image.affine, 10)"
+      },
+      {
+        "cell": 19,
+        "source": "    \"input_nifti\": str(CT_NIFTI),"
+      },
+      {
+        "cell": 19,
+        "source": "        \"raw_connected_components\": brain_components,"
+      },
+      {
+        "cell": 19,
+        "source": "        \"raw_connected_components\": skull_components,"
+      }
+    ]
+  },
+  {
+    "notebook": "10_totalsegmentator_sharp_skull_3d_reconstruction.ipynb",
+    "sha256": "6bd322ccb182992f27a86c965e40f1d0cc055dfb4e8123e7c4a3a3bf597fe1b9",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "BONE_CT_NIFTI = INPUT_DIR / \"CASE_001_bone_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 3,
+        "source": "if FORCE_RERUN or not BONE_CT_NIFTI.exists():"
+      },
+      {
+        "cell": 3,
+        "source": "        str(BONE_DICOM_DIR), str(BONE_CT_NIFTI), reorient_nifti=True"
+      },
+      {
+        "cell": 3,
+        "source": "    print(\"Created:\", BONE_CT_NIFTI)"
+      },
+      {
+        "cell": 3,
+        "source": "    print(\"Using cached NIfTI input:\", BONE_CT_NIFTI)"
+      },
+      {
+        "cell": 3,
+        "source": "bone_ct_image = nib.load(BONE_CT_NIFTI)"
+      },
+      {
+        "cell": 5,
+        "source": "        input=BONE_CT_NIFTI,"
+      },
+      {
+        "cell": 7,
+        "source": "    if not np.allclose(image.affine, reference_image.affine, atol=1e-4):"
+      },
+      {
+        "cell": 7,
+        "source": "        raise RuntimeError(f\"Affine mismatch for {name}\")"
+      },
+      {
+        "cell": 7,
+        "source": "if not np.allclose(brain_image.affine, reference_image.affine, atol=1e-3):"
+      },
+      {
+        "cell": 7,
+        "source": "voxel_volume_mm3 = float(abs(np.linalg.det(reference_image.affine[:3, :3])))"
+      },
+      {
+        "cell": 11,
+        "source": "def prediction_to_mesh(mask, affine, step_size, smoothing_iterations):"
+      },
+      {
+        "cell": 11,
+        "source": "    vertices_voxel, faces, _normals, _values = measure.marching_cubes("
+      },
+      {
+        "cell": 11,
+        "source": "        step_size=step_size,"
+      },
+      {
+        "cell": 11,
+        "source": "    vertices_world = nib.affines.apply_affine(affine, vertices_voxel).astype(np.float32)"
+      },
+      {
+        "cell": 11,
+        "source": "        trimesh.smoothing.filter_taubin("
+      },
+      {
+        "cell": 11,
+        "source": "        sharp_skull_mask, reference_image.affine, step_size=1, smoothing_iterations=2"
+      },
+      {
+        "cell": 11,
+        "source": "    brain_mask, brain_image.affine, step_size=1, smoothing_iterations=6"
+      },
+      {
+        "cell": 19,
+        "source": "        \"mesh_step_size\": 1,"
+      },
+      {
+        "cell": 19,
+        "source": "        \"mesh_step_size\": 1,"
+      }
+    ]
+  },
+  {
+    "notebook": "11_patient_specific_neural_ct_rendering.ipynb",
+    "sha256": "5eb3202ae47614c759761d341b950fcc0caef170eb6ae0659c9dfbae53d42cbe",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "SOURCE_DIR = PROJECT_ROOT / \"outputs\" / \"09_totalsegmentator_dl_skull_brain\""
+      },
+      {
+        "cell": 1,
+        "source": "CT_PATH = SOURCE_DIR / \"input\" / \"CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 1,
+        "source": "BRAIN_MASK_PATH = SOURCE_DIR / \"segmentations\" / \"brain.nii.gz\""
+      },
+      {
+        "cell": 1,
+        "source": "SKULL_MASK_PATH = SOURCE_DIR / \"segmentations\" / \"skull.nii.gz\""
+      },
+      {
+        "cell": 3,
+        "source": "for required_path in (CT_PATH, BRAIN_MASK_PATH, SKULL_MASK_PATH):"
+      },
+      {
+        "cell": 3,
+        "source": "ct_img = nib.load(CT_PATH)"
+      },
+      {
+        "cell": 3,
+        "source": "if not (np.allclose(ct_img.affine, brain_img.affine) and np.allclose(ct_img.affine, skull_img.affine)):"
+      },
+      {
+        "cell": 3,
+        "source": "    raise ValueError(\"CT and masks do not share the same affine.\")"
+      },
+      {
+        "cell": 3,
+        "source": "crop_affine = ct_img.affine @ crop_transform"
+      },
+      {
+        "cell": 4,
+        "source": "world_xyz = nib.affines.apply_affine(crop_affine, grid).astype(np.float32)"
+      },
+      {
+        "cell": 4,
+        "source": "affine_gpu = torch.tensor(crop_affine, device=DEVICE, dtype=torch.float32)"
+      },
+      {
+        "cell": 4,
+        "source": "    xyz = ijk @ affine_gpu[:3, :3].T + affine_gpu[:3, 3]"
+      },
+      {
+        "cell": 7,
+        "source": "    \"crop_affine\": crop_affine,"
+      },
+      {
+        "cell": 10,
+        "source": "nib.save(nib.Nifti1Image(predicted_hu, crop_affine), neural_nifti_path)"
+      },
+      {
+        "cell": 10,
+        "source": "    affine=crop_affine,"
+      },
+      {
+        "cell": 12,
+        "source": "# Display representative held-out planes: original, neural prediction and absolute error."
+      },
+      {
+        "cell": 12,
+        "source": "representative_pool = held_z[brain_area_by_z[held_z] >= np.percentile(brain_area_by_z[brain_area_by_z > 0], 35)]"
+      },
+      {
+        "cell": 12,
+        "source": "selected_z = representative_pool[np.linspace(0, len(representative_pool) - 1, 3, dtype=int)]"
+      },
+      {
+        "cell": 14,
+        "source": "def keep_largest_components(mask: np.ndarray, minimum_size: int, maximum_components: int | None = None) -> np.ndarray:"
+      },
+      {
+        "cell": 14,
+        "source": "    component_ids = np.flatnonzero(sizes >= minimum_size)"
+      },
+      {
+        "cell": 14,
+        "source": "    component_ids = component_ids[component_ids != 0]"
+      },
+      {
+        "cell": 14,
+        "source": "    if maximum_components is not None and len(component_ids) > maximum_components:"
+      },
+      {
+        "cell": 14,
+        "source": "        component_ids = component_ids[np.argsort(sizes[component_ids])[-maximum_components:]]"
+      },
+      {
+        "cell": 14,
+        "source": "    return np.isin(labels, component_ids)"
+      },
+      {
+        "cell": 14,
+        "source": "def mesh_from_mask(mask: np.ndarray, affine: np.ndarray, *, step_size: int = 1):"
+      },
+      {
+        "cell": 14,
+        "source": "    vertices, faces, _, _ = measure.marching_cubes(mask.astype(np.float32), level=0.5, step_size=step_size)"
+      },
+      {
+        "cell": 14,
+        "source": "    vertices_world = nib.affines.apply_affine(affine, vertices)"
+      },
+      {
+        "cell": 14,
+        "source": "neural_skull = keep_largest_components(neural_skull, minimum_size=100, maximum_components=12)"
+      },
+      {
+        "cell": 14,
+        "source": "internal_low = keep_largest_components(internal_low, minimum_size=18, maximum_components=18)"
+      },
+      {
+        "cell": 14,
+        "source": "skull_vertices, skull_faces = mesh_from_mask(neural_skull, crop_affine, step_size=2)"
+      },
+      {
+        "cell": 14,
+        "source": "brain_vertices, brain_faces = mesh_from_mask(brain, crop_affine, step_size=1)"
+      },
+      {
+        "cell": 14,
+        "source": "trimesh.smoothing.filter_taubin(brain_mesh, lamb=0.45, nu=0.50, iterations=5)"
+      },
+      {
+        "cell": 14,
+        "source": "low_vertices, low_faces = mesh_from_mask(internal_low, crop_affine, step_size=1)"
+      },
+      {
+        "cell": 20,
+        "source": "sample_world = nib.affines.apply_affine(crop_affine, sample_indices)"
+      },
+      {
+        "cell": 24,
+        "source": "    \"source_ct\": str(CT_PATH),"
+      },
+      {
+        "cell": 26,
+        "source": "v7_ct_path = v7_root / \"outputs\" / \"09_totalsegmentator_dl_skull_brain\" / \"input\" / \"CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 26,
+        "source": "for v7_path in (v7_dir, v7_ct_path, v7_brain_path, v7_skull_path, v7_neural_path):"
+      },
+      {
+        "cell": 26,
+        "source": "v7_ct_img = nib.load(str(v7_ct_path))"
+      },
+      {
+        "cell": 26,
+        "source": "    v7_crop_affine = np.asarray(v7_npz[\"affine\"], dtype=np.float64).copy()"
+      },
+      {
+        "cell": 26,
+        "source": "v7_index_map = np.linalg.inv(v7_ct_img.affine) @ v7_crop_affine"
+      },
+      {
+        "cell": 26,
+        "source": "v7_axcodes = nib.aff2axcodes(v7_crop_affine)"
+      },
+      {
+        "cell": 26,
+        "source": "v7_spacing = np.linalg.norm(v7_crop_affine[:3, :3], axis=0)"
+      },
+      {
+        "cell": 26,
+        "source": "v7_voxel_volume = float(abs(np.linalg.det(v7_crop_affine[:3, :3])))"
+      },
+      {
+        "cell": 26,
+        "source": "v7_labels, v7_component_count = ndi.label(v7_native_low, structure=v7_conn26)"
+      },
+      {
+        "cell": 30,
+        "source": "        \"components_before_filtering\": int(before),"
+      },
+      {
+        "cell": 30,
+        "source": "        \"components_after_filtering\": after,"
+      },
+      {
+        "cell": 32,
+        "source": "v7_components = pd.read_csv(v7_dir / \"native_low_hu_components.csv\")"
+      },
+      {
+        "cell": 32,
+        "source": "v7_major = v7_components["
+      },
+      {
+        "cell": 32,
+        "source": "    (v7_components[\"volume_mm3\"] >= 50.0)"
+      },
+      {
+        "cell": 32,
+        "source": "    & (v7_components[\"longest_consecutive_slice_run\"] >= 3)"
+      },
+      {
+        "cell": 32,
+        "source": "    v7_major = v7_components.nlargest(1, \"volume_mm3\").copy()"
+      },
+      {
+        "cell": 32,
+        "source": "v7_major_ids = v7_major[\"component_id\"].astype(int).to_numpy()"
+      },
+      {
+        "cell": 32,
+        "source": "print(f\"Components before filtering: {v7_component_count}\")"
+      },
+      {
+        "cell": 32,
+        "source": "print(f\"Recorded components (>=10 mm\u00b3): {len(v7_components)}\")"
+      },
+      {
+        "cell": 32,
+        "source": "print(f\"Major persistent components: {len(v7_major)}\")"
+      },
+      {
+        "cell": 32,
+        "source": "display(v7_components)"
+      },
+      {
+        "cell": 34,
+        "source": "    \"component_id\", \"fraction_inside_brain_mask\","
+      },
+      {
+        "cell": 38,
+        "source": "    \"component_id\", \"first_axial_slice\", \"last_axial_slice\","
+      },
+      {
+        "cell": 54,
+        "source": "print(f\"HU range of major low-density components: {v7_major['minimum_hu'].min():.2f} to {v7_major['maximum_hu'].max():.2f} HU\")"
+      },
+      {
+        "cell": 54,
+        "source": "print(f\"Number of major persistent components: {v7_persistent_count}\")"
+      },
+      {
+        "cell": 54,
+        "source": "print(f\"Largest component volume: {v7_largest['volume_mm3']:.2f} mm^3\")"
+      },
+      {
+        "cell": 56,
+        "source": "v8_ct_path = v8_root / \"outputs\" / \"09_totalsegmentator_dl_skull_brain\" / \"input\" / \"CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 56,
+        "source": "for v8_path in (v8_ct_path, v8_brain_path, v8_neural_path, v8_section7_dir):"
+      },
+      {
+        "cell": 56,
+        "source": "v8_ct_img = nib.load(str(v8_ct_path))"
+      },
+      {
+        "cell": 56,
+        "source": "    v8_crop_affine = np.asarray(v8_npz[\"affine\"], dtype=np.float64).copy()"
+      },
+      {
+        "cell": 56,
+        "source": "v8_index_map = np.linalg.inv(v8_ct_img.affine) @ v8_crop_affine"
+      },
+      {
+        "cell": 56,
+        "source": "v8_axcodes = nib.aff2axcodes(v8_crop_affine)"
+      },
+      {
+        "cell": 56,
+        "source": "v8_spacing = np.linalg.norm(v8_crop_affine[:3, :3], axis=0)"
+      },
+      {
+        "cell": 56,
+        "source": "v8_voxel_volume = float(abs(np.linalg.det(v8_crop_affine[:3, :3])))"
+      },
+      {
+        "cell": 56,
+        "source": "v8_section7_components = pd.read_csv(v8_section7_dir / \"native_low_hu_components.csv\")"
+      },
+      {
+        "cell": 58,
+        "source": "v8_largest_s7 = v8_section7_components.sort_values(\"volume_mm3\", ascending=False).iloc[0]"
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_section7_component_id\": int(v8_largest_s7[\"component_id\"]),"
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_component_volume_mm3\": float(v8_largest_s7[\"volume_mm3\"]),"
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_component_mean_hu\": float(v8_largest_s7[\"mean_hu\"]),"
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_component_median_hu\": float(v8_largest_s7[\"median_hu\"]),"
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_component_persistence_slices\": int(v8_largest_s7[\"longest_consecutive_slice_run\"]),"
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_component_median_boundary_distance_mm\": float("
+      },
+      {
+        "cell": 58,
+        "source": "    \"largest_component_normalized_centrality\": float(v8_largest_s7[\"normalized_centrality\"]),"
+      },
+      {
+        "cell": 60,
+        "source": "        \"connected_components\": int(v8_count_test),"
+      },
+      {
+        "cell": 62,
+        "source": "v8_mid_world = nib.affines.apply_affine("
+      },
+      {
+        "cell": 62,
+        "source": "    v8_crop_affine,"
+      },
+      {
+        "cell": 62,
+        "source": "v8_fig.suptitle(f\"Affine-derived midsagittal plane \u2014 axcodes {v8_axcodes}\", fontsize=14)"
+      },
+      {
+        "cell": 64,
+        "source": "def v8_keep_components(mask, minimum_volume_mm3):"
+      },
+      {
+        "cell": 64,
+        "source": "    centroid_world = nib.affines.apply_affine(v8_crop_affine, centroid_voxel)"
+      },
+      {
+        "cell": 64,
+        "source": "v8_third_mask, _, _ = v8_keep_components(v8_third_raw, 5.0)"
+      },
+      {
+        "cell": 64,
+        "source": "v8_fourth_mask, _, _ = v8_keep_components(v8_fourth_raw & ~v8_third_mask, 5.0)"
+      },
+      {
+        "cell": 64,
+        "source": "v8_basal_mask, _, _ = v8_keep_components("
+      },
+      {
+        "cell": 64,
+        "source": "v8_left_lateral, v8_left_before, _ = v8_keep_components(v8_lateral_roi & v8_left_half, 10.0)"
+      },
+      {
+        "cell": 64,
+        "source": "v8_right_lateral, v8_right_before, _ = v8_keep_components(v8_lateral_roi & v8_right_half, 10.0)"
+      },
+      {
+        "cell": 64,
+        "source": "v8_lateral_confidence = \"MODERATE\" if v8_lateral_supported else \"LOW\""
+      },
+      {
+        "cell": 64,
+        "source": "# Affine-derived AP direction: increasing A means high AP fraction is anterior."
+      },
+      {
+        "cell": 64,
+        "source": "    {\"side\": \"LEFT\", **v8_left_stats, \"classification_confidence\": v8_lateral_confidence},"
+      },
+      {
+        "cell": 64,
+        "source": "    {\"side\": \"RIGHT\", **v8_right_stats, \"classification_confidence\": v8_lateral_confidence},"
+      },
+      {
+        "cell": 64,
+        "source": "    f\"with {v8_lateral_confidence} confidence.\""
+      },
+      {
+        "cell": 66,
+        "source": "v8_third_confidence = \"MODERATE\" if v8_third_supported else \"UNRESOLVED\""
+      },
+      {
+        "cell": 66,
+        "source": "                       \"classification_confidence\": v8_third_confidence}]))"
+      },
+      {
+        "cell": 66,
+        "source": "    print(\"THIRD VENTRICLE \u2014 ANATOMICAL CANDIDATE (moderate CT-based confidence).\")"
+      },
+      {
+        "cell": 68,
+        "source": "v8_fourth_confidence = \"LOW\" if v8_fourth_supported else \"UNRESOLVED\""
+      },
+      {
+        "cell": 68,
+        "source": "                       \"classification_confidence\": v8_fourth_confidence}]))"
+      },
+      {
+        "cell": 68,
+        "source": "    print(\"FOURTH VENTRICLE \u2014 ANATOMICAL CANDIDATE (low CT-based confidence).\")"
+      },
+      {
+        "cell": 70,
+        "source": "v8_peripheral_mask, _, _ = v8_keep_components(v8_peripheral_low_hu, 10.0)"
+      },
+      {
+        "cell": 70,
+        "source": "v8_peripheral_confidence = \"MODERATE\" if v8_peripheral_supported else \"LOW\""
+      },
+      {
+        "cell": 70,
+        "source": "v8_basal_confidence = \"LOW\" if v8_basal_supported else \"UNRESOLVED\""
+      },
+      {
+        "cell": 70,
+        "source": "     \"classification_confidence\": v8_peripheral_confidence},"
+      },
+      {
+        "cell": 70,
+        "source": "     \"classification_confidence\": v8_basal_confidence},"
+      },
+      {
+        "cell": 72,
+        "source": "            \"representative_axial_slice\": ("
+      },
+      {
+        "cell": 76,
+        "source": "def v8_world_mesh(mask, step_size=1):"
+      },
+      {
+        "cell": 76,
+        "source": "    vertices, faces, _, _ = measure.marching_cubes("
+      },
+      {
+        "cell": 76,
+        "source": "        mask_u8, level=0.5, step_size=int(step_size), allow_degenerate=False"
+      },
+      {
+        "cell": 76,
+        "source": "    return nib.affines.apply_affine(v8_crop_affine, vertices), faces"
+      },
+      {
+        "cell": 76,
+        "source": "def v8_add_mesh(figure, mask, name, color, opacity, step_size=1, visible=True):"
+      },
+      {
+        "cell": 76,
+        "source": "    mesh = v8_world_mesh(mask, step_size=step_size)"
+      },
+      {
+        "cell": 76,
+        "source": "v8_add_mesh(v8_figure_3d, v8_brain, \"TotalSegmentator brain\", \"#ef9a9a\", 0.12, step_size=3)"
+      },
+      {
+        "cell": 76,
+        "source": "        \"#66bb6a\", 0.08, step_size=3, visible=\"legendonly\""
+      },
+      {
+        "cell": 78,
+        "source": "    anatomical_class, side, subregion_id, mask, confidence, evidence, limitations"
+      },
+      {
+        "cell": 78,
+        "source": "        \"component_or_subregion_id\": subregion_id,"
+      },
+      {
+        "cell": 78,
+        "source": "        \"classification_confidence\": confidence,"
+      },
+      {
+        "cell": 78,
+        "source": "    v8_lateral_confidence, v8_lateral_evidence, v8_lateral_limit"
+      },
+      {
+        "cell": 78,
+        "source": "    v8_lateral_confidence, v8_lateral_evidence, v8_lateral_limit"
+      },
+      {
+        "cell": 78,
+        "source": "                \"Affine-derived anterior\u2013posterior subdivision of the supported lateral ventricular candidate\","
+      },
+      {
+        "cell": 78,
+        "source": "    v8_third_confidence,"
+      },
+      {
+        "cell": 78,
+        "source": "    v8_fourth_confidence,"
+      },
+      {
+        "cell": 78,
+        "source": "    \"Low confidence without explicit cerebellum/brainstem anatomical labels\","
+      },
+      {
+        "cell": 78,
+        "source": "    v8_peripheral_mask, v8_peripheral_confidence,"
+      },
+      {
+        "cell": 78,
+        "source": "    v8_basal_mask, v8_basal_confidence,"
+      },
+      {
+        "cell": 80,
+        "source": "v8_dominant_confidence = v8_lateral_confidence"
+      },
+      {
+        "cell": 80,
+        "source": "    \"dominant_class_confidence\": v8_dominant_confidence,"
+      },
+      {
+        "cell": 80,
+        "source": "    \"left_lateral_ventricle\": {\"supported\": v8_lateral_supported, \"confidence\": v8_lateral_confidence, **v8_left_stats},"
+      },
+      {
+        "cell": 80,
+        "source": "    \"right_lateral_ventricle\": {\"supported\": v8_lateral_supported, \"confidence\": v8_lateral_confidence, **v8_right_stats},"
+      },
+      {
+        "cell": 80,
+        "source": "    \"third_ventricle\": {\"supported\": v8_third_supported, \"confidence\": v8_third_confidence, **v8_third_stats},"
+      },
+      {
+        "cell": 80,
+        "source": "    \"fourth_ventricle\": {\"supported\": v8_fourth_supported, \"confidence\": v8_fourth_confidence, **v8_fourth_stats},"
+      },
+      {
+        "cell": 80,
+        "source": "        \"supported\": v8_peripheral_supported, \"confidence\": v8_peripheral_confidence, **v8_peripheral_stats"
+      },
+      {
+        "cell": 80,
+        "source": "        \"supported\": v8_basal_supported, \"confidence\": v8_basal_confidence, **v8_basal_stats"
+      },
+      {
+        "cell": 80,
+        "source": "        \"affine_axis_codes\": list(v8_axcodes),"
+      },
+      {
+        "cell": 82,
+        "source": "print(\"Confidence:\")"
+      },
+      {
+        "cell": 82,
+        "source": "print(v8_dominant_confidence)"
+      },
+      {
+        "cell": 82,
+        "source": "print(\"- location: deep, central, supratentorial regions on opposite sides of the affine-derived midsagittal plane\")"
+      },
+      {
+        "cell": 82,
+        "source": "print(f\"- Third ventricle: {v8_third_confidence}\")"
+      },
+      {
+        "cell": 82,
+        "source": "print(f\"- Fourth ventricle: {v8_fourth_confidence}\")"
+      },
+      {
+        "cell": 82,
+        "source": "print(f\"- Cortical sulcal/subarachnoid CSF: {v8_peripheral_confidence}\")"
+      },
+      {
+        "cell": 82,
+        "source": "print(f\"- Basal cisternal CSF: {v8_basal_confidence}\")"
+      },
+      {
+        "cell": 85,
+        "source": "v9_brain_ct_path = ("
+      },
+      {
+        "cell": 85,
+        "source": "v9_bone_ct_path = ("
+      },
+      {
+        "cell": 85,
+        "source": "    v9_brain_ct_path, v9_bone_ct_path, v9_brain_mask_path,"
+      },
+      {
+        "cell": 85,
+        "source": "v9_brain_ct_img = nib.load(str(v9_brain_ct_path))"
+      },
+      {
+        "cell": 85,
+        "source": "v9_bone_ct_img = nib.load(str(v9_bone_ct_path))"
+      },
+      {
+        "cell": 85,
+        "source": "v9_affine = np.asarray(v9_brain_ct_img.affine, dtype=np.float64)"
+      },
+      {
+        "cell": 85,
+        "source": "    if not np.allclose(v9_img.affine, v9_affine, atol=1e-5):"
+      },
+      {
+        "cell": 85,
+        "source": "        raise ValueError(\"A source affine differs from the BRAIN_HR36F affine.\")"
+      },
+      {
+        "cell": 85,
+        "source": "v9_axcodes = nib.aff2axcodes(v9_affine)"
+      },
+      {
+        "cell": 85,
+        "source": "v9_spacing = np.linalg.norm(v9_affine[:3, :3], axis=0)"
+      },
+      {
+        "cell": 85,
+        "source": "v9_voxel_volume = float(abs(np.linalg.det(v9_affine[:3, :3])))"
+      },
+      {
+        "cell": 91,
+        "source": "        # LAS means decreasing LR index points right; reverse this when the affine says R."
+      },
+      {
+        "cell": 91,
+        "source": "            linewidth=1.0, label=\"Affine midsagittal reference\""
+      },
+      {
+        "cell": 91,
+        "source": "    v9_world = nib.affines.apply_affine(v9_affine, v9_coordinate)"
+      },
+      {
+        "cell": 95,
+        "source": "    v9_world = nib.affines.apply_affine(v9_affine, v9_coordinate)"
+      },
+      {
+        "cell": 95,
+        "source": "    v9_source = v9_bone_ct_path if v9_use_bone else v9_brain_ct_path"
+      },
+      {
+        "cell": 95,
+        "source": "        v9_basis = \"Affine midsagittal reference plus report-specified ~3 mm rightward guide\""
+      },
+      {
+        "cell": 99,
+        "source": "    \"brain_reconstruction\": str(v9_brain_ct_path),"
+      },
+      {
+        "cell": 99,
+        "source": "    \"bone_reconstruction\": str(v9_bone_ct_path),"
+      }
+    ]
+  },
+  {
+    "notebook": "12_siren_neural_skull_brain_rendering.ipynb",
+    "sha256": "c515073ae313ce573bbd13bee3ab1fbf7de4ab400400734839b04f3f21efb8e6",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "SOURCE_DIR = PROJECT_ROOT / \"outputs\" / \"09_totalsegmentator_dl_skull_brain\""
+      },
+      {
+        "cell": 1,
+        "source": "CT_PATH = SOURCE_DIR / \"input\" / \"CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 1,
+        "source": "BRAIN_MASK_PATH = SOURCE_DIR / \"segmentations\" / \"brain.nii.gz\""
+      },
+      {
+        "cell": 1,
+        "source": "SKULL_MASK_PATH = SOURCE_DIR / \"segmentations\" / \"skull.nii.gz\""
+      },
+      {
+        "cell": 3,
+        "source": "for required in (CT_PATH, BRAIN_MASK_PATH, SKULL_MASK_PATH):"
+      },
+      {
+        "cell": 3,
+        "source": "ct_img = nib.load(CT_PATH)"
+      },
+      {
+        "cell": 3,
+        "source": "if not (np.allclose(ct_img.affine, brain_img.affine) and np.allclose(ct_img.affine, skull_img.affine)):"
+      },
+      {
+        "cell": 3,
+        "source": "    raise ValueError(\"CT and masks must have the same affine.\")"
+      },
+      {
+        "cell": 3,
+        "source": "crop_affine = ct_img.affine @ crop_transform"
+      },
+      {
+        "cell": 4,
+        "source": "world_corners = nib.affines.apply_affine(crop_affine, corners).astype(np.float32)"
+      },
+      {
+        "cell": 4,
+        "source": "affine_gpu = torch.tensor(crop_affine, dtype=torch.float32, device=DEVICE)"
+      },
+      {
+        "cell": 4,
+        "source": "    xyz = ijk @ affine_gpu[:3, :3].T + affine_gpu[:3, 3]"
+      },
+      {
+        "cell": 7,
+        "source": "    \"crop_affine\": crop_affine,"
+      },
+      {
+        "cell": 10,
+        "source": "nib.save(nib.Nifti1Image(pred_brain_sdf, crop_affine), VOLUME_DIR / \"CASE_001_siren_brain_sdf_mm.nii.gz\")"
+      },
+      {
+        "cell": 10,
+        "source": "nib.save(nib.Nifti1Image(pred_skull_sdf, crop_affine), VOLUME_DIR / \"CASE_001_siren_skull_sdf_mm.nii.gz\")"
+      },
+      {
+        "cell": 10,
+        "source": "nib.save(nib.Nifti1Image(pred_soft_hu, crop_affine), VOLUME_DIR / \"CASE_001_siren_soft_hu.nii.gz\")"
+      },
+      {
+        "cell": 10,
+        "source": "nib.save(nib.Nifti1Image(pred_wide_hu, crop_affine), VOLUME_DIR / \"CASE_001_siren_wide_hu.nii.gz\")"
+      },
+      {
+        "cell": 13,
+        "source": "representative = held_z[(brain[:, :, held_z].sum(axis=(0, 1)) > 10000)]"
+      },
+      {
+        "cell": 13,
+        "source": "selected_z = representative[np.linspace(0, len(representative) - 1, 3, dtype=int)]"
+      },
+      {
+        "cell": 15,
+        "source": "def keep_components(mask: np.ndarray, minimum_size: int, maximum_components: int) -> np.ndarray:"
+      },
+      {
+        "cell": 15,
+        "source": "    components = np.flatnonzero(sizes >= minimum_size)"
+      },
+      {
+        "cell": 15,
+        "source": "    components = components[components != 0]"
+      },
+      {
+        "cell": 15,
+        "source": "    if len(components) > maximum_components:"
+      },
+      {
+        "cell": 15,
+        "source": "        components = components[np.argsort(sizes[components])[-maximum_components:]]"
+      },
+      {
+        "cell": 15,
+        "source": "    return np.isin(labels, components)"
+      },
+      {
+        "cell": 15,
+        "source": "neural_brain = ndimage.binary_closing(raw_pred_brain, iterations=1)"
+      },
+      {
+        "cell": 15,
+        "source": "neural_brain = keep_components(neural_brain, minimum_size=5000, maximum_components=1)"
+      },
+      {
+        "cell": 15,
+        "source": "neural_brain = ndimage.binary_fill_holes(neural_brain)"
+      },
+      {
+        "cell": 15,
+        "source": "# This removes far-field extrapolation components without directly meshing the source mask."
+      },
+      {
+        "cell": 15,
+        "source": "neural_skull = ndimage.binary_closing(neural_skull, iterations=1)"
+      },
+      {
+        "cell": 15,
+        "source": "neural_skull = keep_components(neural_skull, minimum_size=250, maximum_components=20)"
+      },
+      {
+        "cell": 15,
+        "source": "internal_low = keep_components(internal_low, minimum_size=60, maximum_components=20)"
+      },
+      {
+        "cell": 15,
+        "source": "nib.save(nib.Nifti1Image(neural_brain.astype(np.uint8), crop_affine), VOLUME_DIR / \"CASE_001_siren_brain_mask.nii.gz\")"
+      },
+      {
+        "cell": 15,
+        "source": "nib.save(nib.Nifti1Image(neural_skull.astype(np.uint8), crop_affine), VOLUME_DIR / \"CASE_001_siren_skull_mask.nii.gz\")"
+      },
+      {
+        "cell": 15,
+        "source": "nib.save(nib.Nifti1Image(internal_low.astype(np.uint8), crop_affine), VOLUME_DIR / \"CASE_001_siren_internal_low_hu_mask.nii.gz\")"
+      },
+      {
+        "cell": 16,
+        "source": "def create_mesh(mask: np.ndarray, *, step_size: int = 1, smoothing_iterations: int = 3) -> trimesh.Trimesh:"
+      },
+      {
+        "cell": 16,
+        "source": "    vertices, faces, _, _ = measure.marching_cubes("
+      },
+      {
+        "cell": 16,
+        "source": "        mask.astype(np.float32), level=0.5, step_size=step_size"
+      },
+      {
+        "cell": 16,
+        "source": "    vertices_world = nib.affines.apply_affine(crop_affine, vertices)"
+      },
+      {
+        "cell": 16,
+        "source": "        trimesh.smoothing.filter_taubin("
+      },
+      {
+        "cell": 16,
+        "source": "brain_mesh = create_mesh(neural_brain, step_size=1, smoothing_iterations=4)"
+      },
+      {
+        "cell": 16,
+        "source": "skull_mesh = create_mesh(neural_skull, step_size=1, smoothing_iterations=2)"
+      },
+      {
+        "cell": 16,
+        "source": "internal_mesh = create_mesh(internal_low, step_size=1, smoothing_iterations=2)"
+      },
+      {
+        "cell": 17,
+        "source": "skull_preview_mesh = create_mesh(neural_skull, step_size=3, smoothing_iterations=7)"
+      },
+      {
+        "cell": 17,
+        "source": "brain_preview_mesh = create_mesh(neural_brain, step_size=2, smoothing_iterations=7)"
+      },
+      {
+        "cell": 17,
+        "source": "internal_preview_mesh = create_mesh(internal_low, step_size=2, smoothing_iterations=3)"
+      },
+      {
+        "cell": 30,
+        "source": "    \"source_ct\": str(CT_PATH),"
+      }
+    ]
+  },
+  {
+    "notebook": "13_multiview_neural_verification_prototype.ipynb",
+    "sha256": "24649776c1c5fb7d372655e3e3b691dff154e39f3f9384619b2ac84542c64d81",
+    "relevant_source": [
+      {
+        "cell": 2,
+        "source": "BRAIN_CT_PATH = PROJECT_ROOT / \"outputs/09_totalsegmentator_dl_skull_brain/input/CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 2,
+        "source": "BONE_CT_PATH = PROJECT_ROOT / \"outputs/10_totalsegmentator_sharp_skull/input/CASE_001_bone_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 2,
+        "source": "required = [BRAIN_CT_PATH, BONE_CT_PATH, BRAIN_MASK_PATH, SKULL_MASK_PATH, ICH_WEIGHTS, FRACTURE_WEIGHTS]"
+      },
+      {
+        "cell": 4,
+        "source": "brain_img = nib.load(BRAIN_CT_PATH)"
+      },
+      {
+        "cell": 4,
+        "source": "bone_img = nib.load(BONE_CT_PATH)"
+      },
+      {
+        "cell": 4,
+        "source": "affine = brain_img.affine.copy()"
+      },
+      {
+        "cell": 4,
+        "source": "axcodes = nib.aff2axcodes(affine)"
+      },
+      {
+        "cell": 15,
+        "source": "            \"axial_slice\": int(z), \"confidence_raw\": conf,"
+      },
+      {
+        "cell": 15,
+        "source": "    fracture_df = pd.DataFrame(columns=[\"axial_slice\",\"confidence_raw\",\"x1\",\"y1\",\"x2\",\"y2\",\"detector_scope\",\"calibration_status\"])"
+      },
+      {
+        "cell": 15,
+        "source": "    fracture_df = fracture_df.sort_values(\"confidence_raw\", ascending=False).reset_index(drop=True)"
+      },
+      {
+        "cell": 15,
+        "source": "print(\"Candidate boxes at confidence >= 0.05:\", len(fracture_df))"
+      },
+      {
+        "cell": 15,
+        "source": "# stability indicator, not a calibrated confidence interval."
+      },
+      {
+        "cell": 15,
+        "source": "brain_world = nib.affines.apply_affine(affine, np.argwhere(brain_mask))"
+      },
+      {
+        "cell": 15,
+        "source": "    peak_idx = int(g.confidence_raw.idxmax())"
+      },
+      {
+        "cell": 15,
+        "source": "    world = nib.affines.apply_affine(affine, [cy, cx, float(peak.axial_slice)])"
+      },
+      {
+        "cell": 15,
+        "source": "        \"detections\": int(len(g)), \"peak_confidence_raw\": float(g.confidence_raw.max()),"
+      },
+      {
+        "cell": 15,
+        "source": "        \"mean_confidence_raw\": float(g.confidence_raw.mean()),"
+      },
+      {
+        "cell": 15,
+        "source": "        \"adjacent_slice_confidence_sd\": float(g.confidence_raw.std(ddof=1)) if len(g)>1 else np.nan,"
+      },
+      {
+        "cell": 15,
+        "source": "        \"lower95_review_score\": float(max(0, g.confidence_raw.mean()-1.96*g.confidence_raw.std(ddof=1))) if len(g)>1 else np.nan,"
+      },
+      {
+        "cell": 15,
+        "source": "    fracture_clusters = fracture_clusters.sort_values(\"peak_confidence_raw\", ascending=False).reset_index(drop=True)"
+      },
+      {
+        "cell": 16,
+        "source": "    fig.suptitle(f\"Depressed-fracture detector candidate {rank} \u2014 raw confidence {row.confidence_raw:.3f}\\n\""
+      },
+      {
+        "cell": 18,
+        "source": "world_coords = nib.affines.apply_affine(affine, np.argwhere(brain_mask))"
+      },
+      {
+        "cell": 18,
+        "source": "        cworld = nib.affines.apply_affine(affine, [cvox[0], cvox[1], z])"
+      },
+      {
+        "cell": 18,
+        "source": "        \"left_component_voxels\": lc[0], \"right_component_voxels\": rc[0],"
+      },
+      {
+        "cell": 18,
+        "source": "        \"method\": \"bilateral central low-HU component midpoint\","
+      },
+      {
+        "cell": 18,
+        "source": "    print(\"Insufficient bilateral central low-HU components for a geometric estimate.\")"
+      },
+      {
+        "cell": 19,
+        "source": "    representative = mls_df.iloc[(mls_df.absolute_displacement_mm - robust_mls).abs().argmin()]"
+      },
+      {
+        "cell": 19,
+        "source": "    z = int(representative.axial_slice)"
+      },
+      {
+        "cell": 19,
+        "source": "    inv_aff = np.linalg.inv(affine)"
+      },
+      {
+        "cell": 19,
+        "source": "    ref_vox = nib.affines.apply_affine(inv_aff, [reference_midline_x, 0, 0])[0]"
+      },
+      {
+        "cell": 19,
+        "source": "    cand_vox = nib.affines.apply_affine(inv_aff, [representative.candidate_midpoint_world_x_mm, 0, 0])[0]"
+      },
+      {
+        "cell": 19,
+        "source": "    ax.set_title(f\"Exploratory midline geometry \u2014 axial slice {z}\\nabsolute displacement {representative.absolute_displacement_mm:.2f} mm\")"
+      },
+      {
+        "cell": 21,
+        "source": "            row.update({\"score\": float(top.peak_confidence_raw),"
+      },
+      {
+        "cell": 21,
+        "source": "                        \"uncertainty\": float(top.adjacent_slice_confidence_sd) if pd.notna(top.adjacent_slice_confidence_sd) else np.nan,"
+      },
+      {
+        "cell": 25,
+        "source": "        \"method\": \"bilateral central low-HU component midpoint relative to brain/skull reference\","
+      }
+    ]
+  },
+  {
+    "notebook": "14_interactive_skull_brain_multiplanar.ipynb",
+    "sha256": "2ab07630884f596264b5e32f8707beca2b35e8dd006ce950c8599ea2094b6c83",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "from skimage.measure import marching_cubes"
+      },
+      {
+        "cell": 1,
+        "source": "CT_PATH = PROJECT_ROOT / \"outputs/09_totalsegmentator_dl_skull_brain/input/CASE_001_brain_kernel_ct.nii.gz\""
+      },
+      {
+        "cell": 1,
+        "source": "for p in [CT_PATH,BRAIN_PATH,SKULL_PATH,NEURAL_HU_PATH,NEURAL_BRAIN_PATH]:"
+      },
+      {
+        "cell": 1,
+        "source": "ct_img=nib.load(CT_PATH); affine=ct_img.affine.copy()"
+      },
+      {
+        "cell": 1,
+        "source": "neural_img=nib.load(NEURAL_HU_PATH); neural_affine=neural_img.affine.copy()"
+      },
+      {
+        "cell": 1,
+        "source": "print(\"Native CT:\",ct.shape,nib.aff2axcodes(affine))"
+      },
+      {
+        "cell": 1,
+        "source": "print(\"Neural CT:\",neural_hu.shape,nib.aff2axcodes(neural_affine))"
+      },
+      {
+        "cell": 3,
+        "source": "labels,n_components=ndi.label(csf_raw,structure=np.ones((3,3,3),dtype=np.uint8))"
+      },
+      {
+        "cell": 3,
+        "source": "voxel_volume_mm3=float(abs(np.linalg.det(affine[:3,:3])))"
+      },
+      {
+        "cell": 3,
+        "source": "# removed and only the largest persistent components are surfaced in 3-D."
+      },
+      {
+        "cell": 3,
+        "source": "display_labels,display_component_count=ndi.label(csf_opened,structure=np.ones((3,3,3),dtype=np.uint8))"
+      },
+      {
+        "cell": 3,
+        "source": "        int(n_components)==int(nominal[\"components_before_filtering\"]) and"
+      },
+      {
+        "cell": 3,
+        "source": "        len(kept_ids)==int(nominal[\"components_after_filtering\"])"
+      },
+      {
+        "cell": 3,
+        "source": "csf_img=nib.Nifti1Image(csf_candidate.astype(np.uint8),affine,ct_img.header)"
+      },
+      {
+        "cell": 3,
+        "source": "nib.save(nib.Nifti1Image(csf_display_clean.astype(np.uint8),affine,ct_img.header),csf_clean_path)"
+      },
+      {
+        "cell": 3,
+        "source": "neural_csf_img=resample_from_to(csf_img,(neural_hu.shape,neural_affine),order=0)"
+      },
+      {
+        "cell": 3,
+        "source": "print(\"Connected components before filtering:\",int(n_components))"
+      },
+      {
+        "cell": 3,
+        "source": "print(\"Components retained at >=10 mm\u00b3:\",len(kept_ids))"
+      },
+      {
+        "cell": 3,
+        "source": "print(\"Clean display-surface voxels:\",int(csf_display_clean.sum()),\"across\",len(display_ids),\"components\")"
+      },
+      {
+        "cell": 5,
+        "source": "def mesh(mask,img_affine,sigma,step=2):"
+      },
+      {
+        "cell": 5,
+        "source": "    v,f,_,_=marching_cubes(crop,.5,step_size=step,allow_degenerate=False)"
+      },
+      {
+        "cell": 5,
+        "source": "    return nib.affines.apply_affine(img_affine,v).astype(\"<f4\"),f.astype(\"<i4\")"
+      },
+      {
+        "cell": 5,
+        "source": "brain_v,brain_f=mesh(brain,affine,1.0)"
+      },
+      {
+        "cell": 5,
+        "source": "skull_v,skull_f=mesh(skull,affine,.65)"
+      },
+      {
+        "cell": 5,
+        "source": "neural_v,neural_f=mesh(neural_brain,neural_affine,.9)"
+      },
+      {
+        "cell": 5,
+        "source": "csf_v,csf_f=mesh(csf_display_clean,affine,1.15,step=2)"
+      },
+      {
+        "cell": 5,
+        "source": "        \"steps\":native_steps.tolist(),\"affine\":affine.tolist(),"
+      },
+      {
+        "cell": 5,
+        "source": "        \"steps\":neural_steps.tolist(),\"affine\":neural_affine.tolist(),"
+      },
+      {
+        "cell": 5,
+        "source": "    \"csfVerification\":{\"rawVoxels\":int(csf_raw.sum()),\"componentsBefore\":int(n_components),"
+      },
+      {
+        "cell": 5,
+        "source": "                       \"componentsAfter\":int(len(kept_ids)),\"referenceMatch\":reference_match}"
+      },
+      {
+        "cell": 7,
+        "source": "function unpackVolume(p){return {ct:decode(p.ct),brain:decode(p.brain),skull:decode(p.skull),csf:decode(p.csf),steps:p.steps,affine:p.affine};}"
+      },
+      {
+        "cell": 7,
+        "source": "function world(v,i,j,k){const A=v.affine,s=v.steps,x=i*s[0],y=j*s[1],z=k*s[2];return [A[0][0]*x+A[0][1]*y+A[0][2]*z+A[0][3],A[1][0]*x+A[1][1]*y+A[1][2]*z+A[1][3],A[2][0]*x+A[2][1]*y+A[2][2]*z+A[2][3]];}"
+      },
+      {
+        "cell": 9,
+        "source": "        \"minimum_component_volume_mm3\":10.0,\"reference_match_notebook_11\":reference_match,"
+      }
+    ]
+  },
+  {
+    "notebook": "15_brain_skull_benchmark.ipynb",
+    "sha256": "3301a288e2d3657e6a92f8313a76853238fba7099c26ba4a3433ab9fc1356d51",
+    "relevant_source": []
+  },
+  {
+    "notebook": "16_original_monai_unet_brain_skull_ablation.ipynb",
+    "sha256": "17fb4e552eec375692e025dab3a5657c2aefbb87f37b0d73c66717b98c081cf7",
+    "relevant_source": []
+  },
+  {
+    "notebook": "17_anatomy_aware_framework_phase1.ipynb",
+    "sha256": "810ac1287f2e34def454786f1f7c15c168716677474ae4c7677fe5a28ab6d044",
+    "relevant_source": [
+      {
+        "cell": 3,
+        "source": "contract_path = OUTPUT_ROOT / \"frozen_contract.json\""
+      },
+      {
+        "cell": 3,
+        "source": "contract_path.write_text(json.dumps(contract, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "cell": 3,
+        "source": "print(\"Frozen contract:\", contract_path)"
+      },
+      {
+        "cell": 7,
+        "source": "    crop_affine = np.asarray(ct_image.affine, dtype=np.float64).copy()"
+      },
+      {
+        "cell": 7,
+        "source": "    crop_affine[:3, 3] = (ct_image.affine @ np.asarray([*starts, 1.0]))[:3]"
+      },
+      {
+        "cell": 7,
+        "source": "        or not np.allclose(brain_image.affine, ct_image.affine, atol=1e-3, rtol=0)"
+      },
+      {
+        "cell": 7,
+        "source": "        or not np.allclose(skull_image.affine, ct_image.affine, atol=1e-3, rtol=0)"
+      },
+      {
+        "cell": 7,
+        "source": "        \"ct_affine\": crop_affine.tolist(),"
+      },
+      {
+        "cell": 13,
+        "source": "    \"contract_path\": str(contract_path),"
+      },
+      {
+        "cell": 13,
+        "source": "    \"contract_sha256\": sha256_file(contract_path),"
+      },
+      {
+        "cell": 15,
+        "source": "print(\"Phase 1 contract SHA256:\", sha256_file(contract_path))"
+      },
+      {
+        "cell": 21,
+        "source": "    phase1_contract_sha256=sha256_file(contract_path),"
+      }
+    ]
+  },
+  {
+    "notebook": "18_anatomy_aware_framework_phases4_10.ipynb",
+    "sha256": "aa7a94778da0f70da651849c1f4cfc9f13d9584231e3844a75f06e03df01abf9",
+    "relevant_source": [
+      {
+        "cell": 1,
+        "source": "    run_confidence_envelopes,"
+      },
+      {
+        "cell": 1,
+        "source": "    run_surface_confidence,"
+      },
+      {
+        "cell": 3,
+        "source": "print(\"Entropy threshold:\", phase4_report[\"selected_error_threshold\"][\"threshold\"])"
+      },
+      {
+        "cell": 4,
+        "source": "entropy = np.asarray(nib.load(str(output_paths[\"phase4\"] / \"cases\" / example_id / \"predictive_entropy.nii.gz\")).dataobj)"
+      },
+      {
+        "cell": 4,
+        "source": "shown = axes[3].imshow(entropy[:, :, z].T, cmap=\"magma\", origin=\"lower\", vmin=0, vmax=1); axes[3].set_title(\"Calibrated entropy\")"
+      },
+      {
+        "cell": 11,
+        "source": "representative_id = config[\"phase7_adaptive_mesh\"][\"representative_validation_case\"]"
+      },
+      {
+        "cell": 11,
+        "source": "mesh_records = [item for item in validation_records if item[\"case_id\"] == representative_id]"
+      },
+      {
+        "cell": 13,
+        "source": "phase8_report = run_surface_confidence("
+      },
+      {
+        "cell": 13,
+        "source": "    config[\"phase8_surface_confidence\"],"
+      },
+      {
+        "cell": 13,
+        "source": "    representative_case=representative_id,"
+      },
+      {
+        "cell": 13,
+        "source": "print(\"Interactive confidence mesh:\", phase8_report[\"interactive_html\"])"
+      },
+      {
+        "cell": 15,
+        "source": "phase9_report = run_confidence_envelopes("
+      },
+      {
+        "cell": 15,
+        "source": "    config[\"phase9_confidence_envelope\"],"
+      },
+      {
+        "cell": 15,
+        "source": "    representative_case=representative_id,"
+      }
+    ]
+  },
+  {
+    "notebook": "code.ipynb",
+    "sha256": "2334fea5eead71eea6aaae14c404e55cc4df3dd6b3a41a1772477ba88f2baa10",
+    "relevant_source": [
+      {
+        "cell": 2,
+        "source": "    columns=[\"Component\", \"Version\"],"
+      },
+      {
+        "cell": 12,
+        "source": "ras_hu, ras_label, ras_affine, orientation_trace = canonicalize_to_ras("
+      },
+      {
+        "cell": 12,
+        "source": "    primary.ct_hu, primary.label, primary.affine"
+      },
+      {
+        "cell": 12,
+        "source": "spatial_hu, spatial_label, spatial_affine, resample_trace = resample_pair("
+      },
+      {
+        "cell": 12,
+        "source": "    ras_affine,"
+      },
+      {
+        "cell": 20,
+        "source": "cropped_hu, cropped_label, cropped_affine = crop_pair("
+      },
+      {
+        "cell": 20,
+        "source": "    spatial_hu, spatial_label, spatial_affine, crop_bbox"
+      }
+    ]
+  }
+]

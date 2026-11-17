@@ -1,0 +1,22 @@
+{
+  "exported_PLY_GLB_geometry_identical": true,
+  "exported_colors_identical": true,
+  "s0346_full_surface_identity": true,
+  "all_boundary_edges_on_acquired_FOV": true,
+  "boundary_edge_count": 1256,
+  "probability_formula_max_error": 0.0,
+  "entropy_formula_max_error": 0.0,
+  "split_counts": {
+    "train": 1082,
+    "val": 57,
+    "test": 89
+  },
+  "tests": {
+    "tests": 19,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "coordinates": "All mesh numeric coordinates are RAS+ millimetres; configure import units as mm.",
+  "visual_QA": "Reviewed CT opening, geometry comparison and oblique full-resolution PNGs; identical camera pairs with legend and complete framing."
+}

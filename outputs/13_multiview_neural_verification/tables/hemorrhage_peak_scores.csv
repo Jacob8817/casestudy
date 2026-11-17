@@ -1,0 +1,7 @@
+class,peak_native_slice,peak_raw_mean,peak_temperature_T1.5,TTA_SD_at_peak,lower95_review_at_peak,score_interpretation
+any,95,0.22698761522769928,0.28439703583717346,0.18036235868930817,0.0,research model score; not a clinical probability
+intraparenchymal,95,0.010344430804252625,0.030776651576161385,0.014405231922864914,0.0,research model score; not a clinical probability
+intraventricular,95,0.007898837327957153,0.03400018438696861,0.00629934947937727,0.0,research model score; not a clinical probability
+subarachnoid,202,0.013591449707746506,0.05413549020886421,0.0017521808622404933,0.01015717521775514,research model score; not a clinical probability
+subdural,109,0.23324589431285858,0.3059345483779907,0.08711902797222137,0.06249259948730468,research model score; not a clinical probability
+epidural,123,0.008286140859127045,0.03839728608727455,0.0030559422448277473,0.0022964940592646596,research model score; not a clinical probability

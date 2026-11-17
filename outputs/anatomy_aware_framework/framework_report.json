@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "framework": "An Anatomy-Aware Self-Correcting and Geometry-Adaptive Framework",
+  "completed_phases": [
+    1,
+    2,
+    3
+  ],
+  "phase1_report": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase1\\phase1_report.json",
+  "phase1_status": "passed",
+  "phase2_report": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase2\\phase2_report.json",
+  "phase2_status": "passed",
+  "official_test_split_accessed": false,
+  "phase3_report": "F:\\csstdy\\outputs\\anatomy_aware_framework\\phase3\\phase3_report.json",
+  "phase3_status": "passed"
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "migrated_at_utc": "2026-08-27T14:31:24.660346Z",
+  "reason": "cap full training at 50 epochs and permit standard recoverable AMP overflow backoff",
+  "trajectory_preserved_through_epoch": 16,
+  "old_config_sha256": "762470d64a2950878f09e0e49e5e0b09d99ddbea7a153e20e09c4f32574af588",
+  "new_config_sha256": "8033b87ad9e9fab70930ee608a886c635684e27556380538cb3e47fec13b7186",
+  "scheduler_t_max_preserved": 100,
+  "checkpoint_amp_scale_preserved": 16384.0,
+  "next_overflow_behavior": "skip optimizer update, halve scale, continue; NaNs fail closed",
+  "test_split_accessed": false,
+  "archive": "outputs/training/recovery_archive/20260827_full_epoch16_amp_overflow",
+  "status": "passed",
+  "source_bundle_sha256": "01dce726f684bb3a142ab5a0564438819c3f8004e2507172aa849fca2de883aa",
+  "full_provenance_sha256": "b69e1d0acdb6f2105d103b317b953dc6c20438ed9facc53f4c0799220d415f42",
+  "checkpoint_original_sha256": {
+    "last.pt": "4b13c6832b49080cc3cf75fb21384e9d13ff470cd8c9410a68a63f52372ec19b",
+    "best.pt": "c9054c19f0b21912200daaa4ff35552b4e3969ae417e9305bc102538fb0f2bf5"
+  },
+  "checkpoint_migrated_sha256": {
+    "last.pt": "910d12ed2e1d085fbecc67ea8f0a57c7e192ef12d0be249edfb8956c40ff1960",
+    "best.pt": "a9f1a0f935ea3bbdcf7a52dfd7b071aa983da6b5c0570dde65ead3d27b0ae536"
+  },
+  "resume_checkpoint": "outputs/training/gate3_full_baseline/baseline_v1/checkpoints/last.pt",
+  "resume_epoch": 16,
+  "remaining_epoch_cap": 50,
+  "cached_arrays_modified": false,
+  "overflow_replay_validation": {
+    "status": "passed",
+    "resume_epoch": 16,
+    "replayed_batches": 82,
+    "optimizer_steps_added_in_memory_only": 40,
+    "amp_overflow_skips": 1,
+    "scale_before": 16384.0,
+    "scale_after": 8192.0,
+    "artifacts_written": false
+  }
+}

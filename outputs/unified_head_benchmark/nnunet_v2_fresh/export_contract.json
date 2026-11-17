@@ -1,0 +1,10 @@
+{
+  "dataset_name": "Dataset901_BrainSkullOracleROI",
+  "inventory_sha256": "385e38c7006e305d57572538dcb336254a86d54a926cb46099dbd8546e7937af",
+  "train_cases": 98,
+  "validation_cases": 5,
+  "class_priority": "skull wins overlap",
+  "head_crop": "reference brain-or-skull bounding box + 16 voxels",
+  "official_test_split_accessed": false,
+  "raw_folder": "F:\\csstdy\\outputs\\unified_head_benchmark\\nnunet_v2_fresh\\nnUNet_raw\\Dataset901_BrainSkullOracleROI"
+}
