@@ -1,0 +1,10 @@
+finding,report_status,region,reconstruction,certainty
+Hemorrhagic contusion,Reported,Left frontal and temporal lobes,BRAIN_HR36F,Explicitly reported
+Acute subdural hematoma (SDH),Reported,Left fronto-temporo-parietal region,BRAIN_HR36F,Explicitly reported
+Posterior interhemispheric SDH,Reported,Posterior interhemispheric region,BRAIN_HR36F,Explicitly reported
+Intraventricular hemorrhage (IVH),Likely,Bilateral lateral ventricular occipital horns,BRAIN_HR36F,Reported as likely
+Subarachnoid hemorrhage (SAH),Likely,Left frontoparietal lobes,BRAIN_HR36F,Reported as likely
+Mass effect / midline shift,Reported,Midline; approximately 3 mm shift to the right,BRAIN_HR36F,Explicitly reported
+Postoperative extra-axial collection,Reported,Extra-axial postoperative region,BRAIN_HR36F,Explicitly reported
+Right sphenoid bone fracture,Suspected,Right sphenoid bone,BONE_HR60F,Reported as suspected
+Right occipital bone fracture,Suspected,Right occipital bone,BONE_HR60F,Reported as suspected

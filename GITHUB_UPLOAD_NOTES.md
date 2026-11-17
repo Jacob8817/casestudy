@@ -1,25 +1,32 @@
 # GitHub upload contents
 
-This repository contains the project source code, tests, configuration, dependency lists,
-notebooks with their saved outputs, dataset split manifest, audit reports, result metadata,
-figures, and interactive HTML visualizations.
+This repository includes project source, tests, configuration, dependency lists,
+notebooks with saved outputs, the dataset split manifest, audit reports, result metadata,
+figures, interactive HTML visualizations, trained models, and all result artifacts under
+`outputs/`. The separate `Single_Patient_Study/` directory and its ZIP archive are included.
 
-The original project files remain on the source computer at `F:\csstdy`.
-This repository is not yet a full backup of that folder.
+Model checkpoints, volume arrays, segmentation files, meshes, DICOM input files, and ZIP
+archives are stored using Git Large File Storage (LFS). To download their actual contents,
+install Git LFS and run:
 
-## Files remaining local
+```sh
+git lfs install
+git clone https://github.com/Jacob8817/casestudy.git
+cd casestudy
+git lfs pull
+```
 
-- `Totalsegmentator_dataset_v201/` and its ZIP archive: original dataset.
-- `Single_Patient_Study/` and its ZIP archive: patient input data.
-- `data/cache/`: processed arrays and caches.
-- Binary result artifacts under `outputs/`: model checkpoints, volume arrays, segmentation files, and mesh files.
-- `.venv/`, `.tmp/`, Python bytecode, and test caches: local environment and temporary files.
+## Intentionally excluded
 
-Large-data upload/storage is pending a separate choice. GitHub blocks ordinary Git files
-larger than 100 MiB. Some files here exceed that limit, including the dataset ZIP archive.
+- `Totalsegmentator_dataset_v201/` and its ZIP archive, as requested.
+- `data/cache/`: regenerable processed dataset caches.
+- `.venv/`, `.tmp/`, Python bytecode, notebook checkpoints, and test caches: local environment and temporary files.
+- Local credential files, if any.
+
+All original files remain on the source computer at `F:\csstdy`.
+Uploading does not delete or modify the original project files.
 
 The original dataset source and project workflow are documented in
 `PROJECT_CONTEXT_FOR_CHATGPT.md`. Recreate the Python environment using `requirements.txt`
-and `requirements-gpu.txt`, then supply the required datasets and checkpoints before
-running workflows that depend on them. Existing research reports describe prior local runs;
-they do not imply that this repository contains every input or trained model.
+and `requirements-gpu.txt`, and supply the excluded dataset before running workflows
+that depend on it. Existing research reports describe prior local runs.

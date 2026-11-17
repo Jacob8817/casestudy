@@ -11,3 +11,8 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Dataset and regenerable dataset caches (kept on this computer)
+/Totalsegmentator_dataset_v201/
+/Totalsegmentator_dataset_v201.zip
+/data/cache/
